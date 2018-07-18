@@ -21,16 +21,18 @@ function SimpleAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" color="none">
         <Toolbar>
-          <div className={classes.flex}>
-            <Typography variant="title" color="inherit" >
-              Cameron Raymond
-          </Typography>
-            <Typography variant="subheading" color="inherit">
-              Computer Science
-          </Typography>
-            <Typography variant="subheading" color="inherit">
-              Political Studies
-          </Typography>
+          <div className={classes.flex} >
+            <div style={{  flexDirection: "column", alignItems: "flex-start", padding: 0, margin: 0}}>
+              <h2 style={{ fontWeight: 300 }}>
+                Cameron Raymond
+          </h2>
+              <h3 style={{ fontWeight: 100 }}>
+                Computer Science
+          </h3>
+              <h3 style={{ fontWeight: 100 }} >
+                Political Studies
+          </h3>
+            </div>
           </div>
           <HeaderList />
         </Toolbar>

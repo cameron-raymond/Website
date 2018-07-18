@@ -13,7 +13,7 @@ export default class App extends React.Component {
     componentDidMount() {
         this.setStateInterval = window.setInterval(() => {
             this.setState({ data: this.getData() });
-        }, 4000);
+        }, 6000);
     }
 
     getData() {
@@ -35,8 +35,8 @@ export default class App extends React.Component {
         return (
             <VictoryStack
                 padding={0}
-                height={230}
-                animate={{ duration: 10000 }}
+                height={250}
+                animate={{ onEnter: 20000 , duration: 6200 }}
                 colorScale={[ "#4C5C6A","#E9E9E9", "#95A7B0", "#CECECE", "#DEDFDF","#456179",
                 "#b1c3cc",
                 "#00455c",
