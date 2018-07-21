@@ -95,7 +95,7 @@ export default class Scatter extends React.Component {
         return (
             <VictoryGroup
                 padding={0}
-
+                height={250}
                 domainPadding={{ x: 20, y:[4,50] }}
                 animate={{ duration: 500 }}
             >

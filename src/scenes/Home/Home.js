@@ -8,10 +8,10 @@ import './Home.css';
 
 
 class Home extends Component {
-  
-  
+
 
   render() {
+
     return (
       <div >
         <div id="navbar">
@@ -20,6 +20,7 @@ class Home extends Component {
         <div className="Container">
           <About />
           <WhatIDo />
+
           <More />
         </div>
       </div >
