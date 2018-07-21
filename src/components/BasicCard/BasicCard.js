@@ -8,7 +8,7 @@ import './BasicCard.css'
 class Home extends Component {
     render() {
         return (
-            <div className="container" style={{ position: 'relative',backgroundColor: this.props.backgroundColor}} >
+            <div className="card" style={{ position: 'relative',backgroundColor: this.props.backgroundColor}} >
                 {this.props.background}
                 <div style={{ position:'absolute' , top: 10 }}>
                     <Title color={this.props.color} >{this.props.title}</Title>
