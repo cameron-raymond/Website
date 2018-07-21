@@ -16,9 +16,10 @@ class Home extends Component {
         return (
               <div id="about" className="about">
                 <Card title={"Nice To Meet You"}
-                    content={"Hi -  my name is Cameron. I'm a student at Queen's University studying Computer Science, with a minor in Political Studies. The things I love include: spending time with friends, reading, exercising, and learning about clever solutions to difficult problems."}
                     background={<Test />}
-                />
+                >
+                Hi -  my name is Cameron. I'm a student at Queen's University studying Computer Science, with a minor in Political Studies. The things I love include: spending time with friends, reading, exercising, and learning about clever solutions to difficult problems.
+                </Card>
              </div>
         );
     }

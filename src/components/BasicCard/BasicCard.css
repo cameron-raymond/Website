@@ -5,7 +5,7 @@
     align-items: center;
     text-align: center;
     font-size: 0;
-    
+    overflow: hidden;
 }
 
 .title{
@@ -22,7 +22,7 @@
     width: 2.5rem;
     margin-right: 1rem;
     margin-left: 1rem;
-    border-bottom: 1.3px solid black;
+    border-bottom: 2px solid black;
     border-radius: 2px;
     }
 
@@ -31,5 +31,6 @@
     flex: 1;
     flex-direction: row;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    overflow: hidden
 }

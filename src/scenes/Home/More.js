@@ -7,10 +7,11 @@ class More extends Component {
     render() {
         return (
                 <Card title={"Let's Get In Touch"}
-                    content={"Lorem Ipsum give me a job please"}
                     background={<Scatter />}
                     backgrounColor={"#DEDFDF"}
-                />
+                >
+                Lorem Ipsum give me a job please
+                </Card>
         );
     }
 }

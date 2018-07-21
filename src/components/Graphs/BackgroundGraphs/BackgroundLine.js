@@ -44,6 +44,7 @@ export default class App extends React.Component {
                 "#547e88",
                 "#5fa5ca",
                 "#91a6bb"]}
+                style={{data: {opacity: 0.8}}}
             >
                 {this.state.data.map((data, i) => {
                     return (

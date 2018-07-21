@@ -14,7 +14,7 @@ class Home extends Component {
                     <Title color={this.props.color} >{this.props.title}</Title>
                     <div style={{ maxWidth: 600, flexShrink: 1, flexWrap: "wrap", color:this.props.color ,margin: 0}}>
                         <p className="text" style={{color:this.props.color }}>
-                            {this.props.content}
+                            {this.props.children}
                         </p>
                     </div>
                 </div>

@@ -10,11 +10,12 @@ class WhatIDo extends Component {
         return (
 
             <Card title={"What I Do"}
-                content={"Lorem Ipsum write about what you like to do"}
                 background={<Line />}
                 color={"#E9E9E9"}
                 backgroundColor={"#4C5C6A"}
-            />
+            >
+Lorem ipsum I'm not a waste.            
+            </Card>
         );
     }
 }
