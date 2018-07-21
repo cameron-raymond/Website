@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Typography from '@material-ui/core/Typography';
-import '../../scenes/Home/Home.css'
+import './BasicCard.css'
 
 /**
  * 
@@ -8,13 +7,13 @@ import '../../scenes/Home/Home.css'
 class Home extends Component {
     render() {
         return (
-            <div className="Container" style={{ position: 'relative',backgroundColor: this.props.backgroundColor, marginBottom: 0}} >
+            <div className="Container" style={{ position: 'relative',backgroundColor: this.props.backgroundColor}} >
                 {this.props.background}
                 <div style={{ position: 'absolute', top: 10 }}>
-                    <h1 style={{color: this.props.color}}>
+                    <h1 style={{color: this.props.color, fontSize: 30}}>
                         {this.props.title}
                     </h1>
-                    <div style={{ maxWidth: 580, flexShrink: 1, flexWrap: "wrap", color:this.props.color }}>
+                    <div style={{ maxWidth: 580, flexShrink: 1, flexWrap: "wrap", color:this.props.color ,margin: 0}}>
                         <p style={{color:this.props.color }}>
                             {this.props.content}
                         </p>
