@@ -8,15 +8,13 @@
     padding: 20px;
     color: white;
   }
-  .App-title {
+  .appTitle {
+    font-family: 'Roboto Slab', serif;
     padding-top: 40;
     font-size: 1.5em;
   }
-  .Header-list{
-    position: absolute;
-    right: 10em;
+  .headerList{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
   }
 
-  h3{
-    
-  }

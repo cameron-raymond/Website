@@ -15,7 +15,9 @@ class Home extends Component {
           <Header />
         </div>
         <div className="Container">
-          <About/><WhatIDo/><More/>
+          <About/>
+          <WhatIDo/>
+          <More/>
         </div>
       </div >
     );

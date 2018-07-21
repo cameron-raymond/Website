@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Title from './Title'
 import './BasicCard.css'
 
 /**
@@ -9,12 +10,11 @@ class Home extends Component {
         return (
             <div className="Container" style={{ position: 'relative',backgroundColor: this.props.backgroundColor}} >
                 {this.props.background}
+                {/* //test */}
                 <div style={{ position: 'absolute', top: 10 }}>
-                    <h1 style={{color: this.props.color, fontSize: 30}}>
-                        {this.props.title}
-                    </h1>
+                    <Title color={this.props.color} >{this.props.title}</Title>
                     <div style={{ maxWidth: 580, flexShrink: 1, flexWrap: "wrap", color:this.props.color ,margin: 0}}>
-                        <p style={{color:this.props.color }}>
+                        <p className="text" style={{color:this.props.color }}>
                             {this.props.content}
                         </p>
                     </div>

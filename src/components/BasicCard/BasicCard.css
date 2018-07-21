@@ -1,4 +1,4 @@
-.Container{
+.container{
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -7,3 +7,29 @@
     text-align: center ;
 }
 
+.title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30;
+
+}
+
+.text{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.line{
+    width: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-bottom: 1.3px solid black;
+    border-radius: 2px;
+    }
+
+.row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
