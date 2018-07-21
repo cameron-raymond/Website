@@ -35,7 +35,6 @@ export default class App extends React.Component {
         return (
             <VictoryStack
                 padding={0}
-                height={230}
                 animate={{ onEnter: 20000 , duration: 7200 }}
                 colorScale={[ "#4C5C6A","#E9E9E9", "#95A7B0", "#CECECE", "#DEDFDF","#456179",
                 "#b1c3cc",

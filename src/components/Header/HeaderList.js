@@ -7,7 +7,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import GitIcon from '@material-ui/icons/Code';
 import WorkIcon from '@material-ui/icons/Work';
-import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 
 const styles = theme => ({
 
@@ -17,7 +16,7 @@ function FolderList(props) {
     return (
         <div>
             <List>
-                <a href="https://github.com/cameron-raymond" style={{textDecoration: "none"}}>
+                <a href="https://github.com/cameron-raymond" style={{textDecoration: "none" }}>
 
                     <ListItem>
                         <Avatar>

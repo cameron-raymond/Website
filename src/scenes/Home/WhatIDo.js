@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 import Card from '../../components/BasicCard/BasicCard'
-import Line from '../../components/Graphs/BackgroundGraphs/BackgroundLine'
-import Typography from '@material-ui/core/Typography';
+import Line from '../../components/Graphs/BackgroundGraphs/BackgroundLine';
+import * as ScrollMagic from 'scrollmagic'
 import './Home.css'
 
-class Home extends Component {
+class WhatIDo extends Component {
+
     render() {
         return (
+            <div className="panel whatIDo">
+
                 <Card title={"What I Do"}
                     content={"Lorem Ipsum write about what you like to do"}
                     background={<Line />}
                     color={"#E9E9E9"}
                     backgroundColor={"#4C5C6A"}
                 />
-
+            </div>
         );
     }
 }
 
-export default Home;
+export default WhatIDo;

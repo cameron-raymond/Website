@@ -11,7 +11,6 @@ class More extends Component {
                     background={<Scatter />}
                     backgrounColor={"#DEDFDF"}
                 />
-
         );
     }
 }
