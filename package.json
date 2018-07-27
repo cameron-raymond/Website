@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://cameronraymond.me",
   "dependencies": {
     "@material-ui/core": "^1.4.0",
     "@material-ui/icons": "^1.1.0",
@@ -10,6 +11,7 @@
     "react-dom": "^16.4.1",
     "react-list-lazy-load": "^1.1.1",
     "react-mdl": "^1.11.0",
+    "react-pdf": "^3.0.5",
     "react-responsive-carousel": "^3.1.41",
     "react-reveal": "^1.2.2",
     "react-scripts": "1.1.4",
@@ -21,6 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

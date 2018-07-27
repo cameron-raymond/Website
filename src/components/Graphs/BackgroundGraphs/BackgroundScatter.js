@@ -39,7 +39,7 @@ export default class Scatter extends React.Component {
                 padding={0}
                 height={250}
                 domainPadding={{ x: 20, y:[4,50] }}
-                animate={{ duration: 500 }}
+                animate={{ duration: 2000 }}
             >
                 <VictoryScatter
                     data={this.state.data}

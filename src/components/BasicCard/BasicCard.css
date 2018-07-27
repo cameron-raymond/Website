@@ -34,3 +34,14 @@
     justify-content: center;
     overflow: hidden
 }
+
+.content{
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s ease-out
+}
+.content.fade-in{
+    opacity: 1;
+    transform: translateY(0);
+}
