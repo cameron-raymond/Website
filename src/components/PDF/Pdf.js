@@ -6,7 +6,7 @@ state = {}
 render() {
 return(
 <div>
-    <a href={agent_file} download="CameronRaymondResume.pdf" style={{ textDecoration: "none" }}>Resume</a>        
+    <a href={agent_file} download="CameronRaymondResume.pdf" style={{ textDecoration: "none", color: "black" }}>Resume</a>        
 </div>
 );
 }

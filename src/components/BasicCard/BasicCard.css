@@ -9,13 +9,17 @@
 }
 
 .title{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'PT Serif', serif;
     font-size: 30;
 }
 
 .text{
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
+    text-shadow: 1.5px 1.5px 1.5px rgba(26, 26, 26, 0.05);
+}
+a{
+    text-shadow: 0ch
 }
 
 .line{
