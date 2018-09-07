@@ -13,9 +13,10 @@ class WhatIDo extends Component {
                 color={"#E9E9E9"}
                 backgroundColor={"#4C5C6A"}
             >
-                <div><p>The areas of study that pique my interest are discrete math, graph theory, and formal logic. </p>
+                <div>
                     <p>  I'm looking forward to taking a deeper dive into statistics, data science, and artificial intelligence for the rest of my undergrad.
                   In the summer of 2018 I worked at CIBC, Digital Insights and Analytics, developing analytics solutions using Python and React Native.
+                  
 </p>
                 </div>
             </Card>
