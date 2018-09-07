@@ -1,13 +1,4 @@
-@font-face {
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 200;
-    src:
-      local('Proxima'),
-      local('proxima-nova-soft-regular'),
-      url(../../assets//proxima-nova-soft-regular.otf) format('opentype'),
-  }
-  
+
 .card{
     display: flex;
     flex-direction: column;
