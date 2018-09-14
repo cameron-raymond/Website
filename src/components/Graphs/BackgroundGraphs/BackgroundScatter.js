@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { VictoryScatter, VictoryStack, VictoryGroup } from 'victory';
+import { VictoryScatter, VictoryStack,VictoryVoronoi, VictoryGroup } from 'victory';
 
 var _ = require('lodash');
 
@@ -38,24 +38,30 @@ export default class Scatter extends React.Component {
             <VictoryGroup
                 padding={0}
                 height={250}
-                domainPadding={{ x: 20, y:[4,50] }}
-                animate={{ duration: 2000 }}
+                domainPadding={{ x: 20, y: [4, 50] }}
+                animate={{
+                    duration: 2000 ,
+                    onExit: {
+                        duration: 500,
+                        before: () => ({
+                            _y: 0
+                        })
+                    }
+                }}
+                data={this.state.data}
+
             >
-                <VictoryScatter
-                    data={this.state.data}
-                    style={{
-                        data: { fill: "#b1c3cc"}
-                    }}
-                    animate={{
-                        onExit: {
-                            duration: 500,
-                            before: () => ({
-                                _y: 0
-                            })
-                        }
-                    }}
+                <VictoryVoronoi
+                    style={{ data: { stroke: "#b1c3cc", strokeWidth: 2, strokeOpacity: 0.2 } }}
+                  
                 />
-        </VictoryGroup>
+                <VictoryScatter
+                    style={{
+                        data: { fill: "#b1c3cc" }
+                    }}
+                    
+                />
+            </VictoryGroup>
         );
     }
 }
