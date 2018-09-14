@@ -1,5 +1,5 @@
 import React from 'react'
-import agent_file from './CRaymondResume2018.pdf';
+import agent_file from './CRaymondResume2019.pdf';
 
 class Resume extends React.Component{
 state = {}
