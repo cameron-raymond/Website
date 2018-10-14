@@ -28,15 +28,7 @@ export default class Scatter extends React.Component {
     componentWillUnmount() {
         window.clearInterval(this.setStateInterval);
     }
-    _onMouseMove(e) {
-        var data = this.state.data
-        for(var i in data){
-            data[i] = { x: data[i].x + e.screenX, y: _.random(2, 10)+e.screenY };
-
-        }
-        console.log(data)
-        this.setState({data: data});
-    }
+ 
 
     getData() {
         const dots = _.random(6, 15);
@@ -46,7 +38,6 @@ export default class Scatter extends React.Component {
     }
     render() {
         return (
-            <div onMouseMove={this._onMouseMove.bind(this)} width={100}>
 
             <VictoryGroup
                 padding={0}
@@ -61,6 +52,11 @@ export default class Scatter extends React.Component {
                         })
                     }
                 }}
+                style={{
+                    data: {
+                      fillOpacity: 0.7, stroke: "black", strokeWidth: 3
+                    }
+                  }}
                 data={this.state.data}
 
             >
@@ -72,7 +68,6 @@ export default class Scatter extends React.Component {
 
 
             </VictoryGroup>
-            </div>
 
         );
     }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../../components/BasicCard/BasicCard'
 import Line from '../../components/Graphs/BackgroundGraphs/BackgroundLine';
-import * as ScrollMagic from 'scrollmagic'
 import './Home.css'
 
 class WhatIDo extends Component {

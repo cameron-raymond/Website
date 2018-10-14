@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../../components/BasicCard/BasicCard'
-import Test from '../../components/Graphs/BackgroundGraphs/BackgroundVeronoi';
+import Test from '../../components/Graphs/BackgroundGraphs/BackgroundArea';
 import * as ScrollMagic from 'scrollmagic'
 import './Home.css'
 
