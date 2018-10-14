@@ -6,7 +6,7 @@ var _ = require('lodash');
 
 
 
-export default class Scatter extends React.Component {
+export default class Veronoi extends React.Component {
 
     constructor(props) {
         super(props);
@@ -17,13 +17,13 @@ export default class Scatter extends React.Component {
         };
     }
 
-    // componentDidMount() {
-    //     this.setStateInterval = window.setInterval(() => {
-    //         this.setState({
-    //             data: this.getData()
-    //         });
-    //     }, 3000);
-    // }
+    componentDidMount() {
+        this.setStateInterval = window.setInterval(() => {
+            this.setState({
+                data: this.getData()
+            });
+        }, 5000);
+    }
 
     componentWillUnmount() {
         window.clearInterval(this.setStateInterval);
@@ -44,7 +44,7 @@ export default class Scatter extends React.Component {
                 height={250}
                 domainPadding={{ x: 20, y: [4, 50] }}
                 animate={{
-                    duration: 2000,
+                    duration: 4000,
                     onExit: {
                         duration: 500,
                         before: () => ({

@@ -51,10 +51,7 @@ export default class Scatter extends React.Component {
                 data={this.state.data}
 
             >
-                {/* <VictoryVoronoi
-                    style={{ data: { stroke: "#b1c3cc", strokeWidth: 2, strokeOpacity: 0.2 } }}
-                  
-                /> */}
+                
                 <VictoryScatter
                     style={{
                         data: { fill: "#b1c3cc" }

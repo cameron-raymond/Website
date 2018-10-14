@@ -15,8 +15,8 @@ class More extends Component {
         return (
             <Card title={"Let's Get In Touch"}
                 background={<Scatter />}
-                backgrounColor={"#DEDFDF"}
-            >
+                color={"#E9E9E9"}
+                backgroundColor={"#4C5C6A"}            >
             If you have any questions about me, or would like to reach out, feel free.
                 <List>
                     <a href="mailto:CameronRaymond534@gmail.com" style={{ textDecoration: "none" }}>
@@ -25,7 +25,7 @@ class More extends Component {
                             <Avatar>
                                 <Email />
                             </Avatar>
-                            <ListItemText primary="CameronRaymond534@gmail.com" />
+                            <ListItemText color="#E9E9E9" primary="CameronRaymond534@gmail.com" />
 
                         </ListItem>
                     </a>
