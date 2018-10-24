@@ -7,3 +7,11 @@ body {
   font-family: 'IBM Plex Mono Light', monospace;
 }
 
+.moveButton{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+}
