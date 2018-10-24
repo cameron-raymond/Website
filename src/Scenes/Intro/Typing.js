@@ -20,10 +20,10 @@ class Typing extends PureComponent {
           <span>student...</span>
           <Typist.Backspace count={10} delay={500} />
           <Typist.Delay ms={500} />
-          <span>developer...</span>
-          <Typist.Backspace count={12} delay={500} />
-          <Typist.Delay ms={500} />
           <span>data enthusiast...</span>
+          <Typist.Backspace count={18} delay={500} />
+          <Typist.Delay ms={500} />
+          <span>developer...</span>
         </Typist>
     );
   }
