@@ -7,8 +7,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Typing/>
         <div className="background">
+        <div className="typePos"><Typing/></div>
+
         </div>
       </div>
     );

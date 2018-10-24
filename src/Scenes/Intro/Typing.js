@@ -7,6 +7,8 @@ class Typing extends PureComponent {
   render() {
     return (
         <Typist cursor={{blink: true}}   className="typist">
+        <Typist.Delay ms={500} />
+
           <span>nice to meet you...</span>
           <Typist.Backspace count={20} delay={1500} />
           <Typist.Delay ms={500} />
