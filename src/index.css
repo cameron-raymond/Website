@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  margin: 0;
+  background-color: #EAE7dc;
+  font-family: 'IBM Plex Mono Light', monospace;
+}
+
