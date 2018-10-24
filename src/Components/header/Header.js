@@ -19,6 +19,7 @@ class Header extends React.Component {
                     borderColor:"transparent",
                     borderBottomColor: "#8e8d8a",
                     borderStyle: 'solid',
+                    zIndex: 10000
                     
                 }}
                 >

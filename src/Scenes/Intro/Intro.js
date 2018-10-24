@@ -6,7 +6,7 @@ import Typing from './Typing'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container" >
         <div className="background">
         <div className="typePos"><Typing/></div>
 
