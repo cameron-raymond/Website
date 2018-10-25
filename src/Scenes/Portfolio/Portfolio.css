@@ -1,6 +1,9 @@
-.container{
-    padding-top: 60px;
+.portfolioCont{
+    padding-top: 80px;
+
+    padding-left: 3%;
+    padding-right: 3%;
     position: relative;
     height: 100vh;
   }
-  
+

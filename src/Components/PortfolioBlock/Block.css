@@ -1,0 +1,45 @@
+
+.innerBlock{
+    position: relative;
+    width: 25%;
+    height: 33%;
+    max-width: 11em;
+    background-color: #D8C3A5;
+  }
+
+.innerBlockWide{
+    position: relative;
+    width: 15%;
+    height: 40%;
+    max-width: 11em;
+    background-color: #D8C3A5;
+  }
+  .outerBlock{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #E85A4F;
+  }
+  
+  .headingright{
+      position: absolute;
+      top: 25%;
+      right:-1.5em;
+      font-size: 2em;
+      color: #e98074;
+  }
+
+  .headingleft{
+    position: absolute;
+    top: 25%;
+    left:-1.5em;
+    font-size: 2em;
+    color: #e98074;
+  }
+
+.heading:hover{
+    color:#52514f;
+}

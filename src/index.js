@@ -18,7 +18,7 @@ class App extends React.Component {
         <div className="header">
           <Header />
         </div>
-        <Parallax ref={ref => (this.parallax = ref)} pages={3}>
+        <Parallax ref={ref => (this.parallax = ref)} pages={2}>
           <ParallaxLayer
             offset={0}
             speed={0.1}
@@ -26,9 +26,7 @@ class App extends React.Component {
          >
             <Intro />
           </ParallaxLayer>
-
-          <Portfolio onClick={() => this.parallax.scrollTo(0)}/>
-          
+          <Portfolio offset={1} onClick={() => this.parallax.scrollTo(0)} onMouseOver={ e => e.stopPropagation()}/>
         </Parallax>
       </div>
     )
