@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { Parallax, ParallaxLayer } from 'react-spring/dist/addons'
 import Header from './Components/header/Header'
 import Intro from './Scenes/Intro/Intro';
+import Portfolio from './Scenes/Portfolio/Portfolio'
 import Move from './Components/button/Button'
 import './index.css'
 
@@ -29,6 +30,7 @@ class App extends React.Component {
           <ParallaxLayer
             offset={1}
             speed={0.1}
+            
             onClick={() => this.parallax.scrollTo(2)}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 
