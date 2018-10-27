@@ -6,7 +6,7 @@ import Typist from 'react-typist';
 class Typing extends PureComponent {
   render() {
     return (
-        <Typist cursor={{blink: true}}   className="typist">
+        <Typist cursor={{blink: true}}   avgTypingDelay={60} className="typist">
         <Typist.Delay ms={500} />
 
           <span>nice to meet you...</span>

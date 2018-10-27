@@ -17,7 +17,8 @@ class App extends Component {
               to={{ opacity: 1 }}
               tension={120}
               friction={14}
-              delay={19000}>
+              delay={17000}
+              >
               {props => <div style={props}><Button /></div>}
             </Spring>
 

@@ -4,12 +4,9 @@ import { Parallax, ParallaxLayer } from 'react-spring/dist/addons'
 import Header from './Components/header/Header'
 import Intro from './Scenes/Intro/Intro';
 import Portfolio from './Scenes/Portfolio/Portfolio'
-import Move from './Components/button/Button'
 import './index.css'
 
 
-// Little helpers ...
-const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 
 class App extends React.Component {
   render() {
