@@ -9,7 +9,7 @@ class Block extends Component {
 
   render() {
     return (
-          <div className={this.innerBlock} style={{backgroundColor: this.props.fgColour}} onClick={this.props.onClick}>
+          <div className={this.innerBlock} style={{backgroundColor: this.props.fgColour}} onMouseLeave={this.props.onMouseLeave} onMouseEnter={this.props.onMouseEnter} onClick={this.props.onClick}>
             <h1 className={this.heading}>{this.props.title}</h1>
             <div className={"outerBlock"} style={{backgroundColor: this.props.bgColour}}/> 
           </div>
