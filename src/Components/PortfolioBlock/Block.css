@@ -2,16 +2,16 @@
 .innerBlock{
     position: relative;
     width: 25%;
-    height: 33%;
+    height: 100%;
     max-width: 11em;
     background-color: #D8C3A5;
   }
 
 .innerBlockWide{
     position: relative;
-    width: 15%;
-    height: 40%;
-    max-width: 11em;
+    width: 33%;
+    height: 100%;
+    max-width: 17em;
     background-color: #D8C3A5;
   }
   .outerBlock{
