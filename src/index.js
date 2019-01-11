@@ -15,16 +15,19 @@ class App extends React.Component {
         <div className="header">
           <Header />
         </div>
-        <Parallax ref={ref => (this.parallax = ref)} pages={2}>
-          <ParallaxLayer
+        {/* <Parallax ref={ref => (this.parallax = ref)} pages={2}> */}
+          {/* <ParallaxLayer
             offset={0}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(1)}
-         >
+          > */}
             <Intro />
+          {/* </ParallaxLayer>
+          <ParallaxLayer offset={1}
+          >
+            <Portfolio onClick={() => this.parallax.scrollTo(0)} />
           </ParallaxLayer>
-          <Portfolio offset={1} onClick={() => this.parallax.scrollTo(0)} onMouseOver={ e => e.stopPropagation()}/>
-        </Parallax>
+        </Parallax> */}
       </div>
     )
   }

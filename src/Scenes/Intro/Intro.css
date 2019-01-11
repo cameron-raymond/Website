@@ -14,6 +14,7 @@
 .typist{
     font-size: 2em;
     color: #e98074;
+    max-width: 20;
 }
 .typePos{
   width: 80rem;

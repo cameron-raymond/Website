@@ -23,7 +23,7 @@ class Typing extends PureComponent {
           <span>data enthusiast...</span>
           <Typist.Backspace count={18} delay={500} />
           <Typist.Delay ms={500} />
-          <span>developer...</span>
+          <span>developer.</span>
         </Typist>
     );
   }

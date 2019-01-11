@@ -11,7 +11,7 @@ class App extends Component {
       <div className="container" >
         <div className="background">
           <div className="typePos"><Typing /></div>
-          <div className="moveButton">
+          {/* <div className="moveButton">
             <Spring
               from={{ opacity: 0 }}
               to={{ opacity: 1 }}
@@ -22,7 +22,7 @@ class App extends Component {
               {props => <div style={props}><Button /></div>}
             </Spring>
 
-</div>
+</div> */}
         </div>
       </div>
     );
