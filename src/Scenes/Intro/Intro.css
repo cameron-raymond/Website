@@ -1,0 +1,34 @@
+.container{
+  position: relative;
+  height: 100vh;
+}
+.background {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 33%;
+  margin: 0;
+  background-color: #d8c3a5;
+  text-align: center
+}
+.typist{
+    font-size: 2em;
+    color: #e98074;
+    max-width: 20;
+}
+.typePos{
+  width: 80rem;
+  height: 3rem;
+  top:-34px;
+  left: 3rem;
+  z-index: 999;
+  position: relative;
+  text-align: left;
+}
+.moveButton{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+ }

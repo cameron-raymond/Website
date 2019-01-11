@@ -1,9 +1,26 @@
 body {
+  display: flex;
+  flex-direction: column;
+  flex:1;
   margin: 0;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 200
-}
-h1{
-  font-weight: 300
+  background-color: #EAE7dc;
+  font-family: 'IBM Plex Mono Light', monospace;
 }
 
+
+.moveButton{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.header{
+  position: fixed;
+  left: 0;
+  bottom: top;
+  width: 100%;
+  z-index: 900;
+  text-align: center;
+}

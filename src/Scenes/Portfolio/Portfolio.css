@@ -1,0 +1,12 @@
+.portfolioCont{
+    margin-top: 100px;
+    padding-left: 3%;
+    padding-right: 3%;
+    position: relative;
+    height: 100vh;
+  }
+
+.container{
+  display: flex;
+  flex: 1;
+}

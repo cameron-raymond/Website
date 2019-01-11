@@ -1,0 +1,12 @@
+
+a, div{
+    text-decoration: none;
+    color: #8e8d8a;
+    font-size: calc(10px + 2vmin);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: thin
+}
+
+a:hover{
+    color:#52514f;
+}

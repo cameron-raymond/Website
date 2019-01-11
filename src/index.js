@@ -1,10 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import 'typeface-roboto'
-import Home from './scenes/Home/Home'
-import registerServiceWorker from './registerServiceWorker';
- //TEST
-ReactDOM.render(<Home />, document.getElementById('root'));
-registerServiceWorker();
- 
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Parallax, ParallaxLayer } from 'react-spring/dist/addons'
+import Header from './Components/header/Header'
+import Intro from './Scenes/Intro/Intro';
+import Portfolio from './Scenes/Portfolio/Portfolio'
+import './index.css'
+
+
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className="header">
+          <Header />
+        </div>
+        {/* <Parallax ref={ref => (this.parallax = ref)} pages={2}> */}
+          {/* <ParallaxLayer
+            offset={0}
+            speed={0.1}
+            onClick={() => this.parallax.scrollTo(1)}
+          > */}
+            <Intro />
+          {/* </ParallaxLayer>
+          <ParallaxLayer offset={1}
+          >
+            <Portfolio onClick={() => this.parallax.scrollTo(0)} />
+          </ParallaxLayer>
+        </Parallax> */}
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))
