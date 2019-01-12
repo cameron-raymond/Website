@@ -6,7 +6,10 @@ body {
   background-color: #fafafa  ;
   font-family: 'IBM Plex Mono Light', monospace;
 }
-
+.info{
+  text-align: end;
+  padding-right: 50px;
+}
 
 .moveButton{
   position: fixed;
@@ -17,7 +20,7 @@ body {
 }
 
 .header{
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: top;
   width: 100%;
