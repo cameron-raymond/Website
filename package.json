@@ -1,14 +1,13 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://cameron-raymond.github.io/Website/",
+  "homepage": "http://cameronraymond.me",
   "private": true,
   "dependencies": {
     "antd": "^3.10.3",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-drag-drawer": "^3.3.0",
-    "react-icons": "^3.2.2",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
     "react-spring": "^6.1.4",

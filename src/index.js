@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Parallax, ParallaxLayer } from 'react-spring/dist/addons'
 import Header from './Components/header/Header'
 import Intro from './Scenes/Intro/Intro';
-import Portfolio from './Scenes/Portfolio/Portfolio'
 import './index.css'
 
 
@@ -15,19 +13,9 @@ class App extends React.Component {
         <div className="header">
           <Header />
         </div>
-        {/* <Parallax ref={ref => (this.parallax = ref)} pages={2}> */}
-          {/* <ParallaxLayer
-            offset={0}
-            speed={0.1}
-            onClick={() => this.parallax.scrollTo(1)}
-          > */}
+        <div className="footer">
             <Intro />
-          {/* </ParallaxLayer>
-          <ParallaxLayer offset={1}
-          >
-            <Portfolio onClick={() => this.parallax.scrollTo(0)} />
-          </ParallaxLayer>
-        </Parallax> */}
+        </div>
       </div>
     )
   }

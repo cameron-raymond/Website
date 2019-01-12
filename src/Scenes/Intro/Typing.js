@@ -6,7 +6,7 @@ import Typist from 'react-typist';
 class Typing extends PureComponent {
   render() {
     return (
-        <Typist cursor={{blink: true}}   avgTypingDelay={60} className="typist">
+        <Typist cursor={{blink: true}} hideWhenDone={true}  avgTypingDelay={40} className="typist">
         <Typist.Delay ms={500} />
 
           <span>nice to meet you...</span>
@@ -17,13 +17,22 @@ class Typing extends PureComponent {
           <Typist.Delay ms={500} />
           <span>i am a </span>
           <Typist.Delay ms={500} />
-          <span>student...</span>
+          <span className="emphasis">student...</span>
           <Typist.Backspace count={10} delay={500} />
           <Typist.Delay ms={500} />
           <span>data enthusiast...</span>
           <Typist.Backspace count={18} delay={500} />
           <Typist.Delay ms={500} />
           <span>developer.</span>
+          <br/>
+
+          <span className="hidden">i am a </span>
+
+          <span>data enthusiast.</span>
+          <br/>
+          <span className="hidden">i am a </span>
+
+          <span>student.</span>
         </Typist>
     );
   }

@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   flex:1;
   margin: 0;
-  background-color: #EAE7dc;
+  background-color: #fafafa  ;
   font-family: 'IBM Plex Mono Light', monospace;
 }
 
@@ -23,4 +23,13 @@ body {
   width: 100%;
   z-index: 900;
   text-align: center;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 900;
+    text-align: center;
+  
 }
