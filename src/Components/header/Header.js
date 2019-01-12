@@ -23,7 +23,7 @@ class Header extends React.Component {
                     
                 }}
                 >
-                <p >cameron raymond</p>
+                <p >cameron r<span className="hideHead">aymond</span></p>
                 <div style={{
                     display:"flex",
                     flex: 0.25,

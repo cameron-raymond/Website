@@ -8,10 +8,17 @@
   background-color: #d8c3a5;
   text-align: center;
 }
-.emphasis{
-  /* color: #FC4445; */
-  
+
+@media (max-width:490px), (max-height: 500px)  { 
+  .emphasis{
+    display: none;
+    
+  }
 }
+.emphasis{
+  display: show;
+}
+
 @media (max-width:700px)  { 
   .hidden{display: none;}
   

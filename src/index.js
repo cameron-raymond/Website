@@ -16,7 +16,7 @@ class App extends React.Component {
           <Header />
           <div className="info"> 
             <p>(647) 984-3006</p>
-            <a href="mailto:15cjkr@queensu.ca" style={{ textDecoration: "none" }}><p>15cjkr@queensu.ca</p></a>
+            <a href="mailto:15cjkr@queensu.ca" style={{ textDecoration: "none" }}><p >15cjkr@queensu.ca</p></a>
             <a href={agent_file} download="CameronRaymondResume.pdf" style={{ textDecoration: "none" }}>resumé</a>
         </div>
         </div>
