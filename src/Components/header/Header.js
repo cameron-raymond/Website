@@ -26,12 +26,13 @@ class Header extends React.Component {
                 <p >cameron r<span className="hideHead">aymond</span></p>
                 <div style={{
                     display:"flex",
+                    minWidth: 100,
                     flex: 0.25,
                     flexDirection: "row",
                     justifyContent: "space-between",                    
                 }}>
-                    <a href="https://github.com/cameron-raymond"><p>github</p></a>
-                    <a href="https://www.linkedin.com/in/cameron-raymond/"><p> linkedIn</p></a>
+                    <a href="https://github.com/cameron-raymond"><p>git<span className="hideHead">hub</span></p></a>
+                    <a href="https://www.linkedin.com/in/cameron-raymond/"><p> l<span className="hideHead">inked</span>In</p></a>
                 </div>
                 
             </div>

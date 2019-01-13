@@ -34,6 +34,7 @@
     font-size: 3rem;
     color: #e98074;
     flex-wrap: wrap;
+    width: 90vw;
 }
 .typePos{
   display: flex;
