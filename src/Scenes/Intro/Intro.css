@@ -5,7 +5,7 @@
   width: 100%;
   height: 34vh;
   margin: 0;
-  background-color: #d8c3a5;
+  /* background-color: #d8c3a5; */
   text-align: center;
 }
 
@@ -16,10 +16,12 @@
   }
 }
 .emphasis{
+  color: #000;
   display: show;
+  
 }
 
-@media (max-width:700px)  { 
+@media (max-width:703px)  { 
   .hidden{display: none;}
   
 }
@@ -28,15 +30,15 @@
     visibility: hidden;
 }
 
-
-
 .typist{
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 3rem;
-    color: #e98074;
+    /* color: #e98074; */
     flex-wrap: wrap;
     width: 90vw;
 }
 .typePos{
+  
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -46,4 +48,97 @@
   z-index: 999;
   position: relative;
   text-align: left;
+}
+.markerOne {
+  display: inline-block;
+  position: relative;
+}
+.markerOne.under:before, .markerOne.under:after
+{
+  z-index: -1;
+}
+.markerOne:before, .markerOne:after
+{
+  display: inline-block;
+  position: absolute;
+  
+  background: yellow;
+  content: "";
+  opacity: .2;
+  height: 40%;
+  width: 100%;
+  transform:  translatey(0.2em);
+
+}
+
+.markerOne:after
+{
+  left: 0;
+  top:30;
+  transform: rotate(3deg);
+}
+
+.markerTwo {
+  display: inline-block;
+  position: relative;
+}
+.markerTwo.under:before, .markerTwo.under:after
+{
+  z-index: -1;
+}
+.markerTwo:before, .markerTwo:after
+{
+  display: inline-block;
+  position: absolute;
+  
+  background: #b0b9f0;
+  content: "";
+  opacity: .2;
+  height: 40%;
+  width: 100%;
+  transform:  translatey(0.2em);
+
+}
+.markerTwo:before{
+  transform: translateY(2),rotate(1deg);
+
+
+}
+
+.markerTwo:after
+{
+  left: 0;
+  transform: rotate(-1deg)
+}
+.markerThree {
+  display: inline-block;
+  position: relative;
+}
+.markerThree.under:before, .markerThree.under:after
+{
+  z-index: -1;
+}
+.markerThree:before, .markerThree:after
+{
+  display: inline-block;
+  position: absolute;
+  
+  background: #b5deae	;
+  content: "";
+  opacity: .2;
+  height: 40%;
+  width: 100%;
+  transform:  translatey(0.2em);
+
+}
+
+.markerThree:before
+{
+  transform: rotate(1deg), translateY(2);
+}
+
+.markerThree:after
+{
+  left: 0;
+  transform: rotate(2deg);
 }

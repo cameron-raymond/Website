@@ -3,8 +3,7 @@ body {
   flex-direction: column;
   flex:1;
   margin: 0;
-  background-color: #fafafa  ;
-  font-family: 'IBM Plex Mono Light', monospace;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 
