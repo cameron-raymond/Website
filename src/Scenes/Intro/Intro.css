@@ -32,6 +32,7 @@
 
 .typist{
     font-family: 'IBM Plex Mono', monospace;
+    font-style: italic;
     font-size: 3rem;
     /* color: #e98074; */
     flex-wrap: wrap;
