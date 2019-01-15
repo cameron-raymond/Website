@@ -17,7 +17,7 @@ class App extends React.Component {
           <div className="info"> 
             <p>(647) 984-3006</p>
             <a href="mailto:c.raymond@queensu.ca" style={{ textDecoration: "none" }}><p>c.raymond@queensu.ca</p></a>
-            <a href={agent_file} download="CameronRaymondResume.pdf" style={{ textDecoration: "none" }}>resumé</a>
+            <a href={agent_file} download="CameronRaymondResume.pdf" >resumé</a>
         </div>
         </div>
         
