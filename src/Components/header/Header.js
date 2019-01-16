@@ -32,7 +32,7 @@ class Header extends React.Component {
                     justifyContent: "space-between",                    
                 }}>
                     <a href="https://github.com/cameron-raymond"><p>git<span className="hideLinks">hub</span></p></a>
-                    <a href="https://www.linkedin.com/in/cameron-raymond/"><p> l<span className="hideLinks">inked</span>In</p></a>
+                    <a href="https://www.linkedin.com/in/cameron-raymond/"><p> <span className="hideLinks">linked</span>In</p></a>
                 </div>
                 
             </div>
