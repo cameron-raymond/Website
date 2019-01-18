@@ -2,11 +2,7 @@
 .background {
   position: absolute;
   bottom: 0%;
-  width: 100%;
   height: 34vh;
-  margin: 0;
-  /* background-color: #d8c3a5; */
-  text-align: center;
 }
 
 @media (max-width:490px), (max-height: 500px)  { 
@@ -34,7 +30,6 @@
     font-family: 'IBM Plex Mono', monospace;
     font-style: italic;
     font-size: 3rem;
-    /* color: #e98074; */
     flex-wrap: wrap;
     width: 90vw;
 }
@@ -135,11 +130,11 @@
 
 .markerThree:before
 {
-  transform: rotate(1deg), translateY(2);
+  transform: rotate(10deg), translateY(2);
 }
 
 .markerThree:after
 {
   left: 0;
-  transform: rotate(2deg);
+  transform: rotate(1deg);
 }

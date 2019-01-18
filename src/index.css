@@ -4,6 +4,18 @@ body {
   flex:1;
   margin: 0;
   font-family: 'Inconsolata', monospace;
+  font-size: calc(12px + 2vmin);
+  color: #4d4b49;
+
+
+}
+a{
+  color: #4d4b49;
+  text-decoration: none;
+}
+
+a:hover{
+  color:black;
 }
 
 
