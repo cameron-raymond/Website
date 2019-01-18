@@ -23,17 +23,17 @@ class Typing extends PureComponent {
         <span>problem solver...</span>
         <Typist.Backspace count={17} delay={500} />
         <Typist.Delay ms={500} />
-        <span style={{color: '#000'}} className="markerOne">developer.</span>
+        <span style={{color: '#000'}} className="marker">developer.</span>
         <span className="emphasis">
           <br />
 
           <span className="hidden">i am a </span>
 
-          <span className="markerTwo">problem solver.</span>
+          <span className="marker blue">problem solver.</span>
           <br />
           <span className="hidden">i am a </span>
 
-          <span className="markerThree">student.</span>
+          <span className="marker green">student.</span>
         </span>
       </Typist>
     );

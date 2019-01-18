@@ -45,96 +45,31 @@
   position: relative;
   text-align: left;
 }
-.markerOne {
+.marker {
   display: inline-block;
   position: relative;
+  
 }
-.markerOne.under:before, .markerOne.under:after
+.marker:before
 {
   z-index: -1;
-}
-.markerOne:before, .markerOne:after
-{
   display: inline-block;
   position: absolute;
   
-  background: yellow;
+  background: #fada53;
   content: "";
-  opacity: .2;
+  opacity: .3;
   height: 40%;
-  width: 100%;
+  width: 96%;
   transform:  translatey(0.2em);
-
-}
-
-.markerOne:after
-{
-  left: 0;
-  top:30;
-  transform: rotate(3deg);
-}
-
-.markerTwo {
-  display: inline-block;
-  position: relative;
-}
-.markerTwo.under:before, .markerTwo.under:after
-{
-  z-index: -1;
-}
-.markerTwo:before, .markerTwo:after
-{
-  display: inline-block;
-  position: absolute;
   
+  
+}
+
+.marker.blue::before{
   background: #b0b9f0;
-  content: "";
-  opacity: .2;
-  height: 40%;
-  width: 100%;
-  transform:  translatey(0.2em);
-
-}
-.markerTwo:before{
-  transform: translateY(2),rotate(1deg);
-
-
 }
 
-.markerTwo:after
-{
-  left: 0;
-  transform: rotate(-1deg)
-}
-.markerThree {
-  display: inline-block;
-  position: relative;
-}
-.markerThree.under:before, .markerThree.under:after
-{
-  z-index: -1;
-}
-.markerThree:before, .markerThree:after
-{
-  display: inline-block;
-  position: absolute;
-  
+.marker.green::before{
   background: #b5deae	;
-  content: "";
-  opacity: .2;
-  height: 40%;
-  width: 100%;
-  transform:  translatey(0.2em);
-
-}
-
-.markerThree:before
-{
-  transform: rotate(10deg), translateY(2);
-}
-
-.markerThree:after
-{
-  left: 0;
-  transform: rotate(1deg);
 }
