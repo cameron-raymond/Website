@@ -16,7 +16,10 @@ a{
 
 a:hover{
   color:black;
+  transition: 0.5s;
+
 }
+
 
 
 .info{
