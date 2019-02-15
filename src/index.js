@@ -36,7 +36,8 @@ class App extends React.Component {
               <a href="mailto:c.raymond@queensu.ca"><p>c.raymond@queensu.ca</p></a>
             </div>
             <div onClick={() => this.logEvent('click','Downloaded resume')}>
-            <a href={agent_file} download="CameronRaymondResume.pdf" >resumé</a>
+            <a href = {agent_file} target = "_blank">resumé</a>
+
             </div>
 
           </div>
