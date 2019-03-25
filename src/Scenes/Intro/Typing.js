@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import './Intro.css';
+import Loop from './LoopTypist'
 import Typist from 'react-typist';
 
 
@@ -23,7 +24,8 @@ class Typing extends PureComponent {
         <span>problem solver...</span>
         <Typist.Backspace count={17} delay={500} />
         <Typist.Delay ms={500} />
-        <span style={{color: '#000'}} className="marker">developer.</span>
+        <span style={{ color: '#000' }} className="marker">developer.</span>
+        
         <span className="emphasis">
           <br />
 

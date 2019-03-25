@@ -1,7 +1,7 @@
 
-.background {
+.fixed {
   position: absolute;
-  bottom: 0%;
+  bottom: 20%;
   height: 34vh;
 }
 
@@ -14,12 +14,10 @@
 .emphasis{
   color: #000;
   display: show;
-  
 }
 
 @media (max-width:703px)  { 
   .hidden{display: none;}
-  
 }
 
 .hidden{
