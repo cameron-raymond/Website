@@ -6,8 +6,6 @@ body {
   font-family: 'Inconsolata', monospace;
   font-size: calc(12px + 2vmin);
   color: #4d4b49;
-
-
 }
 a{
   color: #4d4b49;
@@ -20,28 +18,18 @@ a:hover{
 
 }
 
-.moveButton{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
 
 .header{
-  position: absolute;
+  position: fixed;
   left: 0;
-  bottom: top;
+  top: 0;
   width: 100%;
   z-index: 900;
   text-align: center;
 }
 .footer{
     position: fixed;
-    left: 0;
+    
     bottom: 0;
-    width: 100%;
-    z-index: 900;
-    text-align: center;
-  
+    width: 50%;
 }

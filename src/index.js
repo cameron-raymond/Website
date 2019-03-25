@@ -5,7 +5,6 @@ import Intro from './Scenes/Intro/Intro';
 import './index.css'
 import Info from  './Components/info/info'
 import ReactGA from 'react-ga';
-import agent_file from './CRaymondResume2019.pdf';
 
 
 
@@ -19,26 +18,17 @@ class App extends React.Component {
     this.initializeReactGA()
   }
 
-  logEvent(logCategory, logAction) {
-    console.log(logAction)
-    ReactGA.event({
-      category: logCategory,
-      action: logAction
-    });
-  }
+ 
   render() {
     return (
       <div>
         <div className="header">
           <Header />
-         <Info/>
-
+          <Info/>
         </div>
-
         <div className="footer">
           <Intro />
         </div>
-
       </div>
     )
   }

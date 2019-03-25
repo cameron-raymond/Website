@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import './Intro.css';
-import Loop from './LoopTypist'
 import Typist from 'react-typist';
 
 
