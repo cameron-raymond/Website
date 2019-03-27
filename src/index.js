@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Header from './Components/header/Header'
 import Intro from './Scenes/Intro/Intro';
-import {Card} from './Components/card/Card'
 import './index.css'
 import ReactGA from 'react-ga';
 
@@ -18,12 +17,11 @@ class App extends React.Component {
     // this.initializeReactGA()
   }
 
-
   render() {
     return (
       <div>
+     
         <Header />
-       
         <Intro />
       </div>
     )

@@ -10,6 +10,8 @@ class Header extends React.Component {
                 style={{
                     display:"flex",
                     flex: 1,
+                    position: 'sticky',
+                    top: 0,
                     flexDirection: "row",
                     justifyContent: "space-between",
                     paddingTop: 10,

@@ -6,17 +6,15 @@ body {
   padding-right: 30px;
   margin: 0;
   font-family: 'Nunito', sans-serif;
-  font-size: calc(12px + 2vmin);
 }
 html, body {height: 100%}
 
 a{
-  color: #4d4b49;
   text-decoration: none;
 }
 
 a:hover{
-  color:black;
+  color:#444;
   transition: 0.5s;
 
 }
