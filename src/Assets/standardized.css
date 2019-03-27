@@ -1,0 +1,51 @@
+.serif{
+    font-family: 'PT Serif', serif;
+    font-size: 1.5rem;   
+    color: #888888;
+
+}
+
+.title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    color: #737373
+
+}
+
+.subtitle{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    color: #888888;
+
+}
+
+.light{
+    color: #F5F5F5
+}
+
+.secondary{
+    color: #888888
+}
+.primary{
+    color: #737373
+}
+
+.highlight{
+    color: rgb(121,191,211,0.3)
+}
+
+.marker {
+    display: inline-block;
+    position: relative;    
+}
+.marker:before{
+    z-index: -1;
+    display: inline-block;
+    position: absolute;
+    background: #79BFD3;
+    content: "";
+    opacity: .3;
+    height: 40%;
+    width: 100%;
+    transform:  translatey(0.2em);
+}

@@ -5,9 +5,8 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Nunito', sans-serif;
   font-size: calc(12px + 2vmin);
-  color: #4d4b49;
 }
 html, body {height: 100%}
 
@@ -22,7 +21,6 @@ a:hover{
 
 }
 
-
 .header{
   position: fixed;
   background-color: aqua;
@@ -32,9 +30,4 @@ a:hover{
   z-index: 900;
   text-align: center;
 }
-.footer{
-    position: fixed;
-    
-    bottom: 0;
-    width: 50%;
-}
+
