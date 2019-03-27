@@ -1,8 +1,8 @@
 
 .fixed {
-  position: absolute;
+  /* position: absolute;
   bottom: 20%;
-  height: 34vh;
+  height: 34vh; */
 }
 
 @media (max-width:490px), (max-height: 500px)  { 

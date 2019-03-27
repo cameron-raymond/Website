@@ -13,8 +13,6 @@ class Header extends React.Component {
                     paddingBottom: 0 ,
                     paddingLeft: 20,
                     paddingRight: 20,
-                    marginLeft: 30,
-                    marginRight: 30,
                     border: 2,
                     borderColor:"transparent",
                     borderBottomColor: "#8e8d8a",

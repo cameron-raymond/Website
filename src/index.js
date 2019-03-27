@@ -22,13 +22,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="header">
           <Header />
           <Info/>
-        </div>
-        <div className="footer">
           <Intro />
-        </div>
       </div>
     )
   }
