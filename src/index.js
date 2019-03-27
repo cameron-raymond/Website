@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import Header from './Components/header/Header'
 import Intro from './Scenes/Intro/Intro';
 import './index.css'
-import Info from  './Components/info/info'
 import ReactGA from 'react-ga';
 
 
@@ -15,16 +14,16 @@ class App extends React.Component {
     ReactGA.pageview('/homepage');
   }
   componentWillMount() {
-    this.initializeReactGA()
+    // this.initializeReactGA()
   }
 
- 
+
   render() {
     return (
       <div>
-          <Header />
-          <Info/>
-          <Intro />
+        <Header />
+       
+        <Intro />
       </div>
     )
   }
