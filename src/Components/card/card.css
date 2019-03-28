@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   display: flex;
   flex-basis: 1;
   background: rgb(121,191,211,0.3);
@@ -18,9 +19,7 @@
 
 .card:hover{
   background: rgb(121,191,211);
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
+
 }
 .cardContent{
   display:none;

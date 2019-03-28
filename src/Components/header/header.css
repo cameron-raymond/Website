@@ -8,9 +8,6 @@
   }
 .header{
   display:flex;
-  flex: 1;
-  position:sticky;
-  top: 0;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 10px;

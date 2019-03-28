@@ -5,10 +5,13 @@ body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
 }
-html, body {height: 100%}
+html, body, .overall {height: 100%}
+
 
 a{
   text-decoration: none;
+  transition: 0.5s;
+
 }
 
 a:hover{

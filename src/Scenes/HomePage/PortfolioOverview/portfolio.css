@@ -8,5 +8,13 @@
   align-items: flex-start;
   align-self: stretch;
 }
+.offset{
+  margin-top: 30px;
+}
+@media (max-width: 500px) {
+  .offset{
+    margin-top: 0px;
+  }
+}
 
 

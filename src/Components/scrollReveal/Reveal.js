@@ -23,6 +23,7 @@ export default function reveal(WrappedComponent) {
              that.bindRef(c);
            }
          }
+         {...this.props}
          />
        );
      }
