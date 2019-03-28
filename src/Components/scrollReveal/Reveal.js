@@ -11,7 +11,7 @@ export default function reveal(WrappedComponent) {
  
   componentDidMount() {
     const domElement = ReactDOM.findDOMNode(this.component);
-    scrollReveal.reveal(domElement);
+    scrollReveal.reveal(domElement,{ viewFactor: 0.15});
   }
  
    render() {

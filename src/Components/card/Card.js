@@ -7,9 +7,8 @@ class Card extends Component {
   render() {
     return (
       <div className="card">
-          <p>test</p>
-         
-
+          {/* <div className="cardContent"><p>{this.props.children}</p></div>          */}
+          <p>{this.props.title}</p>
       </div>
     );
   }

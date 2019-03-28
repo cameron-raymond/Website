@@ -20,7 +20,9 @@ class Typing extends PureComponent {
         <span>i am a </span>
         <span className="marker">software developer, </span>
         <Typist.Delay ms={500} />
-        <span> and <span className="marker">student</span> at Queen's University </span>
+        <span> and <span className="marker">student</span> </span>
+        <Typist.Delay ms={200} />
+        <span>at Queen's University </span>
 
       </Typist>
     );

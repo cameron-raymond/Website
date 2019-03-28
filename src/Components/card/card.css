@@ -12,8 +12,23 @@
   height: 40vw;
   max-width: 30rem;
   max-height: 30rem;
+  box-shadow: -2px 2px 2px rgb(136,136,136,0.05); 
 }
-    
+
+
+.card:hover{
+  background: rgb(121,191,211);
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+.cardContent{
+  display:none;
+}
+
+.card:hover .cardContent{
+  display: block;
+}
 @media (max-width: 500px) {
   .card {
     flex-direction: column;
@@ -23,12 +38,8 @@
     flex-basis: 1;
     background: rgb(121,191,211,0.3);
     margin-top: 10px;
-    
-    
     border-radius: 10px;
     width: 80vw;
     height: 80vw;
-    /* max-width: 30rem;
-    max-height: 30rem;       */
     }
 }

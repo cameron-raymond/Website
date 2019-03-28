@@ -7,18 +7,15 @@ class Portfolio extends Component {
   render() {
     return (
       <div className="pContainer">
-        <Card/>
+        <Card>Recycle.It</Card>
+        <div style={{ marginTop: 30 }}><Card title={"test"}>Recycle.It</Card></div>
+        <Card />
+        <div style={{ marginTop: 30 }}><Card /></div>
+        {/*
+        SOMETHING TO KEEP IN MIND FOR OFFSETTING SECOND COLUMN
+         <div style={{marginTop: 20}}><Card/></div>
          <Card/>
-        <Card/>
-        {/*<Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        
-        <Card/> */}
+         <div style={{marginTop: 30}}><Card/></div> */}
       </div>
     );
   }
