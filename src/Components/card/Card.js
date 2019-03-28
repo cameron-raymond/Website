@@ -1,17 +1,21 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
+import reveal from '../scrollReveal/Reveal'
 import './card.css'
 
-export const Card = () => {
+
+class Card extends Component {
+  render() {
     return (
-      <div className="post">
-        <p>test</p>
-        {/* <button onClick={increment}>Today is {day}</button> */}
+      <div className="card">
+          <p>test</p>
+         
+
       </div>
-    )
+    );
   }
-  
-//   Card.propTypes = {
-//     day: PropTypes.string.isRequired,
-//     increment: PropTypes.func.isRequired,
-//   }
-  
+}
+
+export default reveal(Card);
+
+
+

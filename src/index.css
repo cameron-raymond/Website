@@ -1,7 +1,5 @@
 body {
-  display: flex;
-  flex-direction: column;
-  flex:1;
+ 
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
@@ -17,15 +15,5 @@ a:hover{
   color:#444;
   transition: 0.5s;
 
-}
-
-.header{
-  position: fixed;
-  background-color: aqua;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 900;
-  text-align: center;
 }
 

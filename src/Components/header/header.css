@@ -6,7 +6,19 @@
       animation-name: fadeOut;
     }
   }
-
+.header{
+  display:flex;
+  flex: 1;
+  position:sticky;
+  top: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 10000;
+}
+ 
   @media (max-width:980px)  { 
     .hideLinks{display: none}
   }

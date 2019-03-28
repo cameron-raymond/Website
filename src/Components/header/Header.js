@@ -6,21 +6,7 @@ import agent_file from './CRaymondResume2019.pdf';
 class Header extends React.Component {
     render() {
         return (
-            <div
-                style={{
-                    display:"flex",
-                    flex: 1,
-                    position: 'sticky',
-                    top: 0,
-                    flexDirection: "row",
-                    justifyContent: "space-between",
-                    paddingTop: 10,
-                    paddingLeft: 20,
-                    paddingRight: 20,
-                    zIndex: 10000
-                    
-                }}
-                >
+            <div className="header">
                 <p className="title">cameron<span className="hideHead"> raymond</span></p>
                 <div style={{
                     display:"flex",

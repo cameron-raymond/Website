@@ -1,0 +1,12 @@
+.pContainer{
+  margin-top: 10em;
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+
