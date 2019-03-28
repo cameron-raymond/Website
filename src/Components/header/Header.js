@@ -8,7 +8,7 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header">
-                <Link to="/"><p className="title">cameron<span className="hideHead"> raymond</span></p></Link>
+                <Link to="/"><p className="title onHov">cameron<span className="hideHead"> raymond</span></p></Link>
                 <div style={{
                     display:"flex",
                     minWidth: 100,
@@ -18,8 +18,8 @@ class Header extends React.Component {
                     alignItems: 'center'                 
                 }}>
                     <a className="subtitle primary"href={agent_file} target="_blank">r<span className="hideLinks">esumé</span></a>
-                    <Link to="/about"><a className="subtitle"href={null} target="_blank">a<span className="hideLinks">bout</span></a></Link>
-                    <Link to="/contact"> <a className="subtitle"href={null} target="_blank">c<span className="hideLinks">ontact</span></a></Link>
+                    <Link to="/about"><p className="subtitle onHov" >a<span className="hideLinks">bout</span></p></Link>
+                    <Link to="/contact"> <p className="subtitle onHov" >c<span className="hideLinks">ontact</span></p></Link>
                 </div>
                 
             </div>

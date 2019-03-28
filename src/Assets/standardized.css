@@ -48,3 +48,15 @@
     width: 100%;
     transform:  translatey(0.2em);
 }
+
+
+.onHov{
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+.onHov:hover{
+    color:#444;
+    transition: 0.5s;
+  
+  }
