@@ -12,15 +12,15 @@ class Portfolio extends Component {
     return (
       <div className="pContainer">
         <Link to="/recycleit">
-          <Card subtitle={"react native"}  backgroundImage={RiT}>RecycleIt</Card>
+          <Card subtitle={"React Native"}  backgroundImage={RiT}>RecycleIt</Card>
         </Link>
         <div className="offset">
           <Link to="/DII">
-            <Card subtitle={"react native"} backgroundImage={DII}>Digital Insights and Integrations</Card>
+            <Card subtitle={"React Native"} backgroundImage={DII}>Digital Insights and Integrations</Card>
           </Link>
         </div>
         <Link to="/distDeliveries">
-          <Card subtitle={"react js"} backgroundImage={dist}>Distributed Deliveries</Card>
+          <Card subtitle={"React.js"} backgroundImage={dist}>Distributed Deliveries</Card>
         </Link>
       </div>
     );

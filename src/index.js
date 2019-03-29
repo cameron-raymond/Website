@@ -33,7 +33,7 @@ class Head extends React.PureComponent {
 
 ReactDOM.render(<Router>
   <div>
-    <div style={{position: 'sticky', top: 0}}><Head/></div>
+    <div style={{position: 'sticky', top: 0, zIndex: 1000}}><Head/></div>
     <Route exact path="/" component={Home} />
     <Route path="/recycleit" component={RecycleIt} />
     <Route path="/DII" component={DII} />

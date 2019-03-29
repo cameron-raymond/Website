@@ -32,16 +32,20 @@
 
 .card:hover .overlay{
   opacity: 0.94;
-  overflow: hidden;
-  background: rgb(121,191,211);
+  transition: 0.3s;
+
 }
 .cardContent{
-  display:none;  
+  opacity: 0;  
+  transition: 0.3s;
+  line-height: 0.5rem;
+
   z-index: 3;
 }
 
 .card:hover .cardContent{
-  display: block;
+  opacity: 1;
+  transition: 0.3s;
 }
 @media (max-width: 500px) {
   .card {
