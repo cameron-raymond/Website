@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import Typist from 'react-typist';
 import '../../../Assets/standardized.css'
 import './overview.css'
 

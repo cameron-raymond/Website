@@ -21,6 +21,7 @@
     }
     .reduceListSpace{
         line-height: 0;
+        margin-bottom: 0.5rem;
     }
     .removeLineBreak{
         line-height: 0rem;
