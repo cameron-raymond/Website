@@ -1,5 +1,6 @@
 
 .card {
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13,16 +14,30 @@
   height: 40vw;
   max-width: 30rem;
   max-height: 30rem;
+  overflow:hidden;
   box-shadow: -2px 2px 2px rgb(136,136,136,0.05); 
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(121,191,211);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 0;
+}
 
-.card:hover{
+.card:hover .overlay{
+  opacity: 0.94;
+  overflow: hidden;
   background: rgb(121,191,211);
-
 }
 .cardContent{
-  display:none;
+  display:none;  
+  z-index: 3;
 }
 
 .card:hover .cardContent{

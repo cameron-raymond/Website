@@ -8,12 +8,13 @@ class Card extends Component {
   render() {
     console.log(this.props.children)
     return (
-      <div className="card">
-          <div className="cardContent">
+      <div class="card" style={{ backgroundImage: `url(${this.props.backgroundImage})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+        <div className="overlay"/>
+        <div className="cardContent">
           <p className="title light">{this.props.children}</p>
           <p className="subtitle light">{this.props.subtitle}</p>
 
-            </div>         
+        </div>
       </div>
     );
   }

@@ -11,7 +11,7 @@ import About from './Scenes/About/About'
 import Contact from './Scenes/Contact/Contact'
 import './index.css'
 
-class Head extends React.Component {
+class Head extends React.PureComponent {
   initializeReactGA() {
     ReactGA.initialize('UA-133541363-1');
     ReactGA.pageview('/homepage');
