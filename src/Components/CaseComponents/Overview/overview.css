@@ -1,6 +1,9 @@
 .reduceListSpace{
     line-height: 0.5rem;
 }
+.removeLineBreak{
+    display: inline;
+}
 .oContainer{
     display: flex;
     align-self: stretch;
@@ -15,5 +18,19 @@
 @media (max-width: 500px) {
     .hideComma{
         display: inline;
+    }
+    .reduceListSpace{
+        line-height: 0;
+    }
+    .removeLineBreak{
+        line-height: 0rem;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .oContainer{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 }
