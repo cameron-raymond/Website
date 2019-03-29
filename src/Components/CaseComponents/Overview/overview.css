@@ -1,0 +1,19 @@
+.reduceListSpace{
+    line-height: 0.5rem;
+}
+.oContainer{
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.hideComma{
+    display: none;
+}
+@media (max-width: 500px) {
+    .hideComma{
+        display: inline;
+    }
+}

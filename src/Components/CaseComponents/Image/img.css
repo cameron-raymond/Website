@@ -1,0 +1,19 @@
+.imgContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+.imgStyling{
+    width: 80%;
+    height: auto;
+}
+@media (max-width: 500px) {
+    .imgStyling{
+        width: 100%;
+    }
+}

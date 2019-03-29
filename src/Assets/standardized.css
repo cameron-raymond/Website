@@ -18,6 +18,8 @@
     color: #888888;
 
 }
+.reduceSpace { margin-top: 0.2rem; margin-bottom: 0.2rem }
+
 
 @media (max-width: 500px) {
     .serif{

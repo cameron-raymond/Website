@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Card from '../../../Components/card/Card'
 import RiT from '../../../Assets/RIt.png'
-import DII from '../../../Assets/DIILogo.PNG'
+import DII from '../../../Assets/DII/DIILogo.PNG'
 import dist from '../../../Assets/distDelivery.png'
 import './portfolio.css';
 

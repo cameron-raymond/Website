@@ -1,0 +1,11 @@
+.digInsightsContainer{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tabListElement{
+    margin-left: 0.0rem;
+}

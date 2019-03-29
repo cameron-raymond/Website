@@ -6,7 +6,6 @@ import './card.css'
 
 class Card extends Component {
   render() {
-    console.log(this.props.children)
     return (
       <div class="card" style={{ backgroundImage: `url(${this.props.backgroundImage})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
         <div className="overlay"/>
