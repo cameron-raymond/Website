@@ -17,7 +17,7 @@ class Header extends React.Component {
                     justifyContent: "space-between",   
                     alignItems: 'center'                 
                 }}>
-                    <a className="subtitle primary"href={agent_file} target="_blank">r<span className="hideLinks">esumé</span></a>
+                    <a className="subtitle primary"href={agent_file}>r<span className="hideLinks">esumé</span></a>
                     <Link to="/about"><p className="subtitle onHov" >a<span className="hideLinks">bout</span></p></Link>
                     <Link to="/contact"> <p className="subtitle onHov" >c<span className="hideLinks">ontact</span></p></Link>
                 </div>

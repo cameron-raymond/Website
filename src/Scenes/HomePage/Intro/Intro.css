@@ -3,14 +3,14 @@
 }
 .typist{
     flex-wrap: wrap;
-    width: 90vw;
+    width: 85vw;
 }
 .typePos{
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  height: 3rem;
-  left: 2rem;
+  height: 2rem;
+  left: 1rem;
   position: relative;
   text-align: left;
 }

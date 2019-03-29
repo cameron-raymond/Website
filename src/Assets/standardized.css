@@ -19,6 +19,27 @@
 
 }
 
+@media (max-width: 500px) {
+    .serif{
+        font-size: 1.1rem;       
+    }
+    
+    .title{
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.1rem;
+        color: #737373
+    
+    }
+    
+    .subtitle{
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.9rem;
+        color: #888888;
+    
+    }
+  }
+
+
 .light{
     color: #F5F5F5
 }
@@ -37,12 +58,14 @@
 .marker {
     display: inline-block;
     position: relative;    
+    
 }
 .marker:before{
     z-index: -1;
     display: inline-block;
     position: absolute;
-    background: rgb(121,191,211,0.3);
+    background: #79BFD3;
+    opacity: 0.3;
     content: "";
     height: 40%;
     width: 100%;
