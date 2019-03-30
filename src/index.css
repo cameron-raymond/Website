@@ -20,3 +20,13 @@ a:hover{
 
 }
 
+a:visited {
+  color: #888888;
+  transition: 0.5s;
+}
+a:visited:hover {
+  color:#444;
+  transition: 0.5s;
+}
+
+

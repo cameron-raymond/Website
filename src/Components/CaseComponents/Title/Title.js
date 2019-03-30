@@ -9,7 +9,8 @@ class Title extends PureComponent {
       <div className="caseTitle">
         <Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className="serif primary">
           <p className="serif primary marker reduceSpace">{this.props.title}</p>
-          <p className="subtitle reduceSpace">{this.props.children}</p>
+          <br/>
+          <span className="subtitle reduceSpace">{this.props.children}</span>
         </Typist>
       </div>
     );
