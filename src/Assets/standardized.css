@@ -5,6 +5,14 @@
 
 }
 
+.caseContainer{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .title{
     font-family: 'Nunito', sans-serif;
     font-size: 1.4rem;
