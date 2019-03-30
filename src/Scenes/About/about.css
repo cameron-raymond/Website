@@ -1,0 +1,28 @@
+.introAndImg{
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3.45rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    width: 75vw;
+    max-height: 40rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.introCont{ 
+    flex:4/7;   
+    padding-right: 1rem;  
+  }
+
+.aboutImg{
+    flex: 3/7;
+    width:100%;
+    min-width: 19rem;
+    max-width: 28.125rem;
+    height:auto;
+    object-fit: contain;
+    overflow: hidden;
+}
