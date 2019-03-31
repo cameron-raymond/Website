@@ -7,7 +7,7 @@ import Header from './Components/header/Header'
 import Home from'./Scenes/HomePage/Home';
 import RecycleIt from './Scenes/RecycleIt/RecyleIt'
 import DII from './Scenes/DigitalInsights/DigInsights'
-import DistDeliveries from './Scenes/DistDeliveries/DistDeliveries'
+import DistDelivery from './Scenes/DistDelivery/DistDelivery'
 import About from './Scenes/About/About'
 import Contact from './Scenes/Contact/Contact'
 import './index.css'
@@ -39,7 +39,7 @@ ReactDOM.render(<Router>
     <Route exact path="/" component={Home} />
     <Route path="/recycleit" component={RecycleIt} />
     <Route path="/DII" component={DII} />
-    <Route path="/distDeliveries" component={DistDeliveries} />
+    <Route path="/distDelivery" component={DistDelivery} />
     <Route path="/about" component={About}/>
     <Route path="/contact" component={Contact}/>
     </ScrollToTop>

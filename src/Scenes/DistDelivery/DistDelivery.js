@@ -6,7 +6,7 @@ import CaseText from '../../Components/CaseComponents/TextSection/CaseText'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
 import mockup from '../../Assets/distDelivery/ddMockUp.png'
 import '../../Assets/standardized.css'
-class DistDeliveries extends Component {
+class DistDelivery extends Component {
   render() {
     return (
       <div className="caseContainer">
@@ -26,4 +26,4 @@ class DistDeliveries extends Component {
   }
 }
 
-export default DistDeliveries;
+export default DistDelivery;

@@ -1,6 +1,6 @@
 .serif{
-    font-family: 'PT Serif', serif;
-    font-size: 1.4rem;   
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.45rem;   
     color: #888888;
 
 }
@@ -15,7 +15,7 @@
 
 .title{
     font-family: 'Nunito', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     color: #737373
 
 }
@@ -31,21 +31,15 @@
 
 @media (max-width: 500px) {
     .serif{
-        font-size: 1.1rem;       
+        font-size: 1.15rem;       
     }
     
     .title{
-        font-family: 'Nunito', sans-serif;
-        font-size: 1.1rem;
-        color: #737373
-    
+        font-size: 1.15rem;    
     }
     
     .subtitle{
-        font-family: 'Nunito', sans-serif;
-        font-size: 0.9rem;
-        color: #888888;
-    
+        font-size: 0.9rem;    
     }
   }
 
@@ -57,9 +51,10 @@
 .secondary{
     color: #888888
 }
-.primary{
+.primary, .primary:visited{
     color: #737373
 }
+
 
 .highlight{
     color: rgb(121,191,211,0.3)

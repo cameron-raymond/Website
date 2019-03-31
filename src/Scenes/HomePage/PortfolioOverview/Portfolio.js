@@ -19,8 +19,8 @@ class Portfolio extends Component {
             <Card subtitle={"React Native"} backgroundImage={DII}>Digital Insights</Card>
           </Link>
         </div>
-        <Link to="/distDeliveries">
-          <Card subtitle={"React.js"} backgroundImage={dist}>Distributed Deliveries</Card>
+        <Link to="/distDelivery">
+          <Card subtitle={"React.js"} backgroundImage={dist}>Distributed Delivery</Card>
         </Link>
         
         

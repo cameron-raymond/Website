@@ -16,7 +16,8 @@
 .hideIcons{
   display: none;
 }
- 
+
+
   @media (max-width:1030px)  { 
     .hideLinks{display: none}
     .hideIcons{display: inline;}
