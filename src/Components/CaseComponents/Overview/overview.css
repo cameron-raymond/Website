@@ -15,6 +15,11 @@
 .hideComma{
     display: none;
 }
+@media (max-width: 980px){
+    .reduceListSpace{
+        line-height: 0.8rem;
+    }
+}
 @media (max-width: 600px) {
     .hideComma{
         display: inline;
@@ -28,6 +33,7 @@
         margin-top: 0;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .oContainer{
         flex-direction: column;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Typist from 'react-typist';
 import Blurb from './RevAbout'
-import portrait from '../../Assets/portrait.JPG'
+import portrait from '../../Assets/portrait.png'
 import '../../Assets/standardized.css'
 import './about.css'
 

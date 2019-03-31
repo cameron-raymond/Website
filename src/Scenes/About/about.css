@@ -1,5 +1,6 @@
 .introAndImg{
     display: flex;
+    /* background-color: black; */
     align-self: stretch;
     flex-direction: row;
     justify-content: space-between;
@@ -8,7 +9,7 @@
     margin-left: 7rem;
     margin-right: 7rem;
     width: 75vw;
-    max-height: 40rem;
+    /* max-height: 40rem; */
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -21,8 +22,25 @@
     flex: 3/7;
     width:100%;
     min-width: 19rem;
-    max-width: 28.125rem;
+    max-width: 23rem;
     height:auto;
     object-fit: contain;
     overflow: hidden;
+}
+
+@media (max-width: 980px) {
+    .introAndImg{
+        flex-direction: column-reverse;
+        /* background-color: black; */
+        align-self: center;
+        align-items: center;
+       
+    }
+    .introCont{
+        padding-right: 0;
+    }
+    .aboutImg{
+        margin-bottom: 0.5rem;
+    }
+
 }
