@@ -4,6 +4,7 @@ import '../../../Assets/standardized.css'
 import './footer.css'
 
 class Footer extends PureComponent {
+  
   render() {
     return (
       <div className="footer">

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FiUser,FiMessageSquare ,FiClipboard
+} from 'react-icons/fi';
 import './header.css'
 import '../../Assets/standardized.css'
 import agent_file from './CRaymondResume2019.pdf';
@@ -17,9 +19,9 @@ class Header extends React.Component {
                     justifyContent: "space-between",   
                     alignItems: 'center'                 
                 }}>
-                    <a className="subtitle primary"href={agent_file}>r<span className="hideLinks">esumé</span></a>
-                    <Link to="/about"><p className="subtitle onHov" >a<span className="hideLinks">bout</span></p></Link>
-                    <Link to="/contact"> <p className="subtitle onHov" >c<span className="hideLinks">ontact</span></p></Link>
+                    <a className="subtitle primary"href={agent_file}><span className="hideIcons"><FiClipboard/></span><span className="hideLinks">resumé</span></a>
+                    <Link to="/about"><p className="subtitle onHov" ><span className="hideIcons"><FiUser/></span><span className="hideLinks">about</span></p></Link>
+                    <Link to="/contact"> <p className="subtitle onHov" ><span className="hideIcons"><FiMessageSquare/></span><span className="hideLinks">contact</span></p></Link>
                 </div>
                 
             </div>

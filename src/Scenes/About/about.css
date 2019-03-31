@@ -30,8 +30,8 @@
 
 @media (max-width: 980px) {
     .introAndImg{
+        margin-top: 3rem;
         flex-direction: column-reverse;
-        /* background-color: black; */
         align-self: center;
         align-items: center;
        

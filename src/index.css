@@ -9,6 +9,7 @@ html, body, .overall {height: 100%}
 
 
 a{
+  color: #888888;
   text-decoration: none;
   transition: 0.5s;
 

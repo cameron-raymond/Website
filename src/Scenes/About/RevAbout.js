@@ -14,8 +14,8 @@ class RevAbout extends Component {
                     <br />
 
                     Some of the courses I’ve enjoyed during my undergrad
-                    are Data Structures; Algorithms; Formal Logic; States,
-                    Diversity and Ethnic Conflict; and Artificial Intelligence.
+                    are <a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-235.html">Data Structures</a>; <a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-365.html">Algorithms</a>; <a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-204.html">Formal Logic</a>; States,
+                    Diversity and Ethnic Conflict; and <a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-352.html">Artificial Intelligence</a>.
 <br />
                     <br />
 
