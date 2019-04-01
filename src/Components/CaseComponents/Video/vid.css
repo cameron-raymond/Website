@@ -1,0 +1,41 @@
+.vidContainer{
+    margin-top: 2.8rem;
+
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.textStyling{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:5%;
+}
+.vidStyling{
+    width: 50vw;
+    height: auto;
+}
+@media (max-width: 500px) {
+    .textStyling{
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 700px) {
+    .vidContainer{
+        flex-direction: column-reverse
+
+    }
+    .vidStyling{
+        width: 100vw;
+    }
+   
+    
+}
