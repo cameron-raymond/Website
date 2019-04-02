@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import '../../Assets/standardized.css'
+import analytics from '../../Components/HOC/analytics/Analytics'
 import Title from '../../Components/CaseComponents/Title/Title'
 import Image from '../../Components/CaseComponents/Image/Image'
 import Overview from '../../Components/CaseComponents/Overview/Overview'
 import mockup from '../../Assets/DII/DIImockup.webp'
 import CaseText from '../../Components/CaseComponents/TextSection/CaseText'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
+import '../../Assets/standardized.css'
+
 class DII extends Component {
   render() {
     return (
@@ -25,4 +27,4 @@ class DII extends Component {
   }
 }
 
-export default DII;
+export default analytics(DII,"/digitalInsights");

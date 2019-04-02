@@ -1,26 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import ReactGA from 'react-ga';
 import ScrollToTop from './Assets/ScrollToTop'
 import Header from './Components/header/Header'
 import Home from'./Scenes/HomePage/Home';
 import RecycleIt from './Scenes/RecycleIt/RecyleIt'
-import DII from './Scenes/DigitalInsights/DigInsights'
+// import DII from './Scenes/DigitalInsights/DigInsights'
 import DistDelivery from './Scenes/DistDelivery/DistDelivery'
 import About from './Scenes/About/About'
 import Contact from './Scenes/Contact/Contact'
 import './index.css'
 
 class Head extends React.PureComponent {
-  initializeReactGA() {
-    ReactGA.initialize('UA-133541363-1');
-    ReactGA.pageview('/homepage');
-  }
-  componentWillMount() {
-    // this.initializeReactGA()
-  }
-
   render() {
     return (
       <div>

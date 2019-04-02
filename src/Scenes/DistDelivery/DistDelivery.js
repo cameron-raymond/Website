@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import analytics from '../../Components/HOC/analytics/Analytics'
 import Title from '../../Components/CaseComponents/Title/Title'
 import Image from '../../Components/CaseComponents/Image/Image'
 import Video from '../../Components/CaseComponents/Video/Video'
@@ -38,4 +39,4 @@ class DistDelivery extends Component {
   }
 }
 
-export default DistDelivery;
+export default analytics(DistDelivery,"/distDelivery");

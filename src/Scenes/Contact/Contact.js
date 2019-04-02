@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Typist from 'react-typist';
+import analytics from '../../Components/HOC/analytics/Analytics'
 import Info from './CInfo'
 import '../../Assets/standardized.css'
 import './contact.css'
@@ -17,4 +18,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default analytics(Contact,"/contact");

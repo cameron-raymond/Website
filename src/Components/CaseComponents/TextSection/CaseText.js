@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../../Assets/standardized.css'
-import reveal from '../../scrollReveal/Reveal'
+import reveal from '../../HOC/scrollReveal/Reveal'
 import './casetext.css'
 
 class CaseText extends Component {

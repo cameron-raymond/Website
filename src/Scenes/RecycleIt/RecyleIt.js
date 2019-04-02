@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../Assets/standardized.css'
+import analytics from '../../Components/HOC/analytics/Analytics'
 import Title from '../../Components/CaseComponents/Title/Title'
 import Image from '../../Components/CaseComponents/Image/Image'
 import Video from '../../Components/CaseComponents/Video/Video'
@@ -9,6 +9,8 @@ import mockup from '../../Assets/RIT/RItmockup.webp'
 import altMockup from '../../Assets/RIT/RItmockup.png';
 import CaseText from '../../Components/CaseComponents/TextSection/CaseText'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
+import '../../Assets/standardized.css'
+
 class RecycleIt extends Component {
   render() {
     return (
@@ -39,4 +41,4 @@ class RecycleIt extends Component {
   }
 }
 
-export default RecycleIt;
+export default analytics(RecycleIt,"/recycleIt");

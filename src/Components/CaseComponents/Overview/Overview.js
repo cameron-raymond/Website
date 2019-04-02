@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import SmallList from './SmallList'
-import reveal from '../../scrollReveal/Reveal'
+import reveal from '../../HOC/scrollReveal/Reveal'
 import '../../../Assets/standardized.css'
 import './overview.css'
 

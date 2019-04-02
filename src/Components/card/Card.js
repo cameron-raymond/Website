@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import reveal from '../scrollReveal/Reveal'
+import reveal from '../HOC/scrollReveal/Reveal'
 import '../../Assets/standardized.css'
 import './card.css'
 

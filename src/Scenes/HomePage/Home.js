@@ -1,10 +1,11 @@
 import React from 'react'
+import analytics from '../../Components/HOC/analytics/Analytics'
 import Intro from './Intro/Intro';
 import Portfolio from './PortfolioOverview/Portfolio'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
 import '../../Assets/standardized.css'
 
-export default class Home extends React.Component {
+class Home extends React.Component {
 
   render() {
     return (
@@ -17,3 +18,4 @@ export default class Home extends React.Component {
   }
 }
 
+export default analytics(Home,"/home");

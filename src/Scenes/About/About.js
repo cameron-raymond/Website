@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import analytics from '../../Components/HOC/analytics/Analytics'
 import Intro from './IntroAndImg'
 import Overview from '../../Components/CaseComponents/Overview/Overview'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
@@ -22,4 +23,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default analytics(About,"/about");

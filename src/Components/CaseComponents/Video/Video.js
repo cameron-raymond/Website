@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import VidComp from './VidComponent'
+import reveal from '../../HOC/scrollReveal/Reveal'
 import './vid.css'
 class Video extends Component {
 
@@ -12,11 +13,10 @@ class Video extends Component {
                         <p className="subtitle reduceSpace">{this.props.children}</p>
                 
                         </div>
-
            </div>
          
         )
     }
 };
 
-export default Video;
+export default reveal(Video);
