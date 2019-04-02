@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import reveal from '../../Components/scrollReveal/Reveal'
+import reveal from '../../Components/HOC/scrollReveal/Reveal'
 import '../../Assets/standardized.css'
 import './contact.css'
 
