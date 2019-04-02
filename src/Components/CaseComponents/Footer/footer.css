@@ -25,7 +25,7 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 40rem) {
     .footer{
         height: 10rem;
     }

@@ -29,7 +29,7 @@
 .reduceSpace { margin-top: 0.2rem; margin-bottom: 0.2rem }
 
 
-@media (max-width: 500px) {
+@media (max-width: 40rem) {
     .serif{
         font-size: 1.15rem;       
     }

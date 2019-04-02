@@ -22,7 +22,7 @@
     width: 50vw;
     height: auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 40rem) {
     .textStyling{
         align-items: flex-start;
     }
