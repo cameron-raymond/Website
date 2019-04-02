@@ -3,7 +3,7 @@ import '../../Assets/standardized.css'
 import Title from '../../Components/CaseComponents/Title/Title'
 import Image from '../../Components/CaseComponents/Image/Image'
 import Overview from '../../Components/CaseComponents/Overview/Overview'
-import mockup from '../../Assets/DII/Mockup.JPG'
+import mockup from '../../Assets/DII/DIImockup.webp'
 import CaseText from '../../Components/CaseComponents/TextSection/CaseText'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
 class DII extends Component {

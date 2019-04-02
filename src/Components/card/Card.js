@@ -7,7 +7,7 @@ import './card.css'
 class Card extends Component {
   render() {
     return (
-      <div class="card" style={{ backgroundImage: `url(${this.props.backgroundImage})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+      <div className="card" style={{ backgroundImage: `url(${this.props.backgroundImage})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
         <div className="overlay"/>
         <div className="cardContent">
           <p className="title light">{this.props.children}</p>

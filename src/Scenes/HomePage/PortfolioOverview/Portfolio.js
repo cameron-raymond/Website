@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Card from '../../../Components/card/Card'
-import RiT from '../../../Assets/RIT/RIt.png'
-import DII from '../../../Assets/DII/DIILogo.PNG'
-import dist from '../../../Assets/distDelivery/distDelivery.png'
+import RiT from '../../../Assets/RIT/RIt.webp'
+import DII from '../../../Assets/DII/DIILogo.webp'
+import dist from '../../../Assets/distDelivery/distDelivery.webp'
 import './portfolio.css';
 
 
