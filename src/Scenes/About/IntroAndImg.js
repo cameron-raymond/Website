@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import Typist from 'react-typist';
 import Blurb from './RevAbout'
 import portrait from '../../Assets/portrait.webp'
+import altPortrait from '../../Assets/portrait.png'
 import '../../Assets/standardized.css'
 import './about.css'
 
 class Intro extends Component {
+  isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+  src = this.isSafari ? altPortrait : portrait
   render() {
+    
     return (
       <div className="introAndImg">
         <div className="introCont">
@@ -15,11 +19,11 @@ class Intro extends Component {
           </Typist>
           <Blurb />
         </div>
-      
-          <img src={portrait} alt={""} className="aboutImg" />
+
+        <img src={this.src} alt={""} className="aboutImg" />
       </div>
-        );
-      }
-    }
-    
-    export default Intro;
+    );
+  }
+}
+
+export default Intro;

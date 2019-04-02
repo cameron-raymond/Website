@@ -5,9 +5,11 @@ import './card.css'
 
 
 class Card extends Component {
+  isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+  src = this.isSafari ? this.props.altSrc : this.props.src
   render() {
     return (
-      <div className="card" style={{ backgroundImage: `url(${this.props.backgroundImage})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+      <div className="card" style={{ backgroundImage: `url(${this.src})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
         <div className="overlay"/>
         <div className="cardContent">
           <p className="title light">{this.props.children}</p>
