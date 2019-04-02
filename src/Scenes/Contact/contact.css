@@ -1,0 +1,24 @@
+.contContainer{
+    margin-top: 11rem;
+    height: 4rem;
+    width: 90%;
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+
+.tabOver{
+    margin-left: 1rem;
+}
+
+.link{
+    color: #79BFD3
+}
+.link:hover{
+ color: #53adc6   
+}
+.link:visited{
+    color: #79BFD3
+}
+.link:visited:hover{
+    color: #53adc6   
+}

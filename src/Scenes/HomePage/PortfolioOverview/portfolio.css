@@ -1,0 +1,21 @@
+.pContainer{
+  margin-top: 7rem;
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.offset{
+  margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+  .offset{
+    margin-top: 0px;
+  }
+}
+
+

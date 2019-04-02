@@ -1,35 +1,33 @@
 body {
-  display: flex;
-  flex-direction: column;
-  flex:1;
+ 
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0;
-  font-family: 'Inconsolata', monospace;
-  font-size: calc(12px + 2vmin);
-  color: #4d4b49;
+  font-family: 'Nunito', sans-serif;
 }
-a{
-  color: #4d4b49;
-  text-decoration: none;
-}
+html, body, .overall {height: 100%}
 
-a:hover{
-  color:black;
+
+a{
+  color: #888888;
+  text-decoration: none;
   transition: 0.5s;
 
 }
 
+a:hover{
+  color:#444;
+  transition: 0.5s;
 
-.header{
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 900;
-  text-align: center;
 }
-.footer{
-    position: fixed;
-    
-    bottom: 0;
-    width: 50%;
+
+a:visited {
+  color: #888888;
+  transition: 0.5s;
 }
+a:visited:hover {
+  color:#444;
+  transition: 0.5s;
+}
+
+

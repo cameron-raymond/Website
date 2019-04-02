@@ -3,14 +3,14 @@ import './Intro.css';
 import Typing from './Typing'
 
 
-class App extends Component {
+class Intro extends Component {
   render() {
     return (
-        <div className="fixed">
+          <div className="container">
           <div className="typePos"><Typing /></div>
-        </div>
+          </div>
     );
   }
 }
 
-export default App;
+export default Intro;

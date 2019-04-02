@@ -1,0 +1,26 @@
+.cTextCont{
+    margin-top: 2.8rem;
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.infoCont{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 500px) {
+    .cTextCont{
+        padding: 0;
+    }
+    .infoCont{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+    }
+}

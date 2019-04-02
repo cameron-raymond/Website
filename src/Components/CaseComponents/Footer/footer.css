@@ -1,0 +1,39 @@
+.footer{
+    position: relative;
+    margin-top: 2.8rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 12rem;
+    background-color: #F5F5F5;
+}
+
+.viewNext{
+    margin-right: 4rem;
+}
+.viewNextMobile{
+    display: none;
+}
+
+.footInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+@media (max-width: 500px) {
+    .footer{
+        height: 10rem;
+    }
+    .viewNext{
+        display: none;
+    }
+    .viewNextMobile{
+        display: inherit;
+    }
+ 
+}

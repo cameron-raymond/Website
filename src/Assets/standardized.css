@@ -1,0 +1,90 @@
+.serif{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.45rem;   
+    color: #888888;
+
+}
+
+.caseContainer{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.45rem;
+    color: #737373
+
+}
+
+.subtitle{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    color: #888888;
+
+}
+.reduceSpace { margin-top: 0.2rem; margin-bottom: 0.2rem }
+
+
+@media (max-width: 500px) {
+    .serif{
+        font-size: 1.15rem;       
+    }
+    
+    .title{
+        font-size: 1.15rem;    
+    }
+    
+    .subtitle{
+        font-size: 0.9rem;    
+    }
+  }
+
+
+.light{
+    color: #F5F5F5
+}
+
+.secondary{
+    color: #888888
+}
+.primary, .primary:visited{
+    color: #737373
+}
+
+
+.highlight{
+    color: rgb(121,191,211,0.3)
+}
+
+.marker {
+    display: inline-block;
+    position: relative;    
+    
+}
+.marker:before{
+    z-index: -1;
+    display: inline-block;
+    position: absolute;
+    background: #79BFD3;
+    opacity: 0.3;
+    content: "";
+    height: 40%;
+    width: 100%;
+    transform:  translatey(0.2em);
+}
+
+
+.onHov{
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+.onHov:hover{
+    color:#444;
+    transition: 0.5s;
+  
+  }
