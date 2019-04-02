@@ -7,6 +7,7 @@ import CaseText from '../../Components/CaseComponents/TextSection/CaseText'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
 import userFlow from '../../Assets/distDelivery/ddVideo.mp4'
 import mockup from '../../Assets/distDelivery/ddMockUp.webp'
+import altMockup from '../../Assets/distDelivery/ddMockUp.png'
 import '../../Assets/standardized.css'
 class DistDelivery extends Component {
   render() {
@@ -15,7 +16,7 @@ class DistDelivery extends Component {
         <Title title={"Distributed Delivery"}>
           pairing users who need items shipped, with drivers already going in that direction
          </Title>
-        <Image src={mockup} />
+        <Image src={mockup}  altSrc={altMockup}/>
         <Overview headers={["technologies","buzzwords","timeline"]} elements={[["react.js","firebase"],["artificial intelligence","sharing economy"],["february 2-4, 19'"]]}>technologies</Overview>
         <CaseText title={"problem"}>
           There are 33.8 million vehicles in Canada, and 100+ million parcels delivered each year, this results in a potentially enormous amount of unused space, and is thus a new potential market. This is what my teammates and I realized on the Friday of QHacks, 2019. We wanted to do something novel, that didn’t follow a typical hackathon project template and actually address a problem. Distributed Delivery was born out of a teammates anecdote about the pain of shipping his desktop computer from Calgary to Kingston in a move. This got us thinking about all the people who drive every day with room in their trunk space, who would probably be willing to pick up a package from someone and deliver it if they were already going in that direction. And that there is a potential for technology to address these compatible intrests.

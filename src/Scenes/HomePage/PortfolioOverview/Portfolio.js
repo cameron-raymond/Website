@@ -15,14 +15,17 @@ class Portfolio extends Component {
           <Card subtitle={"React Native"}  backgroundImage={RiT}>RecycleIt.</Card>
         </Link>
         <div className="offset">
-          <Link to="/DII">
-            <Card subtitle={"React Native"} backgroundImage={DII}>Digital Insights</Card>
-          </Link>
-        </div>
         <Link to="/distDelivery">
           <Card subtitle={"React.js"} backgroundImage={dist}>Distributed Delivery</Card>
         </Link>
-        
+          {/* <Link to="/DII">
+            <Card subtitle={"React Native"} backgroundImage={DII}>Digital Insights</Card>
+          </Link> */}
+        </div>
+        {/* <Link to="/distDelivery">
+          <Card subtitle={"React.js"} backgroundImage={dist}>Distributed Delivery</Card>
+        </Link>
+         */}
         
       </div>
     );
