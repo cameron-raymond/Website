@@ -1,5 +1,5 @@
 import React from 'react'
-import { hydrate, render } from 'react-dom'
+import ReactDOM, { hydrate, render } from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './Assets/ScrollToTop'
 import Header from './Components/header/Header'
@@ -31,12 +31,5 @@ class MyApp extends React.PureComponent {
   }
 }
 
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  console.log("Hydrating")
-  hydrate(<MyApp/>, rootElement);
-} else {
-  console.log("Rendering")
-  render(<MyApp/>, rootElement);
-}
 
+ReactDOM.render(<MyApp/>, document.getElementById('root'))
