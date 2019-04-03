@@ -1,9 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { hydrate, render } from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './Assets/ScrollToTop'
 import Header from './Components/header/Header'
-import Home from'./Scenes/HomePage/Home';
+import Home from './Scenes/HomePage/Home';
 import RecycleIt from './Scenes/RecycleIt/RecyleIt'
 // import DII from './Scenes/DigitalInsights/DigInsights'
 import DistDelivery from './Scenes/DistDelivery/DistDelivery'
@@ -11,29 +11,32 @@ import About from './Scenes/About/About'
 import Contact from './Scenes/Contact/Contact'
 import './index.css'
 
-class Head extends React.PureComponent {
+class MyApp extends React.PureComponent {
   render() {
     return (
-      <div>
-        <Header />
-      </div>
+      <Router>
+        <div>
+          <div style={{ position: 'sticky', top: 0, zIndex: 1000 }}><Header /></div>
+          <ScrollToTop>
+            <Route exact path="/" component={Home} />
+            <Route path="/recycleit" component={RecycleIt} />
+            {/* <Route path="/DII" component={DII} /> */}
+            <Route path="/distDelivery" component={DistDelivery} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+          </ScrollToTop>
+        </div>
+      </Router>
     )
   }
 }
 
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  console.log("Hydrating")
+  hydrate(<MyApp/>, rootElement);
+} else {
+  console.log("Rendering")
+  render(<MyApp/>, rootElement);
+}
 
-
-ReactDOM.render(<Router>
-  <div>
-    <div style={{position: 'sticky', top: 0, zIndex: 1000}}><Head/></div>
-    <ScrollToTop>
-    <Route exact path="/" component={Home} />
-    <Route path="/recycleit" component={RecycleIt} />
-    {/* <Route path="/DII" component={DII} /> */}
-    <Route path="/distDelivery" component={DistDelivery} />
-    <Route path="/about" component={About}/>
-    <Route path="/contact" component={Contact}/>
-    </ScrollToTop>
-  </div>
-</Router> 
-, document.getElementById('root'))
