@@ -25,7 +25,7 @@ class Header extends React.Component {
                         to={agent_file}
                     >
                     <p className="subtitle onHov primary"><span className="hideIcons"><FiClipboard /></span><span className="hideLinks">resumé</span></p>
-      </ReactGA.OutboundLink>
+                    </ReactGA.OutboundLink>
                     <Link to="/about"><p className="subtitle onHov" ><span className="hideIcons"><FiUser /></span><span className="hideLinks">about</span></p></Link>
                     <Link to="/contact"> <p className="subtitle onHov" ><span className="hideIcons"><FiMessageSquare /></span><span className="hideLinks">contact</span></p></Link>
                 </div>

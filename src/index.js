@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM, { hydrate, render } from 'react-dom'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './Assets/ScrollToTop'
 import Header from './Components/header/Header'
 import Home from './Scenes/HomePage/Home';
