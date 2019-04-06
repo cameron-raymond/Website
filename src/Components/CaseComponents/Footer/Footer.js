@@ -8,6 +8,7 @@ class Footer extends PureComponent {
   render() {
     return (
       <div className="footer">
+      
         <div className="footInfo">
           <p className="subtitle primary">&copy; 2019 cameron raymond</p>
           <a href="mailto:c.raymond@queensu.ca" className="subtitle">c.raymond@queensu.ca</a>
