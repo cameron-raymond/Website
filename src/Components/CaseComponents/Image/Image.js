@@ -3,6 +3,7 @@ import reveal from '../../HOC/scrollReveal/Reveal'
 import './img.css'
 
 class Image extends Component {
+  
   isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
   src = this.isSafari ? this.props.altSrc : this.props.src
   render() {
