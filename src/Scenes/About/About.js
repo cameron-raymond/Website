@@ -14,7 +14,7 @@ class About extends Component {
     return (
       <div className="caseContainer">
         <Intro />
-        <Overview headers={["what i'm reading",  "what i'm listening too","all time favourites"]}
+        <Overview headers={["what i'm reading",  "what i'm listening to","all time favourites"]}
           elements={[books,pastYearAlbums,allTimeAlbums]}/>
               <Footer to={"contact"}linkTitle={"contact"} linkTitleMobile={"contact"}/>
 
