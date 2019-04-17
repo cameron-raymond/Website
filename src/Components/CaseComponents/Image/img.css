@@ -1,12 +1,12 @@
 .imgContainer{
     position: relative;
     width: 100vw;
-    padding-top: calc((2154/4002)*100);
+    min-height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: black;
+    background-color: #F5F5F5;
     margin-bottom: 1rem;
 
 }
