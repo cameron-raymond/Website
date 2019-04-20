@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from 'react-helmet'
 import analytics from '../../Components/HOC/analytics/Analytics'
 import Title from '../../Components/CaseComponents/Title/Title'
 import Image from '../../Components/CaseComponents/Image/Image'
@@ -12,6 +13,10 @@ class DII extends Component {
   render() {
     return (
       <div className="caseContainer">
+        <Helmet>
+          <title>Digital Insights and Integrations - Cameron Raymond</title>
+          <meta name="description" content="A convenient and comprehensive retail banking analytics developed by Cameron Raymond with React Native." />
+        </Helmet>
         <Title title={"Digital Insights and Integration App"}>
           convenient and comprehensive retail banking analytics
         </Title>

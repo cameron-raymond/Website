@@ -1,5 +1,6 @@
 import React from 'react'
-import ReactDOM, { hydrate, render } from 'react-dom'
+import ReactDOM from 'react-dom'
+import { render } from 'react-snapshot';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './Assets/ScrollToTop'
 import Header from './Components/header/Header'
@@ -32,4 +33,5 @@ class MyApp extends React.PureComponent {
 }
 
 
-ReactDOM.render(<MyApp/>, document.getElementById('root'))
+// ReactDOM.render(<MyApp/>, document.getElementById('root'))
+render(<MyApp/>, document.getElementById('root'));

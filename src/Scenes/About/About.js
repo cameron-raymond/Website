@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from 'react-helmet'
 import analytics from '../../Components/HOC/analytics/Analytics'
 import Intro from './IntroAndImg'
 import Overview from '../../Components/CaseComponents/Overview/Overview'
@@ -13,6 +14,10 @@ class About extends Component {
     let pastYearAlbums = [<a href="https://pitchfork.com/reviews/albums/sons-of-kemet-your-queen-is-a-reptile/">your queen is a reptile</a>, <a href="https://pitchfork.com/reviews/albums/kanye-west-kid-cudi-kids-see-ghosts/">kids see ghosts</a>, <a href="https://pitchfork.com/reviews/albums/parquet-courts-wide-awake/">wide awake!</a>, <a href="https://pitchfork.com/reviews/albums/black-sabbath-paranoid/">paranoid</a>];
     return (
       <div className="caseContainer">
+       <Helmet>
+          <title>About - Cameron Raymond</title>
+          <meta name="description" content="Cameron Raymond is a software developer and student at Queen's University." />
+        </Helmet>
         <Intro />
         <Overview headers={["what i'm reading",  "what i'm listening to","all time favourites"]}
           elements={[books,pastYearAlbums,allTimeAlbums]}/>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from 'react-helmet'
 import analytics from '../../Components/HOC/analytics/Analytics'
 import Title from '../../Components/CaseComponents/Title/Title'
 import Image from '../../Components/CaseComponents/Image/Image'
@@ -15,9 +16,13 @@ class RecycleIt extends Component {
   render() {
     return (
       <div className="caseContainer">
+        <Helmet>
+          <title>RecycleIt - Cameron Raymond</title>
+          <meta name="description" content="A React Native app developed by Cameron Raymond that uses computer vision to help reduce recycling contamination!" />
+        </Helmet>
         <Title title={"RecycleIt."}>
           the app that uses computer vision to help reduce recycling contamination        </Title>
-        <Image altSrc={altMockup} src={mockup}/>
+        <Image altSrc={altMockup} src={mockup} />
         <Overview headers={["technologies", "buzzwords", "timeline"]} elements={[["react native", "clarifai"], ["artificial intelligence", "computer vision"], ["december 18'-february 19'"]]}>technologies</Overview>
         <CaseText title={"problem"}>Landfills produce approximately <a href="http://districtofstewart.com/citizen-services/garbage-pick-up-and-recycling/garbage-and-recycling-statistics">25% of Canada’s methane emissions</a>, and recycling is a key component in reducing the waste that ends up in landfills. However, when a piece of garbage is accidentally thrown into the recycling bin, it’s a costly and labour intensive process to identify it, and transport it to a landfill. Therefore, reducing the contamination rates at the level of the user is a key aspect in making recycling cheaper, and more effective.</CaseText>
         <CaseText title={"methodology"}>	Recycling contamination is primarily the result of a lack of information about what can be recycled. Canadians are throwing too much garbage into recycling bins, so there needs to be a shift in mindset: from recycling more, to recycling better. Wisdom can be drawn from the UK’s<a href="https://www.behaviouralinsights.co.uk/wp-content/uploads/2015/07/BIT-Publication-EAST_FA_WEB.pdf"> Nudge Unit</a>, who found that affecting social change requires making a behaviour easier, more attractive, more social and more timely.</CaseText>
@@ -41,4 +46,4 @@ class RecycleIt extends Component {
   }
 }
 
-export default analytics(RecycleIt,"/recycleIt");
+export default analytics(RecycleIt, "/recycleIt");

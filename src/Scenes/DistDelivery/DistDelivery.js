@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from 'react-helmet'
 import analytics from '../../Components/HOC/analytics/Analytics'
 import Title from '../../Components/CaseComponents/Title/Title'
 import Image from '../../Components/CaseComponents/Image/Image'
@@ -14,6 +15,10 @@ class DistDelivery extends Component {
   render() {
     return (
       <div className="caseContainer">
+         <Helmet>
+          <title>Distributed Delivery - Cameron Raymond</title>
+          <meta name="description" content="A React app developed, in part, by Cameron Raymond that pairs users who need items shipped, with drivers already going in that direction." />
+        </Helmet>
         <Title title={"Distributed Delivery"}>
           pairing users who need items shipped, with drivers already going in that direction
          </Title>
