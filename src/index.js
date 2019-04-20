@@ -33,5 +33,4 @@ class MyApp extends React.PureComponent {
 }
 
 
-// ReactDOM.render(<MyApp/>, document.getElementById('root'))
-render(<MyApp/>, document.getElementById('root'));
+ReactDOM.render(<MyApp/>, document.getElementById('root'))
