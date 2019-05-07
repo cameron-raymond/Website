@@ -5,7 +5,7 @@ import ReactGA from 'react-ga';
 
 import './header.css'
 import '../../Assets/standardized.css'
-import agent_file from './CRaymondResume2019.pdf';
+import resume from '../../Assets/CRaymondResume2020.pdf';
 
 class Header extends React.Component {
     render() {
@@ -22,7 +22,7 @@ class Header extends React.Component {
                 }}>
                     <ReactGA.OutboundLink
                         eventLabel="clickedResume"
-                        to={agent_file}
+                        to={resume}
                     >
                     <p className="subtitle onHov primary"><span className="hideIcons"><FiClipboard /></span><span className="hideLinks">resumé</span></p>
                     </ReactGA.OutboundLink>
