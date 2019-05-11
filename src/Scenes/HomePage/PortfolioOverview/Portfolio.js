@@ -24,9 +24,9 @@ class Portfolio extends Component {
         </Link>
        
         </div>
-        <Link to="/DII">
+        {/* <Link to="/DII">
             <Card subtitle={"React Native"} altSrc={altDII}src={DII}>Digital Insights</Card>
-          </Link>
+          </Link> */}
       </div>
     );
   }
