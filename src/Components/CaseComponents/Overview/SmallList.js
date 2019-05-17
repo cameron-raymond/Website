@@ -16,7 +16,7 @@ class SmallList extends PureComponent {
     render() {
         return (
             <div>
-                <p className="subtitle primary reduceListSpace">{this.props.children}</p>
+                <p className="subtitle primary reduceListSpace" style={{fontWeight: 400}}>{this.props.children}</p>
                 <div className="removeLineBreak">
                     {this.props.elements ? this.handleList(this.props.elements) : null}
                 </div>

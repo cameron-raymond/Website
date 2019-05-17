@@ -16,6 +16,7 @@
 .title{
     font-family: 'Nunito', sans-serif;
     font-size: 1.45rem;
+    font-weight: 400;
     color: #737373
 
 }
@@ -23,6 +24,7 @@
 .subtitle{
     font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
+    
     color: #888888;
 
 }
