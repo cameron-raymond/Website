@@ -5,7 +5,7 @@ class VidComp extends Component {
 
     render() {
         return (
-            <video className='vidStyling' autoPlay loop muted>
+            <video className='vidStyling' autoPlay loop muted playsinline>
                 <source src={this.props.src} type='video/mp4' />
             </video>
         )

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import reveal from '../../Components/HOC/scrollReveal/Reveal'
-import '../../Assets/standardized.css'
 import './about.css'
 
 class RevAbout extends Component {
     render() {
         return (
             <div className="tabOver">
-                <p className="subtitle">I’m a 20 year old software developer from Toronto,
+                <p className="text">I’m a 20 year old software developer from Toronto,
  Ontario - currently studying computer science, with
  a minor in political studies at Queen’s University.
 <br />

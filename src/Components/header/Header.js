@@ -24,10 +24,10 @@ class Header extends React.Component {
                         eventLabel="clickedResume"
                         to={resume}
                     >
-                    <p className="subtitle onHov primary"><span className="hideIcons"><FiClipboard /></span><span className="hideLinks">resumé</span></p>
+                    <p className="text primary onHov"><span className="hideIcons"><FiClipboard /></span><span className="hideLinks">resumé</span></p>
                     </ReactGA.OutboundLink>
-                    <Link to="/about"><p className="subtitle onHov" ><span className="hideIcons"><FiUser /></span><span className="hideLinks">about</span></p></Link>
-                    <Link to="/contact"> <p className="subtitle onHov" ><span className="hideIcons"><FiMessageSquare /></span><span className="hideLinks">contact</span></p></Link>
+                    <Link to="/about"><p className="text onHov" ><span className="hideIcons"><FiUser /></span><span className="hideLinks">about</span></p></Link>
+                    <Link to="/contact"> <p className="text onHov" ><span className="hideIcons"><FiMessageSquare /></span><span className="hideLinks">contact</span></p></Link>
                 </div>
 
             </div>

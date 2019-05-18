@@ -10,7 +10,7 @@ class Video extends Component {
                         <VidComp src={this.props.src}/>
                         <div className="textStyling">
                         <p className="serif marker reduceSpace tabOver">{this.props.title}</p>
-                        <p className="subtitle reduceSpace">{this.props.children}</p>
+                        <p className="text reduceSpace">{this.props.children}</p>
                 
                         </div>
            </div>

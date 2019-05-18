@@ -13,7 +13,7 @@ class Card extends Component {
         <div className="overlay"/>
         <div className="cardContent">
           <p className="title light">{this.props.children}</p>
-          <p className="subtitle light">{this.props.subtitle}</p>
+          <p className="text light">{this.props.subtitle}</p>
         </div>
       </div>
     );

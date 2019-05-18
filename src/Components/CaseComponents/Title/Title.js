@@ -10,7 +10,7 @@ class Title extends PureComponent {
         <Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className="serif primary">
           <p className="serif primary marker reduceSpace">{this.props.title}</p>
           <br/>
-          <span className="subtitle reduceSpace">{this.props.children}</span>
+          <span className="text reduceSpace">{this.props.children}</span>
         </Typist>
       </div>
     );

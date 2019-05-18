@@ -9,7 +9,7 @@ class CaseText extends Component {
         <div className="cTextCont">
             <p className="serif marker reduceSpace">{this.props.title}</p>
             <div className="infoCont">
-                <p className="subtitle reduceSpace">{this.props.children}</p>
+                <p className="text reduceSpace">{this.props.children}</p>
             </div>
         </div>
     )

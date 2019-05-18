@@ -4,8 +4,8 @@ import Card from '../../../Components/card/Card'
 import RiT from '../../../Assets/RIT/RIt.webp'
 
 import altRiT from '../../../Assets/RIT/RIt.png'
-import DII from '../../../Assets/DII/DIILogo.webp'
-import altDII from '../../../Assets/DII/DIILogo.PNG'
+// import DII from '../../../Assets/DII/DIILogo.webp'
+// import altDII from '../../../Assets/DII/DIILogo.PNG'
 import dist from '../../../Assets/distDelivery/distDelivery.webp'
 import altDist from '../../../Assets/distDelivery/distDelivery.png'
 import './portfolio.css';

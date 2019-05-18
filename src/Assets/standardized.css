@@ -2,9 +2,28 @@
     font-family: 'Frank Ruhl Libre', serif;
     font-size: 1.45rem;   
     color: #888888;
-
 }
 
+.title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 400;
+    color: #737373
+}
+
+
+.textEmphasis{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #737373
+}
+.text{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #888888;
+}
 .caseContainer{
     display: flex;
     flex: 1;
@@ -13,21 +32,8 @@
     align-items: center;
 }
 
-.title{
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.45rem;
-    font-weight: 400;
-    color: #737373
 
-}
 
-.subtitle{
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.2rem;
-    
-    color: #888888;
-
-}
 .reduceSpace { margin-top: 0.2rem; margin-bottom: 0.2rem }
 
 
@@ -40,7 +46,7 @@
         font-size: 1.15rem;    
     }
     
-    .subtitle{
+    .text,.textEmphasis{
         font-size: 0.9rem;    
     }
   }

@@ -17,7 +17,7 @@ class About extends Component {
        <Helmet>
           <title>About - Cameron Raymond</title>
           <meta name="description" content="Cameron Raymond is a software developer and student at Queen's University." />
-        </Helmet>
+      </Helmet>
         <Intro />
         <Overview headers={["what i'm reading",  "what i'm listening to","all time favourites"]}
           elements={[books,pastYearAlbums,allTimeAlbums]}/>

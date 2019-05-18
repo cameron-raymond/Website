@@ -10,10 +10,10 @@ class Footer extends PureComponent {
       <div className="footer">
       
         <div className="footInfo">
-          <p className="subtitle primary">&copy; 2019 cameron raymond</p>
-          <a href="mailto:c.raymond@queensu.ca" className="subtitle">c.raymond@queensu.ca</a>
-          <a href="https://linkedin.com/in/cameron-raymond/" className="subtitle">linkedIn</a>
-          <a href="https://github.com/cameron-raymond" className="subtitle">github</a>
+          <p className="textEmphasis">&copy; 2019 cameron raymond</p>
+          <a href="mailto:c.raymond@queensu.ca" className="text">c.raymond@queensu.ca</a>
+          <a href="https://linkedin.com/in/cameron-raymond/" className="text">linkedIn</a>
+          <a href="https://github.com/cameron-raymond" className="text">github</a>
         </div>
 
         <Link to={this.props.to ? this.props.to : '/'}>
