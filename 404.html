@@ -1,0 +1,561 @@
+<html lang="en" class="sr"><head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Whoops! This is a 404 error." data-react-helmet="true"></head>
+  
+    <!--
+        manifest.json provides metadata used when your web app is added to the
+        homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      -->
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+    <!--
+        Notice the use of  in the tags above.
+        It will be replaced with the URL of the `public` folder during the build.
+        Only files inside the `public` folder can be referenced from the HTML.
+  
+        Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+        work correctly both with client-side routing and a non-root public URL.
+        Learn how to configure a non-root public URL by running `npm run build`.
+      -->
+    <title>Whoops!</title>
+  <style type="text/css">.serif{
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 1.45rem;   
+      color: #888888;
+  }
+  
+  .title{
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: #737373
+  }
+  
+  
+  .textEmphasis{
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #737373
+  }
+  .text{
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #888888;
+  }
+  .caseContainer{
+      display: flex;
+      flex: 1 1;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  
+  
+  
+  .reduceSpace { margin-top: 0.2rem; margin-bottom: 0.2rem }
+  
+  
+  @media (max-width: 40rem) {
+      .serif{
+          font-size: 1.15rem;       
+      }
+      
+      .title{
+          font-size: 1.15rem;    
+      }
+      
+      .text,.textEmphasis{
+          font-size: 0.9rem;    
+      }
+    }
+  
+  
+  .light{
+      color: #F5F5F5
+  }
+  
+  .secondary{
+      color: #888888
+  }
+  .primary, .primary:visited{
+      color: #737373
+  }
+  
+  
+  .highlight{
+      color: rgb(121,191,211,0.3)
+  }
+  
+  .marker {
+      display: inline-block;
+      position: relative;    
+      
+  }
+  .marker:before{
+      z-index: -1;
+      display: inline-block;
+      position: absolute;
+      background: #79BFD3;
+      opacity: 0.3;
+      content: "";
+      height: 40%;
+      width: 100%;
+      -webkit-transform:  translatey(0.2em);
+              transform:  translatey(0.2em);
+  }
+  
+  
+  .onHov{
+      text-decoration: none;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+    }
+    
+  .onHov:hover{
+      color:#444;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+    
+    }</style><style type="text/css">
+  @media (max-width:700px)  { 
+      .hideHead{
+        display: none;
+      }
+    }
+  .header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 10000;
+  }
+  .hideIcons{
+    display: none;
+  }
+  
+  
+    @media (max-width:1030px)  { 
+      .hideLinks{display: none}
+      .hideIcons{display: inline;}
+    }
+    </style><style type="text/css">.container{
+    margin-top: 17rem;
+  }
+  .typist{
+      flex-wrap: wrap;
+      width: 85vw;
+  }
+  .typePos{
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    height: 2rem;
+    left: 1rem;
+    position: relative;
+    text-align: left;
+  }
+  
+  </style><style type="text/css">
+  .card {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-basis: 1;
+    background: rgb(121,191,211,0.3);
+    margin: 10px;
+    border-radius: 10px;
+    width: 40vw;
+    height: 40vw;
+    max-width: 30rem;
+    max-height: 30rem;
+    overflow:hidden;
+    -moz-box-shadow: -2px -2px 3px 2px rgba(177, 109, 109, 0.05) inset;
+    -webkit-box-shadow: -2px -2px 2px 0px rgba(177, 109, 109, 0.05) inset;
+  }
+  
+  
+  .overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(121,191,211);
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 0;
+  }
+  
+  .card:hover .overlay{
+    opacity: 0.94;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  
+  }
+  .cardContent{
+    opacity: 0;  
+    -webkit-transition: 0.3s;  
+    transition: 0.3s;
+    line-height: 0.5rem;
+  
+    z-index: 3;
+  }
+  
+  .card:hover .cardContent{
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  @media (max-width: 40rem) {
+    .card {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-basis: 1;
+      background: rgb(121,191,211,0.3);
+      margin-top: 10px;
+      border-radius: 10px;
+      width: 80vw;
+      height: 80vw;
+      }
+  }</style><style type="text/css">.pContainer{
+    margin-top: 7rem;
+    display: flex;
+    flex:1 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .offset{
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 40rem) {
+    .offset{
+      margin-top: 0px;
+    }
+  }
+  
+  
+  </style><style type="text/css">.footer{
+      position: relative;
+      margin-top: 2.8rem;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 12rem;
+      background-color: #F5F5F5;
+      font-weight: 400
+  }
+  
+  .viewNext{
+      margin-right: 4rem;
+  }
+  .viewNextMobile{
+      display: none;
+  }
+  
+  .footInfo{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+  
+  }
+  
+  @media (max-width: 40rem) {
+      .footer{
+          height: 10rem;
+      }
+      .viewNext{
+          display: none;
+      }
+      .viewNextMobile{
+          display: inherit;
+      }
+   
+  }</style><style type="text/css">.caseTitle{
+      margin-top: 8rem;
+      margin-bottom: 2rem;
+      height: 4rem;
+      align-self: flex-start;
+      margin-left: 1rem;
+  }
+  </style><style type="text/css">.imgContainer{
+      position: relative;
+      width: 100vw;
+      min-height: 40vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      /* background-color: black; */
+      background-color: #F5F5F5;
+      margin-bottom: 1rem;
+  
+  }
+  .imgStyling{
+      width: 100%;
+      height: auto;
+  }
+  @media (max-width: 40rem) {
+      .imgStyling{
+          width: 100%;
+      }
+  }</style><style type="text/css">.vidContainer{
+      margin-top: 2.8rem;
+  
+      position: relative;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .textStyling{
+      display: flex;
+      flex: 1 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin:5%;
+  }
+  .vidStyling{
+      width: 50vw;
+      height: auto;
+  }
+  @media (max-width: 40rem) {
+      .textStyling{
+          align-items: flex-start;
+      }
+  }
+  
+  @media (max-width: 700px) {
+      .vidContainer{
+          flex-direction: column-reverse
+  
+      }
+      .vidStyling{
+          width: 100vw;
+      }
+     
+      
+  }</style><style type="text/css">.reduceListSpace{
+      line-height: 0.5rem;
+  }
+  .removeLineBreak{
+      display: inline;
+  }
+  .oContainer{
+      display: flex;
+      align-self: stretch;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+  }
+  
+  .hideComma{
+      display: none;
+  }
+  @media (max-width: 980px){
+      .reduceListSpace{
+          line-height: 0.8rem;
+      }
+  }
+  @media (max-width: 600px) {
+      .hideComma{
+          display: inline;
+      }
+      .reduceListSpace{
+          line-height: 0;
+          margin-bottom: 0.5rem;
+      }
+      .removeLineBreak{
+          line-height: 0rem;
+          margin-top: 0;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+      .oContainer{
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+      }
+  }</style><style type="text/css">.cTextCont{
+      margin-top: 2.8rem;
+      display: flex;
+      padding-left: 15%;
+      padding-right: 15%;
+      align-self: stretch;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+  
+  .infoCont{
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+  
+  @media (max-width: 40rem) {
+      .cTextCont{
+          padding: 0;
+      }
+      .infoCont{
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+  
+      }
+  }</style><style type="text/css">.introAndImg{
+      display: flex;
+      /* background-color: black; */
+      align-self: stretch;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 3.45rem;
+      margin-left: 7rem;
+      margin-right: 7rem;
+      width: 75vw;
+      /* max-height: 40rem; */
+      overflow: hidden;
+      margin-bottom: 2rem;
+  }
+  .introCont{ 
+      flex:4/7 1;   
+      padding-right: 1rem;  
+    }
+  
+  .aboutImg{
+      flex: 3/7 1;
+      width:100%;
+      min-width: 19rem;
+      max-width: 23rem;
+      height:auto;
+      object-fit: contain;
+      overflow: hidden;
+  }
+  
+  @media (max-width: 980px) {
+      .introAndImg{
+          margin-top: 3rem;
+          flex-direction: column-reverse;
+          align-self: center;
+          align-items: center;
+         
+      }
+      .introCont{
+          padding-right: 0;
+      }
+      .aboutImg{
+          margin-bottom: 0.5rem;
+      }
+  
+  }</style><style type="text/css">.contContainer{
+      margin-top: 11rem;
+      height: 4rem;
+      width: 90%;
+      align-self: flex-start;
+      margin-left: 1rem;
+  }
+  
+  .tabOver{
+      margin-left: 1rem;
+  }
+  
+  .link{
+      color: #79BFD3
+  }
+  .link:hover{
+   color: #53adc6   
+  }
+  .link:visited{
+      color: #79BFD3
+  }
+  .link:visited:hover{
+      color: #53adc6   
+  }</style><style type="text/css">body {
+   
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+  }
+  html, body, .overall {height: 100%}
+  
+  
+  a{
+    color: #888888;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  
+  }
+  
+  a:hover{
+    color:#444;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  
+  }
+  
+  a:visited {
+    color: #888888;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  a:visited:hover {
+    color:#444;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  
+  </style>
+  <body style="height: 100%;">
+   
+  
+    <div id="root"><div><div class="contContainer"><div class="Typist serif reduceSpace"><span><span class="marker">Whoops!</span></span></div><div class="tabOver"><p class="text reduceSpace"> This page doesn't exist! Try heading back to      <a href="http://cameronraymond.me" class="link">http://cameronraymond.me</a>.</p></div></div></div></div>
+    <!--
+        This HTML file is a template.
+        If you open it directly in the browser, you will see an empty page.
+  
+        You can add webfonts, meta tags, or analytics to this file.
+        The build step will place the bundled scripts into the <body> tag.
+  
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+  <script src="/static/js/bundle.js"></script><script src="/static/js/1.chunk.js"></script><script src="/static/js/main.chunk.js"></script><script src="/main.dc4630bf75d6ce094f30.hot-update.js"></script>
+  
+  </body></html>

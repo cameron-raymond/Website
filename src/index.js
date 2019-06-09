@@ -18,10 +18,11 @@ class MyApp extends React.PureComponent {
       <Router>
         <div>
           <div style={{ position: 'sticky', top: 0, zIndex: 1000 }}><Header /></div>
+          {/* <Error/> */}
           <ScrollToTop>
             <Route exact path="/" component={Home} />
             <Route path="/recycleit" component={RecycleIt} />
-            {/* <Route path="/DII" component={DII} /> */}
+            {/* <Route path="/DII" component={DII} />  */}
             <Route path="/distDelivery" component={DistDelivery} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />

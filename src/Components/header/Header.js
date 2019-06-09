@@ -11,7 +11,7 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header">
-                <Link to="/"><p className="title onHov">cameron<span className="hideHead"> raymond</span></p></Link>
+                <Link to="/"><p className="textEmphasis onHov">cameron<span className="hideHead"> raymond</span></p></Link>
                 <div style={{
                     display: "flex",
                     minWidth: 100,
