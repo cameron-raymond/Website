@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.10.3",
+    "js-yaml": "^3.13.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-drag-drawer": "^3.3.0",
