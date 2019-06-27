@@ -38,7 +38,7 @@ class DistDelivery extends Component {
         </CaseText>
         <CaseText title={"impact"}>	The resulting app has a pleasant, fluid, user experience and is a simple alternative to traditional shipping methods. Due to our team’s ethos of making better use of available space, we were awarded as one of the top 2 projects that foster sustainable cities through the use of artificial intelligence by Telus. </CaseText>
 
-        <Footer linkTitle={"i wanna go home"} linkTitleMobile={"home"} />
+        <Footer to={"contact"}linkTitle={"let's chat"} linkTitleMobile={"let's chat"} />
       </div>
     );
   }

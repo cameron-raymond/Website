@@ -6,7 +6,7 @@ import ScrollToTop from './Assets/ScrollToTop'
 import Header from './Components/header/Header'
 import Home from './Scenes/HomePage/Home';
 import RecycleIt from './Scenes/RecycleIt/RecyleIt'
-// import DII from './Scenes/DigitalInsights/DigInsights'
+import DII from './Scenes/DigitalInsights/DigInsights'
 import DistDelivery from './Scenes/DistDelivery/DistDelivery'
 import About from './Scenes/About/About'
 import Contact from './Scenes/Contact/Contact'
@@ -22,7 +22,7 @@ class MyApp extends React.PureComponent {
           <ScrollToTop>
             <Route exact path="/" component={Home} />
             <Route path="/recycleit" component={RecycleIt} />
-            {/* <Route path="/DII" component={DII} />  */}
+            <Route path="/DII" component={DII} /> 
             <Route path="/distDelivery" component={DistDelivery} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />

@@ -37,9 +37,9 @@ class DII extends Component {
           The resultant app is available across platforms and devices, customizable, automated, and most importantly – consolidates reporting into one consistent language, visually and semantically.
         </CaseText>
         <CaseText title={"impact"}>
-          After 4 months of constant designing, development, and presenting on new iterations – I was fortunate enough to showcase the Insights and Integrations app to CIBC’s CEO Victor Dodig. It was later presented to CIBC’s CTO Deepak \lastname\. By the end of my internship, the app was distributed to 14 high level executives at CIBC Digital.  
+          After 4 months of constant designing, development, and presenting on new iterations – I was fortunate enough to showcase the Insights and Integrations app to CIBC’s CEO Victor Dodig. It was later presented to CIBC’s CTO Deepak Khandelwal. By the end of my internship, the app was distributed to 14 high level executives at CIBC Digital.  
         </CaseText>
-          <Footer to={"distDelivery"} linkTitle={"what else ya got"} linkTitleMobile={"next"} />
+          <Footer to={"recycleIt"} linkTitle={"what else ya got"} linkTitleMobile={"next"} />
       </div>
         );
       }
