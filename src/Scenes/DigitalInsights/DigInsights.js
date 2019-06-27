@@ -5,6 +5,8 @@ import Title from '../../Components/CaseComponents/Title/Title'
 import Image from '../../Components/CaseComponents/Image/Image'
 import Overview from '../../Components/CaseComponents/Overview/Overview'
 import mockup from '../../Assets/DII/DIImockup.webp'
+import altMockup from '../../Assets/DII/DIImockup.JPG'
+
 import CaseText from '../../Components/CaseComponents/TextSection/CaseText'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
 import '../../Assets/standardized.css'
@@ -20,7 +22,7 @@ class DII extends Component {
         <Title title={"Digital Insights and Integration App"}>
           convenient and comprehensive retail banking analytics
         </Title>
-        <Image src={mockup} />
+        <Image src={mockup} altSrc={altMockup} />
         <Overview headers={["technologies", "buzzwords", "timeline"]} elements={[["react native", "firebase", "python"], ["data analytics", "data visualization"], ["june 18'-august 18"]]}>technologies</Overview>
         <CaseText title={"problem"}>	CIBC Digital’s Insights and Analytics team is responsible for breaking down data, from various streams and platforms, into actionable insights regarding customers’ digital experience. This involves a large amount of consolidating data and is a time consuming process that needs to be repeated at regular intervals. More time spent organizing, consolidating and visualizing data means there’s less time the team is able to spend reporting on why these various trends matter. Therefore, the problem that needed to be addressed was: ‘how can we automate the organization and visualization so that Insights and Analytics can spend more time working on analysis?'</CaseText>
         <CaseText title={"methodology"}>
