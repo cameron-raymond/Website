@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import reveal from '../../Components/HOC/scrollReveal/Reveal'
-import './about.css'
 
-class RevAbout extends Component {
+class RevAbout extends PureComponent {
     render() {
         return (
             <div className="tabOver">

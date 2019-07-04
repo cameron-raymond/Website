@@ -4,8 +4,6 @@ import analytics from '../../Components/HOC/analytics/Analytics'
 import Intro from './IntroAndImg'
 import Overview from '../../Components/CaseComponents/Overview/Overview'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
-import '../../Assets/standardized.css'
-import './about.css'
 
 class About extends Component {
   render() {
