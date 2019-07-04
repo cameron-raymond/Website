@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import '../../../Assets/standardized.css'
 import reveal from '../../HOC/scrollReveal/Reveal'
-import './casetext.css'
+import styles from './casetext.module.css'
 
 class CaseText extends Component {
   render() {
     return (
-        <div className="cTextCont">
+        <div className={styles.cTextCont}>
             <p className="serif marker reduceSpace">{this.props.title}</p>
-            <div className="infoCont">
+            <div className={styles.infoCont}>
                 <p className="text reduceSpace">{this.props.children}</p>
             </div>
         </div>
