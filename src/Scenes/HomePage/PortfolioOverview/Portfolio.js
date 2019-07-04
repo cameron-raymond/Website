@@ -8,21 +8,21 @@ import DII from '../../../Assets/DII/DIILogo.webp'
 import altDII from '../../../Assets/DII/DIILogo.PNG'
 import dist from '../../../Assets/distDelivery/distDelivery.webp'
 import altDist from '../../../Assets/distDelivery/distDelivery.png'
-import './portfolio.css';
+import styles from './portfolio.module.css';
 
 
 class Portfolio extends Component {
   render() {
     return (
-      <div className="pContainer">
-          <Link to="/DII">
-            <Card subtitle={"React Native"} altSrc={altDII} src={DII}>Digital Insights</Card>
-          </Link>
-                <div className="offset">
-
-        <Link to="/recycleit">
-          <Card subtitle={"React Native"} altSrc={altRiT} src={RiT}>RecycleIt.</Card>
+      <div className={styles.container}>
+        <Link to="/DII">
+          <Card subtitle={"React Native"} altSrc={altDII} src={DII}>Digital Insights</Card>
         </Link>
+        <div className={styles.offset}>
+
+          <Link to="/recycleit">
+            <Card subtitle={"React Native"} altSrc={altRiT} src={RiT}>RecycleIt.</Card>
+          </Link>
         </div>
 
         <Link to="/distDelivery">
