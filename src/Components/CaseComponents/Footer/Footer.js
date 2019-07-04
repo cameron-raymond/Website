@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
-import '../../../Assets/standardized.css'
 import styles from './footer.module.css'
 
 class Footer extends PureComponent {

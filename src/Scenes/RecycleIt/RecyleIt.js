@@ -10,7 +10,6 @@ import mockup from '../../Assets/RIT/RItmockup.webp'
 import altMockup from '../../Assets/RIT/RItmockup.png';
 import CaseText from '../../Components/CaseComponents/TextSection/CaseText'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
-import '../../Assets/standardized.css'
 
 class RecycleIt extends Component {
   render() {

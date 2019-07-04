@@ -3,7 +3,6 @@ import analytics from '../../Components/HOC/analytics/Analytics'
 import Intro from './Intro/Intro';
 import Portfolio from './PortfolioOverview/Portfolio'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
-import '../../Assets/standardized.css'
 
 class Home extends React.Component {
 

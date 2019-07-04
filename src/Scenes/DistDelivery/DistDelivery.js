@@ -10,7 +10,6 @@ import Footer from '../../Components/CaseComponents/Footer/Footer'
 import userFlow from '../../Assets/distDelivery/ddVideo.mp4'
 import mockup from '../../Assets/distDelivery/ddMockUp.webp'
 import altMockup from '../../Assets/distDelivery/ddMockUp.png'
-import '../../Assets/standardized.css'
 class DistDelivery extends Component {
   render() {
     return (

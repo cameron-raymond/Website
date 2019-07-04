@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../../Assets/standardized.css'
 import reveal from '../../HOC/scrollReveal/Reveal'
 import styles from './casetext.module.css'
 

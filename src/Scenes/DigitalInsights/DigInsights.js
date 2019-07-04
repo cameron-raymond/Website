@@ -9,7 +9,6 @@ import altMockup from '../../Assets/DII/DIImockup.JPG'
 
 import CaseText from '../../Components/CaseComponents/TextSection/CaseText'
 import Footer from '../../Components/CaseComponents/Footer/Footer'
-import '../../Assets/standardized.css'
 
 class DII extends Component {
   render() {

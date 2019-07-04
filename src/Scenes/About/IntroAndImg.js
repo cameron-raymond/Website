@@ -3,7 +3,6 @@ import Typist from 'react-typist';
 import Blurb from './RevAbout'
 import portrait from '../../Assets/portrait.webp'
 import altPortrait from '../../Assets/portrait.png'
-import '../../Assets/standardized.css'
 import styles from './about.module.css'
 
 class Intro extends Component {
