@@ -14,10 +14,12 @@ import './index.css'
 
 class MyApp extends React.PureComponent {
   render() {
+    const isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+    const pos = isSafari ? '-webkit-sticky' : 'sticky'
     return (
       <Router>
         <div>
-          <div style={{ position: 'sticky', top: 0, zIndex: 1000 , alignSelf:'stretch', backgroundColor:'white'}}><Header /></div>
+          <div style={{ position: pos, top: 0, zIndex: 1000,alignSelf:'stretch', backgroundColor:'white' }}><Header /></div>
           {/* <Error/> */}
           <ScrollToTop>
             <Route exact path="/" component={Home} />
