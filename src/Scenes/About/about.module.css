@@ -1,6 +1,5 @@
 .introAndImg{
     display: flex;
-    /* background-color: black; */
     align-self: stretch;
     flex-direction: row;
     justify-content: space-between;
@@ -9,7 +8,6 @@
     margin-left: 7rem;
     margin-right: 7rem;
     width: 75vw;
-    /* max-height: 40rem; */
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -21,7 +19,6 @@
 .aboutImg{
     flex: 3/7;
     width:100%;
-    min-width: 19rem;
     max-width: 23rem;
     height:auto;
     object-fit: contain;
@@ -32,6 +29,7 @@
     .introAndImg{
         margin-top: 3rem;
         flex-direction: column-reverse;
+        justify-content: flex-end;
         align-self: center;
         align-items: center;
        
