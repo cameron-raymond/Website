@@ -57,6 +57,13 @@ a:visited:hover {
   font-weight: 300;
   color: #888888;
 }
+
+.subheading{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.0rem;
+  font-weight: 300;
+  color: #888888;
+}
 .caseContainer{
   display: flex;
   flex: 1;
@@ -81,6 +88,9 @@ a:visited:hover {
   
   .text,.textEmphasis{
       font-size: 0.9rem;    
+  }
+  .subheading{
+    font-size: 0.8rem;
   }
 }
 

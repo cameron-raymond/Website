@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
+import Emoji from '../../../Components/Emoji'
 import styles from './footer.module.css'
 
 class Footer extends PureComponent {
@@ -9,10 +10,11 @@ class Footer extends PureComponent {
       <div className={styles.footer}>
       
         <div className={styles.footInfo}>
-          <p className="textEmphasis">&copy; 2019 cameron raymond</p>
-          <a href="mailto:c.raymond@queensu.ca" className="text">c.raymond@queensu.ca</a>
-          <a href="https://linkedin.com/in/cameron-raymond/" className="text">linkedIn</a>
-          <a href="https://github.com/cameron-raymond" className="text">github</a>
+          <p className="subheading"><Emoji symbol="👨‍🎨"/> and <Emoji symbol="👷‍♂️"/> by me as of July 7, 2019</p>
+
+          <a href="mailto:c.raymond@queensu.ca" className="subheading">c.raymond@queensu.ca</a>
+          <a href="https://linkedin.com/in/cameron-raymond/" className="subheading">linkedIn</a>
+          <a href="https://github.com/cameron-raymond" className="subheading">github</a>
         </div>
 
         <Link to={this.props.to ? this.props.to : '/'}>
