@@ -6,7 +6,7 @@ import styles from './footer.module.css'
 class Footer extends PureComponent {
   
   render() {
-    const lastUpdated = '07-09-19';
+    const lastUpdated = '07-test-19';
     return (
       <div className={styles.footer}>
       
