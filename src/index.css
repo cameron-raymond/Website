@@ -8,17 +8,43 @@ body {
 }
 html, body, .overall {height: 100%}
 
-
-a{
+a {
   color: #888888;
   text-decoration: none;
-  transition: 0.5s;
-
+  transition: 0.3s;
+  display: inline;
+  position: relative;
+  overflow: hidden;
 }
+a:after {
+  content: "";
+  position: absolute;
+  color:#444;
+
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: 0px;
+  background: rgb(121,191,211,0.3);
+  height: 1px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+a:hover:after,
+a:focus:after,
+a:active:after {
+  color:#444;
+
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
 
 a:hover{
   color:#444;
-  transition: 0.5s;
+  transition: 0.3s;
 
 }
 
