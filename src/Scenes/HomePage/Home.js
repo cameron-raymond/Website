@@ -2,7 +2,7 @@ import React from 'react'
 import analytics from '../../Components/HOC/analytics/Analytics'
 import Intro from './Intro/Intro';
 import Portfolio from './PortfolioOverview/Portfolio'
-import Footer from '../../Components/CaseComponents/Footer/Footer'
+import Footer from '../../Components/Footer/Footer'
 
 class Home extends React.Component {
 

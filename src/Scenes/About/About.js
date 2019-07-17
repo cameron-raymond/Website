@@ -3,7 +3,7 @@ import {Helmet} from 'react-helmet'
 import analytics from '../../Components/HOC/analytics/Analytics'
 import Intro from './IntroAndImg'
 import Overview from '../../Components/CaseComponents/Overview/Overview'
-import Footer from '../../Components/CaseComponents/Footer/Footer'
+import Footer from '../../Components/Footer/Footer'
 
 class About extends Component {
   render() {

@@ -8,7 +8,7 @@ import mockup from '../../Assets/DII/DIImockup.webp'
 import altMockup from '../../Assets/DII/DIImockup.JPG'
 
 import CaseText from '../../Components/CaseComponents/TextSection/CaseText'
-import Footer from '../../Components/CaseComponents/Footer/Footer'
+import Footer from '../../Components/Footer/Footer'
 
 class DII extends Component {
   render() {
