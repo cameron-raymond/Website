@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
-import Emoji from '../../../Components/Emoji'
+import Emoji from '../Emoji'
 import styles from './footer.module.css'
 
 class Footer extends PureComponent {

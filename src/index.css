@@ -1,14 +1,16 @@
 body {
- 
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
 }
-html, body, .overall {height: 100%}
 
-a {
+html, body, .overall {
+  height: 100%
+}
+
+a,a:visited {
   color: #888888;
   text-decoration: none;
   transition: 0.3s;
@@ -16,81 +18,70 @@ a {
   position: relative;
   overflow: hidden;
 }
+
 a:after {
   content: "";
   position: absolute;
-  color:#444;
-
+  color: #444;
   z-index: -1;
   right: 0;
   width: 0;
   bottom: 0px;
-  background: rgb(121,191,211,0.3);
+  background: rgb(121, 191, 211, 0.3);
   height: 1px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
-a:hover:after,
-a:focus:after,
-a:active:after {
-  color:#444;
 
+a:hover:after, a:focus:after, a:active:after {
+  color: #444;
   left: 0;
   right: auto;
   width: 100%;
 }
 
-
-a:hover{
-  color:#444;
+a:hover, a:visited:hover {
+  color: #444;
   transition: 0.3s;
-
 }
 
-a:visited {
-  color: #888888;
-  transition: 0.5s;
-}
-a:visited:hover {
-  color:#444;
-  transition: 0.5s;
-}
 
-.serif{
+.serif {
   font-family: 'Frank Ruhl Libre', serif;
-  font-size: 1.45rem;   
+  font-size: 1.45rem;
   color: #888888;
 }
 
-.title{
+.title {
   font-family: 'Nunito', sans-serif;
   font-size: 1.45rem;
   font-weight: 400;
   color: #737373
 }
 
-
-.textEmphasis{
+.textEmphasis {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #737373
 }
-.text{
+
+.text {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
   color: #888888;
 }
 
-.subheading{
+.subheading {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   font-weight: 300;
   color: #888888;
 }
-.caseContainer{
+
+.caseContainer {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -98,51 +89,48 @@ a:visited:hover {
   align-items: center;
 }
 
-
-
-.reduceSpace { margin-top: 0.2rem; margin-bottom: 0.2rem }
-
+.reduceSpace {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem
+}
 
 @media (max-width: 40rem) {
-  .serif{
-      font-size: 1.15rem;       
+  .serif {
+    font-size: 1.15rem;
   }
-  
-  .title{
-      font-size: 1.15rem;    
+  .title {
+    font-size: 1.15rem;
   }
-  
-  .text,.textEmphasis{
-      font-size: 0.9rem;    
-  }
-  .subheading{
+  .text, .textEmphasis {
     font-size: 0.8rem;
+  }
+  .subheading {
+    font-size: 0.7rem;
   }
 }
 
-
-.light{
+.light {
   color: #F5F5F5
 }
 
-.secondary{
+.secondary {
   color: #888888
 }
-.primary, .primary:visited{
+
+.primary, .primary:visited {
   color: #737373
 }
 
-
-.highlight{
-  color: rgb(121,191,211,0.3)
+.highlight {
+  color: rgb(121, 191, 211, 0.3)
 }
 
 .marker {
   display: inline-block;
-  position: relative;    
-  
+  position: relative;
 }
-.marker:before{
+
+.marker:before {
   z-index: -1;
   display: inline-block;
   position: absolute;
@@ -151,21 +139,19 @@ a:visited:hover {
   content: "";
   height: 40%;
   width: 100%;
-  transform:  translatey(0.2em);
+  transform: translatey(0.2em);
 }
 
-
-.onHov{
+.onHov {
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
-.onHov:hover{
-  color:#444;
-  transition: 0.5s;
-
+.onHov:hover {
+  color: #444;
+  transition: 0.3s;
 }
 
-.tabOver{
+.tabOver {
   margin-left: 1rem;
 }

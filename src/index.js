@@ -19,8 +19,7 @@ class MyApp extends React.PureComponent {
     return (
       <Router>
         <div>
-          <div style={{ position: pos, top: 0, zIndex: 1000,alignSelf:'stretch' }}><Header /></div>
-          {/* <Error/> */}
+          <Header />
           <ScrollToTop>
             <Route exact path="/" component={Home} />
             <Route path="/recycleit" component={RecycleIt} />
