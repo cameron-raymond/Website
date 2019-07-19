@@ -13,7 +13,7 @@ html, body, .overall {
 a,a:visited {
   color: #888888;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
   display: inline;
   position: relative;
   overflow: hidden;
@@ -30,7 +30,7 @@ a:after {
   background: rgb(121, 191, 211, 0.3);
   height: 1px;
   transition-property: width;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
 
@@ -43,7 +43,7 @@ a:hover:after, a:focus:after, a:active:after {
 
 a:hover, a:visited:hover {
   color: #444;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 
@@ -144,12 +144,12 @@ a:hover, a:visited:hover {
 
 .onHov {
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .onHov:hover {
   color: #444;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .tabOver {

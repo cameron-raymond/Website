@@ -18,7 +18,7 @@ class DII extends Component {
           <title>Digital Insights and Integrations - Cameron Raymond</title>
           <meta name="description" content="A convenient and comprehensive retail banking analytics developed by Cameron Raymond with React Native." />
         </Helmet>
-        <Title title={"Digital Insights and Integration App"}>
+        <Title title={"Digital Insights and Integration"}>
           convenient and comprehensive retail banking analytics
         </Title>
         <Image src={mockup} altSrc={altMockup} />

@@ -5,3 +5,9 @@
     align-self: flex-start;
     margin-left: 1rem;
 }
+@media (max-width: 40rem) {
+    .caseTitle{
+        margin-left: 0;
+
+    }
+}
