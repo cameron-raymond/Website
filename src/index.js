@@ -14,8 +14,6 @@ import './index.css'
 
 class MyApp extends React.PureComponent {
   render() {
-    const isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-    const pos = isSafari ? '-webkit-sticky' : 'sticky'
     return (
       <Router>
         <div>
