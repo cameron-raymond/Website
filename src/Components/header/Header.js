@@ -18,9 +18,9 @@ class Header extends React.Component {
     hideBar = () => {
         const { isHide } = this.state
         window.scrollY > this.prev ?
-            !isHide && this.setState({ isHide: true, style: styles.header + ' ' + styles.navUp })
+            !isHide && this.setState({ isHide: true })
             :
-            isHide && this.setState({ isHide: false, style: styles.header });
+            isHide && this.setState({ isHide: false});
 
         this.prev = window.scrollY;
     }
@@ -33,9 +33,9 @@ class Header extends React.Component {
         window.removeEventListener('scroll', this.hideBar);
     }
     render() {
-
+        var headerStyle = this.state.isHide ? styles.header + ' ' + styles.navUp : styles.header
         return (
-            <div className={this.state.style}>
+            <div className={headerStyle}>
                 <Link to="/"><p className="textEmphasis onHov">cameron<span className={styles.hideHead}> raymond</span></p></Link>
                 <div style={{
                     display: "flex",
