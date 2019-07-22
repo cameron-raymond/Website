@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FiUser, FiMessageSquare, FiClipboard } from 'react-icons/fi';
 import ReactGA from 'react-ga';
 import styles from './header.module.css'
@@ -36,7 +36,7 @@ class Header extends React.Component {
         var headerStyle = this.state.isHide ? styles.header + ' ' + styles.navUp : styles.header
         return (
             <div className={headerStyle}>
-                <Link to="/"><p className="textEmphasis onHov">cameron<span className={styles.hideHead}> raymond</span></p></Link>
+<NavLink to="/"><p className="textEmphasis onHov">cameron<span className={styles.hideHead}> raymond</span></p></NavLink>
                 <div style={{
                     display: "flex",
                     minWidth: 100,
@@ -51,8 +51,8 @@ class Header extends React.Component {
                     >
                         <p className="textEmphasis onHov"><span className={styles.hideIcons}><FiClipboard /></span><span className={styles.hideLinks}>resumé</span></p>
                     </ReactGA.OutboundLink>
-                    <Link to="/about"><p className="text onHov" ><span className={styles.hideIcons}><FiUser /></span><span className={styles.hideLinks}>about</span></p></Link>
-                    <Link to="/contact"> <p className="text onHov" ><span className={styles.hideIcons}><FiMessageSquare /></span><span className={styles.hideLinks}>contact</span></p></Link>
+    <NavLink exact activeClassName={styles.active} className="text" to="/about"><p><span className={styles.hideIcons}><FiUser /></span><span className={styles.hideLinks}>about</span></p></NavLink>
+    <NavLink exact activeClassName={styles.active} className="text" to="/contact"> <p ><span className={styles.hideIcons}><FiMessageSquare /></span><span className={styles.hideLinks}>contact</span></p></NavLink>
                 </div>
 
             </div>
