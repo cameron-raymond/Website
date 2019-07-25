@@ -20,7 +20,7 @@ class Header extends React.Component {
         window.scrollY > this.prev ?
             !isHide && this.setState({ isHide: true })
             :
-            isHide && this.setState({ isHide: false});
+            isHide && this.setState({ isHide: false });
 
         this.prev = window.scrollY;
     }
@@ -36,7 +36,7 @@ class Header extends React.Component {
         var headerStyle = this.state.isHide ? styles.header + ' ' + styles.navUp : styles.header
         return (
             <div className={headerStyle}>
-<NavLink to="/"><p className="textEmphasis onHov">cameron<span className={styles.hideHead}> raymond</span></p></NavLink>
+                <NavLink to="/" style={styles.noUnderline}><p className="textEmphasis onHov">cameron<span className={styles.hideHead}> raymond</span></p></NavLink>
                 <div style={{
                     display: "flex",
                     minWidth: 100,
@@ -51,8 +51,8 @@ class Header extends React.Component {
                     >
                         <p className="textEmphasis onHov"><span className={styles.hideIcons}><FiClipboard /></span><span className={styles.hideLinks}>resumé</span></p>
                     </ReactGA.OutboundLink>
-    <NavLink exact activeClassName={styles.active} className="text" to="/about"><p><span className={styles.hideIcons}><FiUser /></span><span className={styles.hideLinks}>about</span></p></NavLink>
-    <NavLink exact activeClassName={styles.active} className="text" to="/contact"> <p ><span className={styles.hideIcons}><FiMessageSquare /></span><span className={styles.hideLinks}>contact</span></p></NavLink>
+                    <NavLink exact className="text" to="/about"><p><span className={styles.hideIcons}><FiUser /></span><span className={styles.hideLinks}>about</span></p></NavLink>
+                    <NavLink exact className="text" to="/contact"> <p ><span className={styles.hideIcons}><FiMessageSquare /></span><span className={styles.hideLinks}>contact</span></p></NavLink>
                 </div>
 
             </div>

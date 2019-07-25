@@ -19,7 +19,6 @@ class About extends Component {
         <Intro />
         <Overview headers={["what i'm reading", "what i'm listening to", "all time favourites"]}
           elements={[books, pastYearAlbums, allTimeAlbums]} />
-        <p className="subheading">Check out some of my work that's been featured on <a href="https://www.designideas.pics/recycleit/">DesignIdeas</a>.</p>
         <Footer to={"contact"} linkTitle={"contact"} linkTitleMobile={"contact"} />
 
       </div>

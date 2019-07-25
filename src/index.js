@@ -7,6 +7,7 @@ import Header from './Components/header/Header'
 import Home from './Scenes/HomePage/Home';
 import RecycleIt from './Scenes/RecycleIt/RecyleIt'
 import DII from './Scenes/DigitalInsights/DigInsights'
+import PS from './Scenes/PublicisSapient/PublicisSapient'
 import DistDelivery from './Scenes/DistDelivery/DistDelivery'
 import About from './Scenes/About/About'
 import Contact from './Scenes/Contact/Contact'
@@ -25,6 +26,7 @@ class MyApp extends React.PureComponent {
             <Route path="/distDelivery" component={DistDelivery} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/publicissapient" component={PS}/>
           </ScrollToTop>
         </div>
       </Router>
