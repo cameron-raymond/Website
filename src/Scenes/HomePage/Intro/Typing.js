@@ -17,7 +17,7 @@ class Typing extends PureComponent {
         <Typist.Delay ms={800} />
         <br/>
         <span>i am a </span>
-        <span className="marker">software developer, </span>
+        <span ><a href="https://github.com/cameron-raymond" >software developer</a>, </span>
         <Typist.Delay ms={500} />
         <span> and <span className="marker">student</span> </span>
         <Typist.Delay ms={200} />
