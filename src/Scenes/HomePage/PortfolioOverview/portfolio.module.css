@@ -1,12 +1,13 @@
 .container{
   margin-top: 7.5rem;
+  max-width: 30rem;
   display: flex;
   flex:1;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
-  align-self: stretch;
+  align-self: center;
 }
 
 .noUnderline:after {
