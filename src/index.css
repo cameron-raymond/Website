@@ -7,7 +7,7 @@ body {
 }
 
 a,a:visited {
-  /* color: #888888; */
+  color: #888888;
   text-decoration: none;
   transition: 0.5s;
   display: inline;
