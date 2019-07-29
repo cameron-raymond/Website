@@ -1,6 +1,7 @@
 .container{
   margin-top: 7.5rem;
-  max-width: 30rem;
+
+  max-width: 80rem;
   display: flex;
   flex:1;
   flex-direction: row;
