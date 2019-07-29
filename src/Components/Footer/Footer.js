@@ -9,7 +9,7 @@ class Footer extends PureComponent {
     // when you run npm deploy, it calls the deploy.sh shell script. Amongst other things it (like committing changes and stuff),
     // it uses sed to find the lastUpdated variable and change its value to todays date. That way I don't have
     // to change anything manually and whenever I deploy a new version it automatically updates.
-    const lastUpdated = '07-25-19';
+    const lastUpdated = '07-28-19';
     return (
       <div className={styles.footer}>
       
