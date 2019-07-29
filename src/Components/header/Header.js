@@ -40,6 +40,7 @@ class Header extends React.Component {
                 <div style={{
                     display: "flex",
                     minWidth: 100,
+                    maxWidth: 250,
                     flex: 0.25,
                     flexDirection: "row",
                     justifyContent: "space-between",
