@@ -7,7 +7,7 @@ body {
 }
 
 a,a:visited {
-  color: #888888;
+  /* color: #888888; */
   text-decoration: none;
   transition: 0.5s;
   display: inline;
@@ -46,21 +46,21 @@ a:hover, a:visited:hover {
 .serif {
   font-family: 'Frank Ruhl Libre', serif;
   font-size: 1.45rem;
-  color: #888888;
+  color: #555;
 }
 
 .title {
   font-family: 'Nunito', sans-serif;
   font-size: 1.45rem;
   font-weight: 400;
-  color: #737373
+  color: #555
 }
 
 .textEmphasis {
   font-family: 'Nunito', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
-  color: #737373
+  color: #555
 }
 
 .text {
@@ -114,7 +114,7 @@ a:hover, a:visited:hover {
 }
 
 .primary, .primary:visited {
-  color: #737373
+  color: #555
 }
 
 .highlight {
