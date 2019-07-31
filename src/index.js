@@ -1,11 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
 // import { render } from 'react-snapshot';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from "react-router-dom"
 import ScrollToTop from "./Assets/ScrollToTop"
 // eslint-disable-next-line no-unused-vars
 import Header from "./Components/header/Header"
-import Home from "./Scenes/HomePage/Home";
+import Home from "./Scenes/HomePage/Home"
 import RecycleIt from "./Scenes/RecycleIt/RecyleIt"
 import DII from "./Scenes/DigitalInsights/DigInsights"
 import PS from "./Scenes/PublicisSapient/PublicisSapient"

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 import reveal from "../../HOC/scrollReveal/Reveal"
 import styles from "./casetext.module.css"
 
@@ -14,6 +15,11 @@ class CaseText extends Component {
 		)
 	}
 }
+CaseText.propTypes = {
+	title: PropTypes.string,
+	children: PropTypes.string,
+}
+
 export default reveal(CaseText)
 
 

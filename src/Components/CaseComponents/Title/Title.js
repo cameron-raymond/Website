@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react"
+import PropTypes from "prop-types"
 import Typist from "react-typist"
 import styles from "./title.module.css"
 
@@ -14,6 +15,11 @@ class Title extends PureComponent {
 			</div>
 		)
 	}
+}
+
+Title.propTypes = {
+	title: PropTypes.string,
+	children: PropTypes.string,
 }
 
 export default Title
