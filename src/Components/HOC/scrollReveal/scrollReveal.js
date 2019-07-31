@@ -1,2 +1,2 @@
-import ScrollReveal from 'scrollreveal';
-export default ScrollReveal();
+import ScrollReveal from "scrollreveal"
+export default ScrollReveal()
