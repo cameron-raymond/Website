@@ -36,7 +36,7 @@ Footer.propTypes = {
 Footer.defaultProps ={
 	to: "/",
 	linkTitle: "i wanna go home",
-	next: "next"
+	next: "home"
 }
 export default Footer
 

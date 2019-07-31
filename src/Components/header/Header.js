@@ -14,7 +14,6 @@ class Header extends React.Component {
 		}
 	}
 
-
     hideBar = () => {
     	const { isHide } = this.state
     	window.scrollY > this.prev ?
