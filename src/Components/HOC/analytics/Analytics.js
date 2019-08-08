@@ -7,7 +7,7 @@ export default function reveal(WrappedComponent, pageName) {
 			ReactGA.initialize("UA-133541363-1")
 			ReactGA.pageview(pageName)
 		}
-		componentWillMount() {
+		UNSAFE_componentWillMount() {
 			if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
 				console.log("dev")
 			} else {

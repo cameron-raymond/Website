@@ -1,9 +1,10 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 import VidComp from "./VidComponent"
 import reveal from "../../HOC/scrollReveal/Reveal"
 import styles from  "./vid.module.css"
-class Video extends Component {
 
+class Video extends Component {
 	render() {
 		return (
 			<div className={styles.vidContainer}> 
@@ -18,5 +19,12 @@ class Video extends Component {
 		)
 	}
 }
+Video.propTypes = {
+	src: PropTypes.node.isRequired,
+	altSrc: PropTypes.node.isRequired,
+	children: PropTypes.any,
+	title: PropTypes.any
+}
+
 
 export default reveal(Video)

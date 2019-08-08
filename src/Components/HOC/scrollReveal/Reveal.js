@@ -10,6 +10,7 @@ export default function reveal(WrappedComponent) {
 		}
  
 		componentDidMount() {
+			// eslint-disable-next-line react/no-find-dom-node
 			const domElement = ReactDOM.findDOMNode(this.component)
 			scrollReveal.reveal(domElement,{ viewFactor: 0.21, reset: true})
 		}

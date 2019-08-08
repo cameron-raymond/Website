@@ -9,7 +9,7 @@ class Contact extends Component {
 		return (
 			<div className={styles.container}>
 				<Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className="serif reduceSpace">
-					<span>let's <span className="marker"> get in touch</span></span>
+					<span>let&apos;s <span className="marker"> get in touch</span></span>
 				</Typist>
 				<Info/>
 			</div>  

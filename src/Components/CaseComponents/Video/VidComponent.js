@@ -1,5 +1,7 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 import styles from  "./vid.module.css"
+
 
 class VidComp extends Component {
 
@@ -11,5 +13,9 @@ class VidComp extends Component {
 		)
 	}
 }
+VidComp.propTypes = {
+	src: PropTypes.node.isRequired,
+}
+
 
 export default VidComp

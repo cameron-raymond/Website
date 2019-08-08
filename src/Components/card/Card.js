@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 import reveal from "../HOC/scrollReveal/Reveal"
 import styles from "./card.module.css"
 
@@ -17,6 +18,12 @@ class Card extends Component {
   		</div>
   	)
   }
+}
+Card.propTypes = {
+	src: PropTypes.node.isRequired,
+	altSrc: PropTypes.node.isRequired,
+	children: PropTypes.any,
+	subtitle: PropTypes.any
 }
 
 // export default reveal(Card);
