@@ -16,24 +16,27 @@ class Portfolio extends Component {
 	render() {
 		return (
 			<div className={styles.container}>
-				<Link className={styles.noUnderline} to="/DII">
-					<Card subtitle={"React Native"} altSrc={altDII} src={DII}>Digital Insights</Card>
-				</Link>
-				<div className={styles.offset}>
+				<span>
+					<Link className={styles.noUnderline} to="/DII">
+						<Card subtitle={"React Native"} altSrc={altDII} src={DII}>Digital Insights</Card>
+					</Link>
+				</span>
+				<span className={styles.offset}>
 					<Link className={styles.noUnderline} to="/publicissapient">
 						<Card subtitle={"Product Management"} altSrc={altTrendr} src={trendr}>Trendr</Card>
 					</Link>
-				</div>
+				</span>
+				<span>
+					<Link className={styles.noUnderline} to="/recycleit">
+						<Card subtitle={"React Native"} altSrc={altRiT} src={RiT}>RecycleIt.</Card>
+					</Link>
+				</span>
 
-				<Link className={styles.noUnderline} to="/recycleit">
-					<Card subtitle={"React Native"} altSrc={altRiT} src={RiT}>RecycleIt.</Card>
-				</Link>
-
-				<div className={styles.offset}>
+				<span className={styles.offset}>
 					<Link className={styles.noUnderline} to="/distDelivery">
 						<Card subtitle={"React.js"} altSrc={altDist} src={dist}>Distributed Delivery</Card>
 					</Link>
-				</div>
+				</span>
 
 
 			</div>
