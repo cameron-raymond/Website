@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import reveal from "../HOC/scrollReveal/Reveal"
 import styles from "./card.module.css"
 
