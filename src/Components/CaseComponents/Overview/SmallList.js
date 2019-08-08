@@ -6,7 +6,7 @@ class SmallList extends PureComponent {
     handleList = (arr) => {
     	return arr.map((val, index) => {
     		if (index < arr.length - 1) {
-    			return <p className={"text"}>&nbsp;&nbsp;{val}<span className={styles.hideComma}>,</span></p>
+    			return <p key={index} className={"text"}>&nbsp;&nbsp;{val}<span className={styles.hideComma}>,</span></p>
     		}
     		return <p key={"end"} className={"text"}>&nbsp;&nbsp;{val}</p>
     	}

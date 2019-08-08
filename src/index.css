@@ -2,11 +2,11 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
-a,a:visited {
+a, a:visited {
   color: #888888;
   text-decoration: none;
   transition: 0.5s;
@@ -42,7 +42,6 @@ a:hover, a:visited:hover {
   transition: 0.5s;
 }
 
-
 .serif {
   font-family: 'Frank Ruhl Libre', serif;
   font-size: 1.45rem;
@@ -50,28 +49,28 @@ a:hover, a:visited:hover {
 }
 
 .title {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.45rem;
   font-weight: 400;
   color: #555
 }
 
 .textEmphasis {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   color: #555
 }
 
 .text {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
   font-weight: 300;
   color: #888888;
 }
 
 .subheading {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
   color: #888888;
