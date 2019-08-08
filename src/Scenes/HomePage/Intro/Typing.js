@@ -12,12 +12,11 @@ class Typing extends PureComponent {
 				<span>nice to meet you, </span>
 				<Typist.Delay ms={500} />
 				<span>my name is </span>
-				<span className="marker"><a href="https://linkedin.com/in/cameron-raymond/" className="primary">cameron</a></span>
-        
+				<span className="marker">cameron</span>
 				<Typist.Delay ms={800} />
 				<br/>
 				<span>i am a </span>
-				<span className="marker" ><a href="https://github.com/cameron-raymond" className="primary">software developer</a>, </span>
+				<span className="marker" >software developer, </span>
 				<Typist.Delay ms={500} />
 				<span> and <span className="marker">student</span> </span>
 				<Typist.Delay ms={200} />
