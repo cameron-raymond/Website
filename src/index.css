@@ -103,7 +103,9 @@ a:hover, a:visited:hover {
     font-size: 0.7rem;
   }
 }
-
+.italic{
+  font-style: italic;
+}
 .light {
   color: #F5F5F5
 }
