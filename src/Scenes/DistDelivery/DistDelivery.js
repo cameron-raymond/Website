@@ -30,7 +30,7 @@ class DistDelivery extends Component {
         There are two problems that Distributed Delivery attempts to address, the rising cost of shipping and the current wealth of unused trunk space. A platform to address these issues must connect those looking to ship items and drivers willing to pick up and deliver them. Furthermore, it should be done in a way that encourages trust and is convenient for both types of users. This blueprint for Distributed Delivery draws on current trends in sharing economies and allows users to earn extra income on an ad-hoc basis.  
 				</CaseText>
 				<Video src={userFlow} title="timely"> 
-        "Distributed Delivery draws on current trends in sharing economies and allows users to earn extra income on an ad-hoc basis." 
+				&ldquo;Distributed Delivery draws on current trends in sharing economies and allows users to earn extra income on an ad-hoc basis.&ldquo; 
 				</Video>
 				<CaseText title={"solution"}>
         Due to the time constraints of a weekend hackathon and the relative lack of web dev experience on my team we agreed that the front-end had to be simple, quick to use, and have minimal steps between the start of the form and end result. Therefore, we decided on a React.js frontend and firebase backend to store user information. After the user completes the form they are matched with a driver who’s driving that distance, during the timeframe specified. Drivers are paid a variable amount depending on the distance they drive, how far out of the way they have to go to deliver the package, and how many other drivers are listed. To request a deliver, or enroll to deliver, can be done in 5 steps and under a minute. 
