@@ -7,7 +7,7 @@ class CaseText extends Component {
 	render() {
 		return (
 			<div className={styles.cTextCont}>
-				<p className="serif marker reduceSpace">{this.props.title}</p>
+				<h2 className="marker reduceSpace">{this.props.title}</h2>
 				<div className={styles.infoCont}>
 					<p className="text reduceSpace">{this.props.children}</p>
 				</div>

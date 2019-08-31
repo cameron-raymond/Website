@@ -8,13 +8,15 @@ class Contact extends Component {
 	render() {
 		return (
 			<div className={styles.container}>
-				<Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className="serif reduceSpace">
-					<span>let&apos;s <span className="marker"> get in touch</span></span>
-				</Typist>
-				<Info/>
-			</div>  
+				<h1>
+					<Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className="reduceSpace">
+						<span>let&apos;s <span className="marker"> get in touch</span></span>
+					</Typist>
+				</h1>
+				<Info />
+			</div>
 		)
 	}
 }
 
-export default analytics(Contact,"/contact")
+export default analytics(Contact, "/contact")

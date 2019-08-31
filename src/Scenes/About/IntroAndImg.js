@@ -13,9 +13,11 @@ class Intro extends Component {
   	return (
   		<div className={styles.introAndImg}>
   			<div className={styles.introCont}>
-  				<Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className="serif">
+				  <h1>
+  				<Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30}>
   					<span>nice to meet you, my name is <span className="marker">cameron</span></span>
   				</Typist>
+				  </h1>
   				<Blurb />
   			</div>
 

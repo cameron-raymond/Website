@@ -42,6 +42,19 @@ a:hover, a:visited:hover {
   transition: 0.5s;
 }
 
+h1{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+h2{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #555
+}
+
 .serif {
   font-family: 'Libre Baskerville', serif;
   font-size: 1.45rem;
@@ -90,10 +103,10 @@ a:hover, a:visited:hover {
 }
 
 @media (max-width: 40rem) {
-  .serif {
+  h1 {
     font-size: 1.15rem;
   }
-  .title {
+  h2 {
     font-size: 1.15rem;
   }
   .text, .textEmphasis {

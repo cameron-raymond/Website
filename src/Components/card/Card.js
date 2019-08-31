@@ -12,7 +12,7 @@ class Card extends Component {
   		<div className={styles.card} style={{ backgroundImage: `url(${this.src})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}>
   			<div className={styles.overlay}/>
   			<div className={styles.cardContent}>
-  				<p className="title light">{this.props.children}</p>
+  				<h2 className="light">{this.props.children}</h2>
   				<p className="text light">{this.props.subtitle}</p>
   			</div>
   		</div>

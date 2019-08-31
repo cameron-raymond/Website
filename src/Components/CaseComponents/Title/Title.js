@@ -7,8 +7,8 @@ class Title extends PureComponent {
 	render() {
 		return (
 			<div className={styles.caseTitle}>
-				<Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className="serif primary">
-					<p className="serif primary marker reduceSpace">{this.props.title}</p>
+				<Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className="primary">
+					<h1 className="marker reduceSpace">{this.props.title}</h1>
 					<br/>
 					<span className="text reduceSpace">{this.props.children}</span>
 				</Typist>

@@ -7,7 +7,7 @@ class CInfo extends Component {
 		return (
 			<div className="tabOver">
 				<p className="text reduceSpace">Thanks for checking out my portfolio! All source code can be found on my         <a href="https://github.com/cameron-raymond" className={styles.link}>github</a>.</p>
-				<p className="text reduceSpace">Want to learn more? Let's grab coffee and chat; feel free to reach out at
+				<p className="text reduceSpace">Want to learn more? Let&lsquo;s grab coffee and chat; feel free to reach out at
 					<a href="mailto:c.raymond@queensu.ca" className={styles.link}> c.raymond@queensu.ca</a>,
            or <a href="https://linkedin.com/in/cameron-raymond/" className={styles.link}>linkedIn</a>.
 				</p>
