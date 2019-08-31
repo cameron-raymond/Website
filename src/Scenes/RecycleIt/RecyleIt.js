@@ -39,7 +39,7 @@ class RecycleIt extends Component {
 				<CaseText title={"impact"}>
           The resulting app is simple to use, gives a response in &lt;10s and can classify objects with a relatively high degree of accuracy. It also highlights some of computer vision’s shortcomings. Objects like burrito wrappers are hard for humans to classify as recycling or garbage because they look like recycling. It requires extra domain knowledge to know that they are in-fact not recyclable. Therefore, to help protect against edge cases that a model would misclassify, extra domain information would be a valuable addition to help provide greater context to the user.
 				</CaseText>
-				<Footer to={"distDelivery"} linkTitle={"what else ya got"} linkTitleMobile={"next"} />
+				<Footer to={"distDelivery"} linkTitle={"next"} />
 			</div>
 		)
 	}

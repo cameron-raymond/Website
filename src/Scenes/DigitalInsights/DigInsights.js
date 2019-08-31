@@ -40,7 +40,7 @@ class DII extends Component {
 				<CaseText title={"impact"}>
           After 4 months of constant designing, development, and presenting on new iterations – I was fortunate enough to showcase the Insights and Integrations app to CIBC’s CEO Victor Dodig. It was later presented to CIBC’s CTO Deepak Khandelwal. By the end of my internship, the app was distributed to 14 high level executives at CIBC Digital.  
 				</CaseText>
-				<Footer to={"recycleIt"} linkTitle={"what else ya got"} linkTitleMobile={"next"} />
+				<Footer to={"recycleIt"} linkTitle={"next"} />
 			</div>
 		)
 	}

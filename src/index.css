@@ -7,7 +7,7 @@ body {
 }
 
 a, a:visited {
-  color: #888888;
+  color: #6b6b6b;
   text-decoration: none;
   transition: 0.5s;
   display: inline;
@@ -42,51 +42,47 @@ a:hover, a:visited:hover {
   transition: 0.5s;
 }
 
-h1{
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.5rem;
-  color: #555;
-}
-
-h2{
-  font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #555
-}
-
-.serif {
-  font-family: 'Libre Baskerville', serif;
+h1 {
+  font-family: 'Hepta Slab', serif;
   font-size: 1.45rem;
-  color: #555;
+  color: #292a2c;
 }
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: #292a2c;
+}
+
+
 
 .title {
   font-family: 'Lato', sans-serif;
   font-size: 1.45rem;
   font-weight: 400;
-  color: #555
+  color: #292a2c;
 }
 
-.textEmphasis {
+h3 {
   font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
-  color: #555
+  color: #292a2c;
 }
 
 .text {
   font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
   font-weight: 300;
-  color: #888888;
+  color: #6b6b6b;
 }
 
 .subheading {
   font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
-  color: #888888;
+  color: #6b6b6b;
 }
 
 .caseContainer {
@@ -109,16 +105,18 @@ h2{
   h2 {
     font-size: 1.15rem;
   }
-  .text, .textEmphasis {
+  .text, h3 {
     font-size: 0.8rem;
   }
   .subheading {
     font-size: 0.7rem;
   }
 }
-.italic{
+
+.italic {
   font-style: italic;
 }
+
 .light {
   color: #F5F5F5
 }
@@ -128,7 +126,7 @@ h2{
 }
 
 .primary, .primary:visited {
-  color: #555
+  color: #292a2c;
 }
 
 .highlight {

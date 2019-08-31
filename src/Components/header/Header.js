@@ -35,7 +35,7 @@ class Header extends React.Component {
     	var headerStyle = this.state.isHide ? styles.header + " " + styles.navUp : styles.header
     	return (
     		<div className={headerStyle}>
-    			<NavLink to="/" style={styles.noUnderline}><p className="textEmphasis onHov">cameron<span className={styles.hideHead}> raymond</span></p></NavLink>
+    			<NavLink to="/" style={styles.noUnderline}><h3 className="onHov">cameron<span className={styles.hideHead}> raymond</span></h3></NavLink>
     			<div style={{
     				display: "flex",
     				minWidth: 100,
@@ -49,7 +49,7 @@ class Header extends React.Component {
     					eventLabel="clickedResume"
     					to={resume}
     				>
-    					<p className="textEmphasis onHov"><span className={styles.hideIcons}><FiClipboard /></span><span className={styles.hideLinks}>resumé</span></p>
+    					<h3 className="onHov"><span className={styles.hideIcons}><FiClipboard /></span><span className={styles.hideLinks}>resumé</span></h3>
     				</ReactGA.OutboundLink>
     				<NavLink exact className="text" to="/about"><p><span className={styles.hideIcons}><FiUser /></span><span className={styles.hideLinks}>about</span></p></NavLink>
     				<NavLink exact className="text" to="/contact"> <p ><span className={styles.hideIcons}><FiMessageSquare /></span><span className={styles.hideLinks}>contact</span></p></NavLink>

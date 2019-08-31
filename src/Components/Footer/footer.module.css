@@ -14,9 +14,6 @@
 .viewNext{
     margin-right: 4rem;
 }
-.viewNextMobile{
-    display: none;
-}
 
 .footInfo{
     display: flex;
@@ -29,12 +26,6 @@
 @media (max-width: 40rem) {
     .footer{
         height: 10rem;
-    }
-    .viewNext{
-        display: none;
-    }
-    .viewNextMobile{
-        display: inherit;
     }
  
 }

@@ -22,7 +22,6 @@ class Footer extends PureComponent {
 
 				<Link to={this.props.to}>
 					<h2 className={styles.viewNext + " onHov"}>{this.props.linkTitle}</h2>
-					<h2 className={styles.viewNextMobile + " onHov"}>{this.props.linkTitleMobile}</h2>
 				</Link>
 			</div>
 		)
