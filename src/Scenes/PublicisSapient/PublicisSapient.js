@@ -10,15 +10,27 @@ class PS extends Component {
 			<div className={styles.container}>
 				<Helmet>
 					<title>Trendr - Cameron Raymond</title>
-					<meta name="description" content="S social media monitoring platform that uses sentiment and network analysis to inform marketing campaigns." />
+					<meta
+						name="description"
+						content="A social media monitoring platform that uses sentiment and network analysis to inform marketing campaigns."
+					/>
 				</Helmet>
 				<h1>
-					<Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className="reduceSpace">
-						<span>coming <span className="marker"> soon</span></span>
+					<Typist
+						cursor={{ hideWhenDone: true }}
+						avgTypingDelay={30}
+						className="reduceSpace"
+					>
+						<span>
+              coming <span className="marker"> soon</span>
+						</span>
 					</Typist>
 				</h1>
 				<div className="tabOver">
-					<p className="text reduceSpace">My first experience as a PM is still under wraps, but check back soon!</p>
+					<p className="text reduceSpace">
+            My first experience as a PM is still under wraps, but check back
+            soon!
+					</p>
 				</div>
 			</div>
 		)

@@ -2,20 +2,20 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 import VidComp from "./VidComponent"
 import reveal from "../../HOC/scrollReveal/Reveal"
-import styles from  "./vid.module.css"
+import styles from "./vid.module.css"
 
 class Video extends Component {
 	render() {
 		return (
-			<div className={styles.vidContainer}> 
-				<VidComp src={this.props.src}/>
+			<div className={styles.vidContainer}>
+				<VidComp src={this.props.src} />
 				<div className={styles.textStyling}>
 					<h3 className="marker reduceSpace tabOver">{this.props.title}</h3>
 					<p className="text reduceSpace">{this.props.children}</p>
-                
+
 				</div>
 			</div>
-         
+
 		)
 	}
 }

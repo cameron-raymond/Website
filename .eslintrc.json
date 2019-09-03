@@ -4,7 +4,11 @@
         "es6": true
     },
     "parser": "babel-eslint",
-    "extends": "plugin:react/recommended",
+    "extends": [
+        "plugin:react/recommended",
+        "prettier"
+      ]
+    ,
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
