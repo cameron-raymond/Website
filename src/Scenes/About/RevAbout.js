@@ -31,5 +31,5 @@ class RevAbout extends PureComponent {
 	}
 }
 
-export default reveal(RevAbout)
+export default reveal(RevAbout,false)
 

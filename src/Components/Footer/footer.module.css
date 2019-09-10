@@ -27,5 +27,7 @@
     .footer{
         height: 10rem;
     }
- 
+    .viewNext{
+        margin-right: 1rem;   
+    }
 }

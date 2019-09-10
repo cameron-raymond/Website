@@ -20,7 +20,7 @@ CaseText.propTypes = {
 	children: PropTypes.string,
 }
 
-export default reveal(CaseText)
+export default reveal(CaseText,false)
 
 
 

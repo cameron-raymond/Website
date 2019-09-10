@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
  
 import scrollReveal from "./scrollReveal"
  
-export default function reveal(WrappedComponent) {
+export default function reveal(WrappedComponent,reset=true) {
 	return class RevealEnhancer extends Component {
 		bindRef(c) {
 			this.component = c
@@ -12,7 +12,7 @@ export default function reveal(WrappedComponent) {
 		componentDidMount() {
 			// eslint-disable-next-line react/no-find-dom-node
 			const domElement = ReactDOM.findDOMNode(this.component)
-			scrollReveal.reveal(domElement,{ viewFactor: 0.21, reset: true})
+			scrollReveal.reveal(domElement,{ viewFactor: 0.21, reset: reset})
 		}
  
 		render() {
