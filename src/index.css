@@ -100,10 +100,10 @@ h3 {
 
 @media (max-width: 40rem) {
   h1 {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
   h2 {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
   .text, h3 {
     font-size: 0.8rem;
