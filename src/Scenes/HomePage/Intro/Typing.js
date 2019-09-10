@@ -6,7 +6,7 @@ import styles from "./Intro.module.css"
 class Typing extends PureComponent {
 	render() {
 		return (
-			<h1>
+			<h1> 
 				<Typist cursor={{ hideWhenDone: true }} avgTypingDelay={30} className={styles.typist}>
 					<Typist.Delay ms={500} />
 
