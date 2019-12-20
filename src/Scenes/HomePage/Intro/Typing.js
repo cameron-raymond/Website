@@ -24,7 +24,7 @@ class Typing extends PureComponent {
 					<span>at Queen&apos;s University </span>
 					<Typist.Delay ms={800} />
 					<br />
-					<span className="text">curently applying to <span className="italic">graduate school</span> and looking for <span className="italic">summer 2020</span> opportunities</span>
+					<span className="text">curently looking for <span className="italic">summer 2020</span> opportunities</span>
 				</Typist>
 			</h1>
 		)

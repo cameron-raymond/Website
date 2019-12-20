@@ -6,18 +6,18 @@ class SmallList extends PureComponent {
     handleList = (arr) => {
     	return arr.map((val, index) => {
     		if (index < arr.length - 1) {
-    			return <p key={index} className={"text "+styles.removeListSpace}>&nbsp;&nbsp;{val}<span className={styles.hideComma}>,</span></p>
+    			return <p key={index} className={"text "+styles.removeListSpace}>{val}<span className={styles.hideComma}>,&nbsp;</span></p>
     		}
-    		return <p key={"end"} className={"text "+styles.removeListSpace}>&nbsp;&nbsp;{val}</p>
+    		return <p key={"end"} className={"text "+styles.removeListSpace}>{val}</p>
     	}
     	)
     }
 
     render() {
     	return (
-    		<div>
+    		<div className={styles.smallListCont}>
     			<h3 className={styles.reduceListSpace} >{this.props.children}</h3>
-    			<div className={styles.removeLineBreak}>
+    			<div className={styles.indent}>
     				{this.props.elements ? this.handleList(this.props.elements) : null}
     			</div>
     		</div>

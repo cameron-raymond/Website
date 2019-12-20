@@ -1,8 +1,15 @@
 .reduceListSpace{
     line-height: 0.5rem;
 }
-.removeLineBreak{
+.indent{
     display: inline;
+    position: relative;
+    word-wrap: break-word;
+    left: 1rem;
+}
+.smallListCont{
+    padding-right: 1rem;
+    position: relative;
 }
 .oContainer{
     display: flex;
@@ -29,7 +36,7 @@
         line-height: 0;
         margin-bottom: 0.5rem;
     }
-    .removeLineBreak{
+    .indent{
         line-height: 0rem;
         margin-top: 0;
         display: flex;

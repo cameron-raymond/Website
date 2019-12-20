@@ -5,15 +5,18 @@ class RevAbout extends PureComponent {
 	render() {
 		return (
 			<div className="tabOver">
-				<p className="text">I’m a 21 year old software developer from Toronto,
+				<p className="text">I’m a 21 year old data enthusiast from Toronto,
  Ontario - currently studying computer science, with
  a minor in political studies at Queen’s University.
 				<br />
 				<br />
-
-					Some of the courses I’ve enjoyed during my undergrad
-                    are <a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-235.html">Data Structures</a>; <a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-365.html">Algorithms</a>; <a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-204.html">Formal Logic</a>; States,
-                    Diversity and Ethnic Conflict; and <a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-352.html">Artificial Intelligence</a>.
+					My broad areas of interest include network science, machine learning, and computer science's applications in the social sciences.
+					Some of the courses that I've found helpful in this pursuit are 
+				<a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-452.html"> Neural and Genetic Computing</a>; 
+				<a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-474.html"> Reinforcement Learning</a>; 
+				<a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-365.html"> Algorithms </a>; 
+					 States, Diversity and Ethnic Conflict; 
+					and <a href="http://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-352.html"> Artificial Intelligence</a>.
 				<br />
 				<br />
 
