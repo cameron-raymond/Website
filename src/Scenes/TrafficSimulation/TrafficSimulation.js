@@ -31,7 +31,7 @@ class TrafficSimulation extends Component {
 					<br/><br/>
 					Working on a problem tied to a real-life application helps us see how reinforcement learning can be applied to improve real-world systems. Over the course of a 140 day run, our system was able to reduce carbon emissions by approximately 2000 kg over a naive agent for a car with a deterministic route. Our solution can be extended very easily to the real-world not only to reduce our carbon footprint, but also to save travel time for the everyday driver.
 				</CaseText>
-				<Footer to={"recycleIt"} linkTitle={"next"} />
+				<Footer to={"publicissapient"} linkTitle={"next"} />
 			</div>
 		)
 	}
