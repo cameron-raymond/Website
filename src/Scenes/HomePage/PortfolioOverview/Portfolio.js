@@ -9,8 +9,9 @@ import dist from "../../../Assets/distDelivery/distDelivery.webp"
 import altDist from "../../../Assets/distDelivery/distDelivery.png"
 import trendr from "../../../Assets/Trendr/trendr.webp"
 import altTrendr from "../../../Assets/Trendr/trendr.png"
+import trafficSimSquare from "../../../Assets/SmartTraffic/TrafficSimSquare.webp"
+import altTrafficSimSquare from "../../../Assets/SmartTraffic/TrafficSimSquare.png"
 import styles from "./portfolio.module.css"
-
 
 class Portfolio extends Component {
 	render() {
@@ -18,27 +19,44 @@ class Portfolio extends Component {
 			<div className={styles.container}>
 				<span>
 					<Link className={styles.noUnderline} to="/DII">
-						<Card subtitle={"React Native"} altSrc={altDII} src={DII}>Digital Insights</Card>
+						<Card subtitle={"React Native"} altSrc={altDII} src={DII}>
+              Digital Insights
+						</Card>
 					</Link>
 				</span>
 				<span className={styles.offset}>
-					<Link className={styles.noUnderline} to="/publicissapient">
-						<Card subtitle={"Product Management"} altSrc={altTrendr} src={trendr}>Trendr</Card>
+					<Link className={styles.noUnderline} to="/trafficSim">
+						<Card
+							subtitle={"Reinforcment Learning"}
+							altSrc={altTrafficSimSquare}
+							src={trafficSimSquare}
+						>
+             		 	Smart Traffic Control
+						</Card>
 					</Link>
 				</span>
 				<span>
+					<Link className={styles.noUnderline} to="/publicissapient">
+						<Card subtitle={"Product Management"} altSrc={altTrendr} src={trendr}>
+            Trendr
+						</Card>
+					</Link>
+				</span>
+				<span className={styles.offset}>
 					<Link className={styles.noUnderline} to="/recycleit">
-						<Card subtitle={"React Native"} altSrc={altRiT} src={RiT}>RecycleIt.</Card>
+						<Card subtitle={"React Native"} altSrc={altRiT} src={RiT}>
+              RecycleIt.
+						</Card>
 					</Link>
 				</span>
 
 				<span className={styles.offset}>
 					<Link className={styles.noUnderline} to="/distDelivery">
-						<Card subtitle={"React.js"} altSrc={altDist} src={dist}>Distributed Delivery</Card>
+						<Card subtitle={"React.js"} altSrc={altDist} src={dist}>
+              Distributed Delivery
+						</Card>
 					</Link>
 				</span>
-
-
 			</div>
 		)
 	}

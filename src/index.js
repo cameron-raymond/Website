@@ -12,6 +12,7 @@ import PS from "./Scenes/PublicisSapient/PublicisSapient"
 import DistDelivery from "./Scenes/DistDelivery/DistDelivery"
 import About from "./Scenes/About/About"
 import Contact from "./Scenes/Contact/Contact"
+import TrafficSimulation from "./Scenes/TrafficSimulation/TrafficSimulation"
 import "./index.css"
 
 class MyApp extends React.PureComponent {
@@ -28,6 +29,7 @@ class MyApp extends React.PureComponent {
 						<Route path="/about" component={About} />
 						<Route path="/contact" component={Contact} />
 						<Route path="/publicissapient" component={PS}/>
+						<Route path="/trafficSim" component={TrafficSimulation}/>
 					</ScrollToTop>
 				</div>
 			</Router>
