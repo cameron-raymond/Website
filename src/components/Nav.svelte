@@ -1,60 +1,76 @@
 <script>
-	export let segment;
+  import { FaLinkedinIn, FaGithub } from "svelte-icons/fa";
+  export let segment;
 </script>
 
 <style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
+  nav {
+    position: sticky;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: 300;
+  }
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 12em;
+  }
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+  .icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  @media (max-width: 40rem) {
+    .icon {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
 
-	li {
-		display: block;
-		float: left;
-	}
-
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
-
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
+  [aria-current] {
+    color: rgb(255, 62, 0);
+    position: relative;
+    display: inline-block;
+  }
+  .divider {
+    height: 1.5rem;
+    width: 1px;
+    background-color: #333;
+    opacity: 0.3;
+  }
 </style>
 
 <nav>
-	<ul>
-		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
-		<li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+  <a aria-current={segment === undefined ? 'page' : undefined} href=".">
+    Cameron Raymond
+  </a>
+  <div class="links">
+    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>blog</a></li>
-	</ul>
+    <a
+      rel="prefetch"
+      aria-current={segment === 'blog' ? 'page' : undefined}
+      href="blog">
+      Resume
+    </a>
+    <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
+      About
+    </a>
+    <div class="divider" />
+    <a class="icon" href="https://www.linkedin.com/in/cameron-raymond/">
+      <FaLinkedinIn />
+    </a>
+    <a class="icon" href="https://github.com/cameron-raymond">
+      <FaGithub />
+    </a>
+  </div>
+
 </nav>

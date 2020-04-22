@@ -1,46 +1,58 @@
+<script>
+  import Emoji from "../components/Emoji.svelte";
+  import { onMount, onDestroy } from "svelte";
+  import { fly } from "svelte/transition";
+  let impactVisible = false;
+  let introVisible = false;
+  let imgVisible = false;
+  let absolute = "absolute"
+//   $: absolute = impactVisible || introVisible || imgVisible ? "absolute" : "";
+  onMount(() => {
+    impactVisible = true;
+    setTimeout(() => (introVisible = true), 300);
+  });
+  onDestroy(() => {
+    impactVisible = false;
+    setTimeout(() => (introVisible = false), 300);
+  });
+</script>
+
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
+  .absolute {
+    position: absolute;
+  }
+  .intro {
+    margin-top: 10rem;
+    height: 2rem;
+    left: 0rem;
+    position: relative;
+    text-align: left;
+  }
+  @media (min-width: 400) {
+    h1 {
+      font-size: 4em;
+    }
+  }
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>🤯Cameron Raymond🤯</title>
 </svelte:head>
-
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<div class="intro {absolute}">
+  {#if impactVisible}
+    <h1 in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 500 }}>
+      Hello
+      <Emoji symbol="👋" />
+    </h1>
+  {/if}
+  {#if introVisible}
+    <p in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 500 }}>
+      I'm Cameron - a data scientist
+      <Emoji symbol="📈" />
+      and graduate student
+      <Emoji symbol="🧑‍💻" />
+      at the University of Oxford
+      <Emoji symbol="🏫🏯" />
+    </p>
+  {/if}
+</div>
