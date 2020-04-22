@@ -5,8 +5,6 @@
   let impactVisible = false;
   let introVisible = false;
   let imgVisible = false;
-  let absolute = "absolute"
-//   $: absolute = impactVisible || introVisible || imgVisible ? "absolute" : "";
   onMount(() => {
     impactVisible = true;
     setTimeout(() => (introVisible = true), 300);
@@ -18,27 +16,33 @@
 </script>
 
 <style>
-  .absolute {
-    position: absolute;
-  }
   .intro {
     margin-top: 10rem;
     height: 2rem;
     left: 0rem;
     position: relative;
-    text-align: left;
+	text-align: left;
+	margin-right: 5rem;
   }
   @media (min-width: 400) {
     h1 {
       font-size: 4em;
     }
   }
+  .intro-svg{
+	  position: fixed;
+	  bottom: 0;
+	  right: 0;
+	  width: 80%;
+	  max-width: 50rem;
+	  z-index: -1000;
+  }
 </style>
 
 <svelte:head>
   <title>🤯Cameron Raymond🤯</title>
 </svelte:head>
-<div class="intro {absolute}">
+<div class="intro">
   {#if impactVisible}
     <h1 in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 500 }}>
       Hello
@@ -56,3 +60,4 @@
     </p>
   {/if}
 </div>
+<img src="intro.svg" alt="" class="intro-svg">
