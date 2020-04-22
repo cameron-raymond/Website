@@ -1,41 +1,41 @@
 <script>
   import Emoji from "../components/Emoji.svelte";
   import { onMount, onDestroy } from "svelte";
-  import { fly } from "svelte/transition";
+  import { fly, fade } from "svelte/transition";
   let impactVisible = false;
   let introVisible = false;
-  let imgVisible = false;
   onMount(() => {
-    impactVisible = true;
-    setTimeout(() => (introVisible = true), 300);
-  });
-  onDestroy(() => {
-    impactVisible = false;
-    setTimeout(() => (introVisible = false), 300);
+    setTimeout(() => {
+      impactVisible = true;
+      setTimeout(() => (introVisible = true), 300);
+    }, 500);
   });
 </script>
 
 <style>
   .intro {
     margin-top: 10rem;
-    height: 2rem;
-    left: 0rem;
+    margin-bottom: 3rem;
+    height: 6.5rem;
     position: relative;
-	text-align: left;
-	margin-right: 5rem;
+    text-align: left;
+    margin-right: 9.5rem;
   }
   @media (min-width: 400) {
     h1 {
       font-size: 4em;
     }
+    .intro {
+      margin-right: 0rem;
+    }
   }
-  .intro-svg{
-	  position: fixed;
-	  bottom: 0;
-	  right: 0;
-	  width: 80%;
-	  max-width: 50rem;
-	  z-index: -1000;
+  .intro-svg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    max-width: 50rem;
+    z-index: -1000;
   }
 </style>
 
@@ -60,4 +60,8 @@
     </p>
   {/if}
 </div>
-<img src="intro.svg" alt="" class="intro-svg">
+<img
+  src="intro.svg"
+  alt=""
+  class="intro-svg"
+  out:fade={{ duration: 50, delay: 100 }} />
