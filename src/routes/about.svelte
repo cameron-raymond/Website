@@ -10,7 +10,7 @@
 
   let aboutMe = [
     {
-      emoji: '📖',
+      emoji: "📖",
       header: "All Time Books",
       list: [
         `<a key={1} href="https://freakonomics.com/book/freakonomics/">Freakonomics</a>`,
@@ -26,7 +26,7 @@
       ]
     },
     {
-      emoji: '📚',
+      emoji: "📚",
       header: `Quarantine Books`,
       list: [
         `<a
@@ -62,7 +62,7 @@
       ]
     },
     {
-      emoji: '👨‍🎤',
+      emoji: "👨‍🎤",
       header: "Quarantine Albums",
       list: [
         `<a key={1} href="https://pitchfork.com/reviews/albums/22957-cubafonia/">
@@ -89,7 +89,7 @@
       ]
     },
     {
-      emoji: '💃🕺',
+      emoji: "💃🕺",
       header: "All Time Albums",
       list: [
         `<a
@@ -212,10 +212,8 @@
         I am passionate about the intersection of technology and society.
       </p>
       <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
-        I’m a 21 year old data scientist from Toronto, Ontario - and a recent
-        computer science graduate from Queen’s University (minor in political
-        science). In the fall I'll be joining the University of Oxford and the
-        Oxford Internet Institute to do my MSc in Social Data Science.
+        In my spare time I love reading, exercising and hanging out with loved
+        ones.
       </p>
     </div>
     <picture in:fade={{ delay: 600, duration: 100 }}>
@@ -224,5 +222,5 @@
       <img src="portrait.webp" alt="portrait" />
     </picture>
   </span>
-  <Overview elements={aboutMe} title="Me Through Lists"/>
+  <Overview elements={aboutMe} title="Me Through Lists" />
 {/if}

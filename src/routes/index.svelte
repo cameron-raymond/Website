@@ -49,7 +49,7 @@
     <div class="intro">
       <h1
         in:fly={{y: 50, duration: 500 }}
-        out:fly={{ y: 50, duration: 500 }}>
+        out:fly={{delay: 50, y: 50, duration: 500 }}>
         Hello
         <Emoji symbol="👋" />
       </h1>
@@ -58,10 +58,15 @@
         out:fly={{ y: 50, duration: 500 }}>
         I'm Cameron - a data scientist
         <Emoji symbol="📈" />
-        and graduate student
+        and incoming graduate student
         <Emoji symbol="🧑‍💻" />
         at the University of Oxford
         <Emoji symbol="🏫🏯" />
+      </p>
+      <p
+        in:fly={{ delay: 350, y: 50, duration: 500 }}
+        out:fly={{  y: 50, duration: 500 }}>
+        This is a new version of my portfolio so be sure to check back for more posts on my work!
       </p>
     </div>
   {/if}
