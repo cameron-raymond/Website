@@ -2,66 +2,69 @@
   import Emoji from "../components/Emoji.svelte";
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
-  let impactVisible = false;
-  let introVisible = false;
+  let visible = false;
   onMount(() => {
-    setTimeout(() => {
-      impactVisible = true;
-      setTimeout(() => (introVisible = true), 300);
-    }, 500);
+    visible = true;
   });
 </script>
 
 <style>
-  .intro {
-    margin-top: 10rem;
-    margin-bottom: 3rem;
-    height: 6.5rem;
+  .cont {
     position: relative;
-    text-align: left;
-    margin-right: 9.5rem;
+    height: calc(100vh - 4em);
+    width: calc(100vw - 4em);
+  }
+  .intro {
+    padding-top: 10rem;
+    padding-right: 8rem;
   }
   @media (min-width: 400) {
     h1 {
       font-size: 4em;
     }
     .intro {
-      margin-right: 0rem;
+      padding-right: 0rem;
     }
   }
   .intro-svg {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    max-width: 50rem;
-    z-index: -1000;
+    position: absolute;
+    bottom: -5rem;
+    right: -1rem;
+    width: 100%;
+    max-width: 55rem;
+    min-width: 40rem;
+    overflow: hidden;
+    z-index: -1;
   }
 </style>
 
 <svelte:head>
   <title>🤯Cameron Raymond🤯</title>
 </svelte:head>
-<div class="intro">
-  {#if impactVisible}
-    <h1 in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 500 }}>
-      Hello
-      <Emoji symbol="👋" />
-    </h1>
+<div class="cont">
+  {#if visible}
+    <div class="intro">
+      <h1
+        in:fly={{ delay: 501, y: 50, duration: 500 }}
+        out:fly={{ y: 50, duration: 500 }}>
+        Hello
+        <Emoji symbol="👋" />
+      </h1>
+      <p
+        in:fly={{ delay: 800, y: 50, duration: 500 }}
+        out:fly={{ y: 50, duration: 500 }}>
+        I'm Cameron - a data scientist
+        <Emoji symbol="📈" />
+        and graduate student
+        <Emoji symbol="🧑‍💻" />
+        at the University of Oxford
+        <Emoji symbol="🏫🏯" />
+      </p>
+    </div>
   {/if}
-  {#if introVisible}
-    <p in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 500 }}>
-      I'm Cameron - a data scientist
-      <Emoji symbol="📈" />
-      and graduate student
-      <Emoji symbol="🧑‍💻" />
-      at the University of Oxford
-      <Emoji symbol="🏫🏯" />
-    </p>
-  {/if}
+  <img
+    src="intro.svg"
+    alt=""
+    class="intro-svg"
+    out:fade={{ duration: 50, delay: 100 }} />
 </div>
-<img
-  src="intro.svg"
-  alt=""
-  class="intro-svg"
-  out:fade={{ duration: 50, delay: 100 }} />

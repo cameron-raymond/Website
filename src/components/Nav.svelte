@@ -1,5 +1,6 @@
 <script>
-  import { FaLinkedinIn, FaGithub } from "svelte-icons/fa";
+  import { FaLinkedinIn, FaGithub, FaUser, FaNewspaper } from "svelte-icons/fa";
+  // import {FiUser} from "svelte-icons/fi"
   export let segment;
 </script>
 
@@ -28,10 +29,24 @@
     width: 1.2rem;
     height: 1.2rem;
   }
+
+  .hideIcons {
+    display: none;
+  }
+
   @media (max-width: 40rem) {
+    .links{
+      width: 9rem;
+    }
     .icon {
       width: 1rem;
       height: 1rem;
+    }
+    .hideLinks {
+      display: none;
+    }
+    .hideIcons {
+      display: block;
     }
   }
 
@@ -53,22 +68,29 @@
     Cameron Raymond
   </a>
   <div class="links">
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <a
-      rel="prefetch"
-      aria-current={segment === 'blog' ? 'page' : undefined}
-      href="blog">
-      Resume
+    <a href="../../static/CRaymondResume2020.pdf">
+      <span class="hideIcons icon">
+        <FaNewspaper />
+      </span>
+      <span class="hideLinks">Resume</span>
     </a>
     <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
-      About
+      <span class="hideIcons icon">
+        <FaUser />
+      </span>
+      <span class="hideLinks">About</span>
     </a>
     <div class="divider" />
     <a class="icon" href="https://www.linkedin.com/in/cameron-raymond/">
       <FaLinkedinIn />
     </a>
-    <a class="icon" href="https://github.com/cameron-raymond">
+    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+		     the blog data when we hover over the link or tap it on a touchscreen -->
+    <a
+      class="icon"
+      rel="prefetch"
+      aria-current={segment === 'blog' ? 'page' : undefined}
+      href="blog">
       <FaGithub />
     </a>
   </div>
