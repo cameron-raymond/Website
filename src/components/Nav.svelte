@@ -35,7 +35,7 @@
   }
 
   @media (max-width: 40rem) {
-    .links{
+    .links {
       width: 9rem;
     }
     .icon {
@@ -68,7 +68,7 @@
     Cameron Raymond
   </a>
   <div class="links">
-    <a href="../../static/CRaymondResume2020.pdf">
+    <a href="CRaymondResume2020.pdf">
       <span class="hideIcons icon">
         <FaNewspaper />
       </span>
@@ -84,15 +84,18 @@
     <a class="icon" href="https://www.linkedin.com/in/cameron-raymond/">
       <FaLinkedinIn />
     </a>
+    <a class="icon" href="https://github.com/cameron-raymond">
+      <FaGithub />
+    </a>
     <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <a
+    <!-- <a
       class="icon"
       rel="prefetch"
       aria-current={segment === 'blog' ? 'page' : undefined}
       href="blog">
       <FaGithub />
-    </a>
+    </a> -->
   </div>
 
 </nav>
