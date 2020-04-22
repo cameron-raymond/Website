@@ -15,6 +15,7 @@
     width: calc(100vw - 4em);
   }
   .intro {
+    padding-left: 1rem;
     padding-top: 10rem;
     padding-right: 8rem;
   }
@@ -27,7 +28,9 @@
     }
   }
   .intro-svg {
-    position: absolute;
+    /* ! Change to this once more content is added */
+    /* position: absolute; */
+    position: fixed;
     bottom: -5rem;
     right: -1rem;
     width: 100%;
@@ -45,13 +48,13 @@
   {#if visible}
     <div class="intro">
       <h1
-        in:fly={{ delay: 501, y: 50, duration: 500 }}
+        in:fly={{y: 50, duration: 500 }}
         out:fly={{ y: 50, duration: 500 }}>
         Hello
         <Emoji symbol="👋" />
       </h1>
       <p
-        in:fly={{ delay: 800, y: 50, duration: 500 }}
+        in:fly={{ delay: 300, y: 50, duration: 500 }}
         out:fly={{ y: 50, duration: 500 }}>
         I'm Cameron - a data scientist
         <Emoji symbol="📈" />
@@ -68,3 +71,30 @@
     class="intro-svg"
     out:fade={{ duration: 50, delay: 100 }} />
 </div>
+<!-- <p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p><p>
+I love to code
+</p> -->
