@@ -29,8 +29,7 @@
   }
   .intro-svg {
     /* ! Change to this once more content is added */
-    /* position: absolute; */
-    position: fixed;
+    position: absolute;
     bottom: -5rem;
     right: -1rem;
     width: 100%;
@@ -66,7 +65,7 @@
       <p
         in:fly={{ delay: 350, y: 50, duration: 500 }}
         out:fly={{  y: 50, duration: 500 }}>
-        This is a new version of my portfolio so be sure to check back for more posts on my work!
+        This is a new version of my portfolio, so be sure to check back for more posts on my work!
       </p>
     </div>
   {/if}
@@ -76,30 +75,3 @@
     class="intro-svg"
     out:fade={{ duration: 50, delay: 100 }} />
 </div>
-<!-- <p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p><p>
-I love to code
-</p> -->
