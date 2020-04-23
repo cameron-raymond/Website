@@ -2,7 +2,9 @@
   import Emoji from "./Emoji.svelte";
   import { FaLinkedinIn, FaGithub } from "svelte-icons/fa";
   import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
-  let lastUpdated = "April 23, 2020";
+  let year = "asdf";
+  let month = "April";
+  let day = "23";
 </script>
 
 <style>
@@ -54,7 +56,10 @@
     by me.
     <br />
     Last updated
-    <a href="https://www.history.com/this-day-in-history/">{lastUpdated}.</a>
+    <a href="https://www.onthisday = "23";
+      {month = "April";
+    </a>
+    .
   </p>
   <div class="links">
     <a href="mailto:cameronraymond534@gmail.com" class="icon">
