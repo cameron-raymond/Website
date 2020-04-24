@@ -4,7 +4,7 @@
   import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
   let year = "2020";
   let month = "April";
-  let day = "23";
+  let day = "24";
 </script>
 
 <style>
