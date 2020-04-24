@@ -10,7 +10,7 @@
     flex: 1;
     align-self: stretch;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
     max-width: 80em;

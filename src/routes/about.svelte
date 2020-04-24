@@ -153,6 +153,22 @@
     object-fit: contain;
     overflow: hidden;
   }
+  /* .about-left-blob-svg {
+    position: absolute;
+    top: 40vh;
+    left: -3rem;
+    height: 30rem;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .about-right-blob-svg {
+    position: absolute;
+    bottom: 2rem;
+    right: 0rem;
+    width: 50%;
+    overflow: hidden;
+    z-index: -1;
+  } */
   @media (max-width: 60rem) {
     span {
       margin-top: 3rem;
@@ -176,6 +192,8 @@
   <title>About</title>
 </svelte:head>
 {#if visible}
+  <!-- <img src="about-left-blob.svg" alt="" class="about-left-blob-svg" />
+  <img src="about-right-blob.svg" alt="" class="about-right-blob-svg" /> -->
   <span>
     <div class="intro">
       <h1 in:fly={{ delay: 500, y: 50, duration: 500 }}>
@@ -216,7 +234,7 @@
         ones.
       </p>
     </div>
-    <picture in:fade={{ delay: 600, duration: 100 }}>
+    <picture in:fade={{ delay: 600, duration: 200 }}>
       <source type="image/webp" srcset="portrait.webp" />
       <source type="image/jpeg" srcset="portrait.png" />
       <img src="portrait.webp" alt="portrait" />
