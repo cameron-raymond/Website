@@ -1,10 +1,14 @@
 <script>
   import Emoji from "./Emoji.svelte";
   import { FaLinkedinIn, FaGithub } from "svelte-icons/fa";
+  import { getOutboundLink } from "../utils/getOutboundLink.js";
   import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
   let year = "2020";
   let month = "April";
   let day = "24";
+  let linkedIn = "https://www.linkedin.com/in/cameron-raymond/"
+  let github = "https://github.com/cameron-raymond"
+  let email = "mailto:cameronraymond534@gmail.com"
 </script>
 
 <style>
@@ -62,15 +66,15 @@
     .
   </p>
   <div class="links">
-    <a href="mailto:cameronraymond534@gmail.com" class="icon">
+    <a href={email} class="icon" on:click={() => getOutboundLink(email)}>
       <IoIosMail />
     </a>
     <div class="divider" />
-    <a href="https://linkedin.com/in/cameron-raymond/" class="icon">
+    <a href={linkedIn} class="icon" on:click={() => getOutboundLink(linkedIn)}>
       <FaLinkedinIn />
     </a>
     <div class="divider" />
-    <a href="https://github.com/cameron-raymond" class="icon">
+    <a href={github} class="icon" on:click={() => getOutboundLink(github)}>
       <FaGithub />
     </a>
   </div>

@@ -1,7 +1,9 @@
 <script>
   import { FaLinkedinIn, FaGithub, FaUser, FaNewspaper } from "svelte-icons/fa";
-  // import {FiUser} from "svelte-icons/fi"
+  import { getOutboundLink } from "../utils/getOutboundLink.js";
   export let segment;
+  let linkedIn = "https://www.linkedin.com/in/cameron-raymond/"
+  let github = "https://github.com/cameron-raymond"
 </script>
 
 <style>
@@ -68,7 +70,9 @@
     Cameron Raymond
   </a>
   <div class="links">
-    <a href="CRaymondResume2020.pdf">
+    <a
+      href="CRaymondResume2020.pdf"
+      on:click={() => getOutboundLink('https://cameronraymond.me/CRaymondResume2020.pdf')}>
       <span class="hideIcons icon">
         <FaNewspaper />
       </span>
@@ -81,10 +85,17 @@
       <span class="hideLinks">About</span>
     </a>
     <div class="divider" />
-    <a class="icon" href="https://www.linkedin.com/in/cameron-raymond/">
+    <a
+      class="icon"
+      href={linkedIn}
+      on:click={() => getOutboundLink(linkedIn)}>
       <FaLinkedinIn />
     </a>
-    <a class="icon" href="https://github.com/cameron-raymond">
+    <a
+      class="icon"
+      href={github}
+      on:click={() => getOutboundLink(github)}
+      >
       <FaGithub />
     </a>
     <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
