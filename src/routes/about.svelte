@@ -55,9 +55,9 @@
         </a>`,
         `<a
           key={5}
-          href="https://www.newyorker.com/magazine/2015/11/23/doomsday-invention-artificial-intelligence-nick-bostrom"
+          href="https://www.newyorker.com/culture/culture-desk/the-limits-of-grit"
         >
-          Superintelligence
+          Grit
         </a>`
       ]
     },
