@@ -189,7 +189,7 @@
 </style>
 
 <svelte:head>
-  <title>About</title>
+  <title>About - Cameron Raymond</title>
 </svelte:head>
 {#if visible}
   <!-- <img src="about-left-blob.svg" alt="" class="about-left-blob-svg" />
