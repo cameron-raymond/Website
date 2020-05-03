@@ -13,14 +13,14 @@
       emoji: "📖",
       header: "All Time Books",
       list: [
-        `<a key={1} href="https://freakonomics.com/book/freakonomics/">Freakonomics</a>`,
-        `<a key={3} href="https://www.penguinrandomhouse.ca/books/89308/thinking-fast-and-slow-by-daniel-kahneman/9780385676533">
+        `<a key={1} href="https://www.nytimes.com/2005/05/15/books/review/freakonomics-everything-he-always-wanted-to-know.html">Freakonomics</a>`,
+        `<a key={3} href="https://www.nytimes.com/2011/11/27/books/review/thinking-fast-and-slow-by-daniel-kahneman-book-review.html">
           Thinking Fast and Slow
         </a>`,
-        `<a key={4}href="https://www.theguardian.com/books/2018/sep/17/future-politics-living-together-in-world-transformed-by-tech-jamie-susskind-review">
+        `<a key={4} href="https://www.theguardian.com/books/2018/sep/17/future-politics-living-together-in-world-transformed-by-tech-jamie-susskind-review">
           Future Politics
         </a>`,
-        `<a key={5} href="https://www.simonandschuster.com/books/Bowling-Alone/Robert-D-Putnam/9780743203043">
+        `<a key={5} href="https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html">
           Bowling Alone
         </a>`
       ]
@@ -58,6 +58,10 @@
           href="https://www.newyorker.com/culture/culture-desk/the-limits-of-grit"
         >
           Grit
+        </a>`,
+        `<a key={6}
+        href="https://www.nytimes.com/2019/01/16/books/review-age-of-surveillance-capitalism-shoshana-zuboff.html">
+          The Age of Surveillance Capitalism
         </a>`
       ]
     },
@@ -65,6 +69,11 @@
       emoji: "👨‍🎤",
       header: "Quarantine Albums",
       list: [
+        `<a key={0}
+        href="https://pitchfork.com/thepitch/5-takeaways-from-drakes-new-mixtape-dark-lane-demo-tapes/">
+        Dark Lane Demo Tapes
+        </a>u
+        `,
         `<a key={1} href="https://pitchfork.com/reviews/albums/22957-cubafonia/">
           Cubafonia
         </a>`,
@@ -82,9 +91,9 @@
         </a>`,
         `<a
           key={4}
-          href="https://pitchfork.com/reviews/albums/dababy-baby-on-baby/"
+          href="https://pitchfork.com/reviews/albums/rina-sawayama-sawayama/"
         >
-          Baby on Baby
+          SAWAYAMA
         </a>`
       ]
     },
