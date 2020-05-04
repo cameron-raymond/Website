@@ -59,6 +59,7 @@
   <meta property="twitter:url" content="https://cameronraymond.me/">
   <meta property="twitter:title" content="🤯Cameron Raymond🤯">
   <meta property="twitter:description" content="Cameron Raymond is a data scientist and incoming graduate student at the University of Oxford.">
+  <meta property="twitter:image" content="https://cameronraymond.me/summary_large_image.png">
 </svelte:head>
 
 <div class="cont">
