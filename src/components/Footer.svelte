@@ -60,21 +60,21 @@
     by me.
     <br />
     Last updated
-    <a href="https://www.onthisday.com/events/{month}/{day}">
+    <a aria-label="{month} {day}, {year}" href="https://www.onthisday.com/events/{month}/{day}">
       {month} {day}, {year}
     </a>
     .
   </p>
   <div class="links">
-    <a href={email} class="icon" on:click={() => getOutboundLink(email)}>
+    <a aria-label="Email" href={email} class="icon" on:click={() => getOutboundLink(email)}>
       <IoIosMail />
     </a>
     <div class="divider" />
-    <a href={linkedIn} class="icon" on:click={() => getOutboundLink(linkedIn)}>
+    <a aria-label="LinkedIn" href={linkedIn} class="icon" on:click={() => getOutboundLink(linkedIn)}>
       <FaLinkedinIn />
     </a>
     <div class="divider" />
-    <a href={github} class="icon" on:click={() => getOutboundLink(github)}>
+    <a aria-label="Github" href={github} class="icon" on:click={() => getOutboundLink(github)}>
       <FaGithub />
     </a>
   </div>

@@ -66,11 +66,11 @@
 </style>
 
 <nav>
-  <a aria-current={segment === undefined ? 'page' : undefined} href=".">
+  <a aria-label="Home" aria-current={segment === undefined ? 'page' : undefined} href=".">
     Cameron Raymond
   </a>
   <div class="links">
-    <a
+    <a aria-label="Resume"
       href="CRaymondResume2020.pdf"
       on:click={() => getOutboundLink('https://cameronraymond.me/CRaymondResume2020.pdf')}>
       <span class="hideIcons icon">
@@ -78,20 +78,20 @@
       </span>
       <span class="hideLinks">Resume</span>
     </a>
-    <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
+    <a aria-label="About" aria-current={segment === 'about' ? 'page' : undefined} href="about">
       <span class="hideIcons icon">
         <FaUser />
       </span>
       <span class="hideLinks">About</span>
     </a>
     <div class="divider" />
-    <a
+    <a aria-label="LinkedIn"
       class="icon"
       href={linkedIn}
       on:click={() => getOutboundLink(linkedIn)}>
       <FaLinkedinIn />
     </a>
-    <a
+    <a aria-label="Github"
       class="icon"
       href={github}
       on:click={() => getOutboundLink(github)}
@@ -100,7 +100,7 @@
     </a>
     <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <!-- <a
+    <!-- <a aria-label=""
       class="icon"
       rel="prefetch"
       aria-current={segment === 'blog' ? 'page' : undefined}
