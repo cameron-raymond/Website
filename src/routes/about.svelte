@@ -198,7 +198,29 @@
 </style>
 
 <svelte:head>
-  <title>About - Cameron Raymond</title>
+  <title>💭About - Cameron Raymond💭</title>
+    <meta name="description" content="Cameron Raymond is a 21 year old data
+    scienist from Toronto, Ontario. In the fall he will be joining the
+    University of Oxford to do his MSc in Social Data Science." />
+    <meta name="keywords" content="Cameron Raymond, University of Oxford, Oxford
+    University, Data Science, Social Data Sience, Data Scientist"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cameronraymond.me/about">
+    <meta property="og:title" content="💭About - Cameron Raymond💭">
+    <meta name="og:description" content="Cameron Raymond is a 21 year old data
+    scienist from Toronto, Ontario. In the fall he will be joining the
+    University of Oxford to do his MSc in Social Data Science." />
+    <meta property="og:image" content="summary_about_large">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_about_large">
+    <meta property="twitter:url" content="https://cameronraymond.me/about">
+    <meta property="twitter:title" content="💭About - Cameron Raymond💭">
+    <meta property="twitter:description" content="Cameron Raymond is a 21 year old data
+    scienist from Toronto, Ontario. In the fall he will be joining the
+    University of Oxford to do his MSc in Social Data Science.">
 </svelte:head>
 {#if visible}
   <!-- <img src="about-left-blob.svg" alt="" class="about-left-blob-svg" />
