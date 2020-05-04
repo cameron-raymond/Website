@@ -212,7 +212,7 @@
     <meta name="og:description" content="Cameron Raymond is a 21 year old data
     scienist from Toronto, Ontario. In the fall he will be joining the
     University of Oxford to do his MSc in Social Data Science." />
-    <meta property="og:image" content="https://cameronraymond.me/summary_about_large.png">
+    <!-- <meta property="og:image" content="summary_large_image"> -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
