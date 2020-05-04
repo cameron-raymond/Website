@@ -72,7 +72,7 @@
         `<a key={0}
         href="https://pitchfork.com/thepitch/5-takeaways-from-drakes-new-mixtape-dark-lane-demo-tapes/">
         Dark Lane Demo Tapes
-        </a>u
+        </a>
         `,
         `<a key={1} href="https://pitchfork.com/reviews/albums/22957-cubafonia/">
           Cubafonia
