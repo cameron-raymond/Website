@@ -52,7 +52,7 @@
   <meta property="og:url" content="https://cameronraymond.me/">
   <meta property="og:title" content="🤯Cameron Raymond🤯">
   <meta name="og:description" content="Cameron Raymond is a data scientist and incoming graduate student at the University of Oxford." />
-  <!-- <meta property="og:image" content="summary_large_image"> -->
+  <meta property="og:image" content="https://cameronraymond.me/summary_large_image.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
