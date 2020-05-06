@@ -14,6 +14,7 @@
 </script>
 
 <script>
+	import Emoji from '../../components/Emoji.svelte'
 	export let post;
 </script>
 
