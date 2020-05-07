@@ -9,7 +9,7 @@
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
-  span {
+  .cont {
     display: flex;
     flex: 1;
     align-self: stretch;
@@ -62,6 +62,10 @@
   .head h4 {
     font-size: initial;
   }
+  .head span {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 62, 0);
+  }
   .foot {
     display: flex;
     flex-direction: row;
@@ -107,7 +111,7 @@
   What I'm Working On
   <Emoji symbol="👨‍🔧" />
 </h2>
-<span>
+<span class="cont">
   {#each posts as post}
     <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
@@ -121,13 +125,17 @@
             <Emoji symbol={post.emoji} />
           </h4>
           {#if post.link}
-            {@html post.link}
+            <span>
+              {@html post.link}
+            </span>
           {/if}
         </div>
         <h4>{post.title}</h4>
       </div>
 
-      <p>{@html post.blurb}</p>
+      <p>
+        {@html post.blurb}
+      </p>
 
       {#if post.tags}
         <div class="foot">

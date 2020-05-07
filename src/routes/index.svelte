@@ -26,6 +26,7 @@
 <style>
   .cont {
     position: relative;
+    min-height: 25rem;
     height: calc(100vh - 4em);
     width: calc(100vw - 4em);
   }

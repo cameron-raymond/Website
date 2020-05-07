@@ -19,7 +19,7 @@ const posts = [
   },
   {
     title: "Modelling Axes of Political Engagement",
-    slug: "political-topic-centrality",
+    slug: "stochastic-blockmodels",
     emoji: "🧶",
     blurb: `Do people care more about policy or politicians when choosing to retweet political content online? Lead author on this study that developed random graph models to model what drives political engagement.`,
 	tags: ["gt", "ml"],
@@ -28,8 +28,8 @@ const posts = [
   },
   {
     title: "RL for Traffic Flow",
-    slug: "what-is-network-science",
-    emoji: "🚀",
+    slug: "rl-for-traffic-flow",
+    emoji: "🚙",
     blurb: `Helped develop a reinforcement learning agent that helps control the flow of traffic. Through a simple RL algorithm, we were able to reduce carbon emmissions by a third, and cut time waiting at red lights in half.`,
     tags: ["rl"],
     link: `<a aria-label="Repo" href="https://github.com/ZaneLittle/Traffic-Light-Simulation#q-learning-for-traffic-signal-control">Repo</a>`,
