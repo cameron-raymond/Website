@@ -146,4 +146,4 @@
     out:fade={{ duration: 50, delay: 100 }} />
 
 </div>
-<Posts {posts} />
+<Posts {posts}/>

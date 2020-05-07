@@ -27,7 +27,8 @@
     align-items: center;
     margin: 2rem;
     width: 30rem;
-    box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.14);
+    border: 1px solid #d1d5da;
+    /* box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.14); */
     border-radius: 8px;
     transition: 0.3s;
     overflow: hidden;
@@ -76,6 +77,13 @@
     padding-right: 0.5rem;
     text-align: right;
   }
+  .placeholder {
+    display: hidden;
+    width: 30rem;
+    height: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 
   @media (max-width: 40rem) {
     h2 {
@@ -86,6 +94,7 @@
       align-self: center;
       border-radius: 0;
       margin: 0rem;
+      border: none;
       padding-bottom: 1rem;
       box-shadow: 0 0 0 0;
     }
@@ -103,6 +112,9 @@
       align-items: center;
       margin-left: -2em;
       margin-right: -2em;
+    }
+    .placeholder{
+      display: none;
     }
   }
 </style>
@@ -146,4 +158,7 @@
       {/if}
     </div>
   {/each}
+  {#if posts.length % 2 != 0}
+    <span class="placeholder" />
+  {/if}
 </span>
