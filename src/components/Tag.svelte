@@ -14,6 +14,7 @@
     margin: 0.2rem 0;
     margin-right: 0.4rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     height: 1.2rem;
     padding: 0 0.3rem;

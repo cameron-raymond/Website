@@ -18,7 +18,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 1rem;
-    max-width: 60em;
+    max-width: 80em;
   }
   .post {
     display: flex;
@@ -26,11 +26,15 @@
     justify-content: space-between;
     align-items: center;
     margin: 2rem;
-    width: 20rem;
+    width: 30rem;
     box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.14);
     border-radius: 8px;
     transition: 0.3s;
     overflow: hidden;
+  }
+  p {
+    text-align: left;
+    padding: 0 1.5rem 0 1.5rem;
   }
   .post:hover {
     transform: translatey(-0.5em);
@@ -45,12 +49,19 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(238, 238, 238, 0.5);
-    height: 3rem;
+    height: 4.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: right;
   }
-
+  .head div {
+    text-align: center;
+    margin-right: 1.5rem;
+    font-size: 0.7rem;
+  }
+  .head h4 {
+    font-size: initial;
+  }
   .foot {
     display: flex;
     flex-direction: row;
@@ -72,11 +83,10 @@
       border-radius: 0;
       margin: 0rem;
       padding-bottom: 1rem;
-      height: 6.5rem;
       box-shadow: 0 0 0 0;
     }
     .head {
-      height: 2.5rem;
+      height: 3.5rem;
       padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
@@ -106,13 +116,18 @@
     <div class="post">
       <!-- <a rel="prefetch" href="blog/{post.slug}">{post.title}</a> -->
       <div class="head">
-        <h4>
-          <Emoji symbol={post.emoji} />
-        </h4>
-        <h5>{post.title}</h5>
+        <div>
+          <h4>
+            <Emoji symbol={post.emoji} />
+          </h4>
+          {#if post.link}
+            {@html post.link}
+          {/if}
+        </div>
+        <h4>{post.title}</h4>
       </div>
 
-      <p>{post.blurb}</p>
+      <p>{@html post.blurb}</p>
 
       {#if post.tags}
         <div class="foot">
