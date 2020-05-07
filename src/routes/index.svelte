@@ -11,9 +11,11 @@
 <script>
   import Emoji from "../components/Emoji.svelte";
   import Posts from "../components/Posts.svelte";
+  import { FaAngleDown } from "svelte-icons/fa";
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
   let visible = false;
+  let y;
   export let posts;
 
   onMount(() => {
@@ -41,7 +43,6 @@
     }
   }
   .intro-svg {
-    /* ! Change to this once more content is added */
     position: absolute;
     bottom: -5rem;
     right: -1rem;
@@ -50,6 +51,14 @@
     min-width: 40rem;
     overflow: hidden;
     z-index: -1;
+  }
+  .down-arrow {
+    position: absolute;
+    bottom: 1rem;
+    left: calc(50vw - 4em);
+    color: rgb(255, 62, 0);
+    height: 2.5rem;
+    width: 2.5rem;
   }
 </style>
 
@@ -90,6 +99,8 @@
     content="https://cameronraymond.me/summary_large_image.png" />
 </svelte:head>
 
+<svelte:window bind:scrollY={y} />
+
 <div class="cont">
   {#if visible}
     <div class="intro">
@@ -119,11 +130,19 @@
         posts on my work!
       </p>
     </div>
+    <span
+      in:fade={{ duration: 500, delay: 3000 }}
+      out:fade={{ duration: 0 }}
+      style="opacity: {1 - Math.max(0, y / 500)}"
+      class="down-arrow">
+      <FaAngleDown />
+    </span>
   {/if}
   <img
     src="intro.svg"
     alt=""
     class="intro-svg"
     out:fade={{ duration: 50, delay: 100 }} />
+
 </div>
 <Posts {posts} />
