@@ -104,11 +104,6 @@
       padding-bottom: 1rem;
       box-shadow: 0 0 0 0;
     }
-    .head {
-      height: 3.5rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
     .foot {
       height: 1rem;
     }
