@@ -44,9 +44,9 @@ code {
   font-family: menlo, inconsolata, monospace;
   font-size: calc(1em - 2px);
   color: #555;
-  background-color: #f0f0f0;
+  background-color: rgba(238, 238, 238, 0.5);
   padding: 0.2em 0.4em;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 @media (max-width: 40rem) {

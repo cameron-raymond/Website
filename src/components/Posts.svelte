@@ -1,0 +1,126 @@
+<script>
+  import Emoji from "./Emoji.svelte";
+  import Tag from "./Tag.svelte";
+  export let posts;
+</script>
+
+<style>
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  span {
+    display: flex;
+    flex: 1;
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 1rem;
+    max-width: 60em;
+  }
+  .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    width: 20rem;
+    box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  .post:hover {
+    transform: translatey(-0.5em);
+    transition: 0.3s;
+    box-shadow: 2px 10px 10px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  .head {
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(238, 238, 238, 0.5);
+    height: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: right;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2rem;
+    padding-right: 0.5rem;
+    text-align: right;
+  }
+
+  @media (max-width: 40rem) {
+    h2 {
+      margin-bottom: 2rem;
+    }
+    .post {
+      width: 100vw;
+      align-self: center;
+      border-radius: 0;
+      margin: 0rem;
+      padding-bottom: 1rem;
+      height: 6.5rem;
+      box-shadow: 0 0 0 0;
+    }
+    .head {
+      height: 2.5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .foot {
+      height: 1rem;
+    }
+    span {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: -2em;
+      margin-right: -2em;
+    }
+  }
+</style>
+
+<h2>
+  What I'm Working On
+  <Emoji symbol="👨‍🔧" />
+</h2>
+<span>
+  {#each posts as post}
+    <!-- we're using the non-standard `rel=prefetch` attribute to
+				tell Sapper to load the data for the page as soon as
+				the user hovers over the link or taps it, instead of
+				waiting for the 'click' event -->
+    <div class="post">
+      <!-- <a rel="prefetch" href="blog/{post.slug}">{post.title}</a> -->
+      <div class="head">
+        <h4>
+          <Emoji symbol={post.emoji} />
+        </h4>
+        <h5>{post.title}</h5>
+      </div>
+
+      <p>{post.blurb}</p>
+
+      {#if post.tags}
+        <div class="foot">
+          {#each post.tags as tagId}
+            <Tag {tagId} />
+          {/each}
+        </div>
+      {/if}
+    </div>
+  {/each}
+</span>

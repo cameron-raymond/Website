@@ -7,6 +7,7 @@
 </script>
 <script>
   import Emoji from "../components/Emoji.svelte";
+  import Posts from '../components/Posts.svelte'
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
   let visible = false;
@@ -103,14 +104,4 @@
     class="intro-svg"
     out:fade={{ duration: 50, delay: 100 }} />
 </div>
-<h1>Recent posts</h1>
-
-<ul>
-	{#each posts as post}
-		<!-- we're using the non-standard `rel=prefetch` attribute to
-				tell Sapper to load the data for the page as soon as
-				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
-		<li><a rel='prefetch' href='blog/{post.slug}'>{post.title}</a></li>
-	{/each}
-</ul>
+<Posts {posts}/>

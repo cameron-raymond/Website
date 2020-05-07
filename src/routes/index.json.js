@@ -3,7 +3,11 @@ import posts from './blog/_posts.js';
 const contents = JSON.stringify(posts.map(post => {
 	return {
 		title: post.title,
-		slug: post.slug
+		slug: post.slug,
+		emoji: post.emoji,
+		tags: post.tags,
+		link: post.link,
+		blurb: post.blurb
 	};
 }));
 

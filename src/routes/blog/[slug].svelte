@@ -61,5 +61,9 @@
 <h1>{post.title}</h1>
 
 <div class='content'>
+	{#if post.html}
 	{@html post.html}
+	{:else}
+		<p>Helo</p>
+	{/if}
 </div>
