@@ -55,15 +55,21 @@
     padding-right: 1.5rem;
     text-align: right;
   }
-  .head div {
+  .head .emoji {
     text-align: center;
     margin-right: 1.5rem;
     font-size: 0.7rem;
   }
+  .head .title {
+    text-align: right;
+    /* margin-right: 1.5rem; */
+    font-size: 0.7rem;
+  }
+
   .head h4 {
     font-size: initial;
   }
-  .head span {
+  .head .link {
     text-decoration: underline;
     text-decoration-color: rgb(255, 62, 0);
   }
@@ -113,7 +119,7 @@
       margin-left: -2em;
       margin-right: -2em;
     }
-    .placeholder{
+    .placeholder {
       display: none;
     }
   }
@@ -132,17 +138,20 @@
     <div class="post">
       <!-- <a rel="prefetch" href="blog/{post.slug}">{post.title}</a> -->
       <div class="head">
-        <div>
+        <div class="emoji">
           <h4>
             <Emoji symbol={post.emoji} />
           </h4>
           {#if post.link}
-            <span>
+            <span class="link">
               {@html post.link}
             </span>
           {/if}
         </div>
-        <h4>{post.title}</h4>
+        <div class="title">
+          <h4>{post.title}</h4>
+          {#if post.date}{post.date}{/if}
+        </div>
       </div>
 
       <p>

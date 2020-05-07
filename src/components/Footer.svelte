@@ -9,7 +9,7 @@
   let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
   let github = "https://github.com/cameron-raymond";
   let email = "mailto:cameronraymond534@gmail.com";
-  let medium = "https://medium.com/cameron-raymond";
+  let medium = "https://medium.com/networkd";
 </script>
 
 <style>

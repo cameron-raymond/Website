@@ -7,7 +7,8 @@ const contents = JSON.stringify(posts.map(post => {
 		emoji: post.emoji,
 		tags: post.tags,
 		link: post.link,
-		blurb: post.blurb
+		blurb: post.blurb,
+		date: post.date
 	};
 }));
 
