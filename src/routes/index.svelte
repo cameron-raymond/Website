@@ -1,13 +1,16 @@
 <script context="module">
   export function preload({ params, query }) {
-		return this.fetch(`index.json`).then(r => r.json()).then(posts => {
-			return { posts };
-		});
+    return this.fetch(`index.json`)
+      .then(r => r.json())
+      .then(posts => {
+        return { posts };
+      });
   }
 </script>
+
 <script>
   import Emoji from "../components/Emoji.svelte";
-  import Posts from '../components/Posts.svelte'
+  import Posts from "../components/Posts.svelte";
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
   let visible = false;
@@ -53,31 +56,46 @@
 <svelte:head>
   <title>🤯Cameron Raymond🤯</title>
 
-  <meta name="description" content="Cameron Raymond is a data scientist and incoming graduate student at the University of Oxford." />
-  <meta name="keywords" content="Cameron Raymond, University of Oxford, Oxford
-  University, Data Science, Social Data Sience, Data Scientist"/>
+  <meta
+    name="description"
+    content="Cameron Raymond is a data scientist and incoming graduate student
+    at the University of Oxford." />
+  <meta
+    name="keywords"
+    content="Cameron Raymond, University of Oxford, Oxford University, Data
+    Science, Social Data Sience, Data Scientist" />
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cameronraymond.me/">
-  <meta property="og:title" content="🤯Cameron Raymond🤯">
-  <meta name="og:description" content="Cameron Raymond is a data scientist and incoming graduate student at the University of Oxford." />
-  <meta property="og:image" content="https://cameronraymond.me/summary_large_image.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cameronraymond.me/" />
+  <meta property="og:title" content="🤯Cameron Raymond🤯" />
+  <meta
+    name="og:description"
+    content="Cameron Raymond is a data scientist and incoming graduate student
+    at the University of Oxford." />
+  <meta
+    property="og:image"
+    content="https://cameronraymond.me/summary_large_image.png" />
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://cameronraymond.me/">
-  <meta property="twitter:title" content="🤯Cameron Raymond🤯">
-  <meta property="twitter:description" content="Cameron Raymond is a data scientist and incoming graduate student at the University of Oxford.">
-  <meta property="twitter:image" content="https://cameronraymond.me/summary_large_image.png">
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://cameronraymond.me/" />
+  <meta property="twitter:title" content="🤯Cameron Raymond🤯" />
+  <meta
+    property="twitter:description"
+    content="Cameron Raymond is a data scientist and incoming graduate student
+    at the University of Oxford." />
+  <meta
+    property="twitter:image"
+    content="https://cameronraymond.me/summary_large_image.png" />
 </svelte:head>
 
 <div class="cont">
   {#if visible}
     <div class="intro">
       <h1
-        in:fly={{y: 50, duration: 500 }}
-        out:fly={{delay: 50, y: 50, duration: 500 }}>
+        in:fly={{ y: 50, duration: 500 }}
+        out:fly={{ delay: 50, y: 50, duration: 500 }}>
         Hello
         <Emoji symbol="👋" />
       </h1>
@@ -88,13 +106,17 @@
         <Emoji symbol="📈" />
         and incoming graduate student
         <Emoji symbol="🧑‍💻" />
-        at the University of Oxford
+        at the
+        <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
+          University of Oxford
+        </a>
         <Emoji symbol="🏫🏯" />
       </p>
       <p
         in:fly={{ delay: 350, y: 50, duration: 500 }}
-        out:fly={{  y: 50, duration: 500 }}>
-        This is a new version of my portfolio, so be sure to check back for more posts on my work!
+        out:fly={{ y: 50, duration: 500 }}>
+        This is a new version of my portfolio, so be sure to check back for more
+        posts on my work!
       </p>
     </div>
   {/if}
@@ -104,4 +126,4 @@
     class="intro-svg"
     out:fade={{ duration: 50, delay: 100 }} />
 </div>
-<Posts {posts}/>
+<Posts {posts} />
