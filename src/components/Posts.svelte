@@ -97,7 +97,7 @@
     .foot {
       height: 1rem;
     }
-    span {
+    .cont {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
