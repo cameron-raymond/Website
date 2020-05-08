@@ -15,11 +15,13 @@
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
   let visible = false;
+  // When you click on the "Read More" section of a card, it sets onHome from
+  // True to false and removes the intro content from the DOM
+  let onHome;
   let y;
   export let posts;
 
   onMount(() => (visible = true));
-  onDestroy(() => (visible = false));
 </script>
 
 <style>
@@ -102,7 +104,7 @@
 <svelte:window bind:scrollY={y} />
 
 <div class="cont">
-  <!-- {#if visible} -->
+  {#if visible && onHome}
   <div class="intro">
     <h1
       in:fly={{ y: 50, duration: 500 }}
@@ -137,11 +139,11 @@
     class="down-arrow">
     <FaAngleDown />
   </span>
-  <!-- {/if} -->
+  {/if}
   <img
     src="intro.svg"
     alt=""
     class="intro-svg"
     out:fade={{ duration: 50, delay: 100 }} />
 </div>
-<Cards {posts} />
+<Cards {posts} bind:onHome />

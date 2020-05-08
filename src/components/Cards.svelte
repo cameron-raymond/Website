@@ -2,6 +2,7 @@
   import Card from "./Card.svelte";
   import Emoji from "./Emoji.svelte";
   export let posts;
+  export let onHome;
 </script>
 
 <style>
@@ -50,7 +51,7 @@
 </h2>
 <span class="cont">
   {#each posts as post}
-    <Card {post} />
+    <Card {post} bind:onHome />
   {/each}
   {#if posts.length % 2 != 0}
     <span class="placeholder" />

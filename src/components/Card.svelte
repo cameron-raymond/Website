@@ -2,6 +2,7 @@
   import Tag from "./Tag.svelte";
   import Emoji from "./Emoji.svelte";
   export let post;
+  export let onHome = true;
 </script>
 
 <style>
@@ -111,7 +112,7 @@
   {#if post.tags || post.slug}
     <div class="foot">
       {#if post.slug}
-        <a rel="prefetch" href="blog/{post.slug}" class="link">Read More</a>
+        <a rel="prefetch" href="blog/{post.slug}" class="link" on:click={() => onHome = false}>Read More</a>
       {/if}
       {#if post.tags}
         <span>
