@@ -55,7 +55,7 @@
 </style>
 
 <svelte:head>
-	<title>{post.title}</title>
+	<title>{post.emoji}{post.title}{post.emoji}</title>
 </svelte:head>
 
 <h1>{post.title}</h1>

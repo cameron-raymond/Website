@@ -10,7 +10,7 @@
 
 <script>
   import Emoji from "../components/Emoji.svelte";
-  import Posts from "../components/Posts.svelte";
+  import Cards from "../components/Cards.svelte";
   import { FaAngleDown } from "svelte-icons/fa";
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
@@ -146,4 +146,4 @@
     out:fade={{ duration: 50, delay: 100 }} />
 
 </div>
-<Posts {posts}/>
+<Cards {posts}/>
