@@ -7,37 +7,37 @@
 // we don't want to create an `/blog/posts` route — the leading
 // underscore tells Sapper not to do that.
 // import Test from '_test.svelte'
-const posts = [
-  {
-    title: "Topic Centrality for Political Messaging",
-    slug: "political-topic-centrality",
-    emoji: "🏛",
-    blurb: `Lead author on this study that uses network science and unsupervised machine learning to quantify the &quot;bridging&quot; and &quot;bonding&quot; nature political messages.`,
-    tags: ["gt", "ml"],
-    link: `<a aria-label="Paper" href="https://github.com/cameron-raymond/CISC500-SeniorThesis/blob/master/topic_centrality_paper/Measures_of_Topic_Centrality_for_Online_Political_Engagement.pdf">Paper</a>`,
-    date: "Apr. '20",
-    html: `<h1>hi</h1>`,
-  },
-  {
-    title: "Modelling Axes of Political Engagement",
-    slug: "stochastic-blockmodels",
-    emoji: "🧶",
-    blurb: `Do people care more about policy or politicians when choosing to retweet political content online? Lead author on this study that developed random graph models to model what drives political engagement.`,
-    tags: ["gt", "ml"],
-    link: `<a aria-label="Paper" href="https://github.com/cameron-raymond/CISC500-SeniorThesis/blob/master/CRaymond_Undergraduate_Thesis.pdf">Paper</a>`,
-    date: "Apr. '20",
-    html: `<h1>hi</h1>`,
-  },
-  {
-    title: "RL for Traffic Flow",
-    slug: "rl-for-traffic-flow",
-    emoji: "🚙",
-    blurb: `Helped develop a reinforcement learning agent that helps control the flow of traffic. Through a simple RL algorithm, we were able to reduce carbon emissions by a third, and cut time waiting at red lights in half.`,
-    tags: ["rl"],
-    link: `<a aria-label="Repo" href="https://github.com/ZaneLittle/Traffic-Light-Simulation#q-learning-for-traffic-signal-control">Repo</a>`,
-    date: "Dec. '19",
-    html: `<h1>hi</h1>`,
-  },
+// const posts = [
+//   {
+//     title: "Topic Centrality for Political Messaging",
+//     slug: "political-topic-centrality",
+//     emoji: "🏛",
+//     blurb: `Lead author on this study that uses network science and unsupervised machine learning to quantify the &quot;bridging&quot; and &quot;bonding&quot; nature political messages.`,
+//     tags: ["gt", "ml"],
+//     link: `<a aria-label="Paper" href="https://github.com/cameron-raymond/CISC500-SeniorThesis/blob/master/topic_centrality_paper/Measures_of_Topic_Centrality_for_Online_Political_Engagement.pdf">Paper</a>`,
+//     date: "Apr. '20",
+//     html: `<h1>hi</h1>`,
+//   },
+//   {
+//     title: "Modelling Axes of Political Engagement",
+//     slug: "stochastic-blockmodels",
+//     emoji: "🧶",
+//     blurb: `Do people care more about policy or politicians when choosing to retweet political content online? Lead author on this study that developed random graph models to model what drives political engagement.`,
+//     tags: ["gt", "ml"],
+//     link: `<a aria-label="Paper" href="https://github.com/cameron-raymond/CISC500-SeniorThesis/blob/master/CRaymond_Undergraduate_Thesis.pdf">Paper</a>`,
+//     date: "Apr. '20",
+//     html: `<h1>hi</h1>`,
+//   },
+//   {
+//     title: "RL for Traffic Flow",
+//     slug: "rl-for-traffic-flow",
+//     emoji: "🚙",
+//     blurb: `Helped develop a reinforcement learning agent that helps control the flow of traffic. Through a simple RL algorithm, we were able to reduce carbon emissions by a third, and cut time waiting at red lights in half.`,
+//     tags: ["rl"],
+//     link: `<a aria-label="Repo" href="https://github.com/ZaneLittle/Traffic-Light-Simulation#q-learning-for-traffic-signal-control">Repo</a>`,
+//     date: "Dec. '19",
+//     html: `<h1>hi</h1>`,
+//   },
   // ,
   // {x
   // 	title: 'What is Sapper?',
@@ -114,7 +114,28 @@ const posts = [
   // 		<p>We're so glad you asked! Come on over to the <a href='https://github.com/sveltejs/svelte'>Svelte</a> and <a href='https://github.com/sveltejs/sapper'>Sapper</a> repos, and join us in the <a href='https://svelte.dev/chat'>Discord chatroom</a>. Everyone is welcome, especially you!</p>
   // 	`
   // }
-];
+// ];
+
+const fs = require("fs");
+const frontMatter = require("front-matter");
+const marked = require("marked");
+
+const posts = fs.readdirSync("./content").map((postFilename) => {
+  const postContent = fs.readFileSync(`./content/${postFilename}`, {
+    encoding: "utf8",
+  });
+  const postFrontMatter = frontMatter(postContent);
+  return {
+    title: postFrontMatter.attributes.title,
+    slug: postFrontMatter.attributes.slug,
+    emoji: postFrontMatter.attributes.emoji,
+    blurb: postFrontMatter.attributes.blurb,
+    tags: postFrontMatter.attributes.tags,
+    link: postFrontMatter.attributes.link,
+    date: postFrontMatter.attributes.date,
+    html: marked(postFrontMatter.body),
+  };
+});
 
 posts.forEach((post) => {
   post.html = post.html.replace(/^\t{3}/gm, "");
