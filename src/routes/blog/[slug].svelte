@@ -35,9 +35,6 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
-  .hideFooter {
-    min-height: 90vh;
-  }
   .content {
     display: flex;
     flex-direction: column;
@@ -136,7 +133,7 @@
     property="twitter:image"
     content="https://cameronraymond.me/summary_large_image.png" />
 </svelte:head>
-<div class="hideFooter">
+<div >
   {#if visible}
     <h1 in:fade={{ delay: 500, duration: 500 }}>{post.title} {post.emoji}</h1>
     <p in:fly={{ delay: 550, x: -50, duration: 500 }} class="subtitle">

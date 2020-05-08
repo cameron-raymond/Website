@@ -112,7 +112,7 @@
   {#if post.tags || post.slug}
     <div class="foot">
       {#if post.slug}
-        <a rel="prefetch" href="blog/{post.slug}" class="link" on:click={() => onHome = false}>Read More</a>
+        <a rel="prefetch" href="blog/{post.slug}" class="link" on:click={() => onHome = false} sapper-noscroll>Read More</a>
       {/if}
       {#if post.tags}
         <span>

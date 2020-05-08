@@ -6,6 +6,7 @@ blurb: "A reinforcement learning agent that helps control the flow of traffic. T
 tags: ["rl"]
 link: "<a aria-label='Repo' href='https://github.com/ZaneLittle/Traffic-Light-Simulation##q-learning-for-traffic-signal-control'>Repo</a>"
 date: "2019-12-01"
+prod: true
 ---
 
 ## Introduction

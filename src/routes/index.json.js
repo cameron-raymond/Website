@@ -8,8 +8,7 @@ let prettyDate = (date) => {
 };
 
 const contents = JSON.stringify(
-  posts
-    .map((post) => {
+  posts.filter(p => p.prod).map((post) => {
       return {
         title: post.title,
         slug: post.slug,

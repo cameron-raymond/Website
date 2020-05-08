@@ -228,66 +228,69 @@
     content="https://cameronraymond.me/summary_about_large.png" />
 
 </svelte:head>
-{#if visible}
-  <!-- <img src="about-left-blob.svg" alt="" class="about-left-blob-svg" /> <img
+
+<div>
+  {#if visible}
+    <!-- <img src="about-left-blob.svg" alt="" class="about-left-blob-svg" /> <img
   src="about-right-blob.svg" alt="" class="about-right-blob-svg" /> -->
-  <span>
-    <div class="intro">
-      <h1 in:fly={{ delay: 500, y: 50, duration: 500 }}>
-        Nice to meet you
-        <Emoji symbol="🙋‍♂️" />
-      </h1>
-      <p in:fly={{ delay: 800, y: 50, duration: 500 }}>
-        I’m a 21 year old data scientist from Toronto, Ontario - and a recent
-        computer science and political science graduate from
-        <a aria-label="Queen’s University" href="https://www.queensu.ca/">
-          Queen’s University.
-        </a>
-        In the fall I'll be joining the
-        <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
-          University of Oxford
-        </a>
-        and the
-        <a
-          aria-label="Oxford Internet Institute"
-          href="https://www.oii.ox.ac.uk/">
-          Oxford Internet Institute
-        </a>
-        to do my MSc in
-        <a
-          aria-label="Social Data Science"
-          href="https://www.oii.ox.ac.uk/study/msc-in-social-data-science/">
-          Social Data Science.
-        </a>
-        My broad areas of interest include network science, machine learning,
-        and computational social science.
-      </p>
-      <p in:fly={{ delay: 850, y: 50, duration: 500 }}>
-        With previous coursework and research studying the Politics of
-        Artificial Intelligence;
-        <a
-          aria-label="Neural and Genetic Computing"
-          href="https://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-452.html">
-          Neural and Genetic Computing;
-        </a>
-        and
-        <a
-          aria-label="Reinforcement Learning"
-          href="https://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-474.html">
-          Reinforcement Learning
-        </a>
-        I am passionate about the intersection of technology and society.
-      </p>
-      <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
-        In my spare time I love reading, exercising and hanging out with loved
-        ones.
-      </p>
-    </div>
-    <picture in:fade={{ delay: 600, duration: 200 }}>
-      <source type="image/webp" srcset="portrait.webp" />
-      <source type="image/jpeg" srcset="portrait.png" />
-      <img src="portrait.webp" alt="portrait" />
-    </picture>
-  </span>
-  <Overview elements={aboutMe} title="Me Through Lists" />
-{/if}
+    <span>
+      <div class="intro">
+        <h1 in:fly={{ delay: 500, y: 50, duration: 500 }}>
+          Nice to meet you
+          <Emoji symbol="🙋‍♂️" />
+        </h1>
+        <p in:fly={{ delay: 800, y: 50, duration: 500 }}>
+          I’m a 21 year old data scientist from Toronto, Ontario - and a recent
+          computer science and political science graduate from
+          <a aria-label="Queen’s University" href="https://www.queensu.ca/">
+            Queen’s University.
+          </a>
+          In the fall I'll be joining the
+          <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
+            University of Oxford
+          </a>
+          and the
+          <a
+            aria-label="Oxford Internet Institute"
+            href="https://www.oii.ox.ac.uk/">
+            Oxford Internet Institute
+          </a>
+          to do my MSc in
+          <a
+            aria-label="Social Data Science"
+            href="https://www.oii.ox.ac.uk/study/msc-in-social-data-science/">
+            Social Data Science.
+          </a>
+          My broad areas of interest include network science, machine learning,
+          and computational social science.
+        </p>
+        <p in:fly={{ delay: 850, y: 50, duration: 500 }}>
+          With previous coursework and research studying the Politics of
+          Artificial Intelligence;
+          <a
+            aria-label="Neural and Genetic Computing"
+            href="https://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-452.html">
+            Neural and Genetic Computing;
+          </a>
+          and
+          <a
+            aria-label="Reinforcement Learning"
+            href="https://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-474.html">
+            Reinforcement Learning
+          </a>
+          I am passionate about the intersection of technology and society.
+        </p>
+        <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
+          In my spare time I love reading, exercising and hanging out with loved
+          ones.
+        </p>
+      </div>
+      <picture in:fade={{ delay: 600, duration: 200 }}>
+        <source type="image/webp" srcset="portrait.webp" />
+        <source type="image/jpeg" srcset="portrait.png" />
+        <img src="portrait.webp" alt="portrait" />
+      </picture>
+    </span>
+    <Overview elements={aboutMe} title="Me Through Lists" />
+  {/if}
+</div>

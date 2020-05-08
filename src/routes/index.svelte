@@ -16,7 +16,7 @@
   import { fly, fade } from "svelte/transition";
   let visible = false;
   // When you click on the "Read More" section of a card, it sets onHome from
-  // True to false and removes the intro content from the DOM
+  // true to false and removes the intro content from the DOM
   let onHome;
   let y;
   export let posts;

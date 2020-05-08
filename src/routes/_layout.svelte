@@ -13,6 +13,7 @@
 		position: relative;
 		padding-left: 2rem;
 		padding-right: 2rem;
+		min-height: 80vh;
 	}
 </style>
 
