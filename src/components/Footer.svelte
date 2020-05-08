@@ -1,7 +1,7 @@
 <script>
   import Emoji from "./Emoji.svelte";
   import { FaLinkedinIn, FaGithub, FaMediumM } from "svelte-icons/fa";
-  import { getOutboundLink } from "../utils/getOutboundLink.js";
+  import { getOutboundLink } from "../utils/link.js";
   import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
   let year = "2020";
   let month = "May";

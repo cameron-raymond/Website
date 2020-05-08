@@ -1,6 +1,6 @@
 <script>
   import { FaLinkedinIn, FaGithub, FaUser, FaNewspaper } from "svelte-icons/fa";
-  import { getOutboundLink } from "../utils/getOutboundLink.js";
+  import { getOutboundLink } from "../utils/link.js";
   export let segment;
   let linkedIn = "https://www.linkedin.com/in/cameron-raymond/"
   let github = "https://github.com/cameron-raymond"
