@@ -21,8 +21,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-weight: 300;
   }
   .links {
@@ -30,7 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 10em;
+    width: 10rem;
   }
   .divider {
     height: 1.5rem;
@@ -48,7 +48,7 @@
       height: 1rem;
     }
     .links {
-      width: 8em;
+      width: 9rem;
     }
   }
 </style>

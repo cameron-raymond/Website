@@ -9,13 +9,13 @@
 <style>
   nav {
     position: sticky;
-    height: 4em;
+    height: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-weight: 300;
   }
 
@@ -24,7 +24,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 12em;
+    width: 12rem;
   }
 
   .icon {

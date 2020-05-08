@@ -11,8 +11,8 @@
 		flex: 1;
 		flex-direction: column;
 		position: relative;
-		padding-left: 2em;
-		padding-right: 2em;
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 </style>
 
