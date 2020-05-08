@@ -130,37 +130,38 @@
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-    <div class="post">
-      <!-- <a rel="prefetch" href="blog/{post.slug}">{post.title}</a> -->
-      <div class="head">
-        <div class="emoji">
-          <h4>
-            <Emoji symbol={post.emoji} />
-          </h4>
-          {#if post.link}
-            <span class="link">
-              {@html post.link}
-            </span>
-          {/if}
+    <a href="blog/{post.slug}">
+      <div class="post">
+        <div class="head">
+          <div class="emoji">
+            <h4>
+              <Emoji symbol={post.emoji} />
+            </h4>
+            {#if post.link}
+              <span class="link">
+                {@html post.link}
+              </span>
+            {/if}
+          </div>
+          <div class="title">
+            <h4>{post.title}</h4>
+            {#if post.date}{post.date}{/if}
+          </div>
         </div>
-        <div class="title">
-          <h4>{post.title}</h4>
-          {#if post.date}{post.date}{/if}
-        </div>
+
+        <p>
+          {@html post.blurb}
+        </p>
+
+        {#if post.tags}
+          <div class="foot">
+            {#each post.tags as tagId}
+              <Tag {tagId} />
+            {/each}
+          </div>
+        {/if}
       </div>
-
-      <p>
-        {@html post.blurb}
-      </p>
-
-      {#if post.tags}
-        <div class="foot">
-          {#each post.tags as tagId}
-            <Tag {tagId} />
-          {/each}
-        </div>
-      {/if}
-    </div>
+    </a>
   {/each}
   {#if posts.length % 2 != 0}
     <span class="placeholder" />
