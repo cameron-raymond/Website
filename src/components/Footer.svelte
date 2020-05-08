@@ -48,7 +48,7 @@
       height: 1rem;
     }
     .links {
-      width: 9rem;
+      width: 8rem;
     }
   }
 </style>

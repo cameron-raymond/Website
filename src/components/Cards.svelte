@@ -36,8 +36,8 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      margin-left: -2em;
-      margin-right: -2em;
+      margin-left: -2rem;
+      margin-right: -2rem;
     }
     .placeholder {
       display: none;
