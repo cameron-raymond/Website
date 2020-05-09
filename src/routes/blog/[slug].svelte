@@ -23,6 +23,7 @@
   onMount(() => {
     window.scrollTo(0, 0);
     visible = true;
+    window.scrollTo(0, 0);
   });
 </script>
 
@@ -50,6 +51,12 @@
     height: auto;
     max-width: 100%;
     max-height: 20rem;
+  }
+  .content :global(h3) {
+    margin-top: 1.5rem;
+  }
+  .content :global(h4) {
+    margin-top: 1rem;
   }
   .content :global(em) {
     margin: auto;
@@ -83,32 +90,7 @@
       color: #555;
     }
   }
-  /* .content :global(h2) {
-    font-size: 1.4em;
-    font-weight: 500;
-  }
 
-  .content :global(pre) {
-    background-color: #f9f9f9;
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
-    padding: 0.5em;
-    border-radius: 2px;
-    overflow-x: auto;
-  }
-
-  .content :global(pre) :global(code) {
-    background-color: transparent;
-    padding: 0;
-  }
-
-  .content :global(ul) {
-    line-height: 1.5;
-  }
-
-  .content :global(li) {
-    margin: 0 0 0.5em 0;
-  }
-   */
 </style>
 
 <svelte:head>

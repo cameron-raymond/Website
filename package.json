@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "eases-jsnext": "^1.0.10",
     "front-matter": "^3.1.0",
     "marked": "^1.0.0",
     "polka": "next",
