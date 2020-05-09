@@ -19,7 +19,9 @@
   import Emoji from "../../components/Emoji.svelte";
   import Tag from "../../components/Tag.svelte";
   export let post;
-
+  window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+  };
   let visible = false;
   onMount(() => {
     visible = true;
@@ -133,7 +135,7 @@
     property="twitter:image"
     content="https://cameronraymond.me/summary_large_image.png" />
 </svelte:head>
-<div >
+<div>
   {#if visible}
     <h1 in:fade={{ delay: 500, duration: 500 }}>{post.title} {post.emoji}</h1>
     <p in:fly={{ delay: 550, x: -50, duration: 500 }} class="subtitle">
