@@ -61,14 +61,27 @@
     color: #555;
     max-width: 40rem;
   }
+  .subtitle .collab {
+    display: flex;
+    font-size: 0.7rem;
+    color: #555;
+  }
   .tags {
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
   .tags span {
     display: flex;
+  }
+  @media (max-width: 40rem) {
+    .subtitle .collab {
+      display: flex;
+      font-size: 0.6rem;
+      color: #555;
+    }
   }
   /* .content :global(h2) {
     font-size: 1.4em;
@@ -136,17 +149,28 @@
 <div>
   {#if visible}
     <h1 in:fade={{ delay: 500, duration: 500 }}>{post.title} {post.emoji}</h1>
-    <p in:fly={{ delay: 550, x: -50, duration: 500 }} class="subtitle">
-      {@html post.blurb}
-      <span class="tags">
-        <span>
-          {#each post.tags as tagId}
-            <Tag {tagId} />
-          {/each}
+    <div in:fly={{ delay: 550, x: -50, duration: 500 }} class="subtitle">
+      <p>
+        {@html post.blurb}
+        {#if post.collaborators}
+          <span class="collab">
+            {#each post.collaborators as collab}
+              {@html collab}
+              &nbsp;
+            {/each}
+          </span>
+        {/if}
+        <span class="tags">
+          <span>
+            {#each post.tags as tagId}
+              <Tag {tagId} />
+            {/each}
+          </span>
+          <p>{post.date}</p>
         </span>
-        <p>{post.date}</p>
-      </span>
-    </p>
+      </p>
+
+    </div>
 
     <div in:fly={{ delay: 800, y: 50, duration: 500 }} class="content">
       {@html post.html}

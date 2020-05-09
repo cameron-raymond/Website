@@ -4,7 +4,8 @@
     rl: "Reinforcement Learning",
     gt: "Graph Theory",
     ml: "Machine Learning",
-    nlp: "Natural Lang. Processing"
+    nlp: "Natural Lang. Processing",
+    nt: "Networkd"
   };
   $: tagString = tagLabels[tagId] || tagId;
 </script>
@@ -23,7 +24,7 @@
   img {
     height: 0.85rem;
     width: 0.85rem;
-    margin-right: 0.2rem;
+    margin: 0.2rem 0.2rem 0 0;
   }
   .tagLabel {
     text-transform: capitalize;

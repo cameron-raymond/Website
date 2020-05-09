@@ -25,6 +25,7 @@ const posts = fs.readdirSync("./content").map((postFilename) => {
     link: postFrontMatter.attributes.link,
     date: postFrontMatter.attributes.date,
     prod: postFrontMatter.attributes.prod,
+    collaborators: postFrontMatter.attributes.collaborators,
     html: marked(postFrontMatter.body),
   };
 });
