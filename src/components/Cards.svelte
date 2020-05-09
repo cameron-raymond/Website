@@ -22,11 +22,12 @@
     max-width: 80em;
   }
   .placeholder {
-    display: hidden;
+    visibility: hidden;
     width: 30rem;
     height: 0;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #fff;
   }
   @media (max-width: 40rem) {
     h2 {

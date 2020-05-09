@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem;
+    margin: 1rem;
     width: 30rem;
     border: 1px solid #d1d5da;
     border-radius: 8px;
@@ -47,7 +47,6 @@
   }
   .head .title {
     text-align: right;
-    /* margin-right: 1.5rem; */
     font-size: 0.7rem;
   }
 
