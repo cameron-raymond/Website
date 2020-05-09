@@ -19,11 +19,9 @@
   import Emoji from "../../components/Emoji.svelte";
   import Tag from "../../components/Tag.svelte";
   export let post;
-  window.onbeforeunload = function() {
-    window.scrollTo(0, 0);
-  };
   let visible = false;
   onMount(() => {
+    window.scrollTo(0, 0);
     visible = true;
   });
 </script>
