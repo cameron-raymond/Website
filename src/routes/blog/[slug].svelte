@@ -73,6 +73,19 @@
     align-items: center;
     flex-wrap: wrap;
   }
+  .fadeIn {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 10rem;
+    margin: -2rem;
+    background-image: linear-gradient(
+      to top,
+      rgb(255, 255, 255),
+      rgba(255, 0, 0, 0)
+    ); /* Standard syntax (must be last) */
+  }
   .tags span {
     display: flex;
   }
@@ -176,4 +189,5 @@
       {@html post.html}
     </div>
   {/if}
+  <div class="fadeIn" />
 </div>
