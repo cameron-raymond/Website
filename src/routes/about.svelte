@@ -163,13 +163,7 @@
     height: auto;
     object-fit: contain;
     overflow: hidden;
-  } /* .about-left-blob-svg {
-    position: absolute; top: 40vh; left: -3rem; height: 30rem; overflow: hidden;
-    z-index: -1;
-  } .about-right-blob-svg {
-    position: absolute; bottom: 2rem; right: 0rem; width: 50%; overflow: hidden;
-    z-index: -1;
-  } */
+  }
   @media (max-width: 60rem) {
     span {
       margin-top: 3rem;
@@ -265,6 +259,30 @@
           and computational social science.
         </p>
         <p in:fly={{ delay: 850, y: 50, duration: 500 }}>
+          I'm currently a research scientist at the
+          <a aria-label="UToronto" href="https://www.utoronto.ca/">
+            University of Toronto
+          </a>
+          working on
+          <a
+            aria-label="community embeddings demo"
+            href="http://csslab.cs.toronto.edu/gs/">
+            community embeddings
+          </a>
+          with
+          <a
+            aria-label="Ashton Anderson Website"
+            href="http://www.cs.toronto.edu/~ashton/">
+            Dr. Ashton Anderson.
+          </a>
+           I'm also working on the blog,
+          <a aria-label="Medium Blog" href="https://medium.com/networkd">
+            Networkd,
+          </a>
+           which aims to take make computational social science research more
+          accessible.
+        </p>
+        <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
           With previous coursework and research studying the Politics of
           Artificial Intelligence;
           <a
@@ -280,7 +298,7 @@
           </a>
           I am passionate about the intersection of technology and society.
         </p>
-        <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
+        <p in:fly={{ delay: 950, y: 50, duration: 500 }}>
           In my spare time I love reading, exercising and hanging out with loved
           ones.
         </p>

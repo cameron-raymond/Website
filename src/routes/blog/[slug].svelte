@@ -78,11 +78,11 @@
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 10rem;
+    height: 8rem;
     margin: -2rem;
     background-image: linear-gradient(
       to top,
-      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.7),
       rgba(255, 0, 0, 0)
     ); /* Standard syntax (must be last) */
   }
