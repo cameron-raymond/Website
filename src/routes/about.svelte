@@ -279,7 +279,7 @@
           <a aria-label="Medium Blog" href="https://medium.com/networkd">
             Networkd,
           </a>
-           which aims to take make computational social science research more
+           which aims to make computational social science research more
           accessible.
         </p>
         <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
