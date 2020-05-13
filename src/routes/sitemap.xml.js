@@ -11,7 +11,7 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
         <loc>https://cameronraymond.me/about</loc>
     </url>
     ${posts
-      .filter((post) => post.slug)
+      .filter((post) => post.slug && post.prod)
       .map((post) => {
         return `<url>
                  <loc>${
