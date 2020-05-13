@@ -8,7 +8,7 @@ function getPath(title, slug) {
   const formatted_title = title
     .replace(/(\s|\?|\,|\&|\/)+/g, "-")
     .toLowerCase();
-  return "/blog/" + formatted_title + "-" + slug;
+  return "/blog/"+slug;
 }
 
 const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
