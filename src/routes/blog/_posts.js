@@ -26,8 +26,9 @@ const posts = fs.readdirSync("./content").map((postFilename) => {
     date: postFrontMatter.attributes.date,
     prod: postFrontMatter.attributes.prod,
     collaborators: postFrontMatter.attributes.collaborators,
-    html: marked(postFrontMatter.body).replace(/^\t{3}/gm, ""),
+    html: marked(postFrontMatter.body).replace(/^\t{3}/gm, "")
   };
 });
+
 
 export default posts;

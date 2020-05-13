@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /intro.svg
+Sitemap: https://cameronraymond.me/sitemap.xml
