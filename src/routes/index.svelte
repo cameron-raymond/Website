@@ -129,7 +129,7 @@
       <p
         in:fly={{ delay: 350, y: 50, duration: 500 }}
         out:fly={{ y: 50, duration: 500 }}>
-        Currently a computational social science RA at the <a aria-label="University of Toronto" href="http://www.cs.toronto.edu/~ashton/">University of Toronto</a>. <!-- and owner of the blog <a aria-label="Networkd" href="https://medium.com/networkd">Networkd</a>.  -->
+        Currently researching computational social science at the <a aria-label="University of Toronto" href="http://www.cs.toronto.edu/~ashton/">University of Toronto</a>. <!-- and owner of the blog <a aria-label="Networkd" href="https://medium.com/networkd">Networkd</a>.  -->
       </p>
     </div>
     <span
