@@ -9,9 +9,13 @@ date: "2020-05-15"
 prod: true
 ---
 
+
 ## Welcome to Networkd
 
-“Networks are important because if we don’t understand networks, we can’t understand how markets function, organizations solve problems or how societies change.” — Duncan Watts
+Network science and AI applied to the social world
+
+![Cover Image](https://cdn-images-1.medium.com/max/2000/1*zkHe5W1eoAbIEJKbNYDDzw.png)
+> “Networks are important because if we don’t understand networks, we can’t understand how markets function, organizations solve problems or how societies change.” — Duncan Watts
 
 Hello and welcome to Networkd, a blog dedicated to uncovering the social world through network science, artificial intelligence (AI), and computational social science. I’m Cameron, Networkd’s founder. I am an incoming MSc student at the University of Oxford studying [Social Data Science](https://www.oii.ox.ac.uk/study/msc-in-social-data-science/). Over the coming months, Networkd will serve as an *accessible* *outlet* for the exciting but all too often *inaccessible* research done in the world of computational social science. This intro to Networkd will give the justification for why opening up this research is a good thing, and set the foundation for further exploration into the world of networks and computation.
 
@@ -32,7 +36,7 @@ We can’t ignore the world we live in, and all its complexities and interdepend
 
 Networkd is a blog about how our relationships can explain interesting and important phenomena in our world. Often, the best way to do this is by creating some sort of network with the relevant data; however, this is far from the only way to avoid the sociological meat grinder, and this blog will often draw on other useful tools as well.
 
-The data that we’ll draw upon is often collected from the internet, a great example of a massively important network (it is the world wide *web* after all). This means that our data are often sparse, in the form of text or images, and that there is a lot of it. AI can help group and categorize this data in a way that makes its exploration that much easier. This will be shown in the coming weeks, when we look at how the tweets of different political leaders served dramatically different purposes, depending on what the tweet was about. AI is helpful because, to a computer, it’s not exactly clear what a tweet is “about”. Computational social science refers to the use of computation to answer social science questions. Since the questions this blog will look at are often about how digital technology is changing our world, and there are a lot of data to collect, computational methods allow us to achieve breadth in our work.
+The data that we’ll draw upon is often collected from the internet, a great example of a massively important network (it is the world wide *web *after all*). *This means that our data are often sparse, in the form of text or images, and that there is a lot of it. AI can help group and categorize this data in a way that makes its exploration that much easier. This will be shown in the coming weeks, when we look at how the tweets of different political leaders served dramatically different purposes, depending on what the tweet was about. AI is helpful because, to a computer, it’s not exactly clear what a tweet is “about”. Computational social science refers to the use of computation to answer social science questions. Since the questions this blog will look at are often about how digital technology is changing our world, and there are a lot of data to collect, computational methods allow us to achieve breadth in our work.
 
 ### Let’s get Started🕺💃
 
