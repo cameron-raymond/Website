@@ -8,14 +8,14 @@
   let day = "12";
   let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
   let github = "https://github.com/cameron-raymond";
-  let email = "mailto:cameronraymond534@gmail.com";
+  let email = "mailto:cameronraymond534@gmail.com?subject=Let's%20Talk%20Data";
   let medium = "https://medium.com/networkd";
 </script>
 
 <style>
   .footer {
     position: relative;
-    margin-top: 3rem;
+    margin-top: 1rem;
     height: 8rem;
     display: flex;
     flex-direction: row;
@@ -42,6 +42,17 @@
     width: 1.2rem;
     height: 1.2rem;
   }
+  .chat {
+    margin-top: 6rem;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+  }
+  .chat a {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 62, 0);
+    text-decoration-thickness: 0.11em;
+  }
   @media (max-width: 40rem) {
     .icon {
       width: 1rem;
@@ -50,9 +61,20 @@
     .links {
       width: 8rem;
     }
+    .chat {
+      margin-top: 4rem;
+    }
   }
 </style>
 
+<div class="chat">
+  <h3>
+    Let's
+    <a aria-label="Email" href={email} on:click={() => getOutboundLink(email)}>
+      Talk Data
+    </a>
+  </h3>
+</div>
 <div class="footer">
   <p>
     <Emoji symbol="👨‍🎨" />
