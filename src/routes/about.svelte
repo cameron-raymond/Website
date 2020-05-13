@@ -275,12 +275,12 @@
             href="http://www.cs.toronto.edu/~ashton/">
             Dr. Ashton Anderson.
           </a>
-           I'm also working on the blog,
+          <!-- I'm also working on the blog,
           <a aria-label="Medium Blog" href="https://medium.com/networkd">
             Networkd,
           </a>
            which aims to make computational social science research more
-          accessible.
+          accessible. -->
         </p>
         <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
           With previous coursework and research studying the Politics of

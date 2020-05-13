@@ -6,7 +6,7 @@ blurb: "Introductory post to \"Networkd,\" a blog dedicated to exploring the soc
 tags: ["nt",]
 link: "<a aria-label='Blog Post' href='https://medium.com/networkd/welcome-to-networkd-c3ba116c74cf'>Blog Post</a>"
 date: "2020-05-15"
-prod: true
+prod: false
 ---
 
 
