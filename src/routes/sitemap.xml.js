@@ -2,15 +2,6 @@
 import fetch from "node-fetch";
 import posts from "./blog/_posts.js";
 
-function getPath(title, slug) {
-  if (!slug) return "/";
-
-  const formatted_title = title
-    .replace(/(\s|\?|\,|\&|\/)+/g, "-")
-    .toLowerCase();
-  return "/blog/"+slug;
-}
-
 const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -24,7 +15,7 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
       .map((post) => {
         return `<url>
                  <loc>${
-                   "https://cameronraymond.me" + getPath(post.title, post.slug)
+                   "https://cameronraymond.me/blog/"+ post.slug
                  }</loc>
             </url>`;
       })
