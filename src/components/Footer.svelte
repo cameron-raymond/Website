@@ -90,6 +90,8 @@
       {month} {day}, {year}
     </a>
     .
+    <br/>
+    <a href="sitemap.xml">Sitemap</a>
   </p>
   <div class="links">
     <a

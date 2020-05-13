@@ -21,7 +21,7 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
     </url>
     ${posts
       .filter((post) => post.slug)
-      .map(function (post) {
+      .map((post) => {
         return `<url>
                  <loc>${
                    "https://cameronraymond.me" + getPath(post.title, post.slug)
@@ -35,7 +35,8 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 export async function get(req, res) {
   // The important thing for you to know about this is that
   // this get request returns a list of stringified json objects.
-  res.setHeader("Content-Type", "application/xml");
-  const xml = render(posts);
-  res.end(xml);
+  res.writeHead(200, {
+    "Content-Type": "application/xml",
+  });
+  res.end(render(posts));
 }
