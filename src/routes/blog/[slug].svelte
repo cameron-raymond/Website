@@ -95,6 +95,9 @@
       font-size: 0.6rem;
       color: #555;
     }
+    .fadeIn{
+      display: none;
+    }
   }
   /* .content :global(h2) {
     font-size: 1.4em;
