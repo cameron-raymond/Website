@@ -147,6 +147,6 @@
       <FaAngleDown />
     </span>
   {/if}
-  <img src="intro.svg" alt="" out:fade={{ duration: 50, delay: 100 }} />
+  <img src="intro.svg" alt="" class="intro-svg" out:fade={{ duration: 50, delay: 100 }} />
 </div>
 <Cards {posts} bind:onHome />
