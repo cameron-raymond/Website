@@ -3,7 +3,7 @@ title: "Welcome to Networkd"
 slug: "networkd-intro"
 emoji: "🕸"
 blurb: "Introductory post to \"Networkd,\" a blog dedicated to exploring the social world through network science, artificial intelligence (AI), and computational social science."
-tags: ["nt",]
+tags: ["bp"]
 link: "<a aria-label='Blog Post' href='https://medium.com/networkd/welcome-to-networkd-c3ba116c74cf'>Blog Post</a>"
 date: "2020-05-15"
 prod: false
