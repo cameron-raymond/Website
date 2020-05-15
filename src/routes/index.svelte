@@ -1,6 +1,6 @@
 <script context="module">
   export function preload({ params, query }) {
-    this.fetch(`sitemap.xml`)
+    this.fetch(`sitemap.xml`);
     return this.fetch(`index.json`)
       .then(r => r.json())
       .then(posts => {
@@ -47,11 +47,11 @@
   }
   .intro-svg {
     position: absolute;
-    bottom: -5rem;
+    bottom: -2.75rem;
     right: -1rem;
     width: 100%;
-    max-width: 55rem;
-    min-width: 40rem;
+    max-width: 42rem;
+    min-width: 35rem;
     overflow: hidden;
     z-index: -1;
   }
@@ -129,7 +129,14 @@
       <p
         in:fly={{ delay: 350, y: 50, duration: 500 }}
         out:fly={{ y: 50, duration: 500 }}>
-        Currently researching computational social science at the <a aria-label="University of Toronto" href="http://www.cs.toronto.edu/~ashton/">University of Toronto</a>. <!-- and owner of the blog <a aria-label="Networkd" href="https://medium.com/networkd">Networkd</a>.  -->
+        Currently researching computational social science at the
+        <a
+          aria-label="University of Toronto"
+          href="http://www.cs.toronto.edu/~ashton/">
+          University of Toronto
+        </a>
+        .
+        <!-- and owner of the blog <a aria-label="Networkd" href="https://medium.com/networkd">Networkd</a>.  -->
       </p>
     </div>
     <span
@@ -140,10 +147,6 @@
       <FaAngleDown />
     </span>
   {/if}
-  <img
-    src="intro.svg"
-    alt=""
-    class="intro-svg"
-    out:fade={{ duration: 50, delay: 100 }} />
+  <img src="intro.svg" alt="" out:fade={{ duration: 50, delay: 100 }} />
 </div>
 <Cards {posts} bind:onHome />
