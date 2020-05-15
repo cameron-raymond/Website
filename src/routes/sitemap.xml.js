@@ -8,14 +8,14 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
         <loc>https://cameronraymond.me</loc>
     </url>
     <url>
-        <loc>https://cameronraymond.me/about</loc>
+        <loc>https://cameronraymond.me/about/</loc>
     </url>
     ${posts
       .filter((post) => post.slug && post.prod)
       .map((post) => {
         return `<url>
                  <loc>${
-                   "https://cameronraymond.me/blog/"+ post.slug
+                   "https://cameronraymond.me/blog/"+ post.slug+"/"
                  }</loc>
             </url>`;
       })
