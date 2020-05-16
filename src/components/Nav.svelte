@@ -3,7 +3,7 @@
   import { getOutboundLink } from "../utils/link.js";
   export let segment;
   let linkedIn = "https://www.linkedin.com/in/cameron-raymond/"
-  let github = "https://github.com/cameron-raymond"
+  let github = "https://github.com/cameron-raymond/"
 </script>
 
 <style>
@@ -71,14 +71,14 @@
   </a>
   <div class="links">
     <a aria-label="Resume"
-      href="CRaymondResume2020.pdf"
+      href="CRaymondResume2020.pdf/"
       on:click={() => getOutboundLink('https://cameronraymond.me/CRaymondResume2020.pdf')}>
       <span class="hideIcons icon">
         <FaNewspaper />
       </span>
       <span class="hideLinks">Resume</span>
     </a>
-    <a aria-label="About" aria-current={segment === 'about' ? 'page' : undefined} href="about">
+    <a aria-label="About" aria-current={segment === 'about' ? 'page' : undefined} href="about/">
       <span class="hideIcons icon">
         <FaUser />
       </span>

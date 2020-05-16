@@ -15,7 +15,7 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
       .map((post) => {
         return `<url>
                  <loc>${
-                   "https://cameronraymond.me/blog/"+ post.slug+"/"
+                   `https://cameronraymond.me/blog/${post.slug}/`
                  }</loc>
             </url>`;
       })

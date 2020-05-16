@@ -7,9 +7,9 @@
   let month = "May";
   let day = "15";
   let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
-  let github = "https://github.com/cameron-raymond";
-  let email = "mailto:cameronraymond534@gmail.com?subject=Let's%20Talk%20Data";
-  let medium = "https://medium.com/@cameronraymond";
+  let github = "https://github.com/cameron-raymond/";
+  let email = "mailto:cameronraymond534@gmail.com?subject=Let's%20Talk%20Data/";
+  let medium = "https://medium.com/@cameronraymond/";
 </script>
 
 <style>

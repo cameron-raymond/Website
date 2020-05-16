@@ -120,7 +120,7 @@
       {#if post.slug}
         <a
           rel="prefetch"
-          href="blog/{post.slug}"
+          href="blog/{post.slug}/"
           class="link"
           on:click={() => (onHome = false)}
           sapper-noscroll>
