@@ -71,7 +71,7 @@
   </a>
   <div class="links">
     <a aria-label="Resume"
-      href="CRaymondResume2020.pdf/"
+      href="CRaymondResume2020.pdf"
       on:click={() => getOutboundLink('https://cameronraymond.me/CRaymondResume2020.pdf')}>
       <span class="hideIcons icon">
         <FaNewspaper />
