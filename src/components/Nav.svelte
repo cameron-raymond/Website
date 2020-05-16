@@ -2,8 +2,8 @@
   import { FaLinkedinIn, FaGithub, FaUser, FaNewspaper } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
   export let segment;
-  let linkedIn = "https://www.linkedin.com/in/cameron-raymond/"
-  let github = "https://github.com/cameron-raymond/"
+  let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
+  let github = "https://github.com/cameron-raymond/";
 </script>
 
 <style>
@@ -66,11 +66,15 @@
 </style>
 
 <nav>
-  <a aria-label="Home" aria-current={segment === undefined ? 'page' : undefined} href=".">
+  <a
+    aria-label="Home"
+    aria-current={segment === undefined ? 'page' : undefined}
+    href=".">
     Cameron Raymond
   </a>
   <div class="links">
-    <a aria-label="Resume"
+    <a
+      aria-label="Resume"
       href="CRaymondResume2020.pdf"
       on:click={() => getOutboundLink('https://cameronraymond.me/CRaymondResume2020.pdf')}>
       <span class="hideIcons icon">
@@ -78,24 +82,28 @@
       </span>
       <span class="hideLinks">Resume</span>
     </a>
-    <a aria-label="About" aria-current={segment === 'about' ? 'page' : undefined} href="about/">
+    <a
+      aria-label="About"
+      aria-current={segment === 'about' ? 'page' : undefined}
+      href="about/">
       <span class="hideIcons icon">
         <FaUser />
       </span>
       <span class="hideLinks">About</span>
     </a>
     <div class="divider" />
-    <a aria-label="LinkedIn"
+    <a
+      aria-label="LinkedIn"
       class="icon"
       href={linkedIn}
       on:click={() => getOutboundLink(linkedIn)}>
       <FaLinkedinIn />
     </a>
-    <a aria-label="Github"
+    <a
+      aria-label="Github"
       class="icon"
       href={github}
-      on:click={() => getOutboundLink(github)}
-      >
+      on:click={() => getOutboundLink(github)}>
       <FaGithub />
     </a>
     <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
