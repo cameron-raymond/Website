@@ -71,7 +71,7 @@
   <meta
     name="description"
     content="Cameron Raymond is a data scientist and incoming graduate student
-    at the University of Oxford." />
+    at the University of Oxford. His broad areas of interest include network science, machine learning, and computational social science." />
   <meta
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
@@ -84,7 +84,7 @@
   <meta
     name="og:description"
     content="Cameron Raymond is a data scientist and incoming graduate student
-    at the University of Oxford." />
+    at the University of Oxford. His broad areas of interest include network science, machine learning, and computational social science." />
   <meta
     property="og:image"
     content="https://cameronraymond.me/summary_large_image.png" />
@@ -129,10 +129,11 @@
       <p
         in:fly={{ delay: 350, y: 50, duration: 500 }}
         out:fly={{ y: 50, duration: 500 }}>
-        Currently researching computational social science at the
+        Currently a research scientist, studying computational social science at
+        the
         <a
           aria-label="University of Toronto"
-          href="http://www.cs.toronto.edu/~ashton/">
+          href="http://www.cs.toronto.edu/">
           University of Toronto
         </a>
         .
@@ -147,6 +148,10 @@
       <FaAngleDown />
     </span>
   {/if}
-  <img src="intro.svg" alt="" class="intro-svg" out:fade={{ duration: 50, delay: 100 }} />
+  <img
+    src="intro.svg"
+    alt=""
+    class="intro-svg"
+    out:fade={{ duration: 50, delay: 100 }} />
 </div>
 <Cards {posts} bind:onHome />

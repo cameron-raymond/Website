@@ -189,7 +189,7 @@
     name="description"
     content="Cameron Raymond is a 21 year old data scienist from Toronto,
     Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science." />
+    MSc in Social Data Science. His broad areas of interest include network science, machine learning, and computational social science." />
   <meta
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
@@ -203,7 +203,7 @@
     name="og:description"
     content="Cameron Raymond is a 21 year old data scienist from Toronto,
     Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science." />
+    MSc in Social Data Science. His broad areas of interest include network science, machine learning, and computational social science." />
   <meta
     property="og:image"
     content="https://cameronraymond.me/summary_about_large.png" />
