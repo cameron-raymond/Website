@@ -1,14 +1,10 @@
 import posts from "./blog/_posts.js";
-
-let prettyDate = (date) => {
-  const d = new Date(date);
-  const ye = new Intl.DateTimeFormat("en", { year: "numeric" }).format(d);
-  const mo = new Intl.DateTimeFormat("en", { month: "short" }).format(d);
-  return `${mo}. ${ye}`;
-};
+import { prettyDate } from "../utils/date.js";
 
 const contents = JSON.stringify(
-  posts.filter(p => p.prod).map((post) => {
+  posts
+    .filter((p) => p.prod)
+    .map((post) => {
       return {
         title: post.title,
         slug: post.slug,

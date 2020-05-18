@@ -2,7 +2,7 @@
 title: "Analyzing Political Polarization: Topic Modelling"
 slug: "political-topic-centrality-2"
 emoji: "🏛"
-blurb: "Part two of three in a series that analyzes political polarization through network science and NLP. Posted on the popular blog <a aria-label='Towards Data Science'href='https://towardsdatascience.com/'>Towards Data Science</a>."
+blurb: "Part two of three in a series that analyzes political polarization through network science. Modelling and extracting topics from political tweets. Posted on the popular blog <a aria-label='Towards Data Science'href='https://towardsdatascience.com/'>Towards Data Science</a>."
 tags: ["bp", "gt", "ml"]
 link: "<a aria-label='Blog' href='https://medium.com/@cameronraymond/analyzing-political-polarization-topic-modelling-2-b45a7bd3d3cc'>Blog</a>"
 date: "2020-05-21"

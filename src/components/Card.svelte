@@ -21,6 +21,12 @@
   p {
     text-align: left;
     padding: 0 1.5rem 0 1.5rem;
+    height: 6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
   }
   .card:hover {
     transform: translatey(-0.5em);
@@ -82,6 +88,9 @@
     }
     .foot {
       height: 1rem;
+    }
+    p {
+      height: initial;
     }
   }
 </style>
