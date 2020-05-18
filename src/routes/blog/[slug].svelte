@@ -112,6 +112,7 @@
 <svelte:head>
   <title>{post.emoji}{post.title} - Cameron Raymond{post.emoji}</title>
 
+  <link rel="canonical" href="https://cameronraymond.me/blog/{post.slug}/">
   <meta name="description" content={post.blurb} />
   <meta
     name="keywords"
@@ -122,7 +123,7 @@
   <meta property="og:type" content="website" />
   <meta
     property="og:url"
-    content="https://cameronraymond.me/blog/{post.slug}" />
+    content="https://cameronraymond.me/blog/{post.slug}/" />
   <meta
     property="og:title"
     content="{post.emoji}{post.title} - Cameron Raymond{post.emoji}" />
@@ -135,7 +136,7 @@
   <meta property="twitter:card" content="summary_large_image" />
   <meta
     property="twitter:url"
-    content="https://cameronraymond.me/blog/{post.slug}" />
+    content="https://cameronraymond.me/blog/{post.slug}/" />
   <meta
     property="twitter:title"
     content="{post.emoji}{post.title} - Cameron Raymond{post.emoji}" />
