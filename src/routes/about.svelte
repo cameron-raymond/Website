@@ -226,8 +226,6 @@
 
 <div>
   {#if visible}
-    <!-- <img src="about-left-blob.svg" alt="" class="about-left-blob-svg" /> <img
-  src="about-right-blob.svg" alt="" class="about-right-blob-svg" /> -->
     <span>
       <div class="intro">
         <h1 in:fly={{ delay: 500, y: 50, duration: 500 }}>
