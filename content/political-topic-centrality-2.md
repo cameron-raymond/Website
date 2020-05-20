@@ -9,8 +9,6 @@ date: "2020-05-21"
 prod: true
 ---
 
-## Analyzing Political Polarization: Topic Modelling
-
 What topics dominated online discourse, answered through natural language processing
 
 ![Source: [Salesforce.com](https://www.salesforce.com/ca/blog/2019/10/get-to-know-ai-for-business--natural-language-processing.html)](https://cdn-images-1.medium.com/max/2402/1*8wo8S9TmNx7aMHWSW_lSfg.png)*Source: [Salesforce.com](https://www.salesforce.com/ca/blog/2019/10/get-to-know-ai-for-business--natural-language-processing.html)*

@@ -80,7 +80,7 @@
     <Emoji symbol="👨‍🎨" />
     +
     <Emoji symbol="👷‍♂️" />
-    by me.
+    by me
     <br />
     Last updated
     <a
@@ -89,7 +89,7 @@
       href="https://www.onthisday.com/events/{month}/{day}">
       {month} {day}, {year}
     </a>
-    .
+    
   </p>
   <div class="links">
     <a
