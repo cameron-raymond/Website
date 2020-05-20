@@ -78,7 +78,7 @@
 <div class="footer">
   <p>
     <Emoji symbol="👨‍🎨" />
-    and
+    +
     <Emoji symbol="👷‍♂️" />
     by me.
     <br />
