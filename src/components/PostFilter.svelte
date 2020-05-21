@@ -1,6 +1,6 @@
 <script>
   export let tags;
-  let current = new Set(tags);
+  let current = new Set();
 
   let tagLabels = {
     rl: "Reinforcement Learning",
@@ -9,6 +9,10 @@
     bp: "Blog Post",
     nlp: "Natural Lang. Processing",
     nt: "Networkd"
+  };
+  let updateCurrent = tagId => {
+    current.has(tagId) ? current.delete(tagId) : current.add(tagId);
+    current = current;
   };
 </script>
 
@@ -22,13 +26,16 @@
     height: 1.2rem;
     padding: 0 0.3rem;
     font-size: 0.7rem;
+    cursor: pointer;
   }
   .active {
     background-color: #ff3e00;
     color: white;
   }
   span {
+    max-width: 40rem;
     display: flex;
+    flex-wrap: wrap;
   }
   img {
     height: 0.85rem;
@@ -50,10 +57,10 @@
   }
 </style>
 
-<h3>Filter by</h3>
+<h3>Include posts like</h3>
 <span>
   {#each tags as tagId}
-    <code class:active={current.has(tagId)} on:click={() => current.has(tagId) ? current.add(tagId) : current.delete(tagId)}>
+    <code class:active={current.has(tagId)} on:click="{() => updateCurrent(tagId)}">
       <picture>
         <source srcset="tags/{tagId}.webp" type="image/webp" />
         <source srcset="tags/{tagId}.png" type="image/png" />
