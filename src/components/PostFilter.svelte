@@ -11,12 +11,8 @@
     nt: "Networkd"
   };
   let updateCurrent = tagId => {
-    // active = active.includes(tagId)
-    //   ? active.filter(x => x != tagId)
-    //   : [...active, tagId];
     active.has(tagId) ? active.delete(tagId) : active.add(tagId);
-    active = active;
-    // console.log(active);
+    active = active.size == 0 ? new Set(tags) : active;
   };
 </script>
 

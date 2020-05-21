@@ -4,12 +4,9 @@
   import Emoji from "./Emoji.svelte";
   export let posts;
   export let onHome;
-  let tags = posts
-    ?[ ...new Set([].concat(...posts.map(x => x.tags)))]
-    : undefined;
-  let active = new Set(tags);
-  console.log(active);
-  $: visible =  posts.filter(post => post.tags.some(tag => active.has(tag)));
+  let active = posts ? new Set([].concat(...posts.map(x => x.tags))): undefined;
+  let tags = posts ? [...active] : undefined;
+  $: visible = posts.filter(post => post.tags.some(tag => active.has(tag)));
 </script>
 
 <style>
