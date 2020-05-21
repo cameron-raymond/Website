@@ -1,15 +1,7 @@
 <script>
+  import { tagLabels } from "../utils/tags.js";
   export let tags;
   export let active;
-
-  let tagLabels = {
-    rl: "Reinforcement Learning",
-    gt: "Graph Theory",
-    ml: "Machine Learning",
-    bp: "Blog Post",
-    nlp: "NLP",
-    nt: "Networkd"
-  };
   let updateCurrent = tagId => {
     active.has(tagId) ? active.delete(tagId) : active.add(tagId);
     active = active.size == 0 ? new Set(tags) : active;

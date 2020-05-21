@@ -74,6 +74,7 @@
   }
   .foot span {
     display: flex;
+    flex-wrap: wrap;
   }
 
   @media (max-width: 40rem) {
