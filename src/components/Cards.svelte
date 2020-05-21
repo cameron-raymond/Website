@@ -1,8 +1,12 @@
 <script>
   import Card from "./Card.svelte";
+  import PostFilter from "./PostFilter.svelte";
   import Emoji from "./Emoji.svelte";
   export let posts;
   export let onHome;
+  let tags = posts
+    ? [...new Set([].concat(...posts.map(x => x.tags)))]
+    : undefined;
 </script>
 
 <style>
@@ -50,11 +54,16 @@
   What I'm Working On
   <Emoji symbol="👨‍🔧" />
 </h2>
-<span class="cont">
-  {#each posts as post}
-    <Card {post} bind:onHome />
-  {/each}
-  {#if posts.length % 2 != 0}
-    <span class="placeholder" />
-  {/if}
-</span>
+{#if tags}
+  <PostFilter tags={tags}/>
+{/if}
+{#if posts}
+  <span class="cont">
+    {#each posts as post}
+      <Card {post} bind:onHome />
+    {/each}
+    {#if posts.length % 2 != 0}
+      <span class="placeholder" />
+    {/if}
+  </span>
+{/if}
