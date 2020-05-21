@@ -1,18 +1,22 @@
 <script>
   export let tags;
-  let current = new Set();
+  export let active;
 
   let tagLabels = {
     rl: "Reinforcement Learning",
     gt: "Graph Theory",
     ml: "Machine Learning",
     bp: "Blog Post",
-    nlp: "Natural Lang. Processing",
+    nlp: "NLP",
     nt: "Networkd"
   };
   let updateCurrent = tagId => {
-    current.has(tagId) ? current.delete(tagId) : current.add(tagId);
-    current = current;
+    // active = active.includes(tagId)
+    //   ? active.filter(x => x != tagId)
+    //   : [...active, tagId];
+    active.has(tagId) ? active.delete(tagId) : active.add(tagId);
+    active = active;
+    // console.log(active);
   };
 </script>
 
@@ -57,16 +61,22 @@
   }
 </style>
 
-<h3>Include posts like</h3>
-<span>
-  {#each tags as tagId}
-    <code class:active={current.has(tagId)} on:click="{() => updateCurrent(tagId)}">
-      <picture>
-        <source srcset="tags/{tagId}.webp" type="image/webp" />
-        <source srcset="tags/{tagId}.png" type="image/png" />
-        <img src="tags/{tagId}.png" alt={`${tagLabels[tagId] || tagId} logo`} />
-      </picture>
-      <div class="tagLabel">{tagLabels[tagId] || tagId}</div>
-    </code>
-  {/each}
-</span>
+{#if tags}
+  <h3>Include</h3>
+  <span>
+    {#each tags as tagId}
+      <code
+        class:active={active.has(tagId)}
+        on:click={() => updateCurrent(tagId)}>
+        <picture>
+          <source srcset="tags/{tagId}.webp" type="image/webp" />
+          <source srcset="tags/{tagId}.png" type="image/png" />
+          <img
+            src="tags/{tagId}.png"
+            alt={`${tagLabels[tagId] || tagId} logo`} />
+        </picture>
+        <div class="tagLabel">{tagLabels[tagId] || tagId}</div>
+      </code>
+    {/each}
+  </span>
+{/if}

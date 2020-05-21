@@ -5,8 +5,11 @@
   export let posts;
   export let onHome;
   let tags = posts
-    ? [...new Set([].concat(...posts.map(x => x.tags)))]
+    ?[ ...new Set([].concat(...posts.map(x => x.tags)))]
     : undefined;
+  let active = new Set(tags);
+  console.log(active);
+  $: visible =  posts.filter(post => post.tags.some(tag => active.has(tag)));
 </script>
 
 <style>
@@ -55,14 +58,14 @@
   <Emoji symbol="👨‍🔧" />
 </h2>
 {#if tags}
-  <PostFilter tags={tags}/>
+  <PostFilter {tags} bind:active />
 {/if}
-{#if posts}
+{#if visible}
   <span class="cont">
-    {#each posts as post}
+    {#each visible as post}
       <Card {post} bind:onHome />
     {/each}
-    {#if posts.length % 2 != 0}
+    {#if visible.length % 2 != 0}
       <span class="placeholder" />
     {/if}
   </span>
