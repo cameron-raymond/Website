@@ -25,6 +25,9 @@
     padding-right: 2rem;
     font-weight: 300;
   }
+  .footer p{
+    margin-right: 1.5rem;
+  }
   .links {
     display: flex;
     flex-direction: row;
@@ -82,14 +85,14 @@
     <Emoji symbol="👷‍♂️" />
     by me
     <br />
-    Last updated
+    Last update
     <a
       aria-label="{month}
       {day}, {year}"
       href="https://www.onthisday.com/events/{month}/{day}">
       {month} {day}, {year}
     </a>
-    
+    <Emoji symbol="👏"/>
   </p>
   <div class="links">
     <a

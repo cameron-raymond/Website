@@ -9,6 +9,11 @@
 </script>
 
 <style>
+  span {
+    max-width: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
   code {
     margin: 0.2rem 0;
     margin-right: 0.4rem;
@@ -19,15 +24,20 @@
     padding: 0 0.3rem;
     font-size: 0.7rem;
     cursor: pointer;
+    transition: 0.2s;
+  }
+  code:hover {
+    transition: 0.2s;
+    background-color: rgba(213, 213, 213, 0.5);
   }
   .active {
     background-color: #ff3e00;
     color: white;
+    transition: 0.2s;
   }
-  span {
-    max-width: 40rem;
-    display: flex;
-    flex-wrap: wrap;
+  .active:hover {
+    background-color: #fa3e00;
+    transition: 0.2s;
   }
   img {
     height: 0.85rem;

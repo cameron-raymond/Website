@@ -4,7 +4,9 @@
   import Emoji from "./Emoji.svelte";
   export let posts;
   export let onHome;
-  let active = posts ? new Set([].concat(...posts.map(x => x.tags))): undefined;
+  let active = posts
+    ? new Set([].concat(...posts.map(x => x.tags)))
+    : undefined;
   let tags = posts ? [...active] : undefined;
   $: visible = posts.filter(post => post.tags.every(tag => active.has(tag)));
 </script>
@@ -12,7 +14,10 @@
 <style>
   h2 {
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
+  }
+  .postFilter {
+    margin-bottom: 0.5rem;
   }
   .cont {
     display: flex;
@@ -57,6 +62,8 @@
 {#if tags}
   <PostFilter {tags} bind:active />
 {/if}
+<span class="postFilter" />
+
 {#if visible}
   <span class="cont">
     {#each visible as post}
