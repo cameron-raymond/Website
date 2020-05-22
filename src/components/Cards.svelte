@@ -6,7 +6,7 @@
   export let onHome;
   let active = posts ? new Set([].concat(...posts.map(x => x.tags))): undefined;
   let tags = posts ? [...active] : undefined;
-  $: visible = posts.filter(post => post.tags.some(tag => active.has(tag)));
+  $: visible = posts.filter(post => post.tags.every(tag => active.has(tag)));
 </script>
 
 <style>
