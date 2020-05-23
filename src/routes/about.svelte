@@ -65,6 +65,10 @@
         `<a aria-label="The Age of Surveillance Capitalism" key={6}
         href="https://www.nytimes.com/2019/01/16/books/review-age-of-surveillance-capitalism-shoshana-zuboff.html">
           The Age of Surveillance Capitalism
+        </a>`,
+        `<a aria-label="Social Physics" key={7}
+        href="https://www.technologyreview.com/2014/03/04/173783/social-physics/">
+          Social Physics
         </a>`
       ]
     },
@@ -189,12 +193,13 @@
     name="description"
     content="Cameron Raymond is a 21 year old data scienist from Toronto,
     Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science. His broad areas of interest include network science, machine learning, and computational social science." />
+    MSc in Social Data Science. His broad areas of interest include network
+    science, machine learning, and computational social science." />
   <meta
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
     Science, Social Data Sience, Data Scientist" />
-  <link rel="canonical" href="https://cameronraymond.me/about/">
+  <link rel="canonical" href="https://cameronraymond.me/about/" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -204,7 +209,8 @@
     name="og:description"
     content="Cameron Raymond is a 21 year old data scienist from Toronto,
     Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science. His broad areas of interest include network science, machine learning, and computational social science." />
+    MSc in Social Data Science. His broad areas of interest include network
+    science, machine learning, and computational social science." />
   <meta
     property="og:image"
     content="https://cameronraymond.me/summary_about_large.png" />
