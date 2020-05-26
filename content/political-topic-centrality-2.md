@@ -9,11 +9,8 @@ date: "2020-05-21"
 prod: true
 ---
 
-## Analyzing Political Polarization: Topic Modelling
 
-What topics dominated online discourse, answered through natural language processing
-
-![Source: [Salesforce.com](https://www.salesforce.com/ca/blog/2019/10/get-to-know-ai-for-business--natural-language-processing.html)](https://cdn-images-1.medium.com/max/2402/1*8wo8S9TmNx7aMHWSW_lSfg.png)*Source: [Salesforce.com](https://www.salesforce.com/ca/blog/2019/10/get-to-know-ai-for-business--natural-language-processing.html)*
+![Source: [Salesforce.com](https://www.salesforce.com/ca/blog/2019/10/get-to-know-ai-for-business--natural-language-processing.html)](https://cdn-images-1.medium.com/max/2402/1*8wo8S9TmNx7aMHWSW_lSfg.png)<div>*Source: [Salesforce.com](https://www.salesforce.com/ca/blog/2019/10/get-to-know-ai-for-business--natural-language-processing.html)*</div>
 
 Networks can tell us a lot about the world we live in. As Duncan Watts, a UPenn sociologist, famously said: "Networks are important because if we don’t understand networks, we can’t understand how markets function, organizations solve problems or how societies change." However, if we’re exploring relationships between different **things** through networks, we need to understand **what exactly those things are.** That is what we’ll be looking at in this article: what can we say about the tweets leading up to the Canadian 2019 election that can help our network analysis of political polarization?
 
@@ -27,11 +24,11 @@ This article, then, is about the tweets scraped from the Twitter accounts of the
 
 This new data set was collected with Twitter’s historical search API, which allows user’s to programmatically access any publicly available tweet. The API was used to collect all of the English tweets from Canada’s five, English speaking party leaders: Andrew Scheer, Elizabeth May, Jagmeet Singh, Justin Trudeau, and Maxime Bernier. All of these party leaders’ tweets between October 21, 2018 and October 21, 2019 — Canada’s 43 general election — were collected. While the tweets from each Federal party’s official Twitter accounts were also collected, they acted as logistical tools — informing party affiliates of events and rallies. The personal accounts for party leaders better represent their beliefs, platforms and style of rhetoric, and are better suited to analyze the bridging versus bonding nature of different topics. In this spirit, only tweets of the party leader were used, excluding retweets. Below graphs the daily and cumulative number of tweets over time, in aggregate and by party leader, for a total of **7,978** tweets.
 
-![Party leader tweets over time.](https://cdn-images-1.medium.com/max/2160/1*9Z7d9R6f0bV8WoaHlS7BWw.png)*Party leader tweets over time.*
+![Party leader tweets over time.](https://cdn-images-1.medium.com/max/2160/1*9Z7d9R6f0bV8WoaHlS7BWw.png)<div>*Party leader tweets over time.*</div>
 
 Additionally, for each tweet collected from a party leader, all of the available retweets by general users were collected for a total of **113,293 retweets** by **36,450 general users**. This is, again, visualized in aggregate and by party leader below.
 
-![Retweets for each party leader over time.](https://cdn-images-1.medium.com/max/2160/1*pYkiqRx8Xso0uxkObA0bAw.png)*Retweets for each party leader over time.*
+![Retweets for each party leader over time.](https://cdn-images-1.medium.com/max/2160/1*pYkiqRx8Xso0uxkObA0bAw.png)<div>*Retweets for each party leader over time.*</div>
 
 ### What is Topic Modelling?
 
@@ -43,7 +40,7 @@ Topic modelling is a form of unsupervised machine learning (ML) that can find cl
 
 Given the inherent noise and extraneous info in text data, it is standard and necessary to preprocess text before modeling¹. Since we’re only interested in what a tweet is about, we can safely remove punctuation marks; words like ‘and’, ‘or’, ‘the’, etc.; words with fewer than three characters; and URLs. Other common Twitter symbols like ‘RT:’, ‘@’ and ‘#’ can also be removed. Emojis contain valuable information, but are hard for a computer to interpret, so they were converted to text using the Python package emoji. After this process, all text was converted to lower-case and lemmatized to get rid of common suffixes. This means that the tweet below, after preprocessing, reads: *wherever maple leaf fly represents rich history bright future value hold dear happy flag day canada*.
 
-![Example tweet](https://cdn-images-1.medium.com/max/2000/1*huOCrc67kdG9zn6QgMktVA.png)*Example tweet*
+![Example tweet](https://cdn-images-1.medium.com/max/2000/1*huOCrc67kdG9zn6QgMktVA.png)<div>*Example tweet*</div>
 
 #### Latent Dirichlet Allocation
 
@@ -53,15 +50,15 @@ My original paper, which can be found on my [personal website](https://cameronra
 
 By performing a parameter sweep we saw that the most performant LDA had a *k* value of 7, α of 0.31 and β of 0.81. Each of the party leaders’ tweets was then represented as some combination of the 7 latent topics that were extracted. By labeling each tweet as the maximum probability value in its topic distribution, each tweet was given a single topic! I found the best way to visualize what each topic is about is to create word clouds, which I’ve included below.
 
-![LDA word clouds](https://cdn-images-1.medium.com/max/2088/1*OncxG28xAWVokOOY3cyJYA.png)*LDA word clouds*
+![LDA word clouds](https://cdn-images-1.medium.com/max/2088/1*OncxG28xAWVokOOY3cyJYA.png)<div>*LDA word clouds*</div>
 
 Topic 1 pertained to **campaign messages, rallies and logistics** — and makes up 8.2% of all tweets. Topic 2 contains tweets regarding a **carbon tax, pipelines and the economy** — and makes up 16.3% of all tweets. Topic 3 contains tweets about the **SNC Lavalin affair**, a scandal that plagued Justin Trudeau, and tweets about corruption — making up 18% of all tweets. Topic 4 is predominantly **appeals to the middle-class and economy** — and is 29.7% of all tweets. Topic 5 contains **celebratory messages** about the campaign, as well as tweets regarding national holidays and days of remembrance — and make up 15% of all tweets. Topic 6 is made up of tweets about **immigration, diversity and free speech** — and makes up 11.5% of all tweets. Finally, topic 7 contains tweets regarding **healthcare, abortion and pharmacare**— and makes up 1% of all tweets.
 
-![Tweets by topic breakdown](https://cdn-images-1.medium.com/max/2702/1*mYH2M6Zmh5Sa60T5xGHbAw.png)*Tweets by topic breakdown*
+![Tweets by topic breakdown](https://cdn-images-1.medium.com/max/2702/1*mYH2M6Zmh5Sa60T5xGHbAw.png)<div>*Tweets by topic breakdown*</div>
 
 This is already a rich source of information. By doing this topic modelling we can see that while topic 6, tweets pertaining to diversity and immigration, only made up 11.5% of all tweets they *made up the majority of Maxime Bernier’s*. Additionally, Andrew Scheer and Elizabeth May’s campaigns relied heavily on topic 3, the SNC Lavalin affair, with a disproportionate number of tweets aimed at Justin Trudeau’s handling of the scandal. It’s also clear that the more right-leaning candidates, Maxime Bernier and Andrew Scheer, had a disproportionate number of tweets pertaining to topic 2. These were tweets rebutting Justin Trudeau’s plan to implement a carbon tax, and arguing for greater access to Alberta’s Oil Sands. Now that we know what these topics are about, we can update the engagement graph from before. Now each tweet vertex is colored according to its topic. The topics have the same color as the pie chart above for reference.
 
-![Engagement graph with tweet vertices colored by topic.](https://cdn-images-1.medium.com/max/6000/1*dlDjeRQMuZoexm-onCcAuw.png)*Engagement graph with tweet vertices colored by topic.*
+![Engagement graph with tweet vertices colored by topic.](https://cdn-images-1.medium.com/max/6000/1*dlDjeRQMuZoexm-onCcAuw.png)<div>*Engagement graph with tweet vertices colored by topic.*</div>
 
 ### What’s Next?
 

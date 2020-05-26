@@ -58,8 +58,12 @@
   .content :global(h4) {
     margin-top: 1rem;
   }
-  .content :global(em) {
-    margin: auto;
+  .content :global(div) {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    text-align: center; 
   }
   h1 {
     margin-top: 4rem;
@@ -102,17 +106,16 @@
       font-size: 0.6rem;
       color: #555;
     }
-    .fadeIn{
+    .fadeIn {
       display: none;
     }
   }
-
 </style>
 
 <svelte:head>
   <title>{post.emoji}{post.title} - Cameron Raymond{post.emoji}</title>
 
-  <link rel="canonical" href="https://cameronraymond.me/blog/{post.slug}/">
+  <link rel="canonical" href="https://cameronraymond.me/blog/{post.slug}/" />
   <meta name="description" content={post.blurb} />
   <meta
     name="keywords"

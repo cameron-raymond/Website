@@ -8,7 +8,3 @@ link: "<a aria-label='Paper' href='https://github.com/cameron-raymond/CISC500-Se
 date: "2020-04-02"
 prod: true
 ---
-
-Your markdown content.
-
-## test
