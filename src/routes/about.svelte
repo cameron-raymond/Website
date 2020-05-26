@@ -72,6 +72,7 @@
       emoji: "👨‍🎤",
       header: "Quarantine Albums",
       list: [
+        `<a aria-label="Un Canto Por México Vol. 1" href="https://www.theneedledrop.com/articles/2020/5/natalia-lafourcade-un-canto-por-mxico-vol-1">Un Canto Por México Vol. 1</a>`,
         `<a aria-label="Dark Lane Demo Tapes" key={0}
         href="https://pitchfork.com/thepitch/5-takeaways-from-drakes-new-mixtape-dark-lane-demo-tapes/">
         Dark Lane Demo Tapes </a> `,
