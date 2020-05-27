@@ -22,7 +22,6 @@
   let visible = false;
   onMount(() => {
     visible = true;
-    window.scrollTo(0, 0);
   });
 </script>
 
@@ -155,7 +154,7 @@
 </svelte:head>
 <div>
   {#if visible}
-    <h1 in:fade={{ delay: 500, duration: 500 }}>{post.title} {post.emoji}</h1>
+    <h1 in:fade={{ delay: 500, duration: 500 }} >{post.title} {post.emoji}</h1>
     <div in:fly={{ delay: 550, x: -50, duration: 500 }} class="subtitle">
       <p>
         {@html post.blurb}

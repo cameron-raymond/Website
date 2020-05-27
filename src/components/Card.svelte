@@ -128,12 +128,13 @@
         </span>
       {/if}
       {#if post.slug}
+        <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+		     the blog data when we hover over the link or tap it on a touchscreen -->
         <a
           rel="prefetch"
           href="blog/{post.slug}/"
           class="link"
-          on:click={() => (onHome = false)}
-          sapper-noscroll>
+          on:click={() => (onHome = false)}>
           Read More
         </a>
       {/if}

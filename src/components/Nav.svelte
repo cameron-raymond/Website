@@ -106,15 +106,6 @@
       on:click={() => getOutboundLink(github)}>
       <FaGithub />
     </a>
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <!-- <a aria-label=""
-      class="icon"
-      rel="prefetch"
-      aria-current={segment === 'blog' ? 'page' : undefined}
-      href="blog">
-      <FaGithub />
-    </a> -->
   </div>
 
 </nav>
