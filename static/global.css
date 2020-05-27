@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Mukta', sans-serif;
+  font-family: "Mukta", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #202124;
   margin: 0 0 0.5em 0;
@@ -22,7 +22,7 @@ h6 {
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #202124;
   text-transform: uppercase;
@@ -51,10 +51,10 @@ code {
 }
 
 @media (max-width: 40rem) {
-	h1{
-		font-size: 1.5em;
-	}
-	body {
+  h1 {
+    font-size: 1.5em;
+  }
+  body {
     font-size: 14px;
   }
 }

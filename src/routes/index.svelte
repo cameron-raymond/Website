@@ -22,7 +22,7 @@
   let y;
   let h;
   export let posts;
-  $: outroDuration = y > h ? 0 : 500
+  $: outroDuration = y > h*0.8 ? 0 : 500
   onMount(() => (visible = true));
 </script>
 
