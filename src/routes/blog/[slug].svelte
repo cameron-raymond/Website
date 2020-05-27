@@ -21,7 +21,6 @@
   export let post;
   let visible = false;
   onMount(() => {
-    window.scrollTo(0, 0);
     visible = true;
     window.scrollTo(0, 0);
   });
@@ -57,13 +56,6 @@
   }
   .content :global(h4) {
     margin-top: 1rem;
-  }
-  .content :global(div) {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    text-align: center;
-    text-align: center;
   }
   .content :global(ul) {
     position: relative;
