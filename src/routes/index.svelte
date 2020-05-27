@@ -137,7 +137,6 @@
         <a aria-label="University of Toronto" href="http://www.cs.toronto.edu/">
           University of Toronto
         </a>
-        .
         <!-- and owner of the blog <a aria-label="Networkd" href="https://medium.com/networkd">Networkd</a>.  -->
       </p>
     </div>

@@ -1,13 +1,7 @@
 <script>
+  import { tagLabels } from "../utils/tags.js";
   export let tagId;
-  let tagLabels = {
-    rl: "Reinforcement Learning",
-    gt: "Graph Theory",
-    ml: "Machine Learning",
-    bp: "Blog Post",
-    nlp: "Natural Lang. Processing",
-    nt: "Networkd"
-  };
+
   $: tagString = tagLabels[tagId] || tagId;
 </script>
 

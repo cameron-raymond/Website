@@ -1,14 +1,23 @@
 <script>
   import Card from "./Card.svelte";
+  import PostFilter from "./PostFilter.svelte";
   import Emoji from "./Emoji.svelte";
   export let posts;
   export let onHome;
+  let active = posts
+    ? new Set([].concat(...posts.map(x => x.tags)))
+    : undefined;
+  let tags = posts ? [...active] : undefined;
+  $: visible = posts.filter(post => post.tags.every(tag => active.has(tag)));
 </script>
 
 <style>
   h2 {
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
+  }
+  .postFilter {
+    margin-bottom: 0.5rem;
   }
   .cont {
     display: flex;
@@ -50,11 +59,18 @@
   What I'm Working On
   <Emoji symbol="👨‍🔧" />
 </h2>
-<span class="cont">
-  {#each posts as post}
-    <Card {post} bind:onHome />
-  {/each}
-  {#if posts.length % 2 != 0}
-    <span class="placeholder" />
-  {/if}
-</span>
+{#if tags}
+  <PostFilter {tags} bind:active />
+{/if}
+<span class="postFilter" />
+
+{#if visible}
+  <span class="cont">
+    {#each visible as post}
+      <Card {post} bind:onHome />
+    {/each}
+    {#if visible.length % 2 != 0}
+      <span class="placeholder" />
+    {/if}
+  </span>
+{/if}

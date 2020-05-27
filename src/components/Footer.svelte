@@ -5,7 +5,7 @@
   import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
   let year = "2020";
   let month = "May";
-  let day = "19";
+  let day = "23";
   let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
   let github = "https://github.com/cameron-raymond/";
   let email = "mailto:cameronraymond534@gmail.com?subject=Let's%20Talk%20Data";
@@ -24,6 +24,9 @@
     padding-left: 2rem;
     padding-right: 2rem;
     font-weight: 300;
+  }
+  .footer p{
+    margin-right: 1.5rem;
   }
   .links {
     display: flex;
@@ -78,18 +81,18 @@
 <div class="footer">
   <p>
     <Emoji symbol="👨‍🎨" />
-    and
+    +
     <Emoji symbol="👷‍♂️" />
-    by me.
+    by me
     <br />
-    Last updated
+    Last update
     <a
       aria-label="{month}
       {day}, {year}"
       href="https://www.onthisday.com/events/{month}/{day}">
       {month} {day}, {year}
     </a>
-    .
+    <Emoji symbol="👏"/>
   </p>
   <div class="links">
     <a
