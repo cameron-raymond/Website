@@ -63,8 +63,21 @@
     flex: 1;
     justify-content: center;
     text-align: center;
-    text-align: center; 
+    text-align: center;
   }
+  .content :global(ul) {
+    position: relative;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1.2em;
+  }
+  .content :global(ul li:before) {
+    font-size: 16.8px;
+    content: "\2022";
+    position: absolute;
+    left: 0;
+  }
+
   h1 {
     margin-top: 4rem;
   }
