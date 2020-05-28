@@ -58,6 +58,11 @@
 
   .head h4 {
     font-size: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
   }
   .link {
     text-decoration: underline;
