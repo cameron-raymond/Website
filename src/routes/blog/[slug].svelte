@@ -98,8 +98,7 @@
     border-radius: 1px;
   }
   progress::-webkit-progress-bar{
-    background-color: white;
-    opacity: 0;
+    background: rgba(255, 255, 255, 0);
   }
   progress::-webkit-progress-value {
     background: #ff3e00;
@@ -125,19 +124,7 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .fadeIn {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 8rem;
-    margin: -2rem;
-    background-image: linear-gradient(
-      to top,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 0, 0, 0)
-    ); /* Standard syntax (must be last) */
-  }
+
   .tags span {
     display: flex;
   }
@@ -146,9 +133,6 @@
       display: flex;
       font-size: 0.6rem;
       color: #555;
-    }
-    .fadeIn {
-      display: none;
     }
   }
 </style>
@@ -225,5 +209,4 @@
       {@html post.html}
     </div>
   {/if}
-  <div class="fadeIn" />
 </div>
