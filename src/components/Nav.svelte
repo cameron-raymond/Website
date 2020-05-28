@@ -17,6 +17,8 @@
     padding-left: 2rem;
     padding-right: 2rem;
     font-weight: 300;
+    z-index: 3;
+    background-color: white;
   }
 
   .links {

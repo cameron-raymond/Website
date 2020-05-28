@@ -28,9 +28,9 @@
   let y = 0;
   let h = 1000;
   let visible = false;
-  $: percDone = progress.set(
-    (y / h) * 100 > 93 ? 100 : Math.max(((y - 100) / h) * 100, 0)
-  );
+  // take 500 off of the height to roughly account for header/footer, shift y by 100 so that it starts after header
+  $: percDone = ((y - 100) / (h - 500)) * 100;
+  $: prog = progress.set(percDone > 95 ? 100 : Math.max(percDone, 0));
 
   onMount(() => {
     visible = true;
@@ -97,7 +97,7 @@
     background: #ff3e00;
     border-radius: 1px;
   }
-  progress::-webkit-progress-bar{
+  progress::-webkit-progress-bar {
     background: rgba(255, 255, 255, 0);
   }
   progress::-webkit-progress-value {
@@ -178,9 +178,10 @@
 
 <div bind:clientHeight={h}>
   {#if visible}
-    <progress in:fade={{ delay: 500, duration: 0 }} value={$progress} max="100">
-    </progress>
-
+    <progress
+      in:fade={{ delay: 500, duration: 0 }}
+      value={$progress}
+      max="100" />
     <h1 in:fade={{ delay: 200, duration: 500 }}>{post.title} {post.emoji}</h1>
     <div in:fly={{ delay: 250, x: -50, duration: 500 }} class="subtitle">
       <p>
