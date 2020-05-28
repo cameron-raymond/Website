@@ -16,10 +16,22 @@
 <script>
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
+  import { tweened } from "svelte/motion";
+  import { cubicOut } from "svelte/easing";
   import Emoji from "../../components/Emoji.svelte";
   import Tag from "../../components/Tag.svelte";
   export let post;
+  const progress = tweened(0, {
+    duration: 500,
+    easing: cubicOut
+  });
+  let y = 0;
+  let h = 1000;
   let visible = false;
+  $: percDone = progress.set(
+    (y / h) * 100 > 93 ? 100 : Math.max(((y - 100) / h) * 100, 0)
+  );
+
   onMount(() => {
     visible = true;
   });
@@ -67,6 +79,27 @@
     content: "\2022";
     position: absolute;
     left: 0;
+  }
+
+  progress {
+    border: none;
+    border-width: 0;
+    background: none;
+    border-radius: 1px;
+    margin: -4rem -2rem 0 -2rem;
+    position: fixed;
+    width: 100%;
+    height: 1.3px;
+    z-index: 2;
+    color: #ff3e00;
+  }
+  progress::-moz-progress-bar {
+    background: #ff3e00;
+    border-radius: 1px;
+  }
+  progress::-webkit-progress-value {
+    background: #ff3e00;
+    border-radius: 1px;
   }
 
   h1 {
@@ -152,10 +185,16 @@
     property="twitter:image"
     content="https://cameronraymond.me/summary_large_image.png" />
 </svelte:head>
-<div>
+
+<svelte:window bind:scrollY={y} />
+
+<div bind:clientHeight={h}>
   {#if visible}
-    <h1 in:fade={{ delay: 500, duration: 500 }} >{post.title} {post.emoji}</h1>
-    <div in:fly={{ delay: 550, x: -50, duration: 500 }} class="subtitle">
+    <progress in:fade={{ delay: 500, duration: 0 }} value={$progress} max="100">
+    </progress>
+
+    <h1 in:fade={{ delay: 200, duration: 500 }}>{post.title} {post.emoji}</h1>
+    <div in:fly={{ delay: 250, x: -50, duration: 500 }} class="subtitle">
       <p>
         {@html post.blurb}
         {#if post.collaborators}
@@ -178,7 +217,7 @@
 
     </div>
 
-    <div in:fly={{ delay: 800, y: 50, duration: 500 }} class="content">
+    <div in:fly={{ delay: 200, y: 50, duration: 500 }} class="content">
       {@html post.html}
     </div>
   {/if}
