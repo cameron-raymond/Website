@@ -97,6 +97,10 @@
     background: #ff3e00;
     border-radius: 1px;
   }
+  progress::-webkit-progress-bar{
+    background-color: white;
+    opacity: 0;
+  }
   progress::-webkit-progress-value {
     background: #ff3e00;
     border-radius: 1px;
