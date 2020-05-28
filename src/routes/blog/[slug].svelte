@@ -89,7 +89,7 @@
     margin: -4rem -2rem 0 -2rem;
     position: fixed;
     width: 100%;
-    height: 1.3px;
+    height: 1.5px;
     z-index: 2;
     color: #ff3e00;
   }
