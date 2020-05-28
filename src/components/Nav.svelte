@@ -40,7 +40,7 @@
 
   @media (max-width: 40rem) {
     .links {
-      width: 9rem;
+      width: 7.5rem;
     }
     .icon {
       width: 1rem;
