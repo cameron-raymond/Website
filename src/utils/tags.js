@@ -4,5 +4,6 @@ export const  tagLabels = {
     ml: "Machine Learning",
     bp: "Blog Post",
     nlp: "NLP",
+    pl: "Politics",
     nt: "Networkd"
   };
