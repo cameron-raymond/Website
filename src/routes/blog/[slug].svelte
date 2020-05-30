@@ -53,6 +53,9 @@
     width: 80vw;
     max-width: 40rem;
   }
+  .content :global(img:first-of-type){
+    max-height: initial;
+  }
   .content :global(img) {
     display: flex;
     align-self: center;
@@ -60,13 +63,20 @@
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 20rem;
+    max-height: 30rem;
   }
   .content :global(h2) {
     margin-top: 1.5rem;
   }
   .content :global(h3) {
     margin-top: 1rem;
+  }
+  .content :global(em){
+    text-align: center;
+    color: #555;
+  }
+  .content :global(p > em){
+    color: inherit;
   }
   .content :global(ul) {
     position: relative;

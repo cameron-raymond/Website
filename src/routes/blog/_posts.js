@@ -10,12 +10,21 @@ const fs = require("fs");
 const frontMatter = require("front-matter");
 const marked = require("marked");
 
+// Every new line in markdown is considered a new paragraph, this prevents img tags from being wrapped <p> tags
+// which is helpful for resizing the first img, centering captions, etc.
+marked.Renderer.prototype.paragraph = (text) => {
+  if (text.startsWith("<img")) {
+    return text + "\n";
+  }
+  return "<p>" + text + "</p>";
+};
+
 const posts = fs.readdirSync("./content").map((postFilename) => {
   const postContent = fs.readFileSync(`./content/${postFilename}`, {
     encoding: "utf8",
   });
   const postFrontMatter = frontMatter(postContent);
-  
+
   return {
     title: postFrontMatter.attributes.title,
     slug: postFrontMatter.attributes.slug,
@@ -26,9 +35,8 @@ const posts = fs.readdirSync("./content").map((postFilename) => {
     date: postFrontMatter.attributes.date,
     prod: postFrontMatter.attributes.prod,
     collaborators: postFrontMatter.attributes.collaborators,
-    html: marked(postFrontMatter.body).replace(/^\t{3}/gm, "")
+    html: marked(postFrontMatter.body).replace(/^\t{3}/gm, ""),
   };
 });
-
 
 export default posts;
