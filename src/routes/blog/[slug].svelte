@@ -62,10 +62,10 @@
     max-width: 100%;
     max-height: 20rem;
   }
-  .content :global(h3) {
+  .content :global(h2) {
     margin-top: 1.5rem;
   }
-  .content :global(h4) {
+  .content :global(h3) {
     margin-top: 1rem;
   }
   .content :global(ul) {

@@ -15,7 +15,7 @@ Alex Pentland, director of MIT’s [Connection Science](http://connection.mit.ed
 
 Some types of tweets spread in very narrow circles, and are only retweeted by the supporters of a party leader. These are what we called *bonding messages*, as they concentrate the spread of information within a particular group (in this case, the supporters of some political party). Other types of tweets spread across the entire network, as they are retweeted by a more diverse range  of individuals. We called these *bridging messages*, as they span demographics when spreading information. **If we take the idea that political polarization is fundamentally a lack of empathy for those with different viewpoints, then knowing what types of messages increase the spread of ideas across the political landscape is important.** To do this we will explore and extend the concept of graph centrality; if the word centrality isn’t familiar to you, don’t worry, we’ll start from the ground up.
 
-### A Quick Recap
+## A Quick Recap
 
 As a reminder from my previous articles on [engagement graphs](https://towardsdatascience.com/analyzing-political-polarization-on-twitter-engagement-graphs-aa0614ed1361) and [topic modelling,](https://towardsdatascience.com/analyzing-political-polarization-topic-modelling-65c6d25b2600) we’re trying to achieve a better understanding of how politically active Twitter users engage  with the different types of messages that party leaders put out. The case study that we’re using is Canada’s 2019 federal election, and all of the English tweets and retweets put out in the preceding year. We created a massive network, seen above, that shows the 5 party leaders, hidden in the center of each cluster; all of the tweets that they put out, colored according to topic; and all of the users who retweeted on of the party leaders tweets. These users are the light-blue vertices. In total we ended up with 7,978 tweets, and 113,293 retweets spread out among 36,450 users.
 
@@ -35,11 +35,11 @@ Since we’re looking at the bridging or bonding characteristics of different *m
 
 * Topic 7: healthcare, abortion and pharmacare.
 
-### What is Graph Centrality
+## What is Graph Centrality
 
 Graph’s are a way of representing relationships, called edges, between various things, called vertices. I’ve been calling the header image a network, which in my opinion is a more intuitive descriptor, but generally in mathematics the network we’ve built would be referred to as a graph. **Measures of graph centrality aim to find important vertices within a graph**. This can be done in a variety of ways; the simplest would be to count the number of edges that each vertex has — and say that the greater number of connections, the higher the centrality score. This is useful in our case because we can then quantify how important tweets of different topics were. But we are going to take a more nuanced approach than just counting the number of retweets per tweet. For this we will look at Eigenvector centrality, which says that it’s not only the number of retweets that matter, but *having retweets from really active Twitter users.* By expanding this concept we’ll arrive at two variations of topic centrality: one which measures how important a topic was, on average, in the entire network — and one that measures how important a topic was, on average, to a specific party leader. The former is an indicator that the information in those tweets was spread broadly, while the latter indicates a concentration of information.
 
-#### Eigenvector Centrality
+### Eigenvector Centrality
 
 As Newman lays out in his 2016, Mathematics of Networks:
 
@@ -47,11 +47,11 @@ As Newman lays out in his 2016, Mathematics of Networks:
 
 Similarly  with my [article](https://towardsdatascience.com/analyzing-political-polarization-topic-modelling-65c6d25b2600?source=post_page-----c169a8717ecf----------------------) where I discuss the LDA, I don’t want to get bogged down in the math that distracts from what we’re trying to achieve. So for now I will simply define the **eigenvector centrality of vertex *i* as *x<sub>i</sub>*, where *x<sub>i</sub>* is proportional to the average eigenvector centrality of *i*’s neighbors.** This way if a tweet vertex is retweeted by *highly engaged users*, it will have a higher eigenvector centrality. This is important because politically active Twitter  users are more likely to share content, attend a political rally and vote —but more importantly they *increase the flow of information in a network.*
 
-### Topic Centrality
+## Topic Centrality
 
 Topic centrality is a new technique that **aggregates the centrality scores for tweets of different topics.** For this study, we’ll say that  messages can serve two purposes: they can bridge communities, and diversify the flow of ideas, or they can bond communities, and concentrate the flow of ideas. In order to quantify this using our network we need two types of topic centrality, one that calculates how important tweets of a particular topic were to the *entire network* and one that calculates how important tweets of a topic were to *a party leader’s base*. The former is represented by total network topic centrality, and the latter is represented by party leader topic centrality. By comparing and contrasting the two we can get a full picture of how different topics influenced political discourse.
 
-#### Total Network Topic Centrality
+### Total Network Topic Centrality
 
 Total network topic centrality is an aggregate of the eigenvector centrality of all tweets of a certain topic in the entire engagement graph. For example, if we’re calculating the total network topic centrality for topic 2 — tweets about a carbon tax —  we would take the entire graph, calculate the eigenvector centrality for all of its vertices, and average the scores of the purple vertices which represent that topic. This is shown below. We can therefore define total network topic centrality for *topic v* in a *graph G* as the set below:
 
@@ -61,7 +61,7 @@ Total network topic centrality is an aggregate of the eigenvector centrality of 
 
 When taking the z-score centrality relative to other topics, a single number can be assigned to the relative importance of topic *v*.
 
-#### Party Leader Topic Centrality
+### Party Leader Topic Centrality
 
 In order to measure how central a topic is to a party leader’s base, we needed a measure of  party leader topic centrality. **This assumes a world in which party leader *y* is the only actor users can engage with.** This done by removing all of the tweets by other party leaders, and all of the users who didn’t retweet something from that party leader, resulting in a subgraph of *G* which we’ll call *G<sub>y</sub>*.
 
@@ -73,7 +73,7 @@ After the subgraph *G<sub>y</sub>* is constructed, the party leader topic centra
 
 Similarly, by taking the z-score of *P<sub>vy</sub>* relative to the other topics that party leader promoted, a single centrality score can be assigned that measures how important topic *v* was to those who engaged with party leader *y*. This will be higher if it: has a high number of retweets and is retweeted by y’s *most engaged followers*. Highly active users who rarely engage with that specific party leader are discounted in this metric relative to someone who is less engaged, but concentrates their attention on that party leader’s content.
 
-#### Putting everything together
+### Putting everything together
 
 ![Tweets by Topic Breakdown](https://cdn-images-1.medium.com/max/2702/1*Shtw4hfWYbRB6b57UCgkwg.png)*Tweets by Topic Breakdown*
 
@@ -89,7 +89,7 @@ What else can we do with this information? **If we take a step back from the par
 
 Here it is interesting to look at the lower right-hand and upper left-hand quadrants. The former indicates topics that are more important to a party leader’s base than to the entire network (topics 7, 4 and 1). Topic 1 — campaign messages— intuitively makes sense in this category; it is not surprising that messages about the campaign, where rallies are, *etc.* would be most important to a party leader’s base. Conversely, tweets in the upper left-hand quadrant indicates tweet topics that are more important to the overall network than to the individual network — which may be an indication of those topics spanning partisan divides (topics 2 and 3).
 
-### So what
+## So what
 
 This series of posts has been a way to distribute my article, *[Bridging or Bonding? Measures of Topic Centrality for Online Political Engagement](https://github.com/cameron-raymond/CISC500-SeniorThesis/raw/master/topic_centrality_paper/Measures_of_Topic_Centrality_for_Online_Political_Engagement.pdf)*, to a wider audience. I spent my time writing these posts because these methods and statistics can uncover interesting facts about our political landscape in ways that are easily overlooked by existing models of political communication. They demonstrate statistically significant results that both the producer of the content *and the content itself*, are crucial in understanding how social media modulates political discourse and engagement. At a more granular level, it allows for the investigation, and confirmation, that certain messages are more important to the overall network, and certain messages are more important to individual party leaders’ bases. The key insight is that **these two categories do not necessarily overlap**. The topics that informed individuals of party events and campaign information, as well as appeals to individuals economic worries (topics 1 and 4 respectively) tended to drive engagement among a party leader’s supporters, but had less influence on the overall discourse. Conversely, issues that were pervasive in the public discourse, like the SNC Lavalin affair and discussion of a carbon tax, translated into the digital realm as well — and tended to be more important to the overall discourse. While all party leaders touched on these big “dinner table” topics, and presumably had differing stances on them, they were not the sole preserve of any one party. As a result engagement was more likely to cross party lines.
 
