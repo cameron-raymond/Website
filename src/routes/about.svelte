@@ -69,6 +69,10 @@
         `<a aria-label="Social Physics" key={7}
         href="https://www.technologyreview.com/2014/03/04/173783/social-physics/">
           Social Physics
+        </a>`,
+         `<a aria-label="Scarcity" key={8}
+        href="https://www.theguardian.com/books/2013/sep/07/scarcity-sendhil-mullainathan-shafir-review">
+          Scarcity
         </a>`
       ]
     },
