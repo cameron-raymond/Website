@@ -13,17 +13,17 @@
       emoji: "📖",
       header: "All Time Books",
       list: [
-        `<a aria-label="Freakonomics" key={1}
+        `<a aria-label="Freakonomics" 
         href="https://www.nytimes.com/2005/05/15/books/review/freakonomics-everything-he-always-wanted-to-know.html">Freakonomics</a>`,
-        `<a aria-label="Thinking Fast and Slow" key={3}
+        `<a aria-label="Thinking Fast and Slow" 
         href="https://www.nytimes.com/2011/11/27/books/review/thinking-fast-and-slow-by-daniel-kahneman-book-review.html">
           Thinking Fast and Slow
         </a>`,
-        `<a aria-label="Future Politics" key={4}
+        `<a aria-label="Future Politics" 
         href="https://www.theguardian.com/books/2018/sep/17/future-politics-living-together-in-world-transformed-by-tech-jamie-susskind-review">
           Future Politics
         </a>`,
-        `<a aria-label="Bowling Alone" key={5}
+        `<a aria-label="Bowling Alone" 
         href="https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html">
           Bowling Alone
         </a>`
@@ -34,43 +34,43 @@
       header: `Quarantine Books`,
       list: [
         `<a aria-label="Americanah"
-          key={1}
+          
           href="https://www.nytimes.com/2013/06/09/books/review/americanah-by-chimamanda-ngozi-adichie.html"
         >
           Americanah
         </a>`,
         `<a aria-label="Poor Economics"
-          key={2} href="https://economics.mit.edu/faculty/eduflo/pooreconomics"
+           href="https://economics.mit.edu/faculty/eduflo/pooreconomics"
         >
           Poor Economics
         </a>`,
         `<a aria-label="Naked Statistics"
-          key={3}
+          
           href="https://www.nytimes.com/2013/01/29/science/naked-statistics-by-charles-wheelan-review.html"
         >
           Naked Statistics
         </a>`,
         `<a aria-label="The Privileged Poor"
-          key={4}
+          
           href="https://www.newyorker.com/recommends/read/the-privileged-poor-a-refreshing-antidote-to-our-obsession-with-the-college-admissions-scandal"
         >
           The Privileged Poor
         </a>`,
         `<a aria-label="Grit"
-          key={5}
+          
           href="https://www.newyorker.com/culture/culture-desk/the-limits-of-grit"
         >
           Grit
         </a>`,
-        `<a aria-label="The Age of Surveillance Capitalism" key={6}
+        `<a aria-label="The Age of Surveillance Capitalism" 
         href="https://www.nytimes.com/2019/01/16/books/review-age-of-surveillance-capitalism-shoshana-zuboff.html">
           The Age of Surveillance Capitalism
         </a>`,
-        `<a aria-label="Social Physics" key={7}
+        `<a aria-label="Social Physics" 
         href="https://www.technologyreview.com/2014/03/04/173783/social-physics/">
           Social Physics
         </a>`,
-         `<a aria-label="Scarcity" key={8}
+        `<a aria-label="Scarcity" 
         href="https://www.theguardian.com/books/2013/sep/07/scarcity-sendhil-mullainathan-shafir-review">
           Scarcity
         </a>`
@@ -80,28 +80,23 @@
       emoji: "👨‍🎤",
       header: "Quarantine Albums",
       list: [
+        `<a aria-label="Alfredo" href="https://pitchfork.com/news/freddie-gibbs-and-the-alchemist-announce-new-album-alfredo-share-new-song-1985-listen/">Alfredo</a>`,
         `<a aria-label="Un Canto Por México Vol. 1" href="https://www.theneedledrop.com/articles/2020/5/natalia-lafourcade-un-canto-por-mxico-vol-1">Un Canto Por México Vol. 1</a>`,
-        `<a aria-label="Dark Lane Demo Tapes" key={0}
+        `<a aria-label="Dark Lane Demo Tapes" 
         href="https://pitchfork.com/thepitch/5-takeaways-from-drakes-new-mixtape-dark-lane-demo-tapes/">
         Dark Lane Demo Tapes </a> `,
         `<a aria-label="Dark Lane Demo Tapes"
-        key={1} href="https://pitchfork.com/reviews/albums/22957-cubafonia/">
+         href="https://pitchfork.com/reviews/albums/22957-cubafonia/">
           Cubafonia
         </a>`,
         `<a aria-label="Unlocked"
-          key={2}
+          
           href="https://pitchfork.com/reviews/albums/denzel-curry-kenny-beats-unlocked/"
         >
           Unlocked
         </a>`,
-        `<a aria-label="Full Circle"
-          key={3}
-          href="https://pitchfork.com/reviews/albums/medhane-full-circle/"
-        >
-          Full Circle
-        </a>`,
         `<a aria-label="SAWAYAMA"
-          key={4}
+          
           href="https://pitchfork.com/reviews/albums/rina-sawayama-sawayama/"
         >
           SAWAYAMA
