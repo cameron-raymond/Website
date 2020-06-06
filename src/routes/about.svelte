@@ -240,7 +240,7 @@
         </h1>
         <p in:fly={{ delay: 800, y: 50, duration: 500 }}>
           I’m a 21 year old data scientist from Toronto, Ontario - and a recent
-          computer science and political science graduate from
+          CS and PoliSci graduate from
           <a aria-label="Queen’s University" href="https://www.queensu.ca/">
             Queen’s University.
           </a>
@@ -280,12 +280,6 @@
             href="http://www.cs.toronto.edu/~ashton/">
             Dr. Ashton Anderson.
           </a>
-          <!-- I'm also working on the blog,
-          <a aria-label="Medium Blog" href="https://medium.com/networkd">
-            Networkd,
-          </a>
-           which aims to make computational social science research more
-          accessible. -->
         </p>
         <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
           With previous coursework and research studying the Politics of
@@ -304,9 +298,15 @@
           I am passionate about the intersection of technology and society.
         </p>
         <p in:fly={{ delay: 950, y: 50, duration: 500 }}>
-          In my spare time I love reading, exercising and hanging out with loved
-          ones.
+          When I'm not working you can find me reading, exercising or hanging out with friends and family.
         </p>
+
+        <p in:fly={{ delay: 1000, y: 50, duration: 500 }}>
+          <Emoji symbol="✌️" />
+          <br />
+          - Cameron
+        </p>
+
       </div>
       <picture in:fade={{ delay: 600, duration: 200 }}>
         <source type="image/webp" srcset="portrait.webp" />
