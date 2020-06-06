@@ -33,28 +33,17 @@
       emoji: "📚",
       header: `Quarantine Books`,
       list: [
-        `<a aria-label="Americanah"
-          
-          href="https://www.nytimes.com/2013/06/09/books/review/americanah-by-chimamanda-ngozi-adichie.html"
-        >
-          Americanah
+        `<a aria-label="Scarcity" 
+        href="https://www.theguardian.com/books/2013/sep/07/scarcity-sendhil-mullainathan-shafir-review">
+          Scarcity
         </a>`,
-        `<a aria-label="Poor Economics"
-           href="https://economics.mit.edu/faculty/eduflo/pooreconomics"
-        >
-          Poor Economics
+        `<a aria-label="Social Physics" 
+        href="https://www.technologyreview.com/2014/03/04/173783/social-physics/">
+          Social Physics
         </a>`,
-        `<a aria-label="Naked Statistics"
-          
-          href="https://www.nytimes.com/2013/01/29/science/naked-statistics-by-charles-wheelan-review.html"
-        >
-          Naked Statistics
-        </a>`,
-        `<a aria-label="The Privileged Poor"
-          
-          href="https://www.newyorker.com/recommends/read/the-privileged-poor-a-refreshing-antidote-to-our-obsession-with-the-college-admissions-scandal"
-        >
-          The Privileged Poor
+        `<a aria-label="The Age of Surveillance Capitalism" 
+        href="https://www.nytimes.com/2019/01/16/books/review-age-of-surveillance-capitalism-shoshana-zuboff.html">
+          The Age of Surveillance Capitalism
         </a>`,
         `<a aria-label="Grit"
           
@@ -62,17 +51,28 @@
         >
           Grit
         </a>`,
-        `<a aria-label="The Age of Surveillance Capitalism" 
-        href="https://www.nytimes.com/2019/01/16/books/review-age-of-surveillance-capitalism-shoshana-zuboff.html">
-          The Age of Surveillance Capitalism
+        `<a aria-label="The Privileged Poor"
+          
+          href="https://www.newyorker.com/recommends/read/the-privileged-poor-a-refreshing-antidote-to-our-obsession-with-the-college-admissions-scandal"
+        >
+          The Privileged Poor
         </a>`,
-        `<a aria-label="Social Physics" 
-        href="https://www.technologyreview.com/2014/03/04/173783/social-physics/">
-          Social Physics
+        `<a aria-label="Naked Statistics"
+          
+          href="https://www.nytimes.com/2013/01/29/science/naked-statistics-by-charles-wheelan-review.html"
+        >
+          Naked Statistics
         </a>`,
-        `<a aria-label="Scarcity" 
-        href="https://www.theguardian.com/books/2013/sep/07/scarcity-sendhil-mullainathan-shafir-review">
-          Scarcity
+        `<a aria-label="Poor Economics"
+           href="https://economics.mit.edu/faculty/eduflo/pooreconomics"
+        >
+          Poor Economics
+        </a>`,
+        `<a aria-label="Americanah"
+          
+          href="https://www.nytimes.com/2013/06/09/books/review/americanah-by-chimamanda-ngozi-adichie.html"
+        >
+          Americanah
         </a>`
       ]
     },
