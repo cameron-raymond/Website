@@ -53,6 +53,11 @@
     width: 80vw;
     max-width: 40rem;
   }
+  .content :global(code){
+    display: inline-block;
+    width: 100%;
+    overflow: auto;
+  }
   .content :global(img:first-of-type){
     max-height: initial;
   }
