@@ -5,7 +5,7 @@
   import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
   let year = "2020";
   let month = "June";
-  let day = "06";
+  let day = "08";
   let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
   let github = "https://github.com/cameron-raymond/";
   let email = "mailto:cameronraymond534@gmail.com?subject=Let's%20Talk%20Data";
