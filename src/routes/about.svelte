@@ -33,6 +33,10 @@
       emoji: "📚",
       header: `Quarantine Books`,
       list: [
+         `<a aria-label="Winners Take All" 
+        href="https://www.nytimes.com/2018/08/20/books/review/winners-take-all-anand-giridharadas.html">
+          Winners Take All
+        </a>`,
         `<a aria-label="Scarcity" 
         href="https://www.theguardian.com/books/2013/sep/07/scarcity-sendhil-mullainathan-shafir-review">
           Scarcity
