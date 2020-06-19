@@ -48,7 +48,6 @@
   .chat {
     margin-top: 6rem;
     display: flex;
-    align-self: stretch;
     justify-content: center;
   }
   .chat a {

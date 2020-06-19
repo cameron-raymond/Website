@@ -149,8 +149,6 @@
 <style>
   span {
     display: flex;
-    flex: 1;
-    align-self: center;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -159,10 +157,9 @@
     margin-right: 7rem;
     overflow: hidden;
     margin-bottom: 2rem;
-    max-width: 65em;
+    max-width: 60em;
   }
   .intro {
-    flex: 4/7;
     padding-right: 1rem;
     max-width: 40em;
   }
@@ -243,14 +240,14 @@
           <Emoji symbol="🙋‍♂️" />
         </h1>
         <p in:fly={{ delay: 800, y: 50, duration: 500 }}>
-          I’m a 21 year old data scientist from Toronto, Ontario - and a recent
-          CS and PoliSci graduate from
+          I'm Cameron - a data scientist from Toronto, and recent CS and PoliSci
+          graduate from
           <a aria-label="Queen’s University" href="https://www.queensu.ca/">
             Queen’s University.
           </a>
-          In the fall I'll be joining the
+          In the fall I'll be joining
           <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
-            University of Oxford
+            Oxford
           </a>
           and the
           <a
@@ -264,11 +261,11 @@
             href="https://www.oii.ox.ac.uk/study/msc-in-social-data-science/">
             Social Data Science.
           </a>
-          My broad areas of interest include network science, machine learning,
+          At Oxford I'll continue studying network science, machine learning,
           and computational social science.
         </p>
         <p in:fly={{ delay: 850, y: 50, duration: 500 }}>
-          I'm currently a research scientist at the
+          Right now I'm a research scientist at the
           <a aria-label="UToronto" href="https://www.utoronto.ca/">
             University of Toronto
           </a>
@@ -299,16 +296,18 @@
             href="https://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-474.html">
             Reinforcement Learning
           </a>
-          I am passionate about the intersection of technology and society.
+          I'm passionate about the intersection of technology and society.
         </p>
         <p in:fly={{ delay: 950, y: 50, duration: 500 }}>
-          When I'm not working you can find me reading, exercising or hanging out with friends and family.
+          If you want to chat, know of a good trail near Toronto or have a
+          recent read you want to share, reach out at the link below
+          <Emoji symbol="😇" />
         </p>
 
         <p in:fly={{ delay: 1000, y: 50, duration: 500 }}>
           <Emoji symbol="✌️" />
           <br />
-          - Cameron
+          Cameron
         </p>
 
       </div>

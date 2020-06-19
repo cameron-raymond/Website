@@ -1,14 +1,12 @@
 <script>
   import Emoji from "./Emoji.svelte";
   export let elements;
-  export let title = "List time!!";
+  export let title;
 </script>
 
 <style>
   span {
     display: flex;
-    flex: 1;
-    align-self: stretch;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;

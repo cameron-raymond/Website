@@ -8,7 +8,6 @@
 <style>
 	main {
 		display: flex;
-		flex: 1;
 		flex-direction: column;
 		position: relative;
 		padding-left: 2rem;
