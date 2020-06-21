@@ -33,6 +33,10 @@
       emoji: "📚",
       header: `Quarantine Books`,
       list: [
+        `<a aria-label="The Address Book" 
+        href="https://www.nytimes.com/2020/04/14/books/review/deirdre-mask-the-address-book.html">
+          The Address Book
+        </a>`,
          `<a aria-label="Winners Take All" 
         href="https://www.nytimes.com/2018/08/20/books/review/winners-take-all-anand-giridharadas.html">
           Winners Take All
