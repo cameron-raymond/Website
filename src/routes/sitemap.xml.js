@@ -1,5 +1,4 @@
 // sitemap.xml.js
-import fetch from "node-fetch";
 import posts from "./blog/_posts.js";
 
 const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>

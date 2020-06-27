@@ -1,8 +1,8 @@
 <script>
-  import Emoji from "../components/Emoji.svelte";
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
-  import Overview from "../components/Overview.svelte";
+  import Emoji from "../../components/Emoji.svelte";
+  import Overview from "../../components/Overview.svelte";
   let visible = false;
   onMount(() => {
     visible = true;
@@ -37,7 +37,7 @@
         href="https://www.nytimes.com/2020/04/14/books/review/deirdre-mask-the-address-book.html">
           The Address Book
         </a>`,
-         `<a aria-label="Winners Take All" 
+        `<a aria-label="Winners Take All" 
         href="https://www.nytimes.com/2018/08/20/books/review/winners-take-all-anand-giridharadas.html">
           Winners Take All
         </a>`,
@@ -90,10 +90,10 @@
       list: [
         `<a aria-label="Alfredo" href="https://pitchfork.com/news/freddie-gibbs-and-the-alchemist-announce-new-album-alfredo-share-new-song-1985-listen/">Alfredo</a>`,
         `<a aria-label="Un Canto Por México Vol. 1" href="https://www.theneedledrop.com/articles/2020/5/natalia-lafourcade-un-canto-por-mxico-vol-1">Un Canto Por México Vol. 1</a>`,
-        `<a aria-label="Dark Lane Demo Tapes" 
-        href="https://pitchfork.com/thepitch/5-takeaways-from-drakes-new-mixtape-dark-lane-demo-tapes/">
-        Dark Lane Demo Tapes </a> `,
-        `<a aria-label="Dark Lane Demo Tapes"
+        `<a aria-label="Everything is Beautiful" 
+        href="https://pitchfork.com/reviews/albums/princess-nokia-everything-is-beautiful-everything-sucks/">
+        Everything is Beautiful </a> `,
+        `<a aria-label="Cubafonia"
          href="https://pitchfork.com/reviews/albums/22957-cubafonia/">
           Cubafonia
         </a>`,
@@ -167,6 +167,10 @@
     padding-right: 1rem;
     max-width: 40em;
   }
+  h2{
+      margin-top: 1.5rem;
+  }
+
   img {
     width: 20rem;
     height: auto;
