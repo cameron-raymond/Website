@@ -53,18 +53,17 @@
     width: 80vw;
     max-width: 40rem;
   }
-  .content :global(code){
+  .content :global(code) {
     display: inline-block;
     width: 100%;
     overflow: auto;
   }
-  .content :global(img:first-of-type){
+  .content :global(img:first-of-type) {
     max-height: initial;
   }
   .content :global(img) {
-    display: flex;
     align-self: center;
-    margin: auto;
+    margin: 1rem auto 0.1rem auto;
     width: auto;
     height: auto;
     max-width: 100%;
@@ -76,14 +75,14 @@
   .content :global(h3) {
     margin-top: 1rem;
   }
-  .content :global(em){
+  .content :global(em) {
     text-align: center;
     color: #555;
   }
-  .content :global(p > em){
+  .content :global(p > em) {
     color: inherit;
   }
-  .content :global(a){
+  .content :global(a) {
     text-decoration: underline;
     text-decoration-color: rgb(255, 62, 0);
   }
@@ -98,6 +97,10 @@
     content: "\2022";
     position: absolute;
     left: 0;
+  }
+  .content :global(blockquote) {
+    border-left: 2px solid #a7a0a0;
+    padding: 0.5em 10px; 
   }
 
   progress {

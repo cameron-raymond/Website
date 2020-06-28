@@ -167,10 +167,6 @@
     padding-right: 1rem;
     max-width: 40em;
   }
-  h2{
-      margin-top: 1.5rem;
-  }
-
   img {
     width: 20rem;
     height: auto;

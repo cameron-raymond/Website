@@ -41,9 +41,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(238, 238, 238, 0.5);
-    height: 4.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    height: 4.6rem;
+    padding: 0.3rem 1.5rem 0.1rem 1.5rem;
     text-align: right;
   }
   .head .emoji {
