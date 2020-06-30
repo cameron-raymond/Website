@@ -1,5 +1,6 @@
 <script>
   import { IoIosCloseCircleOutline } from "svelte-icons/io";
+  import { fly } from "svelte/transition";
   let visible = true;
   let updateVis = () => (visible = !visible);
 </script>
@@ -29,7 +30,7 @@
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #2A384D;
+    background-color: #2a384d;
     color: #fff;
     text-align: center;
     padding: 5px 0;
@@ -39,29 +40,29 @@
     z-index: 1;
   }
 
+  .tooltip .tooltiptext:after,
+  .tooltip .tooltiptext:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
 
- .tooltip .tooltiptext:after,  .tooltip .tooltiptext:before {
-	right: 100%;
-	top: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
- .tooltip .tooltiptext:after {
+  .tooltip .tooltiptext:after {
     border-color: rgba(136, 183, 213, 0);
-	border-width: 8px;
-	margin-top: -8px;
-}
- .tooltip .tooltiptext:before {
+    border-width: 8px;
+    margin-top: -8px;
+  }
+  .tooltip .tooltiptext:before {
     border-color: rgba(255, 120, 169, 0);
-    border-right-color: #2A384D;
-	border-width: 8px;
-	margin-top: -8px;
-}
+    border-right-color: #2a384d;
+    border-width: 8px;
+    margin-top: -8px;
+  }
 
   /* Show the tooltip text when you mouse over the tooltip container */
   .tooltip:hover .tooltiptext {
@@ -92,7 +93,7 @@
     href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
     rel="stylesheet"
     type="text/css" />
-  <div id="mc_embed_signup">
+  <div id="mc_embed_signup" out:fly={{ y: -50, duration: 500 }}>
     <form
       action="https://cameronraymond.us10.list-manage.com/subscribe/post?u=d4654442d7398748f6cba3e51&amp;id=129b2a12c1"
       method="post"
