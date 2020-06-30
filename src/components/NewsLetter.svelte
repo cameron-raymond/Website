@@ -37,7 +37,9 @@
     border-radius: 6px;
     /* Position the tooltip text - see examples below! */
     position: absolute;
-    z-index: 1;
+    left: 40px;
+    top: -5px;
+    z-index: 4;
   }
 
   .tooltip .tooltiptext:after,
@@ -85,6 +87,17 @@
     color: white;
     cursor: pointer;
   }
+  @media (max-width: 40rem) {
+    .tooltip .tooltiptext {
+      width: 100px;
+      left: -40px;
+      top: 25px;
+    }
+    .tooltip .tooltiptext:after,
+    .tooltip .tooltiptext:before {
+      display: none;
+    }
+  }
 </style>
 
 <!-- Begin Mailchimp Signup Form -->
@@ -93,7 +106,7 @@
     href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
     rel="stylesheet"
     type="text/css" />
-  <div id="mc_embed_signup" out:fly={{ y: -50, duration: 500 }}>
+  <div id={visible ? 'mc_embed_signup' : 'hidden'}>
     <form
       action="https://cameronraymond.us10.list-manage.com/subscribe/post?u=d4654442d7398748f6cba3e51&amp;id=129b2a12c1"
       method="post"
@@ -124,7 +137,7 @@
         <span class="tooltip">
           <input
             type="submit"
-            value="🚀"
+            value="✉️"
             name="subscribe"
             id="mc-embedded-subscribe"
             class="button" />
