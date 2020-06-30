@@ -98,6 +98,11 @@
       display: none;
     }
   }
+  @media (max-width: 27rem){
+     #mc_embed_signup_scroll label{
+      display: none;
+    }
+  }
 </style>
 
 <!-- Begin Mailchimp Signup Form -->
@@ -106,7 +111,7 @@
     href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
     rel="stylesheet"
     type="text/css" />
-  <div id={visible ? 'mc_embed_signup' : 'hidden'}>
+  <div id='mc_embed_signup'>
     <form
       action="https://cameronraymond.us10.list-manage.com/subscribe/post?u=d4654442d7398748f6cba3e51&amp;id=129b2a12c1"
       method="post"
