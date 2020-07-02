@@ -21,7 +21,7 @@
   let y;
   let h;
   export let posts;
-  $: outroDuration = y > h*0.8 ? 0 : 500
+  $: outroDuration = y > h * 0.8 ? 0 : 500;
   onMount(() => (visible = true));
 </script>
 
@@ -144,13 +144,17 @@
       out:fade={{ duration: outroDuration }}
       style="opacity: {1 - Math.max(0, y / 500)}"
       class="down-arrow">
-      <FaAngleDown />
+      <a href="blog/">
+        <FaAngleDown />
+      </a>
+
     </span>
   {/if}
   <img
     src="intro.svg"
     alt=""
     class="intro-svg"
-    out:fade={{ duration: outroDuration/5, delay: 100 }} />
+    out:fade={{ duration: outroDuration / 5, delay: 100 }} />
+
 </div>
 <Cards {posts} bind:onHome />
