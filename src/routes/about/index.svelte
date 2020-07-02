@@ -235,92 +235,92 @@
 
 </svelte:head>
 
-<div>
-  {#if visible}
-    <span>
-      <div class="intro">
-        <h1 in:fly={{ delay: 500, y: 50, duration: 500 }}>
-          Nice to meet you
-          <Emoji symbol="🙋‍♂️" />
-        </h1>
-        <p in:fly={{ delay: 800, y: 50, duration: 500 }}>
-          I'm Cameron - a data scientist from Toronto, and recent CS and PoliSci
-          graduate from
-          <a aria-label="Queen’s University" href="https://www.queensu.ca/">
-            Queen’s University.
-          </a>
-          In the fall I'll be joining
-          <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
-            Oxford
-          </a>
-          and the
-          <a
-            aria-label="Oxford Internet Institute"
-            href="https://www.oii.ox.ac.uk/">
-            Oxford Internet Institute
-          </a>
-          to do my MSc in
-          <a
-            aria-label="Social Data Science"
-            href="https://www.oii.ox.ac.uk/study/msc-in-social-data-science/">
-            Social Data Science.
-          </a>
-          At Oxford I'll continue studying network science, machine learning,
-          and computational social science.
-        </p>
-        <p in:fly={{ delay: 850, y: 50, duration: 500 }}>
-          Right now I'm a research scientist at the
-          <a aria-label="UToronto" href="https://www.utoronto.ca/">
-            University of Toronto
-          </a>
-          working on
-          <a
-            aria-label="community embeddings demo"
-            href="http://csslab.cs.toronto.edu/gs/">
-            community embeddings
-          </a>
-          with
-          <a
-            aria-label="Ashton Anderson Website"
-            href="http://www.cs.toronto.edu/~ashton/">
-            Dr. Ashton Anderson.
-          </a>
-        </p>
-        <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
-          With previous coursework and research studying the Politics of
-          Artificial Intelligence;
-          <a
-            aria-label="Neural and Genetic Computing"
-            href="https://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-452.html">
-            Neural and Genetic Computing;
-          </a>
-          and
-          <a
-            aria-label="Reinforcement Learning"
-            href="https://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-474.html">
-            Reinforcement Learning
-          </a>
-          I'm passionate about the intersection of technology and society.
-        </p>
-        <p in:fly={{ delay: 950, y: 50, duration: 500 }}>
-          If you want to chat, know of a good trail near Toronto or have a
-          recent read you want to share, reach out at the link below
-          <Emoji symbol="😇" />
-        </p>
+{#if visible}
+  <span>
+    <div class="intro">
+      <h1 in:fly={{ delay: 500, y: 50, duration: 500 }}>
+        Nice to meet you
+        <Emoji symbol="🙋‍♂️" />
+      </h1>
+      <p in:fly={{ delay: 800, y: 50, duration: 500 }}>
+        I'm Cameron - a data scientist from Toronto, and recent CS and PoliSci
+        graduate from
+        <a aria-label="Queen’s University" href="https://www.queensu.ca/">
+          Queen’s University.
+        </a>
+        In the fall I'll be joining
+        <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
+          Oxford
+        </a>
+        and the
+        <a
+          aria-label="Oxford Internet Institute"
+          href="https://www.oii.ox.ac.uk/">
+          Oxford Internet Institute
+        </a>
+        to do my MSc in
+        <a
+          aria-label="Social Data Science"
+          href="https://www.oii.ox.ac.uk/study/msc-in-social-data-science/">
+          Social Data Science.
+        </a>
+        At Oxford I'll continue studying network science, machine learning, and
+        computational social science.
+      </p>
+      <p in:fly={{ delay: 850, y: 50, duration: 500 }}>
+        Right now I'm a research scientist at the
+        <a aria-label="UToronto" href="https://www.utoronto.ca/">
+          University of Toronto
+        </a>
+        working on
+        <a
+          aria-label="community embeddings demo"
+          href="http://csslab.cs.toronto.edu/gs/">
+          community embeddings
+        </a>
+        with
+        <a
+          aria-label="Ashton Anderson Website"
+          href="http://www.cs.toronto.edu/~ashton/">
+          Dr. Ashton Anderson.
+        </a>
+      </p>
+      <p in:fly={{ delay: 900, y: 50, duration: 500 }}>
+        With previous coursework and research studying the Politics of
+        Artificial Intelligence;
+        <a
+          aria-label="Neural and Genetic Computing"
+          href="https://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-452.html">
+          Neural and Genetic Computing;
+        </a>
+        and
+        <a
+          aria-label="Reinforcement Learning"
+          href="https://www.cs.queensu.ca/students/undergraduate/courses/desc/CISC-474.html">
+          Reinforcement Learning
+        </a>
+        I'm passionate about the intersection of technology and society.
+      </p>
+      <p in:fly={{ delay: 950, y: 50, duration: 500 }}>
+        If you want to chat, know of a good trail near Toronto or have a recent
+        read you want to share, reach out at the link below
+        <Emoji symbol="😇" />
+      </p>
 
-        <p in:fly={{ delay: 1000, y: 50, duration: 500 }}>
-          <Emoji symbol="✌️" />
-          <br />
-          Cameron
-        </p>
+      <p in:fly={{ delay: 1000, y: 50, duration: 500 }}>
+        <Emoji symbol="✌️" />
+        <br />
+        Cameron
+      </p>
 
-      </div>
-      <picture in:fade={{ delay: 600, duration: 200 }}>
-        <source type="image/webp" srcset="portrait.webp" />
-        <source type="image/jpeg" srcset="portrait.png" />
-        <img src="portrait.webp" alt="portrait" />
-      </picture>
-    </span>
+    </div>
+    <picture in:fade={{ delay: 600, duration: 200 }}>
+      <source type="image/webp" srcset="portrait.webp" />
+      <source type="image/jpeg" srcset="portrait.png" />
+      <img src="portrait.webp" alt="portrait" />
+    </picture>
+  </span>
+  <div in:fade={{ delay: 1050, duration: 500 }}>
     <Overview elements={aboutMe} title="Me Through Lists" />
-  {/if}
-</div>
+  </div>
+{/if}
