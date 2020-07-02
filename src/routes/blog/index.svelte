@@ -5,3 +5,5 @@
     goto("/#blog").then(() => document.getElementById("blog").scrollIntoView());
   });
 </script>
+
+<span />
