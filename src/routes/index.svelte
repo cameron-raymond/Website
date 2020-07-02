@@ -63,6 +63,10 @@
     height: 2.5rem;
     width: 2.5rem;
   }
+  .hidden{
+    position: absolute;
+    visibility: hidden;
+  }
 </style>
 
 <svelte:head>
@@ -106,7 +110,8 @@
 </svelte:head>
 
 <svelte:window bind:scrollY={y} bind:innerHeight={h} />
-
+<a href="blog/" class="hidden" aria-label=" ">blog</a>
+<a href="sitemap.xml" class="hidden" aria-label=" ">sitemap</a>
 <div class="cont">
   {#if visible && onHome}
     <div class="intro">
@@ -144,9 +149,7 @@
       out:fade={{ duration: outroDuration }}
       style="opacity: {1 - Math.max(0, y / 500)}"
       class="down-arrow">
-      <a href="blog/">
-        <FaAngleDown />
-      </a>
+      <FaAngleDown />
 
     </span>
   {/if}
