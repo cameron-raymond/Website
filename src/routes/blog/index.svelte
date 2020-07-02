@@ -1,9 +1,25 @@
+<script context="module">
+  export function preload({ params, query }) {
+    return this.fetch(`../index.json`)
+      .then(r => r.json())
+      .then(posts => {
+        return { posts };
+      });
+  }
+</script>
+
 <script>
   import { goto } from "@sapper/app";
+  import Home from "../index.svelte"
   import { onMount } from "svelte";
+  export let posts;
   onMount(() => {
-    goto("/#blog").then(() => document.getElementById("blog").scrollIntoView());
+    let el = document.getElementById("blog");
+    setTimeout(() => {
+       el.scrollIntoView({behavior: "smooth"});
+    }, 5);
+   
   });
 </script>
 
-<span />
+<Home {posts}/>
