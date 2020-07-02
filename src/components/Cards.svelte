@@ -55,7 +55,7 @@
   }
 </style>
 
-<h2>
+<h2 id="blog">
   What I'm Working On
   <Emoji symbol="👨‍🔧" />
 </h2>
