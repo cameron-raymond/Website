@@ -7,7 +7,7 @@ ghpages.publish(
         repo: 'https://github.com/cameron-raymond/Website.git',
         user: {
             name: 'cameron-raymond',
-            email: 'c.raymond@queensu.ca'
+            email: 'cameron.raymond@hey.com'
         }
     },
     () => {
