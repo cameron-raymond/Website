@@ -24,20 +24,10 @@
     padding: 0 0.3rem;
     font-size: 0.7rem;
     cursor: pointer;
-    transition: 0.2s;
-  }
-  code:hover {
-    transition: 0.2s;
-    background-color: rgba(213, 213, 213, 0.5);
   }
   .active {
-    background-color: #ff3e00;
+    background-color: #689dd1;
     color: white;
-    transition: 0.2s;
-  }
-  .active:hover {
-    background-color: #fa3e00;
-    transition: 0.2s;
   }
   img {
     height: 0.85rem;
