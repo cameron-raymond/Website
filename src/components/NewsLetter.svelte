@@ -6,7 +6,7 @@
 </script>
 
 <style>
-  #mc_embed_signup {
+  .sign-up-banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     background: rgba(255, 62, 0, 0.95);
     height: 3rem;
   }
-  #mc-embedded-subscribe {
+  .subscribe {
     background-color: transparent;
     font-size: 16px;
     cursor: pointer;
@@ -25,7 +25,6 @@
     position: relative;
     display: inline-block;
   }
-
   /* Tooltip text */
   .tooltip .tooltiptext {
     visibility: hidden;
@@ -70,7 +69,7 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
-  #mce-EMAIL {
+  .email {
     background-color: transparent;
     border: none;
     color: white;
@@ -90,7 +89,7 @@
   @media (max-width: 40rem) {
     .tooltip .tooltiptext {
       width: 100px;
-      left: -40px;
+      left: -32px;
       top: 25px;
     }
     .tooltip .tooltiptext:after,
@@ -98,20 +97,48 @@
       display: none;
     }
   }
-  @media (max-width: 27rem){
-     #mc_embed_signup_scroll label{
+  @media (max-width: 27rem) {
+    .label {
       display: none;
     }
   }
 </style>
 
-<!-- Begin Mailchimp Signup Form -->
 {#if visible}
-  <link
+  <form
+    class="sign-up-banner"
+    action="https://tinyletter.com/cjkraymond"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://tinyletter.com/cjkraymond', 'popupwindow',
+    'scrollbars=yes,width=800,height=600');return true">
+    <p>
+      <label class="label" for="tlemail">Let's be pals:</label>
+    </p>
+    <div class="signup-input">
+      <input
+        type="text"
+        name="email"
+        class="email"
+        placeholder="my@email.com"
+        id="tlemail" />
+    </div>
+    <input type="hidden" value="1" name="embed" />
+    <span class="tooltip">
+      <input type="submit" value="✉️" class="subscribe" />
+      <span class="tooltiptext">Subscribe!</span>
+    </span>
+    <span id="close-sub" on:click={() => updateVis()}>
+      <IoIosCloseCircleOutline />
+    </span>
+  </form>
+{/if}
+
+<!-- <link
     href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
     rel="stylesheet"
     type="text/css" />
-  <div id='mc_embed_signup'>
+  <div id="mc_embed_signup">
     <form
       action="https://cameronraymond.us10.list-manage.com/subscribe/post?u=d4654442d7398748f6cba3e51&amp;id=129b2a12c1"
       method="post"
@@ -121,16 +148,16 @@
       target="_blank"
       novalidate>
       <div id="mc_embed_signup_scroll">
-        <label for="mce-EMAIL">Sign up for my newsletter!</label>
+        <label for="mce-EMAIL">Let's be pals:</label>
         <input
           type="email"
           value=""
           name="EMAIL"
           class="email"
           id="mce-EMAIL"
-          placeholder="me@email.com"
+          placeholder="my@email.com"
           required />
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input
             type="text"
@@ -138,7 +165,7 @@
             tabindex="-1"
             value="" />
         </div>
-        <!-- <div class="clear"> -->
+        <div class="clear">
         <span class="tooltip">
           <input
             type="submit"
@@ -149,12 +176,10 @@
           <span class="tooltiptext">Subscribe!</span>
         </span>
 
-        <!-- </div> -->
+        </div>
       </div>
     </form>
     <span id="close-sub" on:click={() => updateVis()}>
       <IoIosCloseCircleOutline />
     </span>
-  </div>
-{/if}
-<!--End mc_embed_signup-->
+  </div> -->
