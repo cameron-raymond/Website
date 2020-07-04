@@ -1,6 +1,5 @@
 <script context="module">
   export function preload({ params, query }) {
-    this.fetch(`sitemap.xml`);
     return this.fetch(`index.json`)
       .then(r => r.json())
       .then(posts => {
@@ -22,7 +21,7 @@
   let y;
   let h;
   export let posts;
-  $: outroDuration = y > h*0.8 ? 0 : 500
+  $: outroDuration = y > h * 0.8 ? 0 : 500;
   onMount(() => (visible = true));
 </script>
 
@@ -63,6 +62,10 @@
     color: rgb(255, 62, 0);
     height: 2.5rem;
     width: 2.5rem;
+  }
+  .hidden{
+    position: absolute;
+    visibility: hidden;
   }
 </style>
 
@@ -107,7 +110,8 @@
 </svelte:head>
 
 <svelte:window bind:scrollY={y} bind:innerHeight={h} />
-
+<a href="blog/" class="hidden" aria-label=" ">blog</a>
+<a href="sitemap.xml" class="hidden" aria-label=" ">sitemap</a>
 <div class="cont">
   {#if visible && onHome}
     <div class="intro">
@@ -146,12 +150,14 @@
       style="opacity: {1 - Math.max(0, y / 500)}"
       class="down-arrow">
       <FaAngleDown />
+
     </span>
   {/if}
   <img
     src="intro.svg"
     alt=""
     class="intro-svg"
-    out:fade={{ duration: outroDuration/5, delay: 100 }} />
+    out:fade={{ duration: outroDuration / 5, delay: 100 }} />
+
 </div>
 <Cards {posts} bind:onHome />

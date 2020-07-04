@@ -9,6 +9,9 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
     <url>
         <loc>https://cameronraymond.me/about/</loc>
     </url>
+    <url>
+        <loc>https://cameronraymond.me/blog/</loc>
+    </url>
     ${posts
       .filter((post) => post.slug && post.prod)
       .map((post) => {
