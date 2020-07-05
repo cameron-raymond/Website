@@ -18,9 +18,9 @@ marked.Renderer.prototype.paragraph = (text) => {
   }
   return "<p>" + text + "</p>";
 };
-
-const posts = fs.readdirSync("./content").map((postFilename) => {
-  const postContent = fs.readFileSync(`./content/${postFilename}`, {
+const dirPath = `./content/blog`;
+const posts = fs.readdirSync(dirPath).map((postFilename) => {
+  const postContent = fs.readFileSync(dirPath+`/${postFilename}`, {
     encoding: "utf8",
   });
   const postFrontMatter = frontMatter(postContent);
