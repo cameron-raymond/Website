@@ -129,6 +129,7 @@
 
   h1 {
     margin-top: 4rem;
+    max-width: 58rem;
   }
   .subtitle {
     color: #555;
