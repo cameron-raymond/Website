@@ -56,7 +56,7 @@
 </style>
 
 <h2 id="blog">
-  What I'm Working On
+  Check out my work
   <Emoji symbol="👨‍🔧" />
 </h2>
 {#if tags}
