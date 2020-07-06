@@ -33,6 +33,9 @@
     width: 1.2rem;
     height: 1.2rem;
   }
+  a {
+    text-decoration: none;
+  }
 
   .hideIcons {
     display: none;
