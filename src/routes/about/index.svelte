@@ -1,8 +1,10 @@
 <script context="module">
-  export function preload({ params, query }) {
-    return this.fetch(`about/overview.json`).then(r => r.json()).then(overview => {
-        return { overview };
-      });;
+  export async function preload({ params, query }) {
+    const overview = await this.fetch(`about/overview.json`).then(r =>
+      r.json()
+    );
+    const intro = await this.fetch(`about/intro.json`).then(r => r.json());
+    return { overview: overview, intro: intro };
   }
 </script>
 
@@ -13,6 +15,7 @@
   import Overview from "../../components/Overview.svelte";
   let visible = false;
   export let overview;
+  export let intro;
 
   onMount(() => {
     visible = true;
@@ -107,10 +110,15 @@
 {#if visible}
   <span>
     <div class="intro">
-      <h1 in:fly={{ delay: 500, y: 50, duration: 500 }}>
-        Nice to meet you
-        <Emoji symbol="🙋‍♂️" />
+      
+     <h1 in:fly={{ delay: 500, y: 50, duration: 500 }}>
+        {intro.title}
+        <Emoji symbol={intro.emoji} />
       </h1>
+      <div in:fly={{ delay: 800, y: 50, duration: 500 }}> 
+      {@html intro.html}
+      </div>
+       <!-- 
       <p in:fly={{ delay: 800, y: 50, duration: 500 }}>
         I'm Cameron - a data scientist from Toronto, and recent CS and PoliSci
         graduate from
@@ -180,13 +188,13 @@
         <Emoji symbol="✌️" />
         <br />
         Cameron
-      </p>
+      </p> -->
 
     </div>
-    <picture in:fade={{ delay: 600, duration: 200 }}>
-      <source type="image/webp" srcset="portrait.webp" />
-      <source type="image/jpeg" srcset="portrait.png" />
-      <img src="portrait.webp" alt="portrait" />
+    <picture rel="preload" in:fade={{ delay: 600, duration: 200 }}>
+      <source type="image/webp" srcset="{intro.image}.webp" />
+      <source type="image/jpeg" srcset="{intro.image}.png" />
+      <img src="{intro.image}.webp" alt="{intro.image}" />
     </picture>
   </span>
   <div in:fade={{ delay: 1050, duration: 500 }}>

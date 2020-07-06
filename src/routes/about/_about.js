@@ -4,9 +4,11 @@
 const fs = require("fs");
 const frontMatter = require("front-matter");
 
-const dirPath = `./content/about-overview`;
-const overview = fs.readdirSync(dirPath).map((ovFilename) => {
-  const ovContent = fs.readFileSync(dirPath + `/${ovFilename}`, {
+const marked = require("marked");
+
+const dirPath = `./content/about`;
+export const overview = fs.readdirSync(`${dirPath}/overview`).map((ovFilename) => {
+  const ovContent = fs.readFileSync(`${dirPath}/overview/${ovFilename}`, {
     encoding: "utf8",
   });
   const ovFrontMatter = frontMatter(ovContent);
@@ -21,6 +23,19 @@ const overview = fs.readdirSync(dirPath).map((ovFilename) => {
     "priority": ovFrontMatter.attributes.priority,
     "list": list
   }
-}).filter((p) => p.prod).sort((a,b) => a.priority > b.priority ? 1 : -1);
+}).filter((p) => p.prod).sort((a, b) => a.priority > b.priority ? 1 : -1);
 
-export default overview;
+let getIntro = () => {
+  const introContent = fs.readFileSync(`${dirPath}/intro.md`, {
+    encoding: "utf8",
+  });
+  const introFrontMatter = frontMatter(introContent);
+  return {
+    "image": introFrontMatter.attributes.image,
+    "title": introFrontMatter.attributes.title,
+    "emoji": introFrontMatter.attributes.emoji,
+    "html": marked(introFrontMatter.body).replace(/^\t{3}/gm, ""),
+  }
+
+}
+export const intro = getIntro();

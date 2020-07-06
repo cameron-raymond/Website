@@ -69,6 +69,7 @@
 
 <nav>
   <a
+    rel="prefetch"
     aria-label="Home"
     aria-current={segment === undefined ? 'page' : undefined}
     href=".">
@@ -86,6 +87,7 @@
     </a>
     <a
       aria-label="About"
+      rel="prefetch"
       aria-current={segment === 'about' ? 'page' : undefined}
       href="about/">
       <span class="hideIcons icon">
