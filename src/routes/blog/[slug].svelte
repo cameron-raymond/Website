@@ -82,10 +82,6 @@
   .content :global(p > em) {
     color: inherit;
   }
-  .content :global(a) {
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 62, 0);
-  }
   .content :global(ul) {
     position: relative;
     list-style: none;

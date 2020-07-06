@@ -30,7 +30,7 @@ h1 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration-color: rgb(255, 62, 0);
   color: inherit;
   transition: 0.2s;
 }
