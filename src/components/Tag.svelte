@@ -1,8 +1,8 @@
 <script>
-  import { tagLabels } from "../utils/tags.js";
+  import { tagLabels, typeLabels } from "../utils/tags.js";
   export let tagId;
 
-  $: tagString = tagLabels[tagId] || tagId;
+  $: tagString = tagLabels[tagId] || typeLabels[tagId] ||tagId;
 </script>
 
 <style>
