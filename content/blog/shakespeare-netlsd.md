@@ -3,7 +3,8 @@ title: "Classifying Shakespeare with Networks"
 slug: "shakespeare-netlsd"
 emoji: "🍿"
 blurb: "What distinguishes Shakespeare's comedies from his tragedies? Without looking at a single line of dialogue, this article shows that it is possible to use networks to classify Shakespeare's plays. Posted on Towards Data Science."
-tags: ["bp", "gt"]
+type: "bp"
+tags: ["gt"]
 link: "<a aria-label='Blog' href='https://medium.com/@cameronraymond/classifying-shakespeare-with-networks-2a6c1c44e17f'>Blog</a>"
 date: "2020-06-18"
 prod: true
