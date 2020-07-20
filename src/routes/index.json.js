@@ -9,6 +9,7 @@ const contents = JSON.stringify(
         title: post.title,
         slug: post.slug,
         emoji: post.emoji,
+        type: post.type,
         tags: post.tags,
         link: post.link,
         blurb: post.blurb,

@@ -1,10 +1,16 @@
 <script>
-  import { tagLabels } from "../utils/tags.js";
+  import { tagLabels, typeLabels } from "../utils/tags.js";
   export let tags;
-  export let active;
-  let updateCurrent = tagId => {
-    active.has(tagId) ? active.delete(tagId) : active.add(tagId);
-    active = active.size == 0 ? new Set(tags) : active;
+  export let types;
+  export let activeTypes;
+  export let activeTags;
+  let updateType = typeId => {
+    activeTypes.has(typeId) ? activeTypes.delete(typeId) : activeTypes.add(typeId);
+    activeTypes = activeTypes.size == 0 ? new Set(types) : activeTypes;
+  };
+  let updateTag = tagId => {
+    activeTags.has(tagId) ? activeTags.delete(tagId) : activeTags.add(tagId);
+    activeTags = activeTags.size == 0 ? new Set(tags) : activeTags;
   };
 </script>
 
@@ -33,8 +39,11 @@
     user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
   }
+  h3{
+    margin-top: 0.5rem;
+  }
 
-  .active {
+  .activeTags {
     background-color: #689dd1;
     color: white;
   }
@@ -58,13 +67,30 @@
   }
 </style>
 
-{#if tags}
+{#if tags && types}
   <h3>Include</h3>
+  <span>
+    {#each types as typeId}
+      <code
+        class:activeTags={activeTypes.has(typeId)}
+        on:click={() => updateType(typeId)}>
+        <picture>
+          <source srcset="tags/{typeId}.webp" type="image/webp" />
+          <source srcset="tags/{typeId}.png" type="image/png" />
+          <img
+            src="tags/{typeId}.png"
+            alt={`${tagLabels[typeId] || typeId} logo`} />
+        </picture>
+        <div class="tagLabel">{typeLabels[typeId] || typeId}</div>
+      </code>
+    {/each}
+  </span>
+  <h3>About</h3>
   <span>
     {#each tags as tagId}
       <code
-        class:active={active.has(tagId)}
-        on:click={() => updateCurrent(tagId)}>
+        class:activeTags={activeTags.has(tagId)}
+        on:click={() => updateTag(tagId)}>
         <picture>
           <source srcset="tags/{tagId}.webp" type="image/webp" />
           <source srcset="tags/{tagId}.png" type="image/png" />
