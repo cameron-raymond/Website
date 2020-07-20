@@ -5,7 +5,7 @@ emoji: "🚙"
 blurb: "A reinforcement learning agent that helps control the flow of traffic. Through this simple RL algorithm, we were able to reduce carbon emissions by a third, and cut time waiting at red lights in half."
 type: "sp"
 tags: ["rl"]
-collaborators: ["<a aria-label='collaborator' href='https://github.com/rosslh/'>@rosslh</a>","<a aria-label='collaborator' href='https://github.com/hughcorley'>@hughcorley</a>","<a aria-label='collaborator' href='https://github.com/ZaneLittle/'>@zanelittle</a>","<a aria-label='collaborator' href='https://github.com/Leonard-Zhao/'>@leonard-zhao</a>"]
+collaborators: ["rosslh","hughcorley","zanelittle","leonard-zhao"]
 link: "<a aria-label='Repo' href='https://github.com/ZaneLittle/Traffic-Light-Simulation##q-learning-for-traffic-signal-control'>Repo</a>"
 date: "12-01-2019"
 prod: true

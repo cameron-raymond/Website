@@ -208,7 +208,7 @@
         {#if post.collaborators}
           <span class="collab">
             {#each post.collaborators as collab}
-              {@html collab}
+              <a aria-label='collaborator' href='https://github.com/{collab}/'>@{collab}</a>
               &nbsp;
             {/each}
           </span>
