@@ -30,6 +30,7 @@ const posts = fs.readdirSync(dirPath).map((postFilename) => {
     slug: postFrontMatter.attributes.slug,
     emoji: postFrontMatter.attributes.emoji,
     blurb: postFrontMatter.attributes.blurb,
+    type: postFrontMatter.attributes.type,
     tags: postFrontMatter.attributes.tags,
     link: postFrontMatter.attributes.link,
     date: postFrontMatter.attributes.date,
