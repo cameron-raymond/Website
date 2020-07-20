@@ -12,6 +12,7 @@
     activeTags.has(tagId) ? activeTags.delete(tagId) : activeTags.add(tagId);
     activeTags = activeTags.size == 0 ? new Set(tags) : activeTags;
   };
+  let pluralize = label => label.endsWith(".") ? label.slice(0,-1)+"s." : label+"s" 
 </script>
 
 <style>
@@ -81,7 +82,7 @@
             src="tags/{typeId}.png"
             alt={`${tagLabels[typeId] || typeId} logo`} />
         </picture>
-        <div class="tagLabel">{typeLabels[typeId] || typeId}</div>
+        <div class="tagLabel">{pluralize(typeLabels[typeId]) || pluralize(typeId)}</div>
       </code>
     {/each}
   </span>
