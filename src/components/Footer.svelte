@@ -84,7 +84,7 @@
     <Emoji symbol="👷‍♂️" />
     by me
     <br />
-    Last update
+    Last updated
     <a
       aria-label="{month}
       {day}, {year}"
