@@ -5,7 +5,7 @@
   import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
   let year = "2020";
   let month = "July";
-  let day = "20";
+  let day = "22";
   let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
   let github = "https://github.com/cameron-raymond/";
   let email = "mailto:cameron.raymond@hey.com?subject=Let's%20Talk%20Data";
@@ -84,7 +84,7 @@
     <Emoji symbol="👷‍♂️" />
     by me
     <br />
-    Last update
+    Last updated
     <a
       aria-label="{month}
       {day}, {year}"
