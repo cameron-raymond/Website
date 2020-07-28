@@ -11,17 +11,3 @@ urls: ["https://pitchfork.com/reviews/albums/22035-the-miseducation-of-lauryn-hi
 priority: 4
 prod: true
 ---
-
- <!-- 
-        `<a aria-label="To Pimp a Butterfly"
-          key={4}
-          href="https://pitchfork.com/reviews/albums/20390-to-pimp-a-butterfly/"
-        >
-          To Pimp a Butterfly
-        </a>`,
-        `<a aria-label="Pet Sounds"
-          key={5}
-          href="https://pitchfork.com/reviews/albums/9371-pet-sounds-40th-anniversary/"
-        >
-          Pet Sounds
-        </a>` -->
