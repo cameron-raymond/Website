@@ -5,14 +5,23 @@
   export let activeTypes;
   export let activeTags;
   let updateType = typeId => {
-    activeTypes.has(typeId) ? activeTypes.delete(typeId) : activeTypes.add(typeId);
+    activeTypes.has(typeId)
+      ? activeTypes.delete(typeId)
+      : activeTypes.add(typeId);
     activeTypes = activeTypes.size == 0 ? new Set(types) : activeTypes;
   };
   let updateTag = tagId => {
     activeTags.has(tagId) ? activeTags.delete(tagId) : activeTags.add(tagId);
     activeTags = activeTags.size == 0 ? new Set(tags) : activeTags;
   };
-  let pluralize = label => label.endsWith(".") ? label.slice(0,-1)+"s." : label+"s" 
+  let isolateType = typeId => {
+    activeTypes = new Set([typeId]);
+  };
+  let isolateTag = tagId => {
+    activeTags = new Set([tagId]);
+  };
+  let pluralize = label =>
+    label.endsWith(".") ? label.slice(0, -1) + "s." : label + "s";
 </script>
 
 <style>
@@ -40,7 +49,7 @@
     user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
   }
-  h3{
+  h3 {
     margin-top: 0.5rem;
   }
 
@@ -74,7 +83,8 @@
     {#each types as typeId}
       <code
         class:activeTags={activeTypes.has(typeId)}
-        on:click={() => updateType(typeId)}>
+        on:click={() => updateType(typeId)}
+        on:dblclick={() => isolateType(typeId)}>
         <picture>
           <source srcset="tags/{typeId}.webp" type="image/webp" />
           <source srcset="tags/{typeId}.png" type="image/png" />
@@ -82,7 +92,9 @@
             src="tags/{typeId}.png"
             alt={`${tagLabels[typeId] || typeId} logo`} />
         </picture>
-        <div class="tagLabel">{pluralize(typeLabels[typeId]) || pluralize(typeId)}</div>
+        <div class="tagLabel">
+          {pluralize(typeLabels[typeId]) || pluralize(typeId)}
+        </div>
       </code>
     {/each}
   </span>
@@ -91,7 +103,8 @@
     {#each tags as tagId}
       <code
         class:activeTags={activeTags.has(tagId)}
-        on:click={() => updateTag(tagId)}>
+        on:click={() => updateTag(tagId)}
+        on:dblclick={() => isolateTag(tagId)}>
         <picture>
           <source srcset="tags/{tagId}.webp" type="image/webp" />
           <source srcset="tags/{tagId}.png" type="image/png" />
