@@ -28,13 +28,13 @@
   .cont {
     display: flex;
     flex: 1;
-    align-self: stretch;
+    align-self: center;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 1rem;
-    max-width: 80em;
+    max-width: 70em;
   }
   .placeholder {
     visibility: hidden;
