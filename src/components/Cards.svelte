@@ -14,7 +14,7 @@
   let tags = posts ? [...activeTags] : undefined;
   let types = posts ? [...activeTypes] : undefined;
   // Make a post visible if its type is set to visible and one of the tags are present.
-  $: visible = posts.filter(post => post.tags.some(tag => activeTags.has(tag) && activeTypes.has(post.type)));
+  $: visible = posts.filter(post => post.tags.some(tag => activeTags.has(tag)) && activeTypes.has(post.type));
 </script>
 
 <style>
