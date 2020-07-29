@@ -14,12 +14,6 @@
     activeTags.has(tagId) ? activeTags.delete(tagId) : activeTags.add(tagId);
     activeTags = activeTags.size == 0 ? new Set(tags) : activeTags;
   };
-  let isolateType = typeId => {
-    activeTypes = new Set([typeId]);
-  };
-  let isolateTag = tagId => {
-    activeTags = new Set([tagId]);
-  };
   let pluralize = label =>
     label.endsWith(".") ? label.slice(0, -1) + "s." : label + "s";
 </script>
@@ -83,8 +77,7 @@
     {#each types as typeId}
       <code
         class:activeTags={activeTypes.has(typeId)}
-        on:click={() => updateType(typeId)}
-        on:dblclick={() => isolateType(typeId)}>
+        on:click={() => updateType(typeId)}>
         <picture>
           <source srcset="tags/{typeId}.webp" type="image/webp" />
           <source srcset="tags/{typeId}.png" type="image/png" />
@@ -103,8 +96,7 @@
     {#each tags as tagId}
       <code
         class:activeTags={activeTags.has(tagId)}
-        on:click={() => updateTag(tagId)}
-        on:dblclick={() => isolateTag(tagId)}>
+        on:click={() => updateTag(tagId)}>
         <picture>
           <source srcset="tags/{tagId}.webp" type="image/webp" />
           <source srcset="tags/{tagId}.png" type="image/png" />
