@@ -8,6 +8,6 @@ export const  tagLabels = {
 
 export const typeLabels = {
   bp: "Blog Post",
-  ja: "Journal Article",
+  rp: "Research Paper",
   sp: "School Proj."
 }
