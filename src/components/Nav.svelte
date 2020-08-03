@@ -1,5 +1,11 @@
 <script>
-  import { FaLinkedinIn, FaGithub, FaUser, FaNewspaper } from "svelte-icons/fa";
+  import {
+    FaLinkedinIn,
+    FaGithub,
+    FaUser,
+    FaNewspaper,
+    FaPencilAlt
+  } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
   export let segment;
   let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
@@ -26,7 +32,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 12rem;
+    width: 14.5rem;
   }
 
   .icon {
@@ -43,7 +49,7 @@
 
   @media (max-width: 40rem) {
     .links {
-      width: 7.5rem;
+      width: 9.5rem;
     }
     .icon {
       width: 1rem;
@@ -89,6 +95,16 @@
       <span class="hideLinks">Resume</span>
     </a>
     <a
+      aria-label="Blog"
+      rel="prefetch"
+      aria-current={segment === 'blog' ? 'page' : undefined}
+      href="blog/">
+      <span class="hideIcons icon">
+        <FaPencilAlt />
+      </span>
+      <span class="hideLinks">Blog</span>
+    </a>
+    <a
       aria-label="About"
       rel="prefetch"
       aria-current={segment === 'about' ? 'page' : undefined}
@@ -98,6 +114,7 @@
       </span>
       <span class="hideLinks">About</span>
     </a>
+
     <div class="divider" />
     <a
       aria-label="LinkedIn"
