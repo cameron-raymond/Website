@@ -1,9 +1,9 @@
 <script>
   import { tagLabels, typeLabels } from "../utils/tags.js";
-  export let tags;
-  export let types;
-  export let activeTypes;
-  export let activeTags;
+  export let tags = [];
+  export let types = [];
+  export let activeTypes = [];
+  export let activeTags = [];
   let updateType = typeId => {
     activeTypes.has(typeId)
       ? activeTypes.delete(typeId)
@@ -72,40 +72,48 @@
 </style>
 
 {#if tags && types}
-  <h3>Include</h3>
-  <span>
-    {#each types as typeId}
-      <code
-        class:activeTags={activeTypes.has(typeId)}
-        on:click={() => updateType(typeId)}>
-        <picture>
-          <source srcset="tags/{typeId}.webp" type="image/webp" />
-          <source srcset="tags/{typeId}.png" type="image/png" />
-          <img
-            src="tags/{typeId}.png"
-            alt={`${tagLabels[typeId] || typeId} logo`} />
-        </picture>
-        <div class="tagLabel">
-          {pluralize(typeLabels[typeId]) || pluralize(typeId)}
-        </div>
-      </code>
-    {/each}
-  </span>
-  <h3>About</h3>
-  <span>
-    {#each tags as tagId}
-      <code
-        class:activeTags={activeTags.has(tagId)}
-        on:click={() => updateTag(tagId)}>
-        <picture>
-          <source srcset="tags/{tagId}.webp" type="image/webp" />
-          <source srcset="tags/{tagId}.png" type="image/png" />
-          <img
-            src="tags/{tagId}.png"
-            alt={`${tagLabels[tagId] || tagId} logo`} />
-        </picture>
-        <div class="tagLabel">{tagLabels[tagId] || tagId}</div>
-      </code>
-    {/each}
-  </span>
+  {#if types.length}
+    <h3>Include</h3>
+    <span>
+      {#each types as typeId}
+        <code
+          class:activeTags={activeTypes.has(typeId)}
+          on:click={() => updateType(typeId)}>
+          <picture>
+            <source srcset="tags/{typeId}.webp" type="image/webp" />
+            <source srcset="tags/{typeId}.png" type="image/png" />
+            <img
+              src="tags/{typeId}.png"
+              alt={`${tagLabels[typeId] || typeId} logo`} />
+          </picture>
+          <div class="tagLabel">
+            {pluralize(typeLabels[typeId]) || pluralize(typeId)}
+          </div>
+        </code>
+      {/each}
+    </span>
+  {/if}
+  {#if tags.length}
+    {#if types.length}
+      <h3>About</h3>
+    {:else}
+      <h3>Include</h3>
+    {/if}
+    <span>
+      {#each tags as tagId}
+        <code
+          class:activeTags={activeTags.has(tagId)}
+          on:click={() => updateTag(tagId)}>
+          <picture>
+            <source srcset="tags/{tagId}.webp" type="image/webp" />
+            <source srcset="tags/{tagId}.png" type="image/png" />
+            <img
+              src="tags/{tagId}.png"
+              alt={`${tagLabels[tagId] || tagId} logo`} />
+          </picture>
+          <div class="tagLabel">{tagLabels[tagId] || tagId}</div>
+        </code>
+      {/each}
+    </span>
+  {/if}
 {/if}
