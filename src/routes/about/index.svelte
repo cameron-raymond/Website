@@ -4,7 +4,7 @@
       r.json()
     );
     const intro = await this.fetch(`about/intro.json`).then(r => r.json());
-    return { overview: overview, intro: intro };
+    return { overview, intro};
   }
 </script>
 
