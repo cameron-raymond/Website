@@ -19,25 +19,18 @@ marked.Renderer.prototype.paragraph = (text) => {
   return "<p>" + text + "</p>";
 };
 const dirPath = `./content/blog`;
-const posts = fs.readdirSync(dirPath).map((postFilename) => {
-  const postContent = fs.readFileSync(dirPath+`/${postFilename}`, {
+export const posts = fs.readdirSync(dirPath).map((postFilename) => {
+  const postContent = fs.readFileSync(dirPath + `/${postFilename}`, {
     encoding: "utf8",
   });
   const postFrontMatter = frontMatter(postContent);
-
-  return {
-    title: postFrontMatter.attributes.title,
-    slug: postFrontMatter.attributes.slug,
-    emoji: postFrontMatter.attributes.emoji,
-    blurb: postFrontMatter.attributes.blurb,
-    type: postFrontMatter.attributes.type,
-    tags: postFrontMatter.attributes.tags,
-    link: postFrontMatter.attributes.link,
-    date: postFrontMatter.attributes.date,
-    prod: postFrontMatter.attributes.prod,
-    collaborators: postFrontMatter.attributes.collaborators,
-    html: marked(postFrontMatter.body).replace(/^\t{3}/gm, ""),
-  };
+  let post = postFrontMatter.attributes
+  post.html = marked(postFrontMatter.body).replace(/^\t{3}/gm, "")
+  return post
 });
 
-export default posts;
+export const cards =  JSON.parse(JSON.stringify(posts)).map(p => {
+  delete p.html
+  return p
+});
+

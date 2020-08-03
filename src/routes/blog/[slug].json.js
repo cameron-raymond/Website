@@ -1,6 +1,5 @@
-import posts from "./_posts.js";
+import {posts} from "./_posts.js";
 import { prettyFullDate } from "../../utils/date.js";
-
 const lookup = new Map();
 posts.forEach((post) => {
   post.date = prettyFullDate(post.date);
