@@ -21,7 +21,7 @@
   let h;
   let onHome = true;
   export let posts;
-  $: outro = y > h * 1.1 ? false : true;
+  $: outro = y > h * 1.04 ? false : true;
   onMount(() => (visible = true));
 </script>
 
