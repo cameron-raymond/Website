@@ -19,6 +19,7 @@
   // true to false and removes the intro content from the DOM
   let y;
   let h;
+  let onHome = true;
   export let posts;
   $: outro = y > h * 1.1 ? false : true;
   onMount(() => (visible = true));
@@ -107,7 +108,7 @@
 <svelte:window bind:scrollY={y} bind:innerHeight={h} />
 
 <div class="cont">
-  {#if outro}
+  {#if outro && onHome}
     {#if visible}
       <div class="intro">
         <h1
@@ -156,4 +157,4 @@
       out:fade={{ duration: 100, delay: 100 }} />
   {/if}
 </div>
-<Cards {posts}/>
+<Cards {posts} bind:onHome/>

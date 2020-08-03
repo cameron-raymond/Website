@@ -2,7 +2,7 @@
   import Tag from "./Tag.svelte";
   import Emoji from "./Emoji.svelte";
   export let post;
-  export let onHome = true;
+  export let onHome;
 </script>
 
 <style>
