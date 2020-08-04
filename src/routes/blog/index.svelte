@@ -131,10 +131,10 @@
   <title>💻Blog - Cameron Raymond💻</title>
   <meta
     name="description"
-    content="Cameron Raymond is a 21 year old data scienist from Toronto,
-    Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science. His broad areas of interest include network
-    science, machine learning, and computational social science." />
+    content="Cameron Raymond's blog. AI and network science; politics and policy. Below are some of my
+      ramblings. This is meant to be a more accessible outlet for the exciting
+      but all too often inaccessible research done in the world of computational
+      social science. All opinions are my own." />
   <meta
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
@@ -147,25 +147,26 @@
   <meta property="og:title" content="💻Blog - Cameron Raymond💻" />
   <meta
     name="og:description"
-    content="Cameron Raymond is a 21 year old data scienist from Toronto,
-    Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science. His broad areas of interest include network
-    science, machine learning, and computational social science." />
+    content="Cameron Raymond's blog. AI and network science; politics and policy. Below are some of my
+      ramblings. This is meant to be a more accessible outlet for the exciting
+      but all too often inaccessible research done in the world of computational
+      social science. All opinions are my own." />
   <meta
     property="og:image"
-    content="https://cameronraymond.me/summary_about_large.png" />
+    content="https://cameronraymond.me/networkd.png" />
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:card" content="summary" />
   <meta property="twitter:url" content="https://cameronraymond.me/blog/" />
   <meta property="twitter:title" content="💻About - Cameron Raymond💻" />
   <meta
     property="twitter:description"
-    content="Cameron Raymond is a 21 year old data scienist from Toronto,
-    Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science." />
+    content="Cameron Raymond's blog. AI and network science; politics and policy. Below are some of my
+      ramblings. This is meant to be a more accessible outlet for the exciting
+      but all too often inaccessible research done in the world of computational
+      social science. All opinions are my own.." />
   <meta
     property="twitter:image"
-    content="https://cameronraymond.me/summary_about_large.png" />
+    content="https://cameronraymond.me/networkd.png" />
 
 </svelte:head>
