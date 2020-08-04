@@ -140,11 +140,11 @@
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
     Science, Social Data Sience, Data Scientist" />
-  <link rel="canonical" href="https://cameronraymond.me/about/" />
+  <link rel="canonical" href="https://cameronraymond.me/blog/" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://cameronraymond.me/about/" />
+  <meta property="og:url" content="https://cameronraymond.me/blog/" />
   <meta property="og:title" content="💻Blog - Cameron Raymond💻" />
   <meta
     name="og:description"
@@ -158,7 +158,7 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://cameronraymond.me/about/" />
+  <meta property="twitter:url" content="https://cameronraymond.me/blog/" />
   <meta property="twitter:title" content="💻About - Cameron Raymond💻" />
   <meta
     property="twitter:description"
