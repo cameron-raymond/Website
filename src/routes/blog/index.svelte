@@ -101,13 +101,12 @@
   <span class="content">
     {#each visible as post, i}
       <span
-        in:fly={{ delay: 500+(i*75), y: 50, duration: 500 }}
+        in:fly={{ delay: 500+(i*75), y: 50, duration: 200 }}
         out:fly={{ y: 50, duration: 300 }}>
         <span class="title">
           <h3>
             <Emoji symbol={post.emoji} />
           </h3>
-
           <h2>
             <a rel="prefetch" href="blog/{post.slug}/">{post.title}</a>
           </h2>
