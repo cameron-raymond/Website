@@ -1,11 +1,12 @@
 import {cards} from "./blog/_posts.js";
-import { prettyDate } from "../utils/date.js";
+import { prettyDate, prettyFullDate } from "../utils/date.js";
 
 const contents = JSON.stringify(
   cards
     .filter((p) => p.prod)
     .map((post) => {
       post.timestamp = post.date
+      post.fullDate = prettyFullDate(post.date)
       post.date = prettyDate(post.date)
       return post
     })
