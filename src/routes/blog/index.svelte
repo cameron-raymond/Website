@@ -39,6 +39,13 @@
     max-width: 40rem;
     margin-bottom: 0.5rem;
   }
+  .title {
+    display: flex;
+    flex-direction: row;
+  }
+  .title h2 {
+    margin-left: 0.7rem;
+  }
   h1 {
     margin-top: 4rem;
     max-width: 58rem;
@@ -57,14 +64,25 @@
   .tags span {
     display: flex;
   }
+  @media (max-width: 40rem) {
+    .title h2 {
+      margin-left: 0.4rem;
+    }
+  }
 </style>
 
 {#if visible}
-  <h1 id="blog" in:fade={{ delay: 500, duration: 500 }}>
-    My work
-    <Emoji symbol="👨‍🔧" />
+  <h1
+    id="blog"
+    in:fade={{ delay: 500, duration: 500 }}
+    out:fly={{ y: 50, duration: 300 }}>
+    Explore My work
+    <Emoji symbol="💻" />
   </h1>
-  <div class="subtitle" in:fly={{ delay: 550, x: -50, duration: 500 }}>
+  <div
+    class="subtitle"
+    in:fly={{ delay: 550, x: -50, duration: 500 }}
+    out:fly={{ y: 50, duration: 300 }}>
     <p>
       AI and network science; politics and policy. Below are some of my
       ramblings. This is meant to be a more accessible outlet for the exciting
@@ -72,34 +90,46 @@
       social science. All opinions are my own.
     </p>
   </div>
-  <span class="postFilter" in:fly={{ delay: 550, x: -50, duration: 500 }}>
+  <span
+    class="postFilter"
+    in:fly={{ delay: 550, x: -50, duration: 500 }}
+    out:fly={{ y: 50, duration: 300 }}>
     {#if tags}
       <PostFilter {tags} bind:activeTags />
     {/if}
   </span>
-  <span class="content" in:fly={{ delay: 500, y: 50, duration: 500 }}>
-    {#each visible as post}
-      <h2>
-        <Emoji symbol={post.emoji} />&nbsp;
-        <a rel="prefetch" href="blog/{post.slug}/">{post.title}</a>
-      </h2>
-      <p class="subtitle">
-        {@html post.blurb}
-        <span class="tags">
-          <span>
-            {#each post.tags as tagId}
-              <Tag {tagId} />
-            {/each}
-          </span>
-          <p>{post.date}</p>
+  <span class="content">
+    {#each visible as post, i}
+      <span
+        in:fly={{ delay: 500+(i*75), y: 50, duration: 500 }}
+        out:fly={{ y: 50, duration: 300 }}>
+        <span class="title">
+          <h3>
+            <Emoji symbol={post.emoji} />
+          </h3>
+
+          <h2>
+            <a rel="prefetch" href="blog/{post.slug}/">{post.title}</a>
+          </h2>
         </span>
-      </p>
+        <p class="subtitle">
+          {@html post.blurb}
+          <span class="tags">
+            <span>
+              {#each post.tags as tagId}
+                <Tag {tagId} />
+              {/each}
+            </span>
+            <p>{post.fullDate}</p>
+          </span>
+        </p>
+      </span>
     {/each}
   </span>
 {/if}
 
 <svelte:head>
-  <title>👨‍🔧Blog - Cameron Raymond👨‍🔧</title>
+  <title>💻Blog - Cameron Raymond💻</title>
   <meta
     name="description"
     content="Cameron Raymond is a 21 year old data scienist from Toronto,
@@ -115,7 +145,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://cameronraymond.me/about/" />
-  <meta property="og:title" content="👨‍🔧Blog - Cameron Raymond👨‍🔧" />
+  <meta property="og:title" content="💻Blog - Cameron Raymond💻" />
   <meta
     name="og:description"
     content="Cameron Raymond is a 21 year old data scienist from Toronto,
@@ -129,7 +159,7 @@
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://cameronraymond.me/about/" />
-  <meta property="twitter:title" content="👨‍🔧About - Cameron Raymond👨‍🔧" />
+  <meta property="twitter:title" content="💻About - Cameron Raymond💻" />
   <meta
     property="twitter:description"
     content="Cameron Raymond is a 21 year old data scienist from Toronto,
