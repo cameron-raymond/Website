@@ -98,11 +98,12 @@
       <PostFilter {tags} bind:activeTags />
     {/if}
   </span>
-  <span class="content">
+  <span
+    class="content"
+    in:fly={{ delay: 575, y: 50, duration: 200 }}
+    out:fly={{ y: 50, duration: 300 }}>
     {#each visible as post, i}
-      <span
-        in:fly={{ delay: 500+(i*75), y: 50, duration: 200 }}
-        out:fly={{ y: 50, duration: 300 }}>
+      <span>
         <span class="title">
           <h3>
             <Emoji symbol={post.emoji} />
@@ -131,10 +132,10 @@
   <title>💻Blog - Cameron Raymond💻</title>
   <meta
     name="description"
-    content="Cameron Raymond's blog. AI and network science; politics and policy. Below are some of my
-      ramblings. This is meant to be a more accessible outlet for the exciting
-      but all too often inaccessible research done in the world of computational
-      social science. All opinions are my own." />
+    content="Cameron Raymond's blog. AI and network science; politics and
+    policy. Below are some of my ramblings. This is meant to be a more
+    accessible outlet for the exciting but all too often inaccessible research
+    done in the world of computational social science. All opinions are my own." />
   <meta
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
@@ -147,13 +148,11 @@
   <meta property="og:title" content="💻Blog - Cameron Raymond💻" />
   <meta
     name="og:description"
-    content="Cameron Raymond's blog. AI and network science; politics and policy. Below are some of my
-      ramblings. This is meant to be a more accessible outlet for the exciting
-      but all too often inaccessible research done in the world of computational
-      social science. All opinions are my own." />
-  <meta
-    property="og:image"
-    content="https://cameronraymond.me/networkd.png" />
+    content="Cameron Raymond's blog. AI and network science; politics and
+    policy. Below are some of my ramblings. This is meant to be a more
+    accessible outlet for the exciting but all too often inaccessible research
+    done in the world of computational social science. All opinions are my own." />
+  <meta property="og:image" content="https://cameronraymond.me/networkd.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary" />
@@ -161,10 +160,10 @@
   <meta property="twitter:title" content="💻About - Cameron Raymond💻" />
   <meta
     property="twitter:description"
-    content="Cameron Raymond's blog. AI and network science; politics and policy. Below are some of my
-      ramblings. This is meant to be a more accessible outlet for the exciting
-      but all too often inaccessible research done in the world of computational
-      social science. All opinions are my own.." />
+    content="Cameron Raymond's blog. AI and network science; politics and
+    policy. Below are some of my ramblings. This is meant to be a more
+    accessible outlet for the exciting but all too often inaccessible research
+    done in the world of computational social science. All opinions are my own.." />
   <meta
     property="twitter:image"
     content="https://cameronraymond.me/networkd.png" />

@@ -167,7 +167,7 @@
       in:fade={{ delay: 500, duration: 0 }}
       value={$progress}
       max="100" />
-    <p class="nav">
+    <p in:fade={{ delay: 200, duration: 500 }} class="nav">
       <a href="/">home</a>
       /
       <a href="/blog/">blog</a>
