@@ -1,8 +1,12 @@
 <script>
   import Emoji from "./Emoji.svelte";
-  import { FaLinkedinIn, FaGithub, FaMediumM } from "svelte-icons/fa";
+  import {
+    FaLinkedinIn,
+    FaGithub,
+    FaMediumM,
+    FaTwitter
+  } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
-  import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
   let year = "2020";
   let month = "August";
   let day = "16";
@@ -10,6 +14,7 @@
   let github = "https://github.com/cameron-raymond/";
   let email = "mailto:cameron.raymond@hey.com?subject=Let's%20Talk%20Data";
   let medium = "https://medium.com/@cameronraymond/";
+  let twitter = "https://twitter.com/CJKRaymond";
 </script>
 
 <style>
@@ -25,7 +30,7 @@
     padding-right: 2rem;
     font-weight: 300;
   }
-  .footer p{
+  .footer p {
     margin-right: 1.5rem;
   }
   .links {
@@ -94,19 +99,19 @@
   </p>
   <div class="links">
     <a
-      aria-label="Email"
-      href={email}
-      class="icon"
-      on:click={() => getOutboundLink(email)}>
-      <IoIosMail />
-    </a>
-    <div class="divider" />
-    <a
       aria-label="LinkedIn"
       href={linkedIn}
       class="icon"
       on:click={() => getOutboundLink(linkedIn)}>
       <FaLinkedinIn />
+    </a>
+    <div class="divider" />
+    <a
+      aria-label="twitter"
+      class="icon"
+      href={twitter}
+      on:click={() => getOutboundLink(twitter)}>
+      <FaTwitter />
     </a>
     <div class="divider" />
     <a

@@ -1,15 +1,15 @@
 <script>
   import {
     FaLinkedinIn,
-    FaGithub,
+    FaTwitter,
     FaUser,
     FaNewspaper,
     FaPencilAlt
   } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
   export let segment;
-  let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
-  let github = "https://github.com/cameron-raymond/";
+  let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
+  let twitter = "https://twitter.com/CJKRaymond";
 </script>
 
 <style>
@@ -124,11 +124,11 @@
       <FaLinkedinIn />
     </a>
     <a
-      aria-label="Github"
+      aria-label="twitter"
       class="icon"
-      href={github}
-      on:click={() => getOutboundLink(github)}>
-      <FaGithub />
+      href={twitter}
+      on:click={() => getOutboundLink(twitter)}>
+      <FaTwitter />
     </a>
   </div>
 
