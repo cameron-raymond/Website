@@ -10,7 +10,7 @@
   let year = "2020";
   let month = "August";
   let day = "16";
-  let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
+  let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
   let github = "https://github.com/cameron-raymond/";
   let email = "mailto:cameron.raymond@hey.com?subject=Let's%20Talk%20Data";
   let medium = "https://medium.com/@cameronraymond/";
