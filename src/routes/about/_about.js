@@ -28,3 +28,11 @@ const introFrontMatter = frontMatter(introContent);
 let i = introFrontMatter.attributes;
 i.html =  marked(introFrontMatter.body).replace(/^\t{3}/gm, "");
 export const intro = i;
+
+const pubsContent = fs.readFileSync(`${dirPath}/publications.md`, {
+    encoding: "utf8",
+  });
+const pubsFrontMatter = frontMatter(pubsContent);
+let p = pubsFrontMatter.attributes;
+p.html =  marked(pubsFrontMatter.body).replace(/^\t{3}/gm, "");
+export const pubs = p;

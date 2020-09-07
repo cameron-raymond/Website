@@ -4,7 +4,10 @@
       r.json()
     );
     const intro = await this.fetch(`about/intro.json`).then(r => r.json());
-    return { overview, intro };
+    const publications = await this.fetch(`about/publications.json`).then(r =>
+      r.json()
+    );
+    return { overview, intro, publications };
   }
 </script>
 
@@ -16,6 +19,7 @@
   let visible = false;
   export let overview;
   export let intro;
+  export let publications;
 
   onMount(() => {
     visible = true;
@@ -23,17 +27,21 @@
 </script>
 
 <style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80vw;
+    max-width: 62em;
+    margin-top: 3.45rem;
+  }
   span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 3.45rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
     overflow: hidden;
     margin-bottom: 2rem;
-    max-width: 60em;
   }
   .intro {
     padding-right: 1rem;
@@ -44,6 +52,9 @@
     height: auto;
     object-fit: contain;
     overflow: hidden;
+  }
+  .margin {
+    margin-bottom: 2rem;
   }
   @media (max-width: 60rem) {
     span {
@@ -64,6 +75,46 @@
   }
 </style>
 
+{#if visible}
+  <div class="container">
+    <span>
+      <div class="intro">
+
+        <h1
+          in:fly={{ delay: 500, y: 50, duration: 500 }}
+          out:fly={{ y: 50, duration: 300 }}>
+          {intro.title}
+          <Emoji symbol={intro.emoji} />
+        </h1>
+        <div
+          in:fly={{ delay: 800, y: 50, duration: 500 }}
+          out:fly={{ y: 50, duration: 300 }}>
+          {@html intro.html}
+        </div>
+      </div>
+      <picture
+        rel="preload"
+        in:fade={{ delay: 600, duration: 200 }}
+        out:fly={{ y: 50, duration: 100 }}>
+        <source type="image/webp" srcset="{intro.image}.webp" />
+        <source type="image/jpeg" srcset="{intro.image}.png" />
+        <img src="{intro.image}.webp" alt={intro.image} />
+      </picture>
+    </span>
+    <div
+      class="margin"
+      in:fade={{ delay: 1050, duration: 500 }}
+      out:fly={{ y: 50, duration: 300 }}>
+      <Overview elements={overview} title="Me Through Lists" />
+    </div>
+    <div
+      in:fade={{ delay: 1100, duration: 500 }}
+      out:fly={{ y: 50, duration: 300 }}>
+      <h2>{publications.title}</h2>
+      {@html publications.html}
+    </div>
+  </div>
+{/if}
 <svelte:head>
   <title>💭About - Cameron Raymond💭</title>
   <meta
@@ -104,37 +155,4 @@
   <meta
     property="twitter:image"
     content="https://cameronraymond.me/summary_about_large.png" />
-
 </svelte:head>
-
-{#if visible}
-  <span>
-    <div class="intro">
-
-      <h1
-        in:fly={{ delay: 500, y: 50, duration: 500 }}
-        out:fly={{ y: 50, duration: 300 }}>
-        {intro.title}
-        <Emoji symbol={intro.emoji} />
-      </h1>
-      <div
-        in:fly={{ delay: 800, y: 50, duration: 500 }}
-        out:fly={{ y: 50, duration: 300 }}>
-        {@html intro.html}
-      </div>
-    </div>
-    <picture
-      rel="preload"
-      in:fade={{ delay: 600, duration: 200 }}
-      out:fly={{ y: 50, duration: 100 }}>
-      <source type="image/webp" srcset="{intro.image}.webp" />
-      <source type="image/jpeg" srcset="{intro.image}.png" />
-      <img src="{intro.image}.webp" alt={intro.image} />
-    </picture>
-  </span>
-  <div
-    in:fade={{ delay: 1050, duration: 500 }}
-    out:fly={{ y: 50, duration: 300 }}>
-    <Overview elements={overview} title="Me Through Lists" />
-  </div>
-{/if}
