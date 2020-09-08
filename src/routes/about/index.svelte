@@ -105,12 +105,12 @@
       class="margin"
       in:fade={{ delay: 1050, duration: 500 }}
       out:fly={{ y: 50, duration: 300 }}>
-      <Overview elements={overview} title="Me Through Lists" />
+      <Overview elements={overview} title="Me Through Lists ✅" />
     </div>
     <div
       in:fade={{ delay: 1100, duration: 500 }}
       out:fly={{ y: 50, duration: 300 }}>
-      <h2>{publications.title}</h2>
+      <h2>{publications.title} {publications.emoji}</h2>
       {@html publications.html}
     </div>
   </div>
