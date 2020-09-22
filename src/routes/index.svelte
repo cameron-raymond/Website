@@ -82,7 +82,7 @@
           out:fly={{ y: 50, duration: 500 }}>
           I'm Cameron - a data scientist
           <Emoji symbol="📈" />
-          and incoming graduate student
+          and graduate student
           <Emoji symbol="🧑‍💻" />
           at the
           <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
@@ -93,12 +93,11 @@
         <p
           in:fly={{ delay: 350, y: 50, duration: 500 }}
           out:fly={{ y: 50, duration: 500 }}>
-          Currently a research scientist, studying computational social science
-          at the
+          Previously a research scientist at the University of Toronto's
           <a
             aria-label="University of Toronto"
-            href="http://www.cs.toronto.edu/">
-            University of Toronto
+            href="http://csslab.cs.toronto.edu/">
+            Computational Social Science Lab
           </a>
         </p>
       </div>
@@ -117,7 +116,7 @@
       out:fade={{ duration: 100, delay: 100 }} />
   {/if}
 </div>
-<Cards {posts} bind:onHome/>
+<Cards {posts} bind:onHome />
 <svelte:head>
   <title>🤯Cameron Raymond🤯</title>
 
