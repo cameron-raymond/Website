@@ -9,7 +9,7 @@
   import { getOutboundLink } from "../utils/link.js";
   let year = "2020";
   let month = "September";
-  let day = "07";
+  let day = "22";
   let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
   let github = "https://github.com/cameron-raymond/";
   let email = "mailto:cameron.raymond@hey.com?subject=Let's%20Talk%20Data";
