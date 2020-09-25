@@ -1,8 +1,8 @@
 ---
 header: "Quarantine Books"
 emoji: "📚"
-titles: ["Nudge","The Curse of Bigness","Human Compatible","Lie Machines","Weapons of Math Destruction","The Address Book","Winners Take All","Scarcity","Social Physics","The Age of Surveillance Capitalism","Grit","The Privileged Poor","Naked Statistics","Poor Economics","Americanah"]
-urls: ["https://www.nytimes.com/2015/11/01/upshot/the-power-of-nudges-for-good-and-bad.html","https://www.nytimes.com/2018/12/12/books/review-curse-of-bigness-antitrust-law-tim-wu.html","https://www.nytimes.com/2019/10/31/opinion/superintelligent-artificial-intelligence.html","https://yalebooks.co.uk/display.asp?k=9780300250206",
+titles: ["Palaces for the People","Nudge","The Curse of Bigness","Human Compatible","Lie Machines","Weapons of Math Destruction","The Address Book","Winners Take All","Scarcity","Social Physics","The Age of Surveillance Capitalism","Grit","The Privileged Poor","Naked Statistics","Poor Economics","Americanah"]
+urls: ["https://www.nytimes.com/2018/09/14/books/review/palaces-for-the-people-eric-klinenberg.html","https://www.nytimes.com/2015/11/01/upshot/the-power-of-nudges-for-good-and-bad.html","https://www.nytimes.com/2018/12/12/books/review-curse-of-bigness-antitrust-law-tim-wu.html","https://www.nytimes.com/2019/10/31/opinion/superintelligent-artificial-intelligence.html","https://yalebooks.co.uk/display.asp?k=9780300250206",
 "https://www.nytimes.com/2016/10/09/books/review/weapons-of-math-destruction-cathy-oneil-and-more.html",
 "https://www.nytimes.com/2020/04/14/books/review/deirdre-mask-the-address-book.html",
 "https://www.nytimes.com/2018/08/20/books/review/winners-take-all-anand-giridharadas.html",

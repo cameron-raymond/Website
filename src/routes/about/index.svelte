@@ -4,10 +4,10 @@
       r.json()
     );
     const intro = await this.fetch(`about/intro.json`).then(r => r.json());
-    const publications = await this.fetch(`about/publications.json`).then(r =>
+    const bottom = await this.fetch(`about/bottomContent.json`).then(r =>
       r.json()
     );
-    return { overview, intro, publications };
+    return { overview, intro, bottom };
   }
 </script>
 
@@ -19,7 +19,7 @@
   let visible = false;
   export let overview;
   export let intro;
-  export let publications;
+  export let bottom;
 
   onMount(() => {
     visible = true;
@@ -110,8 +110,7 @@
     <div
       in:fade={{ delay: 1100, duration: 500 }}
       out:fly={{ y: 50, duration: 300 }}>
-      <h2>{publications.title} {publications.emoji}</h2>
-      {@html publications.html}
+      {@html bottom.html}
     </div>
   </div>
 {/if}
