@@ -85,7 +85,6 @@
 <svelte:window bind:scrollY={y} />
 <div class="chat">
   <h3>
-    <!-- <p>{y}/{h}={(y - 100) / (h - 500)}</p> -->
     Let's
     <a aria-label="Email" href={email} on:click={() => getOutboundLink(email)}>
       <Annotation
