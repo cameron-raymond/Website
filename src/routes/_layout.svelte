@@ -5,6 +5,7 @@
   import GoogleAnalytics from "../components/GoogleAnalytics.svelte";
   export let segment;
   let h = 1000;
+  let y = 0;
 </script>
 
 <style>
@@ -18,10 +19,11 @@
   }
 </style>
 
+<svelte:window bind:scrollY={y} />
 <GoogleAnalytics />
 <Nav {segment} />
 <main bind:clientHeight={h}>
-  <slot />
+  <slot/>
 </main>
-<Footer {h} />
+<Footer {h} {y} />
 <HiddenLinks />

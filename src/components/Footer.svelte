@@ -18,10 +18,10 @@
   let medium = "https://medium.com/@cameronraymond/";
   let twitter = "https://twitter.com/CJKRaymond";
 
-  let y;
+  export let y;
   export let h;
   // take 500 off of the height to roughly account for header/footer, shift y by 100 so that it starts after header
-  $: visible = (y - 100) / (h - 500) > 0.92;
+  $: visible = (y - 100) / (h - 500) > 0.90;
 </script>
 
 <style>
@@ -82,7 +82,6 @@
   }
 </style>
 
-<svelte:window bind:scrollY={y} />
 <div class="chat">
   <h3>
     Let's
