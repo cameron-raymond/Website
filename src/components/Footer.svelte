@@ -1,5 +1,7 @@
 <script>
   import Emoji from "./Emoji.svelte";
+  import { onMount } from "svelte";
+  import Annotation from "svelte-rough-notation";
   import {
     FaLinkedinIn,
     FaGithub,
@@ -15,6 +17,11 @@
   let email = "mailto:cameron.raymond@hey.com?subject=Let's%20Talk%20Data";
   let medium = "https://medium.com/@cameronraymond/";
   let twitter = "https://twitter.com/CJKRaymond";
+
+  let y;
+  export let h;
+  // take 500 off of the height to roughly account for header/footer, shift y by 100 so that it starts after header
+  $: visible = (y - 100) / (h - 500) > 0.92;
 </script>
 
 <style>
@@ -56,9 +63,10 @@
     justify-content: center;
   }
   .chat a {
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-decoration-color: rgb(255, 62, 0);
-    text-decoration-thickness: 0.11em;
+    text-decoration-thickness: 0.11em; */
+    text-decoration: none;
   }
   @media (max-width: 40rem) {
     .icon {
@@ -74,11 +82,20 @@
   }
 </style>
 
+<svelte:window bind:scrollY={y} />
 <div class="chat">
   <h3>
+    <!-- <p>{y}/{h}={(y - 100) / (h - 500)}</p> -->
     Let's
     <a aria-label="Email" href={email} on:click={() => getOutboundLink(email)}>
-      Talk Data
+      <Annotation
+        bind:visible
+        type="underline"
+        padding={-1}
+        color="rgb(255, 62, 0)"
+        >
+        Talk Data
+      </Annotation>
     </a>
   </h3>
 </div>
