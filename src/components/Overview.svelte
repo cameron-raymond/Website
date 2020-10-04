@@ -16,7 +16,17 @@
   li {
     list-style-type: none;
   }
+  @media (max-width: 73rem) {
+    .item:nth-child(2n) {
+      page-break-after: right;
+      break-after: right;
+    }
+  }
   @media (max-width: 40rem) {
+    .item:nth-child(2n) {
+      page-break-after: initial;
+      break-after: initial;
+    }
     span {
       flex-direction: column;
       align-items: flex-start;
@@ -28,9 +38,12 @@
 <h2>{title}</h2>
 <span>
   {#each elements as element}
-    <div>
+    <div class="item">
       <h3>
-        {@html element.header} {#if element.emoji} <Emoji symbol={element.emoji}/>{/if}
+        {@html element.header}
+        {#if element.emoji}
+          <Emoji symbol={element.emoji} />
+        {/if}
       </h3>
       <ul>
         {#each element.list as item}
