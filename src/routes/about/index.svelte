@@ -1,13 +1,10 @@
 <script context="module">
   export async function preload({ params, query }) {
-    const overview = await this.fetch(`about/overview.json`).then(r =>
-      r.json()
-    );
     const intro = await this.fetch(`about/intro.json`).then(r => r.json());
-    const bottom = await this.fetch(`about/bottomContent.json`).then(r =>
+    const content = await this.fetch(`about/content.json`).then(r =>
       r.json()
     );
-    return { overview, intro, bottom };
+    return {intro, content };
   }
 </script>
 
@@ -15,11 +12,9 @@
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
   import Emoji from "../../components/Emoji.svelte";
-  import Overview from "../../components/Overview.svelte";
   let visible = false;
-  export let overview;
   export let intro;
-  export let bottom;
+  export let content;
 
   onMount(() => {
     visible = true;
@@ -53,8 +48,21 @@
     object-fit: contain;
     overflow: hidden;
   }
-  .margin {
-    margin-bottom: 2rem;
+  :global(ol) {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 80em;
+  }
+  :global(li > ol) {
+    padding-left: 20px;
+    display: block;
+  }
+  :global(li) {
+    list-style-type: none;
   }
   @media (max-width: 60rem) {
     span {
@@ -71,6 +79,11 @@
     }
     img {
       margin-bottom: 0.5rem;
+    }
+    :global(ol) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
   }
 </style>
@@ -102,15 +115,9 @@
       </picture>
     </span>
     <div
-      class="margin"
-      in:fade={{ delay: 1050, duration: 500 }}
-      out:fly={{ y: 50, duration: 300 }}>
-      <Overview elements={overview} title="Me Through Lists ✅" />
-    </div>
-    <div
       in:fade={{ delay: 1100, duration: 500 }}
       out:fly={{ y: 50, duration: 300 }}>
-      {@html bottom.html}
+      {@html content.html}
     </div>
   </div>
 {/if}
