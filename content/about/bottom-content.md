@@ -44,3 +44,7 @@ Raymond, C. (2020, June 2-8). *Bridging or Bonding? Measures of Topic Centrality
 Raymond, C., Anderson, A., & Waller, I. (2020, September). *Characterizing Political Activity on Reddit During the 2020 U.S. Presidential Primaries*. Manuscript submitted for publication.
 
 White, L., Davidson, A., & Raymond, C. (2020, October). *Public Opinion and Public Trust in Education Systems and Child Care Programs as Key Public Health Sites During the COVID-19 Pandemic*. Manuscript in preparation.
+
+## In Case you Forgot
+
+![Wear a mask or go to jail](content/rl-for-traffic-flow/1918-spanish-flu.jpg)

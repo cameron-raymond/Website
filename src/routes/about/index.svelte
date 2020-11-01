@@ -48,6 +48,9 @@
     object-fit: contain;
     overflow: hidden;
   }
+  :global(img){
+      width: 100%
+  }
   :global(ol) {
     padding-left: 0px;
     display: flex;
@@ -56,6 +59,9 @@
     align-items: flex-start;
     flex-wrap: wrap;
     max-width: 80em;
+  }
+  :global(h2){
+      margin: 1.5em 0 0.5em 0;
   }
   :global(li > ol) {
     padding-left: 20px;
@@ -80,6 +86,9 @@
     img {
       margin-bottom: 0.5rem;
     }
+    :global(h2){
+      margin: .75em 0 0.25em 0;
+  }
     :global(ol) {
       flex-direction: column;
       align-items: flex-start;
@@ -92,7 +101,6 @@
   <div class="container">
     <span>
       <div class="intro">
-
         <h1
           in:fly={{ delay: 500, y: 50, duration: 500 }}
           out:fly={{ y: 50, duration: 300 }}>
