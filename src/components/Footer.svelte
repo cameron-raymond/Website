@@ -10,8 +10,8 @@
   } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
   let year = "2020";
-  let month = "October";
-  let day = "31";
+  let month = "November";
+  let day = "01";
   let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
   let github = "https://github.com/cameron-raymond/";
   let email = "mailto:cameron.raymond@hey.com?subject=Let's%20Talk%20Data";
