@@ -14,6 +14,7 @@
     "deploy": "./scripts/deploy.sh && npm run clean && npm run export && node ./scripts/gh-pages.js"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001157",
     "compression": "^1.7.1",
     "eases-jsnext": "^1.0.10",
     "front-matter": "^3.1.0",
