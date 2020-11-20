@@ -9,8 +9,8 @@
     FaTwitter
   } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
-  let year = "2020";
-  let month = "November";
+  let year = "20";
+  let month = "Nov";
   let day = "20";
   let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
   let github = "https://github.com/cameron-raymond/";
@@ -109,7 +109,7 @@
       aria-label="{month}
       {day}, {year}"
       href="https://www.onthisday.com/events/{month}/{day}">
-      {month} {day}, {year}
+      {month} {day}, '{year}
     </a>
   </p>
   <div class="links">
