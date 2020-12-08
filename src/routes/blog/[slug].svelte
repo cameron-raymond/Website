@@ -37,6 +37,52 @@
   });
 </script>
 
+<svelte:window bind:scrollY={y} />
+
+<div bind:clientHeight={h}>
+  {#if visible}
+    <progress
+      in:fade={{ delay: 500, duration: 0 }}
+      value={$progress}
+      max="100" />
+    <p in:fade={{ delay: 200, duration: 500 }} class="nav">
+      <a href="/">home</a>
+      /
+      <a href="/blog/">blog</a>
+      /
+      <a href="/blog/{post.slug}/">{post.slug}</a>
+    </p>
+    <h1 in:fade={{ delay: 200, duration: 500 }}>{post.title} {post.emoji}</h1>
+    <div in:fly={{ delay: 250, x: -50, duration: 500 }} class="subtitle">
+      <p>
+        {@html post.blurb}
+        {#if post.collaborators}
+          <span class="collab">
+            {#each post.collaborators as collab}
+              <a aria-label="collaborator" href="https://github.com/{collab}/">
+                @{collab}
+              </a>
+              &nbsp;
+            {/each}
+          </span>
+        {/if}
+        <span class="tags">
+          <span>
+            {#each post.tags as tagId}
+              <Tag {tagId} />
+            {/each}
+          </span>
+          <p>{post.date}</p>
+        </span>
+      </p>
+    </div>
+
+    <div in:fly={{ delay: 200, y: 50, duration: 500 }} class="content">
+      {@html post.html}
+    </div>
+  {/if}
+</div>
+
 <style>
   /*
 		By default, CSS is locally scoped to the component,
@@ -82,10 +128,6 @@
   .content :global(p > em) {
     color: inherit;
   }
-  .content :global(a) {
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 62, 0);
-  }
   .content :global(ul) {
     position: relative;
     list-style: none;
@@ -100,7 +142,7 @@
   }
   .content :global(blockquote) {
     border-left: 2px solid #a7a0a0;
-    padding: 0.5em 10px; 
+    padding: 0.5em 10px;
   }
 
   progress {
@@ -126,9 +168,13 @@
     background: #ff3e00;
     border-radius: 1px;
   }
-
-  h1 {
+  .nav {
+    color: #555;
     margin-top: 4rem;
+  }
+  h1 {
+    margin: -0.7rem 0 0 0;
+    max-width: 58rem;
   }
   .subtitle {
     color: #555;
@@ -178,12 +224,10 @@
     property="og:title"
     content="{post.emoji}{post.title} - Cameron Raymond{post.emoji}" />
   <meta name="og:description" content={post.blurb} />
-  <meta
-    property="og:image"
-    content="https://cameronraymond.me/summary_large_image.png" />
+  <meta property="og:image" content="https://cameronraymond.me/networkd.png" />
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:card" content="summary" />
   <meta
     property="twitter:url"
     content="https://cameronraymond.me/blog/{post.slug}/" />
@@ -193,43 +237,5 @@
   <meta property="twitter:description" content={post.blurb} />
   <meta
     property="twitter:image"
-    content="https://cameronraymond.me/summary_large_image.png" />
+    content="https://cameronraymond.me/networkd.png" />
 </svelte:head>
-
-<svelte:window bind:scrollY={y} />
-
-<div bind:clientHeight={h}>
-  {#if visible}
-    <progress
-      in:fade={{ delay: 500, duration: 0 }}
-      value={$progress}
-      max="100" />
-    <h1 in:fade={{ delay: 200, duration: 500 }}>{post.title} {post.emoji}</h1>
-    <div in:fly={{ delay: 250, x: -50, duration: 500 }} class="subtitle">
-      <p>
-        {@html post.blurb}
-        {#if post.collaborators}
-          <span class="collab">
-            {#each post.collaborators as collab}
-              {@html collab}
-              &nbsp;
-            {/each}
-          </span>
-        {/if}
-        <span class="tags">
-          <span>
-            {#each post.tags as tagId}
-              <Tag {tagId} />
-            {/each}
-          </span>
-          <p>{post.date}</p>
-        </span>
-      </p>
-
-    </div>
-
-    <div in:fly={{ delay: 200, y: 50, duration: 500 }} class="content">
-      {@html post.html}
-    </div>
-  {/if}
-</div>

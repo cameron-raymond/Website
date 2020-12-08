@@ -4,11 +4,17 @@
   import Emoji from "./Emoji.svelte";
   export let posts;
   export let onHome;
-  let active = posts
+  // Two filters, types (blog posts, journal articles, etc.) and tags (ML, graph theory, etc.).
+  let activeTypes = posts 
+    ? new Set([].concat(...posts.map(x => x.type)))
+    : undefined;  
+  let activeTags = posts 
     ? new Set([].concat(...posts.map(x => x.tags)))
     : undefined;
-  let tags = posts ? [...active] : undefined;
-  $: visible = posts.filter(post => post.tags.every(tag => active.has(tag)));
+  let tags = posts ? [...activeTags] : undefined;
+  let types = posts ? [...activeTypes] : undefined;
+  // Make a post visible if its type is set to visible and one of the tags are present.
+  $: visible = posts.filter(post => post.tags.some(tag => activeTags.has(tag)) && activeTypes.has(post.type));
 </script>
 
 <style>
@@ -22,13 +28,13 @@
   .cont {
     display: flex;
     flex: 1;
-    align-self: stretch;
+    align-self: center;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 1rem;
-    max-width: 80em;
+    max-width: 70em;
   }
   .placeholder {
     visibility: hidden;
@@ -56,11 +62,11 @@
 </style>
 
 <h2 id="blog">
-  What I'm Working On
+  Check out my work
   <Emoji symbol="👨‍🔧" />
 </h2>
 {#if tags}
-  <PostFilter {tags} bind:active />
+  <PostFilter {tags} {types} bind:activeTags bind:activeTypes/>
 {/if}
 <span class="postFilter" />
 

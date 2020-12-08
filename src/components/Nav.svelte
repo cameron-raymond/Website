@@ -1,9 +1,15 @@
 <script>
-  import { FaLinkedinIn, FaGithub, FaUser, FaNewspaper } from "svelte-icons/fa";
+  import {
+    FaLinkedinIn,
+    FaTwitter,
+    FaUser,
+    FaNewspaper,
+    FaPencilAlt
+  } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
   export let segment;
-  let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
-  let github = "https://github.com/cameron-raymond/";
+  let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
+  let twitter = "https://twitter.com/CJKRaymond";
 </script>
 
 <style>
@@ -26,12 +32,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 12rem;
+    width: 14.5rem;
   }
 
   .icon {
     width: 1.2rem;
     height: 1.2rem;
+  }
+  a {
+    text-decoration: none;
   }
 
   .hideIcons {
@@ -40,7 +49,7 @@
 
   @media (max-width: 40rem) {
     .links {
-      width: 7.5rem;
+      width: 9.5rem;
     }
     .icon {
       width: 1rem;
@@ -69,6 +78,7 @@
 
 <nav>
   <a
+    rel="prefetch"
     aria-label="Home"
     aria-current={segment === undefined ? 'page' : undefined}
     href=".">
@@ -85,7 +95,18 @@
       <span class="hideLinks">Resume</span>
     </a>
     <a
+      aria-label="Blog"
+      rel="prefetch"
+      aria-current={segment === 'blog' ? 'page' : undefined}
+      href="blog/">
+      <span class="hideIcons icon">
+        <FaPencilAlt />
+      </span>
+      <span class="hideLinks">Blog</span>
+    </a>
+    <a
       aria-label="About"
+      rel="prefetch"
       aria-current={segment === 'about' ? 'page' : undefined}
       href="about/">
       <span class="hideIcons icon">
@@ -93,6 +114,7 @@
       </span>
       <span class="hideLinks">About</span>
     </a>
+
     <div class="divider" />
     <a
       aria-label="LinkedIn"
@@ -102,11 +124,11 @@
       <FaLinkedinIn />
     </a>
     <a
-      aria-label="Github"
+      aria-label="twitter"
       class="icon"
-      href={github}
-      on:click={() => getOutboundLink(github)}>
-      <FaGithub />
+      href={twitter}
+      on:click={() => getOutboundLink(twitter)}>
+      <FaTwitter />
     </a>
   </div>
 

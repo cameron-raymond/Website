@@ -2,7 +2,7 @@
   import Tag from "./Tag.svelte";
   import Emoji from "./Emoji.svelte";
   export let post;
-  export let onHome = true;
+  export let onHome;
 </script>
 
 <style>
@@ -126,7 +126,7 @@
     <div class="foot">
       {#if post.tags}
         <span>
-          {#each post.tags as tagId}
+          {#each [post.type,...post.tags] as tagId}
             <Tag {tagId} />
           {/each}
         </span>

@@ -1,15 +1,27 @@
 <script>
   import Emoji from "./Emoji.svelte";
-  import { FaLinkedinIn, FaGithub, FaMediumM } from "svelte-icons/fa";
+  import { onMount } from "svelte";
+  import Annotation from "svelte-rough-notation";
+  import {
+    FaLinkedinIn,
+    FaGithub,
+    FaMediumM,
+    FaTwitter
+  } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
-  import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
-  let year = "2020";
-  let month = "July";
-  let day = "04";
-  let linkedIn = "https://www.linkedin.com/in/cameron-raymond/";
+  let year = "20";
+  let month = "Nov";
+  let day = "20";
+  let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
   let github = "https://github.com/cameron-raymond/";
   let email = "mailto:cameron.raymond@hey.com?subject=Let's%20Talk%20Data";
   let medium = "https://medium.com/@cameronraymond/";
+  let twitter = "https://twitter.com/CJKRaymond";
+
+  export let y;
+  export let h;
+  // take 500 off of the height to roughly account for header/footer, shift y by 100 so that it starts after header
+  $: visible = (y - 100) / (h - 500) > 0.90;
 </script>
 
 <style>
@@ -25,7 +37,7 @@
     padding-right: 2rem;
     font-weight: 300;
   }
-  .footer p{
+  .footer p {
     margin-right: 1.5rem;
   }
   .links {
@@ -51,9 +63,10 @@
     justify-content: center;
   }
   .chat a {
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-decoration-color: rgb(255, 62, 0);
-    text-decoration-thickness: 0.11em;
+    text-decoration-thickness: 0.11em; */
+    text-decoration: none;
   }
   @media (max-width: 40rem) {
     .icon {
@@ -73,7 +86,14 @@
   <h3>
     Let's
     <a aria-label="Email" href={email} on:click={() => getOutboundLink(email)}>
-      Talk Data
+      <Annotation
+        bind:visible
+        type="underline"
+        padding={-1}
+        color="rgb(255, 62, 0)"
+        >
+        Talk Data
+      </Annotation>
     </a>
   </h3>
 </div>
@@ -84,29 +104,29 @@
     <Emoji symbol="👷‍♂️" />
     by me
     <br />
-    Last update
+    Last updated
     <a
       aria-label="{month}
       {day}, {year}"
       href="https://www.onthisday.com/events/{month}/{day}">
-      {month} {day}, {year}
+      {month} {day}, '{year}
     </a>
   </p>
   <div class="links">
-    <a
-      aria-label="Email"
-      href={email}
-      class="icon"
-      on:click={() => getOutboundLink(email)}>
-      <IoIosMail />
-    </a>
-    <div class="divider" />
     <a
       aria-label="LinkedIn"
       href={linkedIn}
       class="icon"
       on:click={() => getOutboundLink(linkedIn)}>
       <FaLinkedinIn />
+    </a>
+    <div class="divider" />
+    <a
+      aria-label="twitter"
+      class="icon"
+      href={twitter}
+      on:click={() => getOutboundLink(twitter)}>
+      <FaTwitter />
     </a>
     <div class="divider" />
     <a
