@@ -24,12 +24,11 @@
    17. [Poor Economics](https://economics.mit.edu/faculty/eduflo/pooreconomics)
    18. [Americanah](https://www.nytimes.com/2013/06/09/books/review/americanah-by-chimamanda-ngozi-adichie.html)
 3. ### Quarantine Albums 👨‍🎤
-   1. [Alfredo](https://pitchfork.com/news/freddie-gibbs-and-the-alchemist-announce-new-album-alfredo-share-new-song-1985-listen/)
-   2. [Un Canto Por México Vol. 1](https://www.theneedledrop.com/articles/2020/5/natalia-lafourcade-un-canto-por-mxico-vol-1)
-   3. [Everything is Beautiful](https://pitchfork.com/reviews/albums/princess-nokia-everything-is-beautiful-everything-sucks/)
-   4. [Cubafonia](https://pitchfork.com/reviews/albums/22957-cubafonia/)
+   1. [Little Dominiques Nosebleed](https://pitchfork.com/reviews/albums/the-koreatown-oddity-little-dominiques-nosebleed/) 
+   2. [Apolonio](https://pitchfork.com/reviews/albums/omar-apollo-apolonio/)
+   3. [Alfredo](https://pitchfork.com/news/freddie-gibbs-and-the-alchemist-announce-new-album-alfredo-share-new-song-1985-listen/)
+   4. [In Utero](https://pitchfork.com/reviews/albums/18517-nirvana-in-utero-20th-anniversary-edition/)
    5. [Unlocked](https://pitchfork.com/reviews/albums/denzel-curry-kenny-beats-unlocked/)
-   6. [SAWAYAMA](https://pitchfork.com/reviews/albums/rina-sawayama-sawayama/)
 4. ### All Time Albums 💃🕺
    1. [The Miseducation of Lauryn Hill](https://pitchfork.com/reviews/albums/22035-the-miseducation-of-lauryn-hill/)
    2. [All Eyez on Me](https://pitchfork.com/reviews/albums/2pac-all-eyez-on-me/)
