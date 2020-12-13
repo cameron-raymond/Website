@@ -1,5 +1,6 @@
 <script>
   import Nav from "../components/Nav.svelte";
+  import Newsletter from "../components/NewsLetter.svelte"
   import HiddenLinks from "../components/HiddenLinks.svelte";
   import Footer from "../components/Footer.svelte";
   import GoogleAnalytics from "../components/GoogleAnalytics.svelte";
@@ -21,6 +22,7 @@
 
 <svelte:window bind:scrollY={y} />
 <GoogleAnalytics />
+<Newsletter/>
 <Nav {segment} />
 <main bind:clientHeight={h}>
   <slot/>
