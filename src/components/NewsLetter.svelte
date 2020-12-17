@@ -6,13 +6,20 @@
 </script>
 
 <style>
+  .margin{
+    height:3rem;
+  }
   .sign-up-banner {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
     color: white;
     background: rgba(255, 62, 0, 0.95);
     height: 3rem;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
   }
   .subscribe {
     background-color: transparent;
@@ -69,6 +76,9 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+  input:focus, input:focus{
+    outline: white;
+}
   .email {
     background-color: transparent;
     border: none;
@@ -105,6 +115,7 @@
 </style>
 
 {#if visible}
+  <div class="margin"/>
   <form
     class="sign-up-banner"
     action="https://tinyletter.com/cjkraymond"
