@@ -16,7 +16,7 @@
    9. [Lie Machines](https://yalebooks.co.uk/display.asp?k=9780300250206)
    10. [Weapons of Math Destruction](https://www.nytimes.com/2016/10/09/books/review/weapons-of-math-destruction-cathy-oneil-and-more.html)
    11. [The Address Book](https://www.nytimes.com/2020/04/14/books/review/deirdre-mask-the-address-book.html)
-   12. [Winners Take Al](https://www.nytimes.com/2018/08/20/books/review/winners-take-all-anand-giridharadas.html)
+   12. [Winners Take All](https://www.nytimes.com/2018/08/20/books/review/winners-take-all-anand-giridharadas.html)
    13. [Scarcity](https://www.theguardian.com/books/2013/sep/07/scarcity-sendhil-mullainathan-shafir-review)
    14. [Social Physics](https://www.technologyreview.com/2014/03/04/173783/social-physics/)
    15. [The Age of Surveillance Capitalism](https://www.nytimes.com/2019/01/16/books/review-age-of-surveillance-capitalism-shoshana-zuboff.html)
@@ -27,7 +27,7 @@
    20. [Americanah](https://www.nytimes.com/2013/06/09/books/review/americanah-by-chimamanda-ngozi-adichie.html)
 3. ### Quarantine Albums 👨‍🎤
    1. [Little Dominiques Nosebleed](https://pitchfork.com/reviews/albums/the-koreatown-oddity-little-dominiques-nosebleed/) 
-   2. [Apolonio](https://pitchfork.com/reviews/albums/omar-apollo-apolonio/)
+   2. [What's Your Pleasure](https://pitchfork.com/reviews/albums/jessie-ware-whats-your-pleasure/)
    3. [Alfredo](https://pitchfork.com/news/freddie-gibbs-and-the-alchemist-announce-new-album-alfredo-share-new-song-1985-listen/)
    4. [In Utero](https://pitchfork.com/reviews/albums/18517-nirvana-in-utero-20th-anniversary-edition/)
    5. [Unlocked](https://pitchfork.com/reviews/albums/denzel-curry-kenny-beats-unlocked/)
