@@ -21,7 +21,7 @@
   export let y;
   export let h;
   // take 500 off of the height to roughly account for header/footer, shift y by 100 so that it starts after header
-  $: visible = (y - 100) / (h - 500) > 0.90;
+  $: visible = (y - 100) / (h - 500) > 0.85;
 </script>
 
 <style>

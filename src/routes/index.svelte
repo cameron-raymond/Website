@@ -47,7 +47,7 @@
   }
   .intro-svg {
     position: absolute;
-    bottom: -2.75rem;
+    bottom: 0;
     right: -1rem;
     width: 100%;
     max-width: 42rem;
@@ -57,7 +57,7 @@
   }
   .down-arrow {
     position: absolute;
-    bottom: 1rem;
+    bottom: 4rem;
     left: calc(50vw - 4em);
     color: rgb(255, 62, 0);
     height: 2.5rem;
