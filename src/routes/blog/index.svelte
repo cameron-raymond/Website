@@ -157,7 +157,7 @@
   <!-- Twitter -->
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:url" content="https://cameronraymond.me/blog/" />
-  <meta property="twitter:title" content="💻About - Cameron Raymond💻" />
+  <meta property="twitter:title" content="💻Blog - Cameron Raymond💻" />
   <meta
     property="twitter:description"
     content="Cameron Raymond's blog. AI and network science; politics and
