@@ -87,6 +87,7 @@
   <div class="links">
     <a
       aria-label="Resume"
+      target="_blank"
       href="cameron-raymond-resume.pdf"
       on:click={() => getOutboundLink('https://cameronraymond.me/cameron-raymond-resume.pdf')}>
       <span class="hideIcons icon">
