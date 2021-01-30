@@ -28,11 +28,11 @@
    21. [Poor Economics](https://economics.mit.edu/faculty/eduflo/pooreconomics)
    22. [Americanah](https://www.nytimes.com/2013/06/09/books/review/americanah-by-chimamanda-ngozi-adichie.html)
 3. ### Quarantine Albums 👨‍🎤
-   1. [Last Year Was Weird, Vol. 2](https://pitchfork.com/reviews/albums/tkay-maidza-last-year-was-weird-vol-2/)
-   2. [Little Dominiques Nosebleed](https://pitchfork.com/reviews/albums/the-koreatown-oddity-little-dominiques-nosebleed/) 
-   3. [What's Your Pleasure](https://pitchfork.com/reviews/albums/jessie-ware-whats-your-pleasure/)
-   4. [Alfredo](https://pitchfork.com/news/freddie-gibbs-and-the-alchemist-announce-new-album-alfredo-share-new-song-1985-listen/)
-   5. [Unlocked](https://pitchfork.com/reviews/albums/denzel-curry-kenny-beats-unlocked/)
+   1. [Brass](https://pitchfork.com/reviews/albums/billy-woods-moor-mother-brass/)
+   2. [As God Intended](https://pitchfork.com/reviews/albums/apollo-brown-che-noir-as-god-intended/)
+   3. [Last Year Was Weird, Vol. 2](https://pitchfork.com/reviews/albums/tkay-maidza-last-year-was-weird-vol-2/)
+   4. [Little Dominiques Nosebleed](https://pitchfork.com/reviews/albums/the-koreatown-oddity-little-dominiques-nosebleed/)
+   5. [What's Your Pleasure](https://pitchfork.com/reviews/albums/jessie-ware-whats-your-pleasure/)
 4. ### All Time Albums 💃🕺
    1. [The Miseducation of Lauryn Hill](https://pitchfork.com/reviews/albums/22035-the-miseducation-of-lauryn-hill/)
    2. [All Eyez on Me](https://pitchfork.com/reviews/albums/2pac-all-eyez-on-me/)
