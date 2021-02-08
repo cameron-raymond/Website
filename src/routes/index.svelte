@@ -99,6 +99,15 @@
             href="http://csslab.cs.toronto.edu/">
             Computational Social Science Lab
           </a>
+        </p><p
+          in:fly={{ delay: 400, y: 50, duration: 500 }}
+          out:fly={{ y: 50, duration: 500 }}>
+          And an incoming research fellow at Stanford's
+          <a
+            aria-label="RegLab"
+            href="https://reglab.stanford.edu/">
+            RegLab
+          </a>
         </p>
       </div>
       <span

@@ -29,7 +29,7 @@ While the latter is interpretable, it relies on fair and principled researchers,
 
 ## Finding Cultural Dimensions
 
-One of Word2Vec’s properties is to position objects in some vector space in a way that preserves relationships between the objects. We can validate that these relationships are preserved by using the model to answer analogy problems. The canonical example of which being *man is to woman as king is to queen.*In vector form this means checking that the transformation *[man]-[woman]*³ is roughly the same as the transformation *[king]-[queen]*. If we wanted to quiz the model we would then see if *[king]+[woman]-[man]=[queen].*
+One of Word2Vec’s properties is to position objects in some vector space in a way that preserves relationships between the objects. We can validate that these relationships are preserved by using the model to answer analogy problems. The canonical example of which being *man is to woman as king is to queen.*In vector form this means checking that the transformation *[man]-[woman]³* is roughly the same as the transformation *[king]-[queen].* If we wanted to quiz the model we would then see if *[king]+[woman]-[man]=[queen].*
 
 ![Word embedding analogy examples](https://cdn-images-1.medium.com/max/2800/0*rrtXS8euqoIpn4QX.png)
 
@@ -41,7 +41,7 @@ Similarly if our embedding, in this case a word embedding,  included words like 
 
 The vectors that transform *[king]* into *[queen]* or *[rich]* into *[bankrupt]* can be thought of as *cultural dimensions* that cut through the meaningless axes that Word2Vec provides. And since those cultural dimensions are just vectors themselves, they are easy to compare against new vectors.
 
-![Projection of *[w] onto [v] by taking their dot product. Source: [3Blue1Brown](https://www.youtube.com/watch?v=LyGKycYT2v0&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=9).*](https://cdn-images-1.medium.com/max/2000/1*JFpl5nhVhFBUr2MHuhRiZQ.gif)*Projection of*[w] onto [v] by taking their dot product. Source: [3Blue1Brown](https://www.youtube.com/watch?v=LyGKycYT2v0&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=9).**
+![Projection of *[w] onto [v] by taking their dot product. Source: [3Blue1Brown](https://www.youtube.com/watch?v=LyGKycYT2v0&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=9).*](https://cdn-images-1.medium.com/max/2000/1*JFpl5nhVhFBUr2MHuhRiZQ.gif)*Projection of [w] onto [v] by taking their dot product. Source: [3Blue1Brown](https://www.youtube.com/watch?v=LyGKycYT2v0&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=9).*
 
 Going back to the sports example, **to see how masculine the vector representing *boxing* is — we can take the gender dimension, and project *[boxing]* onto it.**This is done by taking the dot product of *[boxing]* and *[gender-dim].*If the vectors in the embedding are normalized the dot product will range between [-1,1], where -1 indicates being exactly aligned with the masculine direction, and 1 indicates perfect alignment with the feminine direction. By projecting the sport vectors against both the gender and class dimensions, we can interpret each of those vectors in terms of gender and class.
 
