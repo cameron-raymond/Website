@@ -102,11 +102,11 @@
         </p><p
           in:fly={{ delay: 400, y: 50, duration: 500 }}
           out:fly={{ y: 50, duration: 500 }}>
-          And an incoming research fellow at Stanford's
+          And an incoming research fellow at
           <a
-            aria-label="RegLab"
-            href="https://reglab.stanford.edu/">
-            RegLab
+            aria-label="Stanford Law School"
+            href="https://law.stanford.edu/">
+            Stanford Law School
           </a>
         </p>
       </div>
