@@ -1,13 +1,13 @@
 <script>
   import { IoIosCloseCircleOutline } from "svelte-icons/io";
   import { fly } from "svelte/transition";
-  let visible = true;
+  export let visible = true;
   let updateVis = () => (visible = !visible);
 </script>
 
 <style>
-  .margin{
-    height:3rem;
+  .margin {
+    height: 3rem;
   }
   .sign-up-banner {
     display: flex;
@@ -76,9 +76,10 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
-  input:focus, input:focus{
+  input:focus,
+  input:focus {
     outline: white;
-}
+  }
   .email {
     background-color: transparent;
     border: none;
@@ -114,33 +115,31 @@
   }
 </style>
 
-{#if visible}
-  <div class="margin"/>
-  <form
-    class="sign-up-banner"
-    action="https://tinyletter.com/cjkraymond"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://tinyletter.com/cjkraymond', 'popupwindow',
-    'scrollbars=yes,width=800,height=600');return true">
-    <p>
-      <label class="label" for="tlemail">Let's be pals:</label>
-    </p>
-    <div class="signup-input">
-      <input
-        type="text"
-        name="email"
-        class="email"
-        placeholder="my@email.com"
-        id="tlemail" />
-    </div>
-    <input type="hidden" value="1" name="embed" />
-    <span class="tooltip">
-      <input type="submit" value="✉️" class="subscribe" />
-      <span class="tooltiptext">Subscribe!</span>
-    </span>
-    <span id="close-sub" on:click={() => updateVis()}>
-      <IoIosCloseCircleOutline />
-    </span>
-  </form>
-{/if}
+<div class="margin" />
+<form
+  class="sign-up-banner"
+  action="https://tinyletter.com/cjkraymond"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://tinyletter.com/cjkraymond', 'popupwindow',
+  'scrollbars=yes,width=800,height=600');return true">
+  <p>
+    <label class="label" for="tlemail">Let's be pals:</label>
+  </p>
+  <div class="signup-input">
+    <input
+      type="text"
+      name="email"
+      class="email"
+      placeholder="my@email.com"
+      id="tlemail" />
+  </div>
+  <input type="hidden" value="1" name="embed" />
+  <span class="tooltip">
+    <input type="submit" value="✉️" class="subscribe" />
+    <span class="tooltiptext">Subscribe!</span>
+  </span>
+  <span id="close-sub" on:click={() => updateVis()}>
+    <IoIosCloseCircleOutline />
+  </span>
+</form>

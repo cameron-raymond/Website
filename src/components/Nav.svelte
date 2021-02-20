@@ -7,7 +7,10 @@
     FaPencilAlt
   } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
+  import NewsLetter from "./NewsLetter.svelte"
   export let segment;
+  let visible = true;
+  $: margin = !visible
   let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
   let twitter = "https://twitter.com/CJKRaymond";
 </script>
@@ -33,6 +36,9 @@
     justify-content: space-between;
     align-items: center;
     width: 14.5rem;
+  }
+  .margin{
+    margin-bottom: 3rem;
   }
 
   .icon {
@@ -76,7 +82,10 @@
   }
 </style>
 
-<nav>
+{#if visible}
+  <NewsLetter bind:visible/>
+{/if}
+<nav class:margin >
   <a
     rel="prefetch"
     aria-label="Home"
@@ -132,5 +141,4 @@
       <FaTwitter />
     </a>
   </div>
-
 </nav>

@@ -22,7 +22,6 @@
 
 <svelte:window bind:scrollY={y} />
 <GoogleAnalytics />
-<Newsletter/>
 <Nav {segment} />
 <main bind:clientHeight={h}>
   <slot/>

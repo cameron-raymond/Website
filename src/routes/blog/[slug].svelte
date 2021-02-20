@@ -150,7 +150,7 @@
     border-width: 0;
     background: none;
     border-radius: 1px;
-    margin: -4rem -2rem 0 -2rem;
+    margin: -7rem -2rem 0 -2rem;
     position: fixed;
     width: 100%;
     height: 1.5px;
