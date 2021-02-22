@@ -1,6 +1,5 @@
 <script>
   import Emoji from "./Emoji.svelte";
-  import { onMount } from "svelte";
   import Annotation from "svelte-rough-notation";
   import {
     FaLinkedinIn,
@@ -8,6 +7,7 @@
     FaMediumM,
     FaTwitter
   } from "svelte-icons/fa";
+  import LazyLoad from "./HoC/LazyLoad.svelte";
   import { getOutboundLink } from "../utils/link.js";
   let year = "21";
   let month = "February";
@@ -17,11 +17,6 @@
   let email = "mailto:cameron.raymond@hey.com?subject=Let's%20Talk%20Data";
   let medium = "https://medium.com/@cameronraymond/";
   let twitter = "https://twitter.com/CJKRaymond";
-
-  export let y;
-  export let h;
-  // take 500 off of the height to roughly account for header/footer, shift y by 100 so that it starts after header
-  $: visible = (y - 100) / (h - 500) > 0.85;
 </script>
 
 <style>
@@ -83,19 +78,26 @@
 </style>
 
 <div class="chat">
-  <h3>
-    Let's
-    <a aria-label="Email" href={email} on:click={() => getOutboundLink(email)}>
-      <Annotation
-        bind:visible
-        type="underline"
-        padding={-1}
-        color="rgb(255, 62, 0)"
-        >
-        Talk Data
-      </Annotation>
-    </a>
-  </h3>
+  <LazyLoad let:visible>
+    {#if visible}
+      <h3>
+        Let's
+        <a
+          aria-label="Email"
+          href={email}
+          on:click={() => getOutboundLink(email)}>
+          <Annotation
+            visible={true}
+            type="underline"
+            padding={-1}
+            color="rgb(255, 62, 0)">
+            Talk Data
+          </Annotation>
+        </a>
+      </h3>
+    {/if}
+  </LazyLoad>
+
 </div>
 <div class="footer">
   <p>
