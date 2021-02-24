@@ -65,50 +65,47 @@
 
 <div class="cont">
   <LazyLoad let:hasBeenVisible let:visible>
-    {#if hasBeenVisible && onHome}
-      {#if visible}
-        <div class="intro">
-          <h1
-            in:fly={{ y: 50, duration: 500 }}
-            out:fly={{ delay: 50, y: 50, duration: 500 }}>
-            Hello
-            <Emoji symbol="👋" />
-          </h1>
-          <p
-            in:fly={{ delay: 300, y: 50, duration: 500 }}
-            out:fly={{ y: 50, duration: 500 }}>
-            I'm Cameron - a data scientist
-            <Emoji symbol="📈" />
-            and graduate student
-            <Emoji symbol="🧑‍💻" />
-            at the
-            <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
-              University of Oxford
-            </a>
-            <Emoji symbol="🏫🏯" />
-          </p>
-          <p
-            in:fly={{ delay: 350, y: 50, duration: 500 }}
-            out:fly={{ y: 50, duration: 500 }}>
-            Previously a research scientist at the University of Toronto's
-            <a
-              aria-label="University of Toronto"
-              href="http://csslab.cs.toronto.edu/">
-              Computational Social Science Lab
-            </a>
-          </p>
-          <p
-            in:fly={{ delay: 400, y: 50, duration: 500 }}
-            out:fly={{ y: 50, duration: 500 }}>
-            And an incoming research fellow at
-            <a
-              aria-label="Stanford Law School"
-              href="https://law.stanford.edu/">
-              Stanford Law School
-            </a>
-          </p>
-        </div>
-      {/if}
+    {#if visible && onHome}
+      <div class="intro">
+        <h1
+          in:fly={{ y: 50, duration: 500 }}
+          out:fly={{ delay: 50, y: 50, duration: 500 }}>
+          Hello
+          <Emoji symbol="👋" />
+        </h1>
+        <p
+          in:fly={{ delay: 300, y: 50, duration: 500 }}
+          out:fly={{ y: 50, duration: 500 }}>
+          I'm Cameron - a data scientist
+          <Emoji symbol="📈" />
+          and graduate student
+          <Emoji symbol="🧑‍💻" />
+          at the
+          <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
+            University of Oxford
+          </a>
+          <Emoji symbol="🏫🏯" />
+        </p>
+        <p
+          in:fly={{ delay: 350, y: 50, duration: 500 }}
+          out:fly={{ y: 50, duration: 500 }}>
+          Previously a research scientist at the University of Toronto's
+          <a
+            aria-label="University of Toronto"
+            href="http://csslab.cs.toronto.edu/">
+            Computational Social Science Lab
+          </a>
+        </p>
+        <p
+          in:fly={{ delay: 400, y: 50, duration: 500 }}
+          out:fly={{ y: 50, duration: 500 }}>
+          And an incoming research fellow at
+          <a aria-label="Stanford Law School" href="https://law.stanford.edu/">
+            Stanford Law School
+          </a>
+          <Emoji symbol="⚖️" />
+        </p>
+      </div>
       <span
         in:fade={{ duration: 500, delay: 3000 }}
         out:fade={{ duration: 500 }}
@@ -116,13 +113,14 @@
         class="down-arrow">
         <FaAngleDown />
       </span>
-      <img
-        src="intro.svg"
-        alt=""
-        class="intro-svg"
-        out:fade={{ duration: 100, delay: 100 }} />
     {/if}
   </LazyLoad>
+
+  <img
+    src="intro.svg"
+    alt=""
+    class="intro-svg"
+    out:fade={{ duration: 100, delay: 100 }} />
 </div>
 <Cards {posts} bind:onHome />
 <svelte:head>

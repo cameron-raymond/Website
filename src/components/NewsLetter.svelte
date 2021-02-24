@@ -76,6 +76,11 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
   input:focus,
   input:focus {
     outline: white;
