@@ -110,7 +110,7 @@
       aria-current={segment === 'blog' ? 'page' : undefined}
       href="blog/">
       <span class="hideIcons icon">
-        <FaPencilAlt />
+        <FaPencilAlt aria-label="blog"/>
       </span>
       <span class="hideLinks">Blog</span>
     </a>
@@ -120,7 +120,7 @@
       aria-current={segment === 'about' ? 'page' : undefined}
       href="about/">
       <span class="hideIcons icon">
-        <FaUser />
+        <FaUser aria-label="about" />
       </span>
       <span class="hideLinks">About</span>
     </a>
@@ -131,14 +131,14 @@
       class="icon"
       href={linkedIn}
       on:click={() => getOutboundLink(linkedIn)}>
-      <FaLinkedinIn />
+      <FaLinkedinIn aria-label="linked in"/>
     </a>
     <a
       aria-label="twitter"
       class="icon"
       href={twitter}
       on:click={() => getOutboundLink(twitter)}>
-      <FaTwitter />
+      <FaTwitter aria-label="twitter"/>
     </a>
   </div>
 </nav>
