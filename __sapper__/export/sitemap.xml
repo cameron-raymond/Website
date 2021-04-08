@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://cameronraymond.me</loc>
+    </url>
+    <url>
+        <loc>https://cameronraymond.me/about/</loc>
+    </url>
+    <url>
+        <loc>https://cameronraymond.me/blog/</loc>
+    </url>
+    <url>
+                 <loc>https://cameronraymond.me/blog/anything2vec/</loc>
+            </url><url>
+                 <loc>https://cameronraymond.me/blog/covid-music/</loc>
+            </url><url>
+                 <loc>https://cameronraymond.me/blog/political-topic-centrality-1/</loc>
+            </url><url>
+                 <loc>https://cameronraymond.me/blog/political-topic-centrality-2/</loc>
+            </url><url>
+                 <loc>https://cameronraymond.me/blog/political-topic-centrality-3/</loc>
+            </url><url>
+                 <loc>https://cameronraymond.me/blog/right-to-be-forgotten-ml/</loc>
+            </url><url>
+                 <loc>https://cameronraymond.me/blog/rl-for-traffic-flow/</loc>
+            </url><url>
+                 <loc>https://cameronraymond.me/blog/shakespeare-netlsd/</loc>
+            </url><url>
+                 <loc>https://cameronraymond.me/blog/word2vec-cultural-dims/</loc>
+            </url>
+    </urlset>
