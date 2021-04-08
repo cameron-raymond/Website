@@ -19,7 +19,9 @@
     "eases-jsnext": "^1.0.10",
     "front-matter": "^3.1.0",
     "marked": "^1.0.0",
+    "mediumexporter": "^0.1.6",
     "polka": "next",
+    "request-promise": "^4.2.6",
     "sirv": "^0.4.0",
     "svelte-icons": "^2.1.0"
   },

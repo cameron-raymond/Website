@@ -3,18 +3,25 @@
     // the `slug` parameter is available because
     // this file is called [slug].svelte
     const res = await this.fetch(`blog/${params.slug}.json`);
-    const data = await res.json();
-
+    const post = await res.json();
+    if (post.html == false) {
+      try {
+        const url = "/.netlify/functions/post?link=" + post.mediumURL;
+        const postRes = await fetch(url);
+        const html = await postRes.json();
+        post.html = html.html;
+      } catch (error) {}
+    }
     if (res.status === 200) {
-      return { post: data };
+      return { post };
     } else {
-      this.error(res.status, data.message);
+      this.error(res.status, post.message);
     }
   }
 </script>
 
 <script>
-  import { onMount, onDestroy } from "svelte";
+  import { onMount } from "svelte";
   import { fly, fade } from "svelte/transition";
   import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
@@ -27,61 +34,25 @@
   });
   let y = 0;
   let h = 1000;
-  let visible = false;
+  let dataLoaded = false;
+  let showAnimation = false;
   // take 500 off of the height to roughly account for header/footer, shift y by 100 so that it starts after header
   $: percDone = ((y - 100) / (h - 500)) * 100;
-  $: prog = progress.set(percDone > 95 ? 100 : Math.max(percDone, 0));
+  $: {
+    progress.set(percDone > 95 ? 100 : Math.max(percDone, 0));
+  }
 
-  onMount(() => {
-    visible = true;
+  onMount(async () => {
+    showAnimation = true;
+    if (post.html == false) {
+      const url = "/.netlify/functions/post?link=" + post.mediumURL;
+      const postRes = await fetch(url);
+      const html = await postRes.json();
+      post.html = html.html;
+    }
+    dataLoaded = true;
   });
 </script>
-
-<svelte:window bind:scrollY={y} />
-
-<div bind:clientHeight={h}>
-  {#if visible}
-    <progress
-      in:fade={{ delay: 500, duration: 0 }}
-      value={$progress}
-      max="100" />
-    <p in:fade={{ delay: 200, duration: 500 }} class="nav">
-      <a href="/">home</a>
-      /
-      <a href="/blog/">blog</a>
-      /
-      <a href="/blog/{post.slug}/">{post.slug}</a>
-    </p>
-    <h1 in:fade={{ delay: 200, duration: 500 }}>{post.title} {post.emoji}</h1>
-    <div in:fly={{ delay: 250, x: -50, duration: 500 }} class="subtitle">
-      <p>
-        {@html post.blurb}
-        {#if post.collaborators}
-          <span class="collab">
-            {#each post.collaborators as collab}
-              <a aria-label="collaborator" href="https://github.com/{collab}/">
-                @{collab}
-              </a>
-              &nbsp;
-            {/each}
-          </span>
-        {/if}
-        <span class="tags">
-          <span>
-            {#each post.tags as tagId}
-              <Tag {tagId} />
-            {/each}
-          </span>
-          <p>{post.date}</p>
-        </span>
-      </p>
-    </div>
-
-    <div in:fly={{ delay: 200, y: 50, duration: 500 }} class="content">
-      {@html post.html}
-    </div>
-  {/if}
-</div>
 
 <style>
   /*
@@ -205,6 +176,54 @@
   }
 </style>
 
+<svelte:window bind:scrollY={y} />
+
+<div bind:clientHeight={h}>
+  {#if showAnimation}
+    <progress
+      in:fade={{ delay: 500, duration: 0 }}
+      value={$progress}
+      max="100" />
+    <p in:fade={{ delay: 200, duration: 500 }} class="nav">
+      <a href="/">home</a>
+      /
+      <a href="/blog/">blog</a>
+      /
+      <a href="/blog/{post.slug}/">{post.slug}</a>
+    </p>
+    <h1 in:fade={{ delay: 200, duration: 500 }}>{post.title} {post.emoji}</h1>
+    <div in:fly={{ delay: 250, x: -50, duration: 500 }} class="subtitle">
+      <p>
+        {@html post.blurb}
+        {#if post.collaborators}
+          <span class="collab">
+            {#each post.collaborators as collab}
+              <a aria-label="collaborator" href="https://github.com/{collab}/">
+                @{collab}
+              </a>
+              &nbsp;
+            {/each}
+          </span>
+        {/if}
+        <span class="tags">
+          <span>
+            {#each post.tags as tagId}
+              <Tag {tagId} />
+            {/each}
+          </span>
+          <p>{post.date}</p>
+        </span>
+      </p>
+    </div>
+    {#if dataLoaded}
+      <div in:fly={{ delay: 200, y: 50, duration: 500 }} class="content">
+        {@html post.html}
+      </div>
+    {:else}
+      <div style="height: 45vw;" />
+    {/if}
+  {/if}
+</div>
 <svelte:head>
   <title>{post.emoji}{post.title} - Cameron Raymond{post.emoji}</title>
 

@@ -19,6 +19,14 @@
   let y;
   let onHome = true;
   export let posts;
+
+  // fetch(url, {
+  //   method: "POST",
+  //   body: JSON.stringify({"link": "https://towardsdatascience.com/how-covid-has-changed-our-music-listening-habits-8c5e11be240f"}),
+  //   headers: {
+  //     "Content-Type": "application/json"
+  //   }
+  // })
 </script>
 
 <style>
