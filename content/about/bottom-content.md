@@ -50,9 +50,9 @@
 
 ## Publications and Conference Presentations 📝
 
-Raymond, C., Anderson, A., & Waller, I. (2021, January). *Measuring Alignment of Online Grassroots Political Communities with Political Campaigns*. Manuscript submitted for publication.
+Raymond, C., Anderson, A., & Waller, I. (2021, July). *Measuring Alignment of Online Grassroots Political Communities with Political Campaigns*. [Conference Presentation]. 7th International Conference on Computational Social Science, Zurich, CH.
 
-Raymond, C. (2020, June). *Bridging or Bonding? Measures of Topic Centrality for Online Political Engagement* [Conference Presentation]. INSNA Sunbelt 2020, Paris, FR.
+Raymond, C. (2020, June). *Bridging or Bonding? Measures of Topic Centrality for Online Political Engagement* [Conference Presentation]. International Network for Social Network Analysis Sunbelt 2020, Paris, FR.
 
 White, L., Davidson, A., & Raymond, C. (2020, October). *Public Opinion and Public Trust in Education Systems and Child Care Programs as Key Public Health Sites During the COVID-19 Pandemic*. Working Paper.
 
