@@ -37,52 +37,6 @@
   });
 </script>
 
-<svelte:window bind:scrollY={y} />
-
-<div bind:clientHeight={h}>
-  {#if visible}
-    <progress
-      in:fade={{ delay: 500, duration: 0 }}
-      value={$progress}
-      max="100" />
-    <p in:fade={{ delay: 200, duration: 500 }} class="nav">
-      <a href="/">home</a>
-      /
-      <a href="/blog/">blog</a>
-      /
-      <a href="/blog/{post.slug}/">{post.slug}</a>
-    </p>
-    <h1 in:fade={{ delay: 200, duration: 500 }}>{post.title} {post.emoji}</h1>
-    <div in:fly={{ delay: 250, x: -50, duration: 500 }} class="subtitle">
-      <p>
-        {@html post.blurb}
-        {#if post.collaborators}
-          <span class="collab">
-            {#each post.collaborators as collab}
-              <a aria-label="collaborator" href="https://github.com/{collab}/">
-                @{collab}
-              </a>
-              &nbsp;
-            {/each}
-          </span>
-        {/if}
-        <span class="tags">
-          <span>
-            {#each post.tags as tagId}
-              <Tag {tagId} />
-            {/each}
-          </span>
-          <p>{post.date}</p>
-        </span>
-      </p>
-    </div>
-
-    <div in:fly={{ delay: 200, y: 50, duration: 500 }} class="content">
-      {@html post.html}
-    </div>
-  {/if}
-</div>
-
 <style>
   /*
 		By default, CSS is locally scoped to the component,
@@ -148,15 +102,15 @@
   progress {
     border: none;
     border-width: 0;
-    background: none;
     border-radius: 1px;
-    margin: -7rem -2rem 0 -2rem;
     position: fixed;
+    margin: -4rem -2rem 0 -2rem;
     width: 100%;
-    height: 1.5px;
+    height: 2px;
     z-index: 2;
     color: #ff3e00;
   }
+
   progress::-moz-progress-bar {
     background: #ff3e00;
     border-radius: 1px;
@@ -205,6 +159,51 @@
   }
 </style>
 
+<svelte:window bind:scrollY={y} />
+
+<div bind:clientHeight={h}>
+  {#if visible}
+    <progress
+      in:fade={{ delay: 500, duration: 0 }}
+      value={$progress}
+      max="100" />
+    <p in:fade={{ delay: 200, duration: 500 }} class="nav">
+      <a href="/">home</a>
+      /
+      <a href="/blog/">blog</a>
+      /
+      <a href="/blog/{post.slug}/">{post.slug}</a>
+    </p>
+    <h1 in:fade={{ delay: 200, duration: 500 }}>{post.title} {post.emoji}</h1>
+    <div in:fly={{ delay: 250, x: -50, duration: 500 }} class="subtitle">
+      <p>
+        {@html post.blurb}
+        {#if post.collaborators}
+          <span class="collab">
+            {#each post.collaborators as collab}
+              <a aria-label="collaborator" href="https://github.com/{collab}/">
+                @{collab}
+              </a>
+              &nbsp;
+            {/each}
+          </span>
+        {/if}
+        <span class="tags">
+          <span>
+            {#each post.tags as tagId}
+              <Tag {tagId} />
+            {/each}
+          </span>
+          <p>{post.date}</p>
+        </span>
+      </p>
+    </div>
+
+    <div in:fly={{ delay: 200, y: 50, duration: 500 }} class="content">
+      {@html post.html}
+    </div>
+  {/if}
+</div>
 <svelte:head>
   <title>{post.emoji}{post.title} - Cameron Raymond{post.emoji}</title>
 
