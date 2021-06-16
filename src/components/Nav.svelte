@@ -7,10 +7,8 @@
     FaPencilAlt
   } from "svelte-icons/fa";
   import { getOutboundLink } from "../utils/link.js";
-  import NewsLetter from "./NewsLetter.svelte"
   export let segment;
-  let visible = true;
-  $: margin = !visible
+
   let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
   let twitter = "https://twitter.com/CJKRaymond";
 </script>
@@ -37,10 +35,6 @@
     align-items: center;
     width: 14.5rem;
   }
-  .margin{
-    margin-bottom: 3rem;
-  }
-
   .icon {
     width: 1.2rem;
     height: 1.2rem;
@@ -82,10 +76,7 @@
   }
 </style>
 
-{#if visible}
-  <NewsLetter bind:visible/>
-{/if}
-<nav class:margin >
+<nav>
   <a
     rel="prefetch"
     aria-label="Home"
@@ -110,7 +101,7 @@
       aria-current={segment === 'blog' ? 'page' : undefined}
       href="blog/">
       <span class="hideIcons icon">
-        <FaPencilAlt aria-label="blog"/>
+        <FaPencilAlt aria-label="blog" />
       </span>
       <span class="hideLinks">Blog</span>
     </a>
@@ -131,14 +122,14 @@
       class="icon"
       href={linkedIn}
       on:click={() => getOutboundLink(linkedIn)}>
-      <FaLinkedinIn aria-label="linked in"/>
+      <FaLinkedinIn aria-label="linked in" />
     </a>
     <a
       aria-label="twitter"
       class="icon"
       href={twitter}
       on:click={() => getOutboundLink(twitter)}>
-      <FaTwitter aria-label="twitter"/>
+      <FaTwitter aria-label="twitter" />
     </a>
   </div>
 </nav>
