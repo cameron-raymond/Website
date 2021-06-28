@@ -1,10 +1,8 @@
 <script context="module">
   export async function preload({ params, query }) {
     const intro = await this.fetch(`about/intro.json`).then(r => r.json());
-    const content = await this.fetch(`about/content.json`).then(r =>
-      r.json()
-    );
-    return {intro, content };
+    const content = await this.fetch(`about/content.json`).then(r => r.json());
+    return { intro, content };
   }
 </script>
 
@@ -48,8 +46,8 @@
     object-fit: contain;
     overflow: hidden;
   }
-  :global(img){
-      width: 100%
+  :global(img) {
+    width: 100%;
   }
   :global(ol) {
     padding-left: 0px;
@@ -60,9 +58,15 @@
     flex-wrap: wrap;
     max-width: 80em;
   }
-  :global(h2){
-      margin: 1.5em 0 0.5em 0;
+  :global(h2) {
+    margin: 1.5em 0 0.5em 0;
   }
+  :global(li > ol) {
+    padding-left: 20px;
+    display: block;
+    max-width: 15rem;
+  }
+
   :global(li > ol) {
     padding-left: 20px;
     display: block;
@@ -86,9 +90,9 @@
     img {
       margin-bottom: 0.5rem;
     }
-    :global(h2){
-      margin: .75em 0 0.25em 0;
-  }
+    :global(h2) {
+      margin: 0.75em 0 0.25em 0;
+    }
     :global(ol) {
       flex-direction: column;
       align-items: flex-start;
