@@ -39,11 +39,12 @@
     }
     .intro {
       padding-right: 0rem;
+      padding-top: 5rem;
     }
   }
   .intro-svg {
     position: absolute;
-    bottom: 0;
+    bottom: -3rem;
     right: -1rem;
     width: 100%;
     max-width: 42rem;
