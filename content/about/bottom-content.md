@@ -57,6 +57,8 @@ Raymond, C. (2020, June). *Bridging or Bonding? Measures of Topic Centrality for
 
 White, L., Davidson, A., & Raymond, C. (2020, October). *Public Opinion and Public Trust in Education Systems and Child Care Programs as Key Public Health Sites During the COVID-19 Pandemic*. Working Paper.
 
-## In Case you Forgot
+## Current Meme
 
-![Wear a mask or go to jail](content/rl-for-traffic-flow/1918-spanish-flu.jpg)
+P-hackers take notice
+
+![Current meme](content/about/current-meme.jpg)

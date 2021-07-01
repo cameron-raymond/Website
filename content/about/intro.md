@@ -1,5 +1,5 @@
 ---
-image: "portrait"
+image: "content/about/portrait"
 title: "Nice to meet you"
 emoji: "🙋‍♂️"
 ---

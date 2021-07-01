@@ -67,10 +67,6 @@
     max-width: 15rem;
   }
 
-  :global(li > ol) {
-    padding-left: 20px;
-    display: block;
-  }
   :global(li) {
     list-style-type: none;
   }
