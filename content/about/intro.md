@@ -4,7 +4,7 @@ title: "Nice to meet you"
 emoji: "🙋‍♂️"
 ---
 
-I'm Cameron - a data scientist from Toronto, and MSc student at Oxford and the Oxford Internet Institute reading Social Data Science. I'm also a graduate from Queen's University where I studied computer science and political science. My broad interests include network science, machine learning, and computational social science.
+I'm Cameron - a data scientist from Toronto, and MSc student at Oxford and the Oxford Internet Institute reading Social Data Science. I'm also a graduate from Queen's University where I studied computer science and political science. My broad interests include causal inference, machine learning, human-computer interaction and computational social science.
 
 Previously, I worked as a research scientist at the University of Toronto studying [community embeddings](http://csslab.cs.toronto.edu/gs/) with Dr. Ashton Anderson.
 
