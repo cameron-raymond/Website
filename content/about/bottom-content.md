@@ -5,7 +5,8 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Quarantine Books 📚
-   1. **2021**
+   **2021**
+   1. [Range: Why Generalists Triumph in a Specialized World](https://www.nytimes.com/2019/05/28/books/review/david-epstein-range.html)
    2. [Power to the Public: The Promise of Public Interest Technology](https://press.princeton.edu/books/ebook/9780691216638/power-to-the-public)
    3. [Causal Inference: The Mixtape](https://blogs.worldbank.org/impactevaluations/book-review-cunninghams-causal-inference-mixtape)
    4. [Good Economics for Hard Times](https://www.nytimes.com/2019/10/26/opinion/sunday/duflo-banerjee-economic-incentives.html)
@@ -13,29 +14,29 @@
    6. [Naïve. Super](https://www.newyorker.com/books/page-turner/the-coming-of-age-tale-that-inspired-mayor-pete-to-learn-norwegian)
    7. [Exit West](https://www.nytimes.com/2017/02/27/books/review-exit-west-mohsin-hamid.html)
    8. [The Data Detective](https://www.wsj.com/articles/the-data-detective-review-broadly-informed-easily-misled-11611875753)
-   9. [Soul Full of Coal Dust](https://www.nytimes.com/2020/08/18/books/review/soul-full-of-coal-dust-chris-hamby.html)
+   9.  [Soul Full of Coal Dust](https://www.nytimes.com/2020/08/18/books/review/soul-full-of-coal-dust-chris-hamby.html)
    10. [The UX Team Of One](https://uxbookreviews.com/2015/05/05/the-user-experience-team-of-one/)
    11. [Uncanny Valley](https://www.nytimes.com/2020/01/03/books/review/uncanny-valley-anna-wiener.html)
-   12. **2020**
-   13. [Natural](https://www.theguardian.com/books/2020/may/02/natural-by-alan-levinovitz-review-the-seductive-myth-of-natures-goodness)
-   14. [A Promised Land](https://www.nytimes.com/2020/11/12/books/review/barack-obama-a-promised-land.html)
-   15. [I Heard you Paint Houses](https://www.nytimes.com/2004/06/20/books/killing-him-softly.html)
-   16. [Palaces for the People](https://www.nytimes.com/2018/09/14/books/review/palaces-for-the-people-eric-klinenberg.html)
-   17. [Nudge](https://www.nytimes.com/2015/11/01/upshot/the-power-of-nudges-for-good-and-bad.html)
-   18. [The Curse of Bigness](https://www.nytimes.com/2018/12/12/books/review-curse-of-bigness-antitrust-law-tim-wu.html)
-   19. [Human Compatible](https://www.nytimes.com/2019/10/31/opinion/superintelligent-artificial-intelligence.html)
-   20. [Lie Machines](https://yalebooks.co.uk/display.asp?k=9780300250206)
-   21. [Weapons of Math Destruction](https://www.nytimes.com/2016/10/09/books/review/weapons-of-math-destruction-cathy-oneil-and-more.html)
-   22. [The Address Book](https://www.nytimes.com/2020/04/14/books/review/deirdre-mask-the-address-book.html)
-   23. [Winners Take All](https://www.nytimes.com/2018/08/20/books/review/winners-take-all-anand-giridharadas.html)
-   24. [Scarcity](https://www.theguardian.com/books/2013/sep/07/scarcity-sendhil-mullainathan-shafir-review)
-   25. [Social Physics](https://www.technologyreview.com/2014/03/04/173783/social-physics/)
-   26. [The Age of Surveillance Capitalism](https://www.nytimes.com/2019/01/16/books/review-age-of-surveillance-capitalism-shoshana-zuboff.html)
-   27. [Grit](https://www.newyorker.com/culture/culture-desk/the-limits-of-grit)
-   28. [The Privileged Poor](https://www.newyorker.com/recommends/read/the-privileged-poor-a-refreshing-antidote-to-our-obsession-with-the-college-admissions-scandal)
-   29. [Naked Statistics](https://www.nytimes.com/2013/01/29/science/naked-statistics-by-charles-wheelan-review.html)
-   30. [Poor Economics](https://economics.mit.edu/faculty/eduflo/pooreconomics)
-   31. [Americanah](https://www.nytimes.com/2013/06/09/books/review/americanah-by-chimamanda-ngozi-adichie.html)
+   **2020**
+   1.  [Natural](https://www.theguardian.com/books/2020/may/02/natural-by-alan-levinovitz-review-the-seductive-myth-of-natures-goodness)
+   2.  [A Promised Land](https://www.nytimes.com/2020/11/12/books/review/barack-obama-a-promised-land.html)
+   3.  [I Heard you Paint Houses](https://www.nytimes.com/2004/06/20/books/killing-him-softly.html)
+   4.  [Palaces for the People](https://www.nytimes.com/2018/09/14/books/review/palaces-for-the-people-eric-klinenberg.html)
+   5.  [Nudge](https://www.nytimes.com/2015/11/01/upshot/the-power-of-nudges-for-good-and-bad.html)
+   6.  [The Curse of Bigness](https://www.nytimes.com/2018/12/12/books/review-curse-of-bigness-antitrust-law-tim-wu.html)
+   7.  [Human Compatible](https://www.nytimes.com/2019/10/31/opinion/superintelligent-artificial-intelligence.html)
+   8.  [Lie Machines](https://yalebooks.co.uk/display.asp?k=9780300250206)
+   9.  [Weapons of Math Destruction](https://www.nytimes.com/2016/10/09/books/review/weapons-of-math-destruction-cathy-oneil-and-more.html)
+   10. [The Address Book](https://www.nytimes.com/2020/04/14/books/review/deirdre-mask-the-address-book.html)
+   11. [Winners Take All](https://www.nytimes.com/2018/08/20/books/review/winners-take-all-anand-giridharadas.html)
+   12. [Scarcity](https://www.theguardian.com/books/2013/sep/07/scarcity-sendhil-mullainathan-shafir-review)
+   13. [Social Physics](https://www.technologyreview.com/2014/03/04/173783/social-physics/)
+   14. [The Age of Surveillance Capitalism](https://www.nytimes.com/2019/01/16/books/review-age-of-surveillance-capitalism-shoshana-zuboff.html)
+   15. [Grit](https://www.newyorker.com/culture/culture-desk/the-limits-of-grit)
+   16. [The Privileged Poor](https://www.newyorker.com/recommends/read/the-privileged-poor-a-refreshing-antidote-to-our-obsession-with-the-college-admissions-scandal)
+   17. [Naked Statistics](https://www.nytimes.com/2013/01/29/science/naked-statistics-by-charles-wheelan-review.html)
+   18. [Poor Economics](https://economics.mit.edu/faculty/eduflo/pooreconomics)
+   19. [Americanah](https://www.nytimes.com/2013/06/09/books/review/americanah-by-chimamanda-ngozi-adichie.html)
 3. ### Quarantine Albums 👨‍🎤
    1. [Return to the 36 Chambers: The Dirty Version](https://pitchfork.com/reviews/albums/ol-dirty-bastard-return-to-the-36-chambers-the-dirty-version/)
    2. [Houdini](http://www.deadendfollies.com/blog/classic-album-review-melvins-houdini)
@@ -51,11 +52,11 @@
 
 ## Publications and Conference Presentations 📝
 
-Raymond, C., Anderson, A., & Waller, I. (2021, July). *Measuring Alignment of Online Grassroots Political Communities with Political Campaigns*. [Conference Presentation]. 7th International Conference on Computational Social Science, Zurich, CH.
+Raymond, C., Krafft, P. (2021, September). *Managing Online Rumour Proportions During Offline Protests.* The 3rd Multidisciplinary International Symposium on Disinformation in Open Online Media (MISDOOM), online.
 
-Raymond, C. (2020, June). *Bridging or Bonding? Measures of Topic Centrality for Online Political Engagement* [Conference Presentation]. International Network for Social Network Analysis Sunbelt 2020, Paris, FR.
+Raymond, C., Anderson, A., & Waller, I. (2021, July). *Measuring Alignment of Online Grassroots Political Communities with Political Campaigns.* The 7th International Conference on Computational Social Science (ICS2S2), Zurich, CH.
 
-White, L., Davidson, A., & Raymond, C. (2020, October). *Public Opinion and Public Trust in Education Systems and Child Care Programs as Key Public Health Sites During the COVID-19 Pandemic*. Working Paper.
+Raymond, C. (2020, June). *Bridging or Bonding? Measures of Topic Centrality for Online Political Engagement.* International Network for Social Network Analysis Sunbelt Conference, Paris, FR.
 
 ## Current Meme
 
