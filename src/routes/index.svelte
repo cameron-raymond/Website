@@ -33,10 +33,7 @@
     padding-top: 10rem;
     padding-right: 8rem;
   }
-  @media (min-width: 400) {
-    h1 {
-      font-size: 4em;
-    }
+  @media (max-width: 40rem) {
     .intro {
       padding-right: 0rem;
       padding-top: 5rem;
@@ -54,7 +51,7 @@
   }
   .down-arrow {
     position: absolute;
-    bottom: 4rem;
+    bottom: 2rem;
     left: calc(50vw - 4em);
     color: rgb(255, 62, 0);
     height: 2.5rem;
