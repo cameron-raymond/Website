@@ -57,6 +57,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     max-width: 80em;
+    list-style: none;
   }
   :global(h2) {
     margin: 1.5em 0 0.5em 0;
@@ -65,11 +66,9 @@
     padding-left: 20px;
     display: block;
     max-width: 15rem;
+    list-style: initial
   }
 
-  :global(li) {
-    list-style-type: none;
-  }
   @media (max-width: 60rem) {
     span {
       margin-top: 3rem;
