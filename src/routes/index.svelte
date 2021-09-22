@@ -76,7 +76,13 @@
           out:fly={{ y: 50, duration: 500 }}>
           I'm Cameron - a data scientist
           <Emoji symbol="📈" />
-          and graduate student
+          and research fellow at Stanford Law School
+          <Emoji symbol="⚖️" />
+        </p>
+        <p
+          in:fly={{ delay: 350, y: 50, duration: 500 }}
+          out:fly={{ y: 50, duration: 500 }}>
+          Previously a graduate student
           <Emoji symbol="🧑‍💻" />
           at the
           <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">
@@ -85,23 +91,14 @@
           <Emoji symbol="🏫🏯" />
         </p>
         <p
-          in:fly={{ delay: 350, y: 50, duration: 500 }}
+          in:fly={{ delay: 400, y: 50, duration: 500 }}
           out:fly={{ y: 50, duration: 500 }}>
-          Previously a research scientist at the University of Toronto's
+          And research scientist at the University of Toronto's
           <a
             aria-label="University of Toronto"
             href="http://csslab.cs.toronto.edu/">
             Computational Social Science Lab
           </a>
-        </p>
-        <p
-          in:fly={{ delay: 400, y: 50, duration: 500 }}
-          out:fly={{ y: 50, duration: 500 }}>
-          And an incoming research fellow at
-          <a aria-label="Stanford Law School" href="https://law.stanford.edu/">
-            Stanford Law School
-          </a>
-          <Emoji symbol="⚖️" />
         </p>
       </div>
       <span
