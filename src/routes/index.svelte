@@ -76,7 +76,12 @@
           out:fly={{ y: 50, duration: 500 }}>
           I'm Cameron - a data scientist
           <Emoji symbol="📈" />
-          and research fellow at Stanford Law School
+          and research fellow at Stanford Law School's
+          <a
+            aria-label="Stanford Law School"
+            href="https://reglab.stanford.edu/">
+            RegLab
+          </a>
           <Emoji symbol="⚖️" />
         </p>
         <p
