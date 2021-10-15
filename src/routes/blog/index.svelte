@@ -105,7 +105,7 @@
     {#each visible as post, i}
       <span>
         <span class="title">
-          <h3>
+          <h3 style="margin: 0">
             <Emoji symbol={post.emoji} />
           </h3>
           <h2>
