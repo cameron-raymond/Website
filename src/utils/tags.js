@@ -4,6 +4,7 @@ export const  tagLabels = {
     ml: "Machine Learning",
     nlp: "NLP",
     pl: "Politics",
+    ci: "Causal Inference"
   };
 
 export const typeLabels = {
