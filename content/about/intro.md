@@ -4,7 +4,9 @@ title: "Nice to meet you"
 emoji: "🙋‍♂️"
 ---
 
-I'm Cameron - a data scientist from Toronto, and research fellow at Stanford Law School's RegLab. Previously I was a graduate student at Oxford where I did research on misinformation and human-computer interaction at the Oxford Internet Institute. I'm also a graduate from Queen's University where I studied computer science and political science. My (very) broad interests include causal inference, machine learning, human-computer interaction and computational social science.
+I'm Cameron – a data scientist from Toronto. Right now I'm a research fellow at Stanford where I work with government agencies to leverage emerging technology and causal inference to inform policy. I'm also a recent graduate from Oxford where I researched misinformation and human-computer interaction. Before that I was doing my undergrad at Queen's University studying computer science and political science. I've been lucky enough to do work and research at institutions like the University of Toronto's Computational Social Science Lab; Princeton's Stigma and Social Perception Lab; Stanford's Regulation Evaluation and Governance Lab; and the Oxford Internet Institute. I've had my work featured at conferences like ICWSM, IC2S2, INSNA's Sunbelt conference and MISDOOM.
+
+If my previous experience spanning computer science, data science, policy, psychology, HCI and computational social science sounds broad, that's because it is! The through line, though, is that I'm passionate about applying technology and data to important social issues. My (very) general interests include causal inference, machine learning, human-computer interaction and computational social science.
 
 If you want to chat, know of a good trail near SF or have a recent read you want to share, reach out at the link below 😇
 

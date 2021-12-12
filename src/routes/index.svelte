@@ -128,8 +128,7 @@
 
   <meta
     name="description"
-    content="Cameron Raymond is a data scientist and incoming graduate student
-    at the University of Oxford. His broad areas of interest include network
+    content="Cameron Raymond is a data scientist graduate from the University of Oxford. His broad areas of interest include network
     science, machine learning, and computational social science." />
   <meta
     name="keywords"
@@ -143,8 +142,7 @@
   <meta property="og:title" content="🤯Cameron Raymond🤯" />
   <meta
     name="og:description"
-    content="Cameron Raymond is a data scientist and incoming graduate student
-    at the University of Oxford. His broad areas of interest include network
+    content="Cameron Raymond is a data scientist graduate from the University of Oxford. His broad areas of interest include network
     science, machine learning, and computational social science." />
   <meta
     property="og:image"
