@@ -150,13 +150,6 @@
   .tags span {
     display: flex;
   }
-  @media (max-width: 40rem) {
-    .subtitle .collab {
-      display: flex;
-      font-size: 0.6rem;
-      color: #555;
-    }
-  }
 </style>
 
 <svelte:window bind:scrollY={y} />

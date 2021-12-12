@@ -64,10 +64,6 @@
     text-decoration: none;
   }
   @media (max-width: 40rem) {
-    .icon {
-      width: 1rem;
-      height: 1rem;
-    }
     .links {
       width: 8rem;
     }

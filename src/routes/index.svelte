@@ -95,16 +95,6 @@
           </a>
           <Emoji symbol="🏫🏯" />
         </p>
-        <p
-          in:fly={{ delay: 400, y: 50, duration: 500 }}
-          out:fly={{ y: 50, duration: 500 }}>
-          And research scientist at the University of Toronto's
-          <a
-            aria-label="University of Toronto"
-            href="http://csslab.cs.toronto.edu/">
-            Computational Social Science Lab
-          </a>
-        </p>
       </div>
       <span
         in:fade={{ duration: 500, delay: 3000 }}

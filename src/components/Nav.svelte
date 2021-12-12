@@ -51,10 +51,6 @@
     .links {
       width: 9.5rem;
     }
-    .icon {
-      width: 1rem;
-      height: 1rem;
-    }
     .hideLinks {
       display: none;
     }

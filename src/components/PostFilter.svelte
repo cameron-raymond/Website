@@ -59,16 +59,6 @@
   .tagLabel {
     text-transform: capitalize;
   }
-  @media (max-width: 40rem) {
-    code {
-      font-size: 0.6rem;
-    }
-    img {
-      height: 0.6rem;
-      width: 0.6rem;
-      margin-right: 0.1rem;
-    }
-  }
 </style>
 
 {#if tags && types}

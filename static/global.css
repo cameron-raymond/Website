@@ -48,24 +48,3 @@ code {
   padding: 0.2em 0.4em;
   border-radius: 8px;
 }
-
-@media (max-width: 40rem) {
-  h1 {
-    font-size: 1.5em;
-  }
-  h2 {
-    font-size: 1.17em;
-  }
-  h3 {
-    font-size: 1em;
-  }
-  h4 {
-    font-size: 0.83em;
-  }
-  body {
-    font-size: 14px;
-  }
-  code{
-    font-size: calc(1em - 4px);
-  }
-}
