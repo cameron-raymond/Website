@@ -9,6 +9,7 @@
 <script>
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
+  import Head from "../../components/Head.svelte"
   import Emoji from "../../components/Emoji.svelte";
   let visible = false;
   export let intro;
@@ -128,44 +129,5 @@
     </div>
   </div>
 {/if}
-<svelte:head>
-  <title>💭About - Cameron Raymond💭</title>
-  <meta
-    name="description"
-    content="Cameron Raymond is a 21 year old data scienist from Toronto,
-    Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science. His broad areas of interest include network
-    science, machine learning, and computational social science." />
-  <meta
-    name="keywords"
-    content="Cameron Raymond, University of Oxford, Oxford University, Data
-    Science, Social Data Sience, Data Scientist" />
-  <link rel="canonical" href="https://cameronraymond.me/about/" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://cameronraymond.me/about/" />
-  <meta property="og:title" content="💭About - Cameron Raymond💭" />
-  <meta
-    name="og:description"
-    content="Cameron Raymond is a 21 year old data scienist from Toronto,
-    Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science. His broad areas of interest include network
-    science, machine learning, and computational social science." />
-  <meta
-    property="og:image"
-    content="https://cameronraymond.me/summary_about_large.png" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://cameronraymond.me/about/" />
-  <meta property="twitter:title" content="💭About - Cameron Raymond💭" />
-  <meta
-    property="twitter:description"
-    content="Cameron Raymond is a 21 year old data scienist from Toronto,
-    Ontario. In the fall he will be joining the University of Oxford to do his
-    MSc in Social Data Science." />
-  <meta
-    property="twitter:image"
-    content="https://cameronraymond.me/summary_about_large.png" />
-</svelte:head>
+<Head/>

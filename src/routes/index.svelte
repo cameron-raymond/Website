@@ -9,6 +9,7 @@
 </script>
 
 <script>
+  import Head from "../components/Head.svelte"
   import Emoji from "../components/Emoji.svelte";
   import Cards from "../components/Cards.svelte";
   import LazyLoad from "../components/HoC/LazyLoad.svelte";
@@ -113,40 +114,4 @@
     out:fade={{ duration: 100, delay: 100 }} />
 </div>
 <Cards {posts} bind:onHome />
-<svelte:head>
-  <title>🤯Cameron Raymond🤯</title>
-
-  <meta
-    name="description"
-    content="Cameron Raymond is a data scientist graduate from the University of Oxford. His broad areas of interest include network
-    science, machine learning, and computational social science." />
-  <meta
-    name="keywords"
-    content="Cameron Raymond, University of Oxford, Oxford University, Data
-    Science, Social Data Sience, Data Scientist" />
-  <link rel="canonical" href="https://cameronraymond.me" />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://cameronraymond.me" />
-  <meta property="og:title" content="🤯Cameron Raymond🤯" />
-  <meta
-    name="og:description"
-    content="Cameron Raymond is a data scientist graduate from the University of Oxford. His broad areas of interest include network
-    science, machine learning, and computational social science." />
-  <meta
-    property="og:image"
-    content="https://cameronraymond.me/summary_large_image.png" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://cameronraymond.me" />
-  <meta property="twitter:title" content="🤯Cameron Raymond🤯" />
-  <meta
-    property="twitter:description"
-    content="Cameron Raymond is a data scientist and incoming graduate student
-    at the University of Oxford." />
-  <meta
-    property="twitter:image"
-    content="https://cameronraymond.me/summary_large_image.png" />
-</svelte:head>
+<Head/>
