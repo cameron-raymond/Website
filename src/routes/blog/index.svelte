@@ -135,7 +135,7 @@
     content="Cameron Raymond's blog. AI and network science; politics and
     policy. Below are some of my ramblings. This is meant to be a more
     accessible outlet for the exciting but all too often inaccessible research
-    done in the world of computational social science. All opinions are my own." />
+    done in the world of computational social science. All opinions are (unfortunately) my own." />
   <meta
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
