@@ -28,10 +28,12 @@
     -webkit-line-clamp: 4; /* number of lines to show */
     -webkit-box-orient: vertical;
   }
-  .card:hover {
-    transform: translatey(-0.5em);
-    transition: 0.3s;
-    box-shadow: 2px 10px 10px 2px rgba(0, 0, 0, 0.12);
+  @media (hover: hover) {
+    .card:hover {
+      transform: translatey(-0.5em);
+      transition: 0.3s;
+      box-shadow: 2px 10px 10px 2px rgba(0, 0, 0, 0.12);
+    }
   }
 
   .head {
@@ -126,7 +128,7 @@
     <div class="foot">
       {#if post.tags}
         <span>
-          {#each [post.type,...post.tags] as tagId}
+          {#each [post.type, ...post.tags] as tagId}
             <Tag {tagId} />
           {/each}
         </span>
