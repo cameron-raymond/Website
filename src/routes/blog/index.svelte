@@ -1,7 +1,7 @@
 <script context="module">
   export async function preload({ params, query }) {
     let posts = await this.fetch(`../index.json`).then(r => r.json());
-    posts = [].concat(...posts.filter(x => x.type === "bp"));
+    posts = [].concat(...posts.filter(x => x.slug !== undefined));
     return { posts };
   }
 </script>
@@ -87,7 +87,7 @@
       AI and network science; politics and policy. Below are some of my
       ramblings. This is meant to be a more accessible outlet for the exciting
       but all too often inaccessible research done in the world of computational
-      social science. All opinions are my own.
+      social science. All opinions are (unfortunately) my own.
     </p>
   </div>
   <span

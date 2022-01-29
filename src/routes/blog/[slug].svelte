@@ -173,6 +173,7 @@
         {@html post.blurb}
         {#if post.collaborators}
           <span class="collab">
+            In collabortion with:
             {#each post.collaborators as collab}
               <a aria-label="collaborator" href="https://github.com/{collab}/">
                 @{collab}
