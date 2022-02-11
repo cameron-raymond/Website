@@ -55,7 +55,7 @@
 
 ## Awards 🏆
 
-**Highly Commended Thesis Prize** (University of Oxford). Each year, the board of examiners awards a small number of 'Highly Commended' awards for outstanding thesis work. I was one of x recipients out of a class of 30. See, [press release](https://www.oii.ox.ac.uk/news-events/news/introducing-the-2020-oii-msc-thesis-prize-winners/).
+**Highly Commended Thesis Prize** (University of Oxford). Each year, the board of examiners awards a small number of 'Highly Commended' awards for outstanding thesis work. I was one of 4 recipients out of a department of 60. See, [press release](https://www.oii.ox.ac.uk/news-events/news/introducing-the-2021-msc-thesis-prize-winners/).
 
 ## Publications and Conference Presentations 📝
 
