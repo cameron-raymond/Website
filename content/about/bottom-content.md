@@ -53,7 +53,13 @@
    4. [To Pimp a Butterfly](https://pitchfork.com/reviews/albums/20390-to-pimp-a-butterfly/)
    5. [Pet Sounds](https://pitchfork.com/reviews/albums/9371-pet-sounds-40th-anniversary/)
 
+## Awards 🏆
+
+**Highly Commended Thesis Prize** (University of Oxford). Each year, the board of examiners awards a small number of 'Highly Commended' awards for outstanding thesis work. I was one of 4 recipients out of a department of 60. See, [press release](https://www.oii.ox.ac.uk/news-events/news/introducing-the-2021-msc-thesis-prize-winners/).
+
 ## Publications and Conference Presentations 📝
+
+Raymond, C., Anderson, A., & Waller, I. (2022, June). Measuring Alignment of Online Grassroots Political Communities with Political Campaigns. In *Proceedings of the International AAAI Conference on Web and Social Media* (Vol. 15).
 
 Raymond, C., Krafft, P. (2021, September). *Managing Online Rumour Proportions During Offline Protests.* The 3rd Multidisciplinary International Symposium on Disinformation in Open Online Media (MISDOOM), online.
 

@@ -5,6 +5,7 @@ emoji: "🧫"
 blurb: "Understanding the decisions AI make is critical in mitigating its downsides. This article explains what cultural dimensions are, and demonstrates how they can increase interpretability and quantify bias in word embeddings."
 type: "bp"
 tags: ["ml"]
+collaborators: ["CSSLab"]
 link: "<a aria-label='Blog' href='https://medium.com/@cameronraymond/understanding-word2vec-through-cultural-dimensions-39934ae72926'>Blog</a>"
 date: "2020-07-06"
 prod: true
