@@ -71,3 +71,11 @@ const contentFrontMatter = frontMatter(bcontent);
 let c = contentFrontMatter.attributes;
 c.html =  marked(contentFrontMatter.body).replace(/^\t{3}/gm, "");
 export const content = c;
+
+const booklistContent = fs.readFileSync(`${dirPath}/booklist.md`, {
+  encoding: "utf8",
+});
+const booklistContentFrontMatter = frontMatter(booklistContent);
+let b = booklistContentFrontMatter.attributes;
+b.html =  marked(booklistContentFrontMatter.body).replace(/^\t{3}/gm, "");
+export const booklist = b;
