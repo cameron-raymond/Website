@@ -4,12 +4,12 @@
    2. [Thinking Fast and Slow](https://www.nytimes.com/2011/11/27/books/review/thinking-fast-and-slow-by-daniel-kahneman-book-review.html)
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
-2. ### Quarantine Books 📚
-   **2022**
-   1. [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
-   2. [Subtract](https://www.harvard.com/book/subtract/)
-   3. **[Previous years' books](/about/booklist/)**
-3. ### Quarantine Albums 👨‍🎤
+2. ### Recent Books 📚
+   1. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
+   2. [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
+   3. [Subtract](https://www.harvard.com/book/subtract/)
+   4. **[Previous years' books](/about/booklist/)**
+3. ### Recent Albums 👨‍🎤
    1. [Return to the 36 Chambers: The Dirty Version](https://pitchfork.com/reviews/albums/ol-dirty-bastard-return-to-the-36-chambers-the-dirty-version/)
    2. [Houdini](http://www.deadendfollies.com/blog/classic-album-review-melvins-houdini)
    3. [Brass](https://pitchfork.com/reviews/albums/billy-woods-moor-mother-brass/)
