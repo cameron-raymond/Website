@@ -2,35 +2,35 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.da5939e9.js"
+    "main": "client.1b97896a.js"
   },
   "css": {
     "main": "main.416392461.css",
     "chunks": {
       "index.svelte": [
-        "index.18e023ee.css",
-        "client.da5939e9.css",
-        "Tag.d491c503.css",
-        "PostFilter.62ceca60.css"
+        "index.3560dcd0.css",
+        "client.1b97896a.css",
+        "Tag.82f8f6be.css",
+        "PostFilter.12796ab6.css"
       ],
       "about/index.svelte": [
-        "index.457d441c.css",
-        "client.da5939e9.css"
+        "index.942eeb8c.css",
+        "client.1b97896a.css"
       ],
       "about/booklist.svelte": [
-        "booklist.b2fb563c.css",
-        "client.da5939e9.css"
+        "booklist.66683a12.css",
+        "client.1b97896a.css"
       ],
       "blog/index.svelte": [
-        "index.245be697.css",
-        "client.da5939e9.css",
-        "Tag.d491c503.css",
-        "PostFilter.62ceca60.css"
+        "index.5a9fa473.css",
+        "client.1b97896a.css",
+        "Tag.82f8f6be.css",
+        "PostFilter.12796ab6.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].57e9a8c1.css",
-        "client.da5939e9.css",
-        "Tag.d491c503.css"
+        "[slug].5cf74a88.css",
+        "client.1b97896a.css",
+        "Tag.82f8f6be.css"
       ]
     }
   }
