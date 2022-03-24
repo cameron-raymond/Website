@@ -1,5 +1,5 @@
 ---
-title: "Break Them up? The Case for Interoperability Over Anti-Trust for Direct Messaging Platforms"
+title: "Break Them up? The Case for Interoperability Among Direct Messaging Platforms"
 slug: "messaging-interoperability"
 emoji: "💬"
 blurb: "Despite the dire need for regulation, direct messaging is the overlooked middle child of social media. While structural break ups of technology platforms is en vogue, it is unlikely to have meaningful impacts in this market, relative to interoperability among messaging platforms."
