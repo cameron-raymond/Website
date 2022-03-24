@@ -13,7 +13,6 @@ const katex = require("katex")
 
 
 const renderer = new marked.Renderer()
-let originParagraph = renderer.paragraph.bind(renderer)
 renderer.paragraph = (text) => {
   const blockRegex = /\$\$[^\$]*\$\$/g
   const inlineRegex = /\$[^\$]*\$/g
@@ -29,9 +28,15 @@ renderer.paragraph = (text) => {
     const result = renderMathsExpression(expr)
     text = text.replace(expr, result)
   }
-  return originParagraph(text)
+    // Every new line in markdown is considered a new paragraph, this prevents img tags from being wrapped <p> tags
+  // which is helpful for resizing the first img, centering captions, etc.
+  if (text.startsWith("<img")) {
+    return text + "\n";
+  }
+  return "<p>" + text + "</p>";
 }
-function renderMathsExpression (expr) {
+
+function renderMathsExpression(expr) {
   if (expr[0] === '$' && expr[expr.length - 1] === '$') {
     let displayStyle = false
     expr = expr.substr(1, expr.length - 2)
@@ -45,24 +50,23 @@ function renderMathsExpression (expr) {
     } catch (e) {
       console.err(e)
     }
+    html = html.replace(/class="katex"/g, 'class="katex" style="font-size: inherit;"')
     if (displayStyle && html) {
-      html = html.replace(/class="katex"/g, 'class="katex katex-block" style="display: block;"')
+      html = html.replace(/class="katex"/g, 'class="katex katex-block" style="display: block; font-size: inherit;"')
     }
     return html
   } else {
     return null
   }
 }
-marked.setOptions({renderer: renderer})
+marked.setOptions({ renderer: renderer })
 
-// Every new line in markdown is considered a new paragraph, this prevents img tags from being wrapped <p> tags
-// which is helpful for resizing the first img, centering captions, etc.
-marked.Renderer.prototype.paragraph = (text) => {
-  if (text.startsWith("<img")) {
-    return text + "\n";
-  }
-  return "<p>" + text + "</p>";
-};
+// marked.Renderer.prototype.paragraph = (text) => {
+//   if (text.startsWith("<img")) {
+//     return text + "\n";
+//   }
+//   return "<p>" + text + "</p>";
+// };
 const dirPath = `./content/blog`;
 export const posts = fs.readdirSync(dirPath).map((postFilename) => {
   const postContent = fs.readFileSync(dirPath + `/${postFilename}`, {
@@ -74,7 +78,7 @@ export const posts = fs.readdirSync(dirPath).map((postFilename) => {
   return post
 });
 
-export const cards =  JSON.parse(JSON.stringify(posts)).map(p => {
+export const cards = JSON.parse(JSON.stringify(posts)).map(p => {
   delete p.html
   return p
 });
