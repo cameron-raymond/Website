@@ -161,11 +161,11 @@
       value={$progress}
       max="100" />
     <p in:fade={{ delay: 200, duration: 500 }} class="nav">
-      <a href="/">home</a>
+      <a href="/">Home</a>
       /
-      <a href="/blog/">blog</a>
+      <a href="/blog/">Blog</a>
       /
-      <a href="/blog/{post.slug}/">{post.slug}</a>
+      <a href="/blog/{post.slug}/">{post.title}</a>
     </p>
     <h1 in:fade={{ delay: 200, duration: 500 }}>{post.title} {post.emoji}</h1>
     <div in:fly={{ delay: 250, x: -50, duration: 500 }} class="subtitle">
