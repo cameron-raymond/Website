@@ -61,12 +61,6 @@ function renderMathsExpression(expr) {
 }
 marked.setOptions({ renderer: renderer })
 
-// marked.Renderer.prototype.paragraph = (text) => {
-//   if (text.startsWith("<img")) {
-//     return text + "\n";
-//   }
-//   return "<p>" + text + "</p>";
-// };
 const dirPath = `./content/blog`;
 export const posts = fs.readdirSync(dirPath).map((postFilename) => {
   const postContent = fs.readFileSync(dirPath + `/${postFilename}`, {
