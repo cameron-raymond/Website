@@ -2,7 +2,7 @@
 title: "Simulating Statistical Power in R"
 slug: "power-simulations-in-r"
 emoji: "🔋"
-blurb: "A tutorial (with code!) explaining the important concept underpinning the design of vaccine trials, the validity A/B tests, and driving the “reproducibility crisis” in the social sciences."
+blurb: "A tutorial (with code!) explaining the important concept underpinning the design of vaccine trials, the validity of A/B tests, and driving the “reproducibility crisis” in the social sciences."
 type: "bp"
 tags: ["ci"]
 collaborators: ["RegLab"]
