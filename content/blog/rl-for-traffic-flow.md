@@ -47,11 +47,11 @@ To better simulate real-life traffic, we implement high-traffic and low-traffic 
 
 Each intersection is controlled by a traffic light entity that has two states: allowing north-south traffic (light is green for cars north and south of the light and red for cars east and west of the light) or allowing east-west traffic. Since we are trying to minimize waiting times for cars, we also need to include waiting times into our state space. As it would be unrealistic to account for a continuous measure of wait times for every car, we instead discretize this for each queue of cars. The amount of time each car has been waiting in the north and south queues of a particular intersection is summed. This value is binned as a zero, low, medium, or high waiting time for the pair of queues. The same is done for the east and west queues for each intersection.
 
-Thus we have a state space with a maximum of: 2<sup>lights</sup> ⋅ 4<sup>2⋅lights</sup> = 2<sup>4</sup> ⋅ 4<sup>8</sup> = 1,048,576 states.
+Thus we have a state space with a maximum of: $2^l \times 4^{2l} = 2^4 \times 4^8 = 1,048,576$ states.
 
 ### Action space
 
-Each light can enable north-south traffic or east-west traffic. This means that there are two actions available for each light at each step: switch light directions (turn green lights to red or turn red lights to green) or do nothing. Thus, the total action space is 2<sup>4</sup> = 16 possible actions.
+Each light can enable north-south traffic or east-west traffic. This means that there are two actions available for each light at each step: switch light directions (turn green lights to red or turn red lights to green) or do nothing. Thus, the total action space is $2^4=16$ possible actions.
 
 ### Reward scheme
 
@@ -61,7 +61,7 @@ As the objective is to minimize average waiting times, in order to maximize the 
 
 ### Approach
 
-We used Q-learning for training the agent. The Q-table is represented as a dictionary with the state value being the key, and its value being the A(s). By using a dictionary (a hash table) instead of an array, we were able to avoid storing entries until they were visited. This reduced memory usage as, in-practice, only 8-12% of the state space needed to be explored before convergence. We use a learning rate, _α_, of 0.9; a discount factor, _γ_, of 0.5; and an exploration rate, _ε_ of 0.01. Additionally, we implemented a softmax policy to compare against the _ε_-greedy policy. We decided to use Q-learning as we have a very large state space so bootstrapping would be preferable to keep training times reasonable.
+We used Q-learning for training the agent. The Q-table is represented as a dictionary with the state value being the key, and its value being the A(s). By using a dictionary (a hash table) instead of an array, we were able to avoid storing entries until they were visited. This reduced memory usage as, in-practice, only 8-12% of the state space needed to be explored before convergence. We use a learning rate, $\alpha$, of 0.9; a discount factor, $\gamma$, of 0.5; and an exploration rate, $\epsilon$ of 0.01. Additionally, we implemented a softmax policy to compare against the $\epsilon$ -greedy policy. We decided to use Q-learning as we have a very large state space so bootstrapping would be preferable to keep training times reasonable.
 
 ### Environment
 
@@ -69,15 +69,15 @@ No external environment, simulation or data sets were used. The agent was traine
 
 ## Results
 
-### Comparison of softmax and _ε_-greedy for a normal and loop route
+### Comparison of softmax and e-greedy for a normal and loop route
 
-We first compared the performance of using an _ε_-greedy and a softmax policy with our “normal” route generation, or simply optimal routes with randomized start and end points. We can see from Figure 2 and Figure 3 that both models have similar performances, though the _ε_-greedy model converged to a slightly lower average wait time.
+We first compared the performance of using an $\epsilon$ -greedy and a softmax policy with our “normal” route generation, or simply optimal routes with randomized start and end points. We can see from Figure 2 and Figure 3 that both models have similar performances, though the $\epsilon$ -greedy model converged to a slightly lower average wait time.
 
 ![alt_text](content/rl-for-traffic-flow/DailyAvg_NormalRoute_Softmax.png "Figure 2: Softmax daily averages for normal route.")
 *Figure 3: Softmax daily averages for normal route.*
 
-![alt_text](content/rl-for-traffic-flow/DailyAvg_NormalRoute_EGreedy.png "Figure 3: ε-greedy daily averages for normal route.")
-*Figure 4: ε-greedy daily averages for normal route.*
+![alt_text](content/rl-for-traffic-flow/DailyAvg_NormalRoute_EGreedy.png "Figure 3: $\epsilon$ -greedy daily averages for normal route.")
+*Figure 4: $\epsilon$ -greedy daily averages for normal route.*
 
 We then compared the two policies using a “loop” route, where every car performs 10 counter clockwise loops and then exits.
 
@@ -85,35 +85,35 @@ We then compared the two policies using a “loop” route, where every car perf
 ![alt_text](content/rl-for-traffic-flow/DailyAvg_LoopRoute_Softmax.png "Figure 4: Softmax daily averages for looping route.")
 *Figure 5: Softmax daily averages for looping route.*
 
-![alt_text](content/rl-for-traffic-flow/DailyAvg_LoopRoute_EGreedy.png "Figure 5: ε-greedy daily averages for looping route.")
-*Figure 6: ε-greedy daily averages for looping route.*
+![alt_text](content/rl-for-traffic-flow/DailyAvg_LoopRoute_EGreedy.png "Figure 5: $\epsilon$ -greedy daily averages for looping route.")
+*Figure 6: $\epsilon$ -greedy daily averages for looping route.*
 
-From Figure 4 and Figure 5 above, we can see that using a softmax policy on the loop route enabled the agent to learn the loop. Comparing this to Figure 5, the _ε_-greedy agent converges but has some difficulty as time goes on. Due to the difference in performance between the two policies when using “random” routes and looped routes, the choice of which policy to use would depend on how the cars behave in the environment.
+From Figure 4 and Figure 5 above, we can see that using a softmax policy on the loop route enabled the agent to learn the loop. Comparing this to Figure 5, the $\epsilon$ -greedy agent converges but has some difficulty as time goes on. Due to the difference in performance between the two policies when using “random” routes and looped routes, the choice of which policy to use would depend on how the cars behave in the environment.
 
 The trained agent is able to efficiently control traffic in a robust manner. Despite having a great variation in the number of cars added to the environment (for example, during rush hour), the time cost per car stays relatively constant, as shown in Figure 6 below.
 
 ![alt_text](content/rl-for-traffic-flow/OneDay_NormalRoute_EGreedy.png "Figure 6: Cost per car throughout a day. Note the two periods of rush hour in the lower plot.")
 *Figure 7: Cost per car throughout a day. Note the two periods of rush hour in the lower plot.*
 
-In addition to modeling the movement of vehicles throughout the environment, the amount of carbon dioxide produced by each vehicle was also simulated. As is expected, utilization of the learning agent resulted not only in more efficient traffic control, but also resulted in less carbon dioxide being produced each day. The results of certain routes (either normal or loop) and policy being used (either softmax or _ε_-greedy) are similar to that of the results for the wait times discussed previously, with softmax performing better for the loop route, and _ε_-greedy performing better for the normal route.
+In addition to modeling the movement of vehicles throughout the environment, the amount of carbon dioxide produced by each vehicle was also simulated. As is expected, utilization of the learning agent resulted not only in more efficient traffic control, but also resulted in less carbon dioxide being produced each day. The results of certain routes (either normal or loop) and policy being used (either softmax or $\epsilon$ -greedy) are similar to that of the results for the wait times discussed previously, with softmax performing better for the loop route, and $\epsilon$ -greedy performing better for the normal route.
 
 ![alt_text](content/rl-for-traffic-flow/CO2_NormalRoute_Softmax.png "Figure 7: Cumulative CO2 for normal route using softmax.")
 *Figure 8: Cumulative CO2 for normal route using softmax.*
 
-![alt_text](content/rl-for-traffic-flow/CO2_NormalRoute_EGreedy.png "Figure 8: Cumulative CO2 for normal route using ε-greedy.")
-*Figure 9: Cumulative CO2 for normal route using ε-greedy.*
+![alt_text](content/rl-for-traffic-flow/CO2_NormalRoute_EGreedy.png "Figure 8: Cumulative CO2 for normal route using e-greedy.")
+*Figure 9: Cumulative CO2 for normal route using $\epsilon$ -greedy.*
 
 ![alt_text](content/rl-for-traffic-flow/CO2_LoopRoute_Softmax.png "Figure 9: Cumulative CO2 for loop route using softmax.")
 *Figure 10: Cumulative CO2 for loop route using softmax.*
 
-![alt_text](content/rl-for-traffic-flow/CO2_LoopRoute_EGreedy.png "Figure 10: Cumulative CO2 for loop route using ε-greedy.")
-*Figure 11: Cumulative CO2 for loop route using ε-greedy.*
+![alt_text](content/rl-for-traffic-flow/CO2_LoopRoute_EGreedy.png "Figure 10: Cumulative CO2 for loop route using e-greedy.")
+*Figure 11: Cumulative CO2 for loop route using $\epsilon$ -greedy.*
 
 ## Conclusion
 
 A number of adjustments to our solution had to be made during the development of our agent in order to achieve desirable results. Reducing the state space of the problem is key in decreasing training time. Initially, our approach involved including the current time of the simulation in the state, so that the agent would be able to learn about when rush-hour occurs and adjust its strategy accordingly. Ultimately we learned that including time in our state greatly increases the size of the state space, and that the agent “learns” how to handle rush hour through the information embedded in the queues - their wait times. Therefore, this extraneous piece of information was not necessary.
 
-We learned that, given problems with different parameters, soft-max or e-greedy can be the better approach, and the developer has to apply a different strategy based on the circumstances. Experimenting with these policies revealed how using different parameters would change our results and potentially improve our model for specific situations.
+We learned that, given problems with different parameters, softmax or $\epsilon$ -greedy can be the better approach, and the developer has to apply a different strategy based on the circumstances. Experimenting with these policies revealed how using different parameters would change our results and potentially improve our model for specific situations.
 
 We also learned that decreasing the size of the state-space doesn’t necessarily provide a performance gain; by adding a bin for zero wait time, the agent was able to differentiate between queues with _few_ cars and queues with _no_ cars, decreasing travel times.
 
