@@ -224,7 +224,7 @@ ggplot(results,
      labs(x = 'Sample Size', y = 'Power',color='Effect Size')
 ```
 
-Below shows the power covers for 4 different effect sizes (0, 2, 5, and 10 day increase in days attended) for sample sizes ranging from 20 to 3000 students. The sample size needed to reach our predefined power threshold of 0.80 (80%) depends on how big of an effect we think our intervention will have on attendance rates. If we think it will have a large effect, we only need to recruit 20 students to have a good shot at observing the effect. If we think it will have a small effect we would need to recruit hundreds.
+Below shows the power curves for 4 different effect sizes (0, 2, 5, and 10 day increase in days attended) for sample sizes ranging from 20 to 3000 students. The sample size needed to reach our predefined power threshold of 0.80 (80%) depends on how big of an effect we think our intervention will have on attendance rates. If we think it will have a large effect, we only need to recruit 20 students to have a good shot at observing the effect. If we think it will have a small effect we would need to recruit hundreds.
 
 ![Power curve showing your ability to detect the effect of your treatment on school attendance (power, y-axis) by number of students enrolled (x-axis). This is done for four different effect sizes. Power threshold is dotted horizontal line and indicates being “sufficiently powered”.](https://cdn-images-1.medium.com/max/2000/1*4ln1bhls2ctQ6E4e1jCYjg.png)*Power curve showing your ability to detect the effect of your treatment on school attendance (power, y-axis) by number of students enrolled (x-axis). This is done for four different effect sizes. Power threshold is dotted horizontal line and indicates being “sufficiently powered”.*
 
