@@ -5,15 +5,17 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
-   2. [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
-   3. [Subtract](https://www.harvard.com/book/subtract/)
-   4. **[Previous years' books](/about/booklist/)**
+   1. [Kindred: Neanderthal Life, Love, Death and Art](https://www.npr.org/2020/10/27/927772107/kindred-dismantles-simplistic-views-of-neanderthals)
+   2. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
+   3. [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
+   4. [Subtract](https://www.harvard.com/book/subtract/)
+   5. **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
-   1. [From a Bird’s Eye View](https://pitchfork.com/reviews/albums/cordae-from-a-birds-eye-view/)
-   2. [Magic](https://pitchfork.com/reviews/albums/nas-hit-boy-magic/)
-   3. [The College Dropout](https://pitchfork.com/reviews/albums/8767-the-college-dropout/)
-   4. [Dawn FM](https://pitchfork.com/reviews/albums/the-weeknd-dawn-fm/)
+   1. [It's Almost Dry](https://pitchfork.com/reviews/albums/pusha-t-its-almost-dry/)
+   2. [From a Bird’s Eye View](https://pitchfork.com/reviews/albums/cordae-from-a-birds-eye-view/)
+   3. [Magic](https://pitchfork.com/reviews/albums/nas-hit-boy-magic/)
+   4. [The College Dropout](https://pitchfork.com/reviews/albums/8767-the-college-dropout/)
+   5. [Dawn FM](https://pitchfork.com/reviews/albums/the-weeknd-dawn-fm/)
 4. ### All Time Albums 💃🕺
    1. [The Miseducation of Lauryn Hill](https://pitchfork.com/reviews/albums/22035-the-miseducation-of-lauryn-hill/)
    2. [All Eyez on Me](https://pitchfork.com/reviews/albums/2pac-all-eyez-on-me/)
