@@ -3,7 +3,7 @@ title: "Reinforcement Learning for Traffic Flow"
 slug: "rl-for-traffic-flow"
 emoji: "🚙"
 blurb: "A reinforcement learning agent that helps control the flow of traffic. Through this simple RL algorithm, we were able to reduce carbon emissions by a third, and cut time waiting at red lights in half."
-type: "sp"
+type: "bp"
 tags: ["rl"]
 collaborators: ["rosslh","hughcorley","zanelittle","leonard-zhao"]
 link: "<a aria-label='Repo' href='https://github.com/ZaneLittle/Traffic-Light-Simulation##q-learning-for-traffic-signal-control'>Repo</a>"
