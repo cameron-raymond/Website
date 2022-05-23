@@ -9,6 +9,13 @@ export const  tagLabels = {
 
 export const typeLabels = {
   bp: "Blog Post",
-  rp: "Research Paper",
-  sp: "School Proj."
+  rp: "Research",
+  // sp: "School Proj."
+}
+
+// For the toggle filters
+export const selectorLabels = {
+  bp: "Blog Posts",
+  rp: "Research",
+  // sp: "School Proj."
 }

@@ -1,5 +1,5 @@
 <script>
-  import { tagLabels, typeLabels } from "../utils/tags.js";
+  import { tagLabels, selectorLabels} from "../utils/tags.js";
   export let tags = [];
   export let types = [];
   export let activeTypes = [];
@@ -14,8 +14,6 @@
     activeTags.has(tagId) ? activeTags.delete(tagId) : activeTags.add(tagId);
     activeTags = activeTags.size == 0 ? new Set(tags) : activeTags;
   };
-  let pluralize = label =>
-    label.endsWith(".") ? label.slice(0, -1) + "s." : label + "s";
 </script>
 
 <style>
@@ -74,10 +72,10 @@
             <source srcset="tags/{typeId}.png" type="image/png" />
             <img
               src="tags/{typeId}.png"
-              alt={`${tagLabels[typeId] || typeId} logo`} />
+              alt={`${selectorLabels[typeId] || typeId} logo`} />
           </picture>
           <div class="tagLabel">
-            {pluralize(typeLabels[typeId]) || pluralize(typeId)}
+            {selectorLabels[typeId] || typeId}
           </div>
         </code>
       {/each}
