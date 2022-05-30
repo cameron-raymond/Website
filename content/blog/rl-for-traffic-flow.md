@@ -35,7 +35,7 @@ Throughout this project we have attempted to design a reinforcement learning age
 
 The objective we want to optimize is minimizing the average wait time of cars. Thus, we want a policy for switching traffic light controls that will ensure a consistent and smooth transition of cars from one intersection to the next.
 
-We attempt to model a road network such as _Figure 2_. In order to reflect this, we developed our own environment in simulation. It consists of four intersections, each with a traffic light entity that controls traffic at that intersection, along with 4 queues at each intersection that represent all the cars that are waiting to go through.
+We attempt to model a road network such as *Figure 2*. In order to reflect this, we developed our own environment in simulation. It consists of four intersections, each with a traffic light entity that controls traffic at that intersection, along with 4 queues at each intersection that represent all the cars that are waiting to go through.
 
 Cars are randomly added to one of the queues on the “outside” of the network (such as the southern facing queue of the north-west traffic light). As time progresses, cars drive a randomized, predetermined route through the network, and out an exit node on the outside of the network. These optimal routes are determined, given a start and end node, by performing a breadth-first search. All cars in the same queue can be thought of as facing the same direction, though they don’t necessarily need to be heading the same way. If the light at the queue a car is in is green, they are popped from this queue and pushed to an adjacent queue, depending on the route they intend to take.
 
@@ -81,7 +81,6 @@ We first compared the performance of using an $\epsilon$ -greedy and a softmax p
 
 We then compared the two policies using a “loop” route, where every car performs 10 counter clockwise loops and then exits.
 
-
 ![alt_text](content/rl-for-traffic-flow/DailyAvg_LoopRoute_Softmax.png "Figure 4: Softmax daily averages for looping route.")
 *Figure 5: Softmax daily averages for looping route.*
 
@@ -115,6 +114,6 @@ A number of adjustments to our solution had to be made during the development of
 
 We learned that, given problems with different parameters, softmax or $\epsilon$ -greedy can be the better approach, and the developer has to apply a different strategy based on the circumstances. Experimenting with these policies revealed how using different parameters would change our results and potentially improve our model for specific situations.
 
-We also learned that decreasing the size of the state-space doesn’t necessarily provide a performance gain; by adding a bin for zero wait time, the agent was able to differentiate between queues with _few_ cars and queues with _no_ cars, decreasing travel times.
+We also learned that decreasing the size of the state-space doesn’t necessarily provide a performance gain; by adding a bin for zero wait time, the agent was able to differentiate between queues with *few* cars and queues with *no* cars, decreasing travel times.
 
 Finally, working on a problem tied to a real-life application helps us see how reinforcement learning can be applied to improve real-world systems. Over the course of a 140 day run, our system was able to reduce carbon emissions by approximately 2000 kg over a naive agent for a car with a deterministic route. Our solution can be extended very easily to the real-world not only to reduce our carbon footprint, but also to save travel time for the everyday driver.
