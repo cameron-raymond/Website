@@ -54,7 +54,7 @@ function renderMathsExpression (expr) {
 }
 marked.setOptions({renderer: renderer})
 
-const dirPath = `./content/about`;
+const dirPath = `./static/content/about`;
 
 const introContent = fs.readFileSync(`${dirPath}/intro.md`, {
   encoding: "utf8",
