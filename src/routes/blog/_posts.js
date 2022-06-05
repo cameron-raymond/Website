@@ -61,7 +61,7 @@ function renderMathsExpression(expr) {
 }
 marked.setOptions({ renderer: renderer })
 
-const dirPath = `./content/blog`;
+const dirPath = `./static/content/blog`;
 export const posts = fs.readdirSync(dirPath).map((postFilename) => {
   const postContent = fs.readFileSync(dirPath + `/${postFilename}`, {
     encoding: "utf8",
