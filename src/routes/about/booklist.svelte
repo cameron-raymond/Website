@@ -8,6 +8,7 @@
 </script>
 
 <script>
+  import HiddenLinks from "../../components/HiddenLinks.svelte";
   export let booklist;
 </script>
 
@@ -50,5 +51,5 @@
   <span>
     {@html booklist.html}
   </span>
-
 </div>
+<HiddenLinks/>

@@ -1,7 +1,6 @@
 <script>
   import Nav from "../components/Nav.svelte";
   import Newsletter from "../components/NewsLetter.svelte"
-  import HiddenLinks from "../components/HiddenLinks.svelte";
   import Footer from "../components/Footer.svelte";
   import GoogleAnalytics from "../components/GoogleAnalytics.svelte";
   export let segment;
@@ -27,4 +26,3 @@
   <slot/>
 </main>
 <Footer {h} {y} />
-<HiddenLinks />
