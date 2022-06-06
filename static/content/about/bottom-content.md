@@ -29,7 +29,7 @@
 
 ## Publications and Conference Presentations 📝
 
-Raymond, C., Anderson, A., & Waller, I. (2022, June). Measuring Alignment of Online Grassroots Political Communities with Political Campaigns. In *Proceedings of the International AAAI Conference on Web and Social Media* (Vol. 15).
+Raymond, C., Anderson, A., & Waller, I. (2022, June). Measuring Alignment of Online Grassroots Political Communities with Political Campaigns. In *Proceedings of the International AAAI Conference on Web and Social Media* (ICWSM) (Vol. 15).
 
 Raymond, C., Krafft, P. (2021, September). *Managing Online Rumour Proportions During Offline Protests.* The 3rd Multidisciplinary International Symposium on Disinformation in Open Online Media (MISDOOM), online.
 
@@ -41,4 +41,4 @@ Raymond, C. (2020, June). *Bridging or Bonding? Measures of Topic Centrality for
 
 P-hackers take notice
 
-![Current meme](content/about/current-meme.jpg)
+![![Current meme](content/about/current-meme.png)](content/about/current-df.webp)
