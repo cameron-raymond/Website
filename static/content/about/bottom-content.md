@@ -29,7 +29,7 @@
 
 ## Publications and Conference Presentations 📝
 
-Raymond, C., Anderson, A., & Waller, I. (2022, June). Measuring Alignment of Online Grassroots Political Communities with Political Campaigns. In *Proceedings of the International AAAI Conference on Web and Social Media* (ICWSM) (Vol. 15).
+Raymond, C., Waller, I., & Anderson, A. (2022). Measuring Alignment of Online Grassroots Political Communities with Political Campaigns. *Proceedings of the International AAAI Conference on Web and Social Media*, 16(1), 806-816.
 
 Raymond, C., Krafft, P. (2021, September). *Managing Online Rumour Proportions During Offline Protests.* The 3rd Multidisciplinary International Symposium on Disinformation in Open Online Media (MISDOOM), online.
 
