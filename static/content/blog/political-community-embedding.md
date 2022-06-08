@@ -6,7 +6,7 @@ blurb: "Lead author on this study, accepted to ICWSM 2022, that uses neural embe
 type: "rp"
 tags: ["ml","pl"]
 collaborators: ["CSSLab"]
-link: "<a aria-label='Paper' href='content/political-community-embedding/Measuring_Alignment_of_Online_Grassroots_Political_Communities_with_Political_Campaigns.pdf'>Paper</a>"
-date: "2021-01-15"
+link: "<a aria-label='Paper' href='https://ojs.aaai.org/index.php/ICWSM/article/view/19336'>Paper</a>"
+date: "2022-05-31"
 prod: true
 ---
