@@ -5,13 +5,15 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [Blockchain Chicken Farm](https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html)
-   2. [Stumbling on Happiness](https://www.nytimes.com/2006/05/07/books/review/07stossell.html)
-   3. [Kindred: Neanderthal Life, Love, Death and Art](https://www.npr.org/2020/10/27/927772107/kindred-dismantles-simplistic-views-of-neanderthals)
-   4. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
-   5. [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
-   6. [Subtract](https://www.harvard.com/book/subtract/)
-   7. **[Previous years' books](/about/booklist/)**
+   1. [Picasso: A Biography](https://archive.nytimes.com/www.nytimes.com/books/98/10/18/specials/obrian-picasso.html)
+   2. [Cheap Speech: How Disinformation Poisons Our Politics — and How to Cure It](https://www.nytimes.com/2022/06/09/books/books-disinformation-fake-news.html#link-71b93d41)
+   3. [Blockchain Chicken Farm](https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html)
+   4. [Stumbling on Happiness](https://www.nytimes.com/2006/05/07/books/review/07stossell.html)
+   5. [Kindred: Neanderthal Life, Love, Death and Art](https://www.npr.org/2020/10/27/927772107/kindred-dismantles-simplistic-views-of-neanderthals)
+   6. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
+   7. [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
+   8. [Subtract](https://www.harvard.com/book/subtract/)
+   9. **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
    1. [Mr. Morale & The Big Steppers](https://pitchfork.com/reviews/albums/kendrick-lamar-mr-morale-and-the-big-steppers/)
    2. [Melt My Eyez See Your Future](https://pitchfork.com/reviews/albums/denzel-curry-melt-my-eyez-see-your-future/)
