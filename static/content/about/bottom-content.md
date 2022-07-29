@@ -5,7 +5,7 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [Picasso: A Biography](https://archive.nytimes.com/www.nytimes.com/books/98/10/18/specials/obrian-picasso.html)
+   1. [Jackson Pollock: An American Saga](https://www.nytimes.com/1990/01/28/books/a-spattered-life.html)
    2. [Cheap Speech: How Disinformation Poisons Our Politics — and How to Cure It](https://www.nytimes.com/2022/06/09/books/books-disinformation-fake-news.html#link-71b93d41)
    3. [Blockchain Chicken Farm](https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html)
    4. [Stumbling on Happiness](https://www.nytimes.com/2006/05/07/books/review/07stossell.html)
