@@ -48,7 +48,8 @@
     overflow: hidden;
   }
   :global(img) {
-    width: 100%;
+    max-width: 100%;
+    max-height: 30rem
   }
   :global(ol) {
     padding-left: 0px;

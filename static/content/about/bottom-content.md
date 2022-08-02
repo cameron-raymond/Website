@@ -42,6 +42,4 @@ Raymond, C. (2020, June). *Bridging or Bonding? Measures of Topic Centrality for
 
 ## Current Meme
 
-P-hackers take notice
-
 ![![Current meme](content/about/current-meme.png)](content/about/current-meme.webp)
