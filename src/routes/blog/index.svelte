@@ -10,7 +10,6 @@
   import { onMount, onDestroy } from "svelte";
   import { fly, fade } from "svelte/transition";
   import Tag from "../../components/Tag.svelte";
-  import Card from "../../components/Card.svelte";
   import PostFilter from "../../components/PostFilter.svelte";
   import Emoji from "../../components/Emoji.svelte";
   export let posts;
@@ -84,10 +83,7 @@
     in:fly={{ delay: 550, x: -50, duration: 500 }}
     out:fly={{ y: 50, duration: 300 }}>
     <p>
-      AI and network science; politics and policy. Below are some of my
-      ramblings. This is meant to be a more accessible outlet for the exciting
-      but all too often inaccessible research done in the world of computational
-      social science. All opinions are (unfortunately) my own.
+      A collection of some of my thoughts and projects over the years. Take everything with a grain of salt.
     </p>
   </div>
   <span
