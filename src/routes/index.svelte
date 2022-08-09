@@ -9,7 +9,7 @@
 </script>
 
 <script>
-  import Head from "../components/Head.svelte"
+  import Head from "../components/Head.svelte";
   import Emoji from "../components/Emoji.svelte";
   import Cards from "../components/Cards.svelte";
   import LazyLoad from "../components/HoC/LazyLoad.svelte";
@@ -77,7 +77,14 @@
           out:fly={{ y: 50, duration: 500 }}>
           I'm Cameron - a data scientist
           <Emoji symbol="📈" />
-          and research fellow at Stanford Law School's
+          and incoming Trust & Safety Analyst at
+          <a aria-label="OpenAI" href="https://openai.com/">OpenAI</a>
+          <Emoji symbol="🧠" />
+        </p>
+        <p
+          in:fly={{ delay: 350, y: 50, duration: 500 }}
+          out:fly={{ y: 50, duration: 500 }}>
+          Currently a research fellow at Stanford Law School's
           <a
             aria-label="Stanford Law School"
             href="https://reglab.stanford.edu/">
@@ -86,7 +93,7 @@
           <Emoji symbol="⚖️" />
         </p>
         <p
-          in:fly={{ delay: 350, y: 50, duration: 500 }}
+          in:fly={{ delay: 400, y: 50, duration: 500 }}
           out:fly={{ y: 50, duration: 500 }}>
           Previously a graduate student
           <Emoji symbol="🧑‍💻" />
@@ -114,4 +121,4 @@
     out:fade={{ duration: 100, delay: 100 }} />
 </div>
 <Cards {posts} bind:onHome />
-<Head/>
+<Head />
