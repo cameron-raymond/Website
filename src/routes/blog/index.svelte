@@ -83,7 +83,8 @@
     in:fly={{ delay: 550, x: -50, duration: 500 }}
     out:fly={{ y: 50, duration: 300 }}>
     <p>
-      A collection of some of my thoughts and projects over the years. Take everything with a grain of salt.
+      A collection of some of my thoughts and projects over the years. Take
+      everything with a grain of salt.
     </p>
   </div>
   <span
@@ -128,10 +129,8 @@
   <title>💻Blog - Cameron Raymond💻</title>
   <meta
     name="description"
-    content="Cameron Raymond's blog. AI and network science; politics and
-    policy. Below are some of my ramblings. This is meant to be a more
-    accessible outlet for the exciting but all too often inaccessible research
-    done in the world of computational social science. All opinions are (unfortunately) my own." />
+    content="Cameron Raymond's blog. A collection of some of my thoughts and
+    projects over the years. Take everything with a grain of salt." />
   <meta
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
@@ -144,10 +143,8 @@
   <meta property="og:title" content="💻Blog - Cameron Raymond💻" />
   <meta
     name="og:description"
-    content="Cameron Raymond's blog. AI and network science; politics and
-    policy. Below are some of my ramblings. This is meant to be a more
-    accessible outlet for the exciting but all too often inaccessible research
-    done in the world of computational social science. All opinions are my own." />
+    content="Cameron Raymond's blog. A collection of some of my thoughts and
+    projects over the years. Take everything with a grain of salt." />
   <meta property="og:image" content="https://cameronraymond.me/networkd.png" />
 
   <!-- Twitter -->
@@ -156,10 +153,8 @@
   <meta property="twitter:title" content="💻Blog - Cameron Raymond💻" />
   <meta
     property="twitter:description"
-    content="Cameron Raymond's blog. AI and network science; politics and
-    policy. Below are some of my ramblings. This is meant to be a more
-    accessible outlet for the exciting but all too often inaccessible research
-    done in the world of computational social science. All opinions are my own.." />
+    content="Cameron Raymond's blog. A collection of some of my thoughts and
+    projects over the years. Take everything with a grain of salt. " />
   <meta
     property="twitter:image"
     content="https://cameronraymond.me/networkd.png" />
