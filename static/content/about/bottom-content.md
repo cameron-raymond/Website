@@ -5,15 +5,16 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [Jackson Pollock: An American Saga](https://www.nytimes.com/1990/01/28/books/a-spattered-life.html)
-   2. [Cheap Speech: How Disinformation Poisons Our Politics — and How to Cure It](https://www.nytimes.com/2022/06/09/books/books-disinformation-fake-news.html#link-71b93d41)
-   3. [Blockchain Chicken Farm](https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html)
-   4. [Stumbling on Happiness](https://www.nytimes.com/2006/05/07/books/review/07stossell.html)
-   5. [Kindred: Neanderthal Life, Love, Death and Art](https://www.npr.org/2020/10/27/927772107/kindred-dismantles-simplistic-views-of-neanderthals)
-   6. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
-   7. [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
-   8. [Subtract](https://www.harvard.com/book/subtract/)
-   9. **[Previous years' books](/about/booklist/)**
+   1. [Chatter](https://www.newyorker.com/books/page-turner/can-we-control-the-voice-in-our-head)
+   2. [Jackson Pollock: An American Saga](https://www.nytimes.com/1990/01/28/books/a-spattered-life.html)
+   3. [Cheap Speech: How Disinformation Poisons Our Politics — and How to Cure It](https://www.nytimes.com/2022/06/09/books/books-disinformation-fake-news.html#link-71b93d41)
+   4. [Blockchain Chicken Farm](https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html)
+   5. [Stumbling on Happiness](https://www.nytimes.com/2006/05/07/books/review/07stossell.html)
+   6. [Kindred: Neanderthal Life, Love, Death and Art](https://www.npr.org/2020/10/27/927772107/kindred-dismantles-simplistic-views-of-neanderthals)
+   7. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
+   8. [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
+   9. [Subtract](https://www.harvard.com/book/subtract/)
+   10. **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
    1. [Mr. Morale & The Big Steppers](https://pitchfork.com/reviews/albums/kendrick-lamar-mr-morale-and-the-big-steppers/)
    2. [Melt My Eyez See Your Future](https://pitchfork.com/reviews/albums/denzel-curry-melt-my-eyez-see-your-future/)
