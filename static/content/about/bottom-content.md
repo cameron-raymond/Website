@@ -16,14 +16,14 @@
    9. [Subtract](https://www.harvard.com/book/subtract/)
    10. **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
-   1. [Mr. Morale & The Big Steppers](https://pitchfork.com/reviews/albums/kendrick-lamar-mr-morale-and-the-big-steppers/)
-   2. [Melt My Eyez See Your Future](https://pitchfork.com/reviews/albums/denzel-curry-melt-my-eyez-see-your-future/)
-   3. [It's Almost Dry](https://pitchfork.com/reviews/albums/pusha-t-its-almost-dry/)
-   4. [From a Bird’s Eye View](https://pitchfork.com/reviews/albums/cordae-from-a-birds-eye-view/)
+   1. [$oul $old $eparately](https://pitchfork.com/reviews/albums/freddie-gibbs-soul-sold-separately/)
+   2. [Cheat codes](https://pitchfork.com/reviews/albums/danger-mouse-black-thought-cheat-codes/)
+   3. [Mr. Morale & The Big Steppers](https://pitchfork.com/reviews/albums/kendrick-lamar-mr-morale-and-the-big-steppers/)
+   4. [It's Almost Dry](https://pitchfork.com/reviews/albums/pusha-t-its-almost-dry/)
 4. ### All Time Albums 💃🕺
    1. [The Miseducation of Lauryn Hill](https://pitchfork.com/reviews/albums/22035-the-miseducation-of-lauryn-hill/)
    2. [All Eyez on Me](https://pitchfork.com/reviews/albums/2pac-all-eyez-on-me/)
-   3. [This Old Dog](https://pitchfork.com/reviews/albums/23125-this-old-dog/)
+   3. [Madvillainy](https://pitchfork.com/reviews/albums/5579-madvillainy/)
    4. [To Pimp a Butterfly](https://pitchfork.com/reviews/albums/20390-to-pimp-a-butterfly/)
    5. [Pet Sounds](https://pitchfork.com/reviews/albums/9371-pet-sounds-40th-anniversary/)
 
