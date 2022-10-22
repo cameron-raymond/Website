@@ -10,6 +10,7 @@ date: "05-21-2020"
 prod: true
 ---
 
+**NOTE: this was my first uninhibited, and unsupervised, exploration into computational social science. While I learned a lot from this project, it's clear that the methods and findings are not well-founded. It was, however, lots of fun! I'm leaving these posts up for posterity but, again, would not consider it close to rigorous.**
 
 ![Source: [Salesforce.com](https://www.salesforce.com/ca/blog/2019/10/get-to-know-ai-for-business--natural-language-processing.html)](https://cdn-images-1.medium.com/max/2402/1*8wo8S9TmNx7aMHWSW_lSfg.png)*Source: [Salesforce.com](https://www.salesforce.com/ca/blog/2019/10/get-to-know-ai-for-business--natural-language-processing.html)*
 

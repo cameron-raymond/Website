@@ -10,6 +10,8 @@ date: "05-28-2020"
 prod: true
 ---
 
+**NOTE: this was my first uninhibited, and unsupervised, exploration into computational social science. While I learned a lot from this project, it's clear that the methods and findings are not well-founded. It was, however, lots of fun! I'm leaving these posts up for posterity but, again, would not consider it close to rigorous.**
+
 ![All the tweets of political leaders, and their retweets, leading up to Canada’s 2019 federal election](https://cdn-images-1.medium.com/max/6000/1*dlDjeRQMuZoexm-onCcAuw.png)*All the tweets of political leaders, and their retweets, leading up to Canada’s 2019 federal election*
 
 Alex Pentland, director of MIT’s [Connection Science](http://connection.mit.edu/) initiative and former director of the MIT [Media Lab,](https://www.media.mit.edu/) argues that information flows across networks in a way very similar to the flu. Those who weren’t previously sick, but are repeatedly exposed to those who are, become increasingly likely to ‘catch it’ and go on to spread it to others. The same goes for ideas. As we are exposed to different viewpoints and perspectives, we have a propensity towards ‘catching’ them, which influences are friends and family (our little part of the larger network). This can go on in a cascading affect that disperses information across the entire network. **In this article we will look at political polarization as a function of the flow of ideas in a network.** Specifically, we will see that depending on what a tweet is about, it can ‘spread’ very differently.
