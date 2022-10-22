@@ -77,14 +77,14 @@
           out:fly={{ y: 50, duration: 500 }}>
           I'm Cameron - a data scientist
           <Emoji symbol="📈" />
-          and incoming Trust & Safety Analyst at
+          working on Trust & Safety at
           <a aria-label="OpenAI" href="https://openai.com/">OpenAI</a>
           <Emoji symbol="🧠" />
         </p>
         <p
           in:fly={{ delay: 350, y: 50, duration: 500 }}
           out:fly={{ y: 50, duration: 500 }}>
-          Currently a research fellow at Stanford Law School's
+          Previously a research fellow at Stanford Law School's
           <a
             aria-label="Stanford Law School"
             href="https://reglab.stanford.edu/">
@@ -95,7 +95,7 @@
         <p
           in:fly={{ delay: 400, y: 50, duration: 500 }}
           out:fly={{ y: 50, duration: 500 }}>
-          Previously a graduate student
+          And graduate student
           <Emoji symbol="🧑‍💻" />
           at the
           <a aria-label="University of Oxford" href="http://www.ox.ac.uk/">

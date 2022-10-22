@@ -7,4 +7,3 @@ export function get(req, res) {
   });
   res.end(booklists);
 }
-
