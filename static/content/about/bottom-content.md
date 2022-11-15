@@ -36,6 +36,8 @@
 
 ## Publications and Conference Presentations 📝
 
+Raymond, C., Ouyang, D., D'Agostino, A., Rudman, S. L., & Ho, D. E. (2023). Automated vs. manual case investigation and contact tracing for pandemic surveillance: Evidence from a stepped wedge cluster randomized trial. *eClinicalMedicine, 55*, 101726.
+
 Raymond, C., Waller, I., & Anderson, A. (2022). Measuring Alignment of Online Grassroots Political Communities with Political Campaigns. *Proceedings of the International AAAI Conference on Web and Social Media*, 16(1), 806-816.
 
 Raymond, C., Krafft, P. (2021, September). *Managing Online Rumour Proportions During Offline Protests.* The 3rd Multidisciplinary International Symposium on Disinformation in Open Online Media (MISDOOM), online.
