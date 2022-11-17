@@ -46,6 +46,12 @@ Raymond, C., Anderson, A., & Waller, I. (2021, July). *Measuring Alignment of On
 
 Raymond, C. (2020, June). *Bridging or Bonding? Measures of Topic Centrality for Online Political Engagement.* International Network for Social Network Analysis Sunbelt Conference, Paris, FR.
 
+## Professional Affiliations
+
+**Trust & Safety Professional Association** (Affiliated Member).
+
+**The Young Researcher** (Editorial Board Member). The Young Researcher is a journal that introduces secondary school students to academic research and publishes their projects.
+
 ## Current Meme
 
 ![![Current meme](content/about/current-meme.png)](content/about/current-meme.webp)
