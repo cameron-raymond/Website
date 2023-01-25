@@ -5,25 +5,17 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [Custodians of the Internet](https://yalebooks.yale.edu/book/9780300261431/custodians-of-the-internet/)
-   1. [Deepfakes: The Coming Infocalypse](https://www.nytimes.com/2021/03/10/technology/ancestor-deepfake-tom-cruise.html)
-   2. [Chatter](https://www.newyorker.com/books/page-turner/can-we-control-the-voice-in-our-head)
-   3. [Jackson Pollock: An American Saga](https://www.nytimes.com/1990/01/28/books/a-spattered-life.html)
-   4. [Cheap Speech: How Disinformation Poisons Our Politics — and How to Cure It](https://www.nytimes.com/2022/06/09/books/books-disinformation-fake-news.html#link-71b93d41)
-   5. [Blockchain Chicken Farm](https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html)
-   6. [Stumbling on Happiness](https://www.nytimes.com/2006/05/07/books/review/07stossell.html)
-   7. [Kindred: Neanderthal Life, Love, Death and Art](https://www.npr.org/2020/10/27/927772107/kindred-dismantles-simplistic-views-of-neanderthals)
-   8. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
-   9.  [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
-   10. [Subtract](https://www.harvard.com/book/subtract/)
-   11. **[Previous years' books](/about/booklist/)**
-1. ### Recent Albums 👨‍🎤
+   1. [The Bauhaus Group](https://www.nytimes.com/2009/12/27/books/review/Simon-t.html)
+   2. [The Creative Act](https://www.nytimes.com/2022/12/29/books/review/rick-rubin-by-the-book-interview.html)
+   3. [Station Eleven](https://www.nytimes.com/2021/12/15/arts/television/station-eleven-review.html)
+   4.  **[Previous years' books](/about/booklist/)**
+3. ### Recent Albums 👨‍🎤
    1. [Her Loss](https://pitchfork.com/reviews/albums/drake-21-savage-her-loss/)
    2. [$oul $old $eparately](https://pitchfork.com/reviews/albums/freddie-gibbs-soul-sold-separately/)
    3. [Cheat codes](https://pitchfork.com/reviews/albums/danger-mouse-black-thought-cheat-codes/)
    4. [Mr. Morale & The Big Steppers](https://pitchfork.com/reviews/albums/kendrick-lamar-mr-morale-and-the-big-steppers/)
    5. [It's Almost Dry](https://pitchfork.com/reviews/albums/pusha-t-its-almost-dry/)
-2. ### All Time Albums 💃🕺
+4. ### All Time Albums 💃🕺
    1. [The Miseducation of Lauryn Hill](https://pitchfork.com/reviews/albums/22035-the-miseducation-of-lauryn-hill/)
    2. [All Eyez on Me](https://pitchfork.com/reviews/albums/2pac-all-eyez-on-me/)
    3. [Madvillainy](https://pitchfork.com/reviews/albums/5579-madvillainy/)
