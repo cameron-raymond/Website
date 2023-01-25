@@ -1,7 +1,18 @@
 # All the Books I've Read Since COVID 📚
 
-1. ### 2021 🤓
-
+1. ### 2022 💪
+   1. [Custodians of the Internet](https://yalebooks.yale.edu/book/9780300261431/custodians-of-the-internet/)
+   1. [Deepfakes: The Coming Infocalypse](https://www.nytimes.com/2021/03/10/technology/ancestor-deepfake-tom-cruise.html)
+   2. [Chatter](https://www.newyorker.com/books/page-turner/can-we-control-the-voice-in-our-head)
+   3. [Jackson Pollock: An American Saga](https://www.nytimes.com/1990/01/28/books/a-spattered-life.html)
+   4. [Cheap Speech: How Disinformation Poisons Our Politics — and How to Cure It](https://www.nytimes.com/2022/06/09/books/books-disinformation-fake-news.html#link-71b93d41)
+   5. [Blockchain Chicken Farm](https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html)
+   6. [Stumbling on Happiness](https://www.nytimes.com/2006/05/07/books/review/07stossell.html)
+   7. [Kindred: Neanderthal Life, Love, Death and Art](https://www.npr.org/2020/10/27/927772107/kindred-dismantles-simplistic-views-of-neanderthals)
+   8. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
+   9.  [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
+   10. [Subtract](https://www.harvard.com/book/subtract/)
+2. ### 2021 🤓
    1. [The Electric Kool-Aid Acid Test](https://www.nytimes.com/2011/08/10/opinion/keseys-trip-in-living-color.html)
    2. [The Book of Why](https://www.nytimes.com/2018/06/01/business/dealbook/review-the-book-of-why-examines-the-science-of-cause-and-effect.html)
    3. [Van Gogh: The Life](https://www.nytimes.com/2011/10/21/books/van-gogh-the-life-by-steven-naifeh-and-gregory-white-smith.html)
