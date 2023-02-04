@@ -2,7 +2,7 @@
 title: "My Next Phase"
 slug: "openai-update"
 emoji: "🗻"
-blurb: "Life update: I’m joining OpenAI as a Trust & Safety Analyst!"
+blurb: "Life update: I’m joining OpenAI's Trust & Safety team!"
 type: "bp"
 tags: ["ml"]
 # collaborators: ["CSSLab"]
@@ -14,7 +14,7 @@ prod: true
 ![bell curve](content/openai-update/header.png "Top left: the gang at Queen's hoco. Top right: the view of the RadCam from the Exeter fellows garden. Bottom left: Stanford's Hoover Tower. Bottom right: The new gig!")
 *Top left: the gang at Queen's hoco. Top right: the view of the RadCam from the Exeter fellows garden. Bottom left: Stanford's Hoover Tower. Bottom right: The new gig!*
 
-It feels crazy to type this, but in October I’ll joining OpenAI as a Trust & Safety Analyst. There I’ll be working to discover and mitigate the abuse of AI technology. I’m not sure what I want this post to be other than a space to put pen to paper and mark this big shift in my life.
+It feels crazy to type this, but in October I’ll joining OpenAI on their Trust & Safety team. There I’ll be working to understand, discover and mitigate the abuse of AI technology. I’m not sure what I want this post to be other than a space to put pen to paper and mark this big shift in my life.
 
 The things OpenAI build inspires plenty of debate, reasonable alarm, as well as awe and joy. This technology will undoubtedly shape our future. While this is an exciting time in the AI field, now is also the time to invest in sociotechnical methods for preventing abuse and harms. I hope to do my part in creating a future where AI contributes to a more equitable and beautiful world.  
 
