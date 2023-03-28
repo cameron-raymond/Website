@@ -5,10 +5,11 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [The Bauhaus Group](https://www.nytimes.com/2009/12/27/books/review/Simon-t.html)
-   2. [The Creative Act](https://www.nytimes.com/2022/12/29/books/review/rick-rubin-by-the-book-interview.html)
-   3. [Station Eleven](https://www.nytimes.com/2021/12/15/arts/television/station-eleven-review.html)
-   4.  **[Previous years' books](/about/booklist/)**
+   1. [Behind the Screen](https://www.nytimes.com/2020/03/13/opinion/sunday/online-comment-moderation.html)
+   2. [The Bauhaus Group](https://www.nytimes.com/2009/12/27/books/review/Simon-t.html)
+   3. [The Creative Act](https://www.nytimes.com/2022/12/29/books/review/rick-rubin-by-the-book-interview.html)
+   4. [Station Eleven](https://www.nytimes.com/2021/12/15/arts/television/station-eleven-review.html)
+   5.  **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
    1. [Her Loss](https://pitchfork.com/reviews/albums/drake-21-savage-her-loss/)
    2. [$oul $old $eparately](https://pitchfork.com/reviews/albums/freddie-gibbs-soul-sold-separately/)
