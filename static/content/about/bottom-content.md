@@ -23,9 +23,11 @@
    4. [To Pimp a Butterfly](https://pitchfork.com/reviews/albums/20390-to-pimp-a-butterfly/)
    5. [Pet Sounds](https://pitchfork.com/reviews/albums/9371-pet-sounds-40th-anniversary/)
 
-## Awards 🏆
+## Awards 🏆 and Talks 💬
 
-**Highly Commended Thesis Prize** (University of Oxford). Each year, the board of examiners awards a small number of 'Highly Commended' awards for outstanding thesis work. I was one of 4 recipients out of a department of 60. See, [press release](https://www.oii.ox.ac.uk/news-events/news/introducing-the-2021-msc-thesis-prize-winners/).
+**💬 Generative AI for Constructive Communication** (MIT Media Lab, 2023). Presented on trust, regulatory policy, and audits.
+
+**🏆 Highly Commended Thesis Prize** (University of Oxford, 2021). Each year, the board of examiners awards a small number of 'Highly Commended' awards for outstanding thesis work. I was one of 4 recipients out of a department of 60. See, [press release](https://www.oii.ox.ac.uk/news-events/news/introducing-the-2021-msc-thesis-prize-winners/).
 
 ## Publications and Conference Presentations 📝
 
