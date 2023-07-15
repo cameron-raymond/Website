@@ -1,7 +1,7 @@
 ---
 title: "Automated vs. manual case investigation and contact tracing for pandemic surveillance"
 emoji: "📞"
-blurb: "Lead author on the first ever randomized control trial of COVID-19 contact tracing – accepted to The Lancet's subsidiary, eClinicalMedicine."
+blurb: "Lead author on the first randomized control trial of COVID-19 contact tracing – accepted to The Lancet's subsidiary, eClinicalMedicine."
 type: "rp"
 tags: ["ci","pl"]
 collaborators: ["reglab"]

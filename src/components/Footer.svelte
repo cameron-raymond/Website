@@ -14,7 +14,6 @@
   let day = "06";
   let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
   let github = "https://github.com/cameron-raymond/";
-  let email = "mailto:cameron.raymond@hey.com?subject=Let's%20Talk%20Data";
   let medium = "https://medium.com/@cameronraymond/";
   let twitter = "https://twitter.com/CJKRaymond";
 </script>
@@ -79,9 +78,9 @@
       <h3>
         Let's
         <a
-          aria-label="Email"
-          href={email}
-          on:click={() => getOutboundLink(email)}>
+          aria-label="linkedIn"
+          href={linkedIn}
+          on:click={() => getOutboundLink(linkedIn)}>
           <Annotation
             visible={true}
             type="underline"

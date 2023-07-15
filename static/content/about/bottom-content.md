@@ -5,13 +5,15 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [God, Human, Animal, Machine](https://www.nytimes.com/2021/08/24/books/review/the-fate-of-the-self-in-the-age-of-clicks.html)
-   2. [STFU](https://www.cbsnews.com/news/book-excerpt-stfu-by-dan-lyons/)
-   3. [Behind the Screen](https://www.nytimes.com/2020/03/13/opinion/sunday/online-comment-moderation.html)
-   4. [The Bauhaus Group](https://www.nytimes.com/2009/12/27/books/review/Simon-t.html)
-   5. [The Creative Act](https://www.nytimes.com/2022/12/29/books/review/rick-rubin-by-the-book-interview.html)
-   6. [Station Eleven](https://www.nytimes.com/2021/12/15/arts/television/station-eleven-review.html)
-   7.  **[Previous years' books](/about/booklist/)**
+   1. [Voices in the Code](https://www.russellsage.org/publications/voices-code)
+   2. [You’re Not Listening](https://www.nytimes.com/2020/02/11/well/family/listening-relationships-marriage-closeness-communication-bias.html)
+   3. [God, Human, Animal, Machine](https://www.nytimes.com/2021/08/24/books/review/the-fate-of-the-self-in-the-age-of-clicks.html)
+   4. [STFU](https://www.cbsnews.com/news/book-excerpt-stfu-by-dan-lyons/)
+   5. [Behind the Screen](https://www.nytimes.com/2020/03/13/opinion/sunday/online-comment-moderation.html)
+   6. [The Bauhaus Group](https://www.nytimes.com/2009/12/27/books/review/Simon-t.html)
+   7. [The Creative Act](https://www.nytimes.com/2022/12/29/books/review/rick-rubin-by-the-book-interview.html)
+   8. [Station Eleven](https://www.nytimes.com/2021/12/15/arts/television/station-eleven-review.html)
+   9.  **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
    1. [Her Loss](https://pitchfork.com/reviews/albums/drake-21-savage-her-loss/)
    2. [$oul $old $eparately](https://pitchfork.com/reviews/albums/freddie-gibbs-soul-sold-separately/)
@@ -27,11 +29,13 @@
 
 ## Awards 🏆 and Talks 💬
 
+**💬 Safety2Vec: An Introduction to Text Embeddings and their Applications in T&S** (TrustCon, 2023). Presented on applications of AI in Trust & Safety to tech professionals.
+
 **💬 Generative AI for Constructive Communication** (MIT Media Lab, 2023). Presented on trust, regulatory policy, and audits.
 
 **🏆 Highly Commended Thesis Prize** (University of Oxford, 2021). Each year, the board of examiners awards a small number of 'Highly Commended' awards for outstanding thesis work. I was one of 4 recipients out of a department of 60. See, [press release](https://www.oii.ox.ac.uk/news-events/news/introducing-the-2021-msc-thesis-prize-winners/).
 
-## Publications and Conference Presentations 📝
+## Academic Publications and Conference Presentations 📝
 
 Raymond, C., Ouyang, D., D'Agostino, A., Rudman, S. L., & Ho, D. E. (2023). Automated vs. manual case investigation and contact tracing for pandemic surveillance: Evidence from a stepped wedge cluster randomized trial. *eClinicalMedicine, 55*, 101726.
 
