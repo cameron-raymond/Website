@@ -5,15 +5,17 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [Voices in the Code](https://www.russellsage.org/publications/voices-code)
-   2. [You’re Not Listening](https://www.nytimes.com/2020/02/11/well/family/listening-relationships-marriage-closeness-communication-bias.html)
-   3. [God, Human, Animal, Machine](https://www.nytimes.com/2021/08/24/books/review/the-fate-of-the-self-in-the-age-of-clicks.html)
-   4. [STFU](https://www.cbsnews.com/news/book-excerpt-stfu-by-dan-lyons/)
-   5. [Behind the Screen](https://www.nytimes.com/2020/03/13/opinion/sunday/online-comment-moderation.html)
-   6. [The Bauhaus Group](https://www.nytimes.com/2009/12/27/books/review/Simon-t.html)
-   7. [The Creative Act](https://www.nytimes.com/2022/12/29/books/review/rick-rubin-by-the-book-interview.html)
-   8. [Station Eleven](https://www.nytimes.com/2021/12/15/arts/television/station-eleven-review.html)
-   9.  **[Previous years' books](/about/booklist/)**
+   1. [Season of the Witch](https://www.nytimes.com/2012/08/05/books/review/season-of-the-witch-by-david-talbot.html)
+   2. [God, Human, Animal, Machine](https://www.nytimes.com/2021/08/24/books/review/the-fate-of-the-self-in-the-age-of-clicks.html)
+   3. [Voices in the Code](https://www.russellsage.org/publications/voices-code)
+   4. [You’re Not Listening](https://www.nytimes.com/2020/02/11/well/family/listening-relationships-marriage-closeness-communication-bias.html)
+   5. [God, Human, Animal, Machine](https://www.nytimes.com/2021/08/24/books/review/the-fate-of-the-self-in-the-age-of-clicks.html)
+   6. [STFU](https://www.cbsnews.com/news/book-excerpt-stfu-by-dan-lyons/)
+   7. [Behind the Screen](https://www.nytimes.com/2020/03/13/opinion/sunday/online-comment-moderation.html)
+   8. [The Bauhaus Group](https://www.nytimes.com/2009/12/27/books/review/Simon-t.html)
+   9. [The Creative Act](https://www.nytimes.com/2022/12/29/books/review/rick-rubin-by-the-book-interview.html)
+   10. [Station Eleven](https://www.nytimes.com/2021/12/15/arts/television/station-eleven-review.html)
+   11. **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
    1. [Her Loss](https://pitchfork.com/reviews/albums/drake-21-savage-her-loss/)
    2. [$oul $old $eparately](https://pitchfork.com/reviews/albums/freddie-gibbs-soul-sold-separately/)
