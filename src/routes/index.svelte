@@ -77,9 +77,10 @@
           out:fly={{ y: 50, duration: 500 }}>
           I'm Cameron - a data scientist
           <Emoji symbol="📈" />
-          working on Trust & Safety at
-          <a aria-label="OpenAI" href="https://openai.com/">OpenAI</a>
+          working on
+          <a aria-label="OpenAI" href="https://openai.com/">OpenAI's</a>
           <Emoji symbol="🧠" />
+          Safety Systems team
         </p>
         <p
           in:fly={{ delay: 350, y: 50, duration: 500 }}
