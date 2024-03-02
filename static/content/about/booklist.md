@@ -1,18 +1,32 @@
 # All the Books I've Read Since COVID 📚
 
-1. ### 2022 💪
+1. ### 2023 😴
+   1. [Bottoms Up and the Devil Laughs](https://www.nytimes.com/2023/03/22/books/review/bottoms-up-and-the-devil-laughs-kerry-howley.html)
+   2. [What We Owe Each Other](https://www.nytimes.com/2023/01/18/us/columbia-president-nemat-shafik.html)
+   3. [Going Infinite](https://www.nytimes.com/2023/10/02/books/review/going-infinite-michael-lewis.html)
+   4. [Season of the Witch](https://www.nytimes.com/2012/08/05/books/review/season-of-the-witch-by-david-talbot.html)
+   5. [God, Human, Animal, Machine](https://www.nytimes.com/2021/08/24/books/review/the-fate-of-the-self-in-the-age-of-clicks.html)
+   6. [Voices in the Code](https://www.russellsage.org/publications/voices-code)
+   7. [You’re Not Listening](https://www.nytimes.com/2020/02/11/well/family/listening-relationships-marriage-closeness-communication-bias.html)
+   8. [God, Human, Animal, Machine](https://www.nytimes.com/2021/08/24/books/review/the-fate-of-the-self-in-the-age-of-clicks.html)
+   9. [STFU](https://www.cbsnews.com/news/book-excerpt-stfu-by-dan-lyons/)
+   10. [Behind the Screen](https://www.nytimes.com/2020/03/13/opinion/sunday/online-comment-moderation.html)
+   11. [The Bauhaus Group](https://www.nytimes.com/2009/12/27/books/review/Simon-t.html)
+   12. [The Creative Act](https://www.nytimes.com/2022/12/29/books/review/rick-rubin-by-the-book-interview.html)
+   13. [Station Eleven](https://www.nytimes.com/2021/12/15/arts/television/station-eleven-review.html)
+2. ### 2022 💪
    1. [Custodians of the Internet](https://yalebooks.yale.edu/book/9780300261431/custodians-of-the-internet/)
-   1. [Deepfakes: The Coming Infocalypse](https://www.nytimes.com/2021/03/10/technology/ancestor-deepfake-tom-cruise.html)
-   2. [Chatter](https://www.newyorker.com/books/page-turner/can-we-control-the-voice-in-our-head)
-   3. [Jackson Pollock: An American Saga](https://www.nytimes.com/1990/01/28/books/a-spattered-life.html)
-   4. [Cheap Speech: How Disinformation Poisons Our Politics — and How to Cure It](https://www.nytimes.com/2022/06/09/books/books-disinformation-fake-news.html#link-71b93d41)
-   5. [Blockchain Chicken Farm](https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html)
-   6. [Stumbling on Happiness](https://www.nytimes.com/2006/05/07/books/review/07stossell.html)
-   7. [Kindred: Neanderthal Life, Love, Death and Art](https://www.npr.org/2020/10/27/927772107/kindred-dismantles-simplistic-views-of-neanderthals)
-   8. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
-   9.  [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
-   10. [Subtract](https://www.harvard.com/book/subtract/)
-2. ### 2021 🤓
+   2. [Deepfakes: The Coming Infocalypse](https://www.nytimes.com/2021/03/10/technology/ancestor-deepfake-tom-cruise.html)
+   3. [Chatter](https://www.newyorker.com/books/page-turner/can-we-control-the-voice-in-our-head)
+   4. [Jackson Pollock: An American Saga](https://www.nytimes.com/1990/01/28/books/a-spattered-life.html)
+   5. [Cheap Speech: How Disinformation Poisons Our Politics — and How to Cure It](https://www.nytimes.com/2022/06/09/books/books-disinformation-fake-news.html#link-71b93d41)
+   6. [Blockchain Chicken Farm](https://www.nytimes.com/2020/10/15/books/review/blockchain-chicken-farm-xiaowei-wang.html)
+   7. [Stumbling on Happiness](https://www.nytimes.com/2006/05/07/books/review/07stossell.html)
+   8. [Kindred: Neanderthal Life, Love, Death and Art](https://www.npr.org/2020/10/27/927772107/kindred-dismantles-simplistic-views-of-neanderthals)
+   9. [Keeping At It: The Quest for Sound Money and Good Government](https://www.washingtonpost.com/outlook/a-former-fed-chiefs-reproaches-of-irresponsible-financial-management/2018/12/07/83001a50-f4d3-11e8-aeea-b85fd44449f5_story.html)
+   10. [The Premonition](https://www.nytimes.com/2021/05/03/books/review-premonition-pandemic-michael-lewis.html)
+   11. [Subtract](https://www.harvard.com/book/subtract/)
+3. ### 2021 🤓
    1. [The Electric Kool-Aid Acid Test](https://www.nytimes.com/2011/08/10/opinion/keseys-trip-in-living-color.html)
    2. [The Book of Why](https://www.nytimes.com/2018/06/01/business/dealbook/review-the-book-of-why-examines-the-science-of-cause-and-effect.html)
    3. [Van Gogh: The Life](https://www.nytimes.com/2011/10/21/books/van-gogh-the-life-by-steven-naifeh-and-gregory-white-smith.html)
@@ -27,7 +41,7 @@
    12. [Soul Full of Coal Dust](https://www.nytimes.com/2020/08/18/books/review/soul-full-of-coal-dust-chris-hamby.html)
    13. [The UX Team Of One](https://uxbookreviews.com/2015/05/05/the-user-experience-team-of-one/)
    14. [Uncanny Valley](https://www.nytimes.com/2020/01/03/books/review/uncanny-valley-anna-wiener.html)
-2. ### 2020 🤮
+4. ### 2020 🤮
    1.  [Natural](https://www.theguardian.com/books/2020/may/02/natural-by-alan-levinovitz-review-the-seductive-myth-of-natures-goodness)
    2.  [A Promised Land](https://www.nytimes.com/2020/11/12/books/review/barack-obama-a-promised-land.html)
    3.  [I Heard you Paint Houses](https://www.nytimes.com/2004/06/20/books/killing-him-softly.html)
