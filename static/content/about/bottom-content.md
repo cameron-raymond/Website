@@ -5,20 +5,9 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [Bottoms Up and the Devil Laughs](https://www.nytimes.com/2023/03/22/books/review/bottoms-up-and-the-devil-laughs-kerry-howley.html)
-   2. [What We Owe Each Other](https://www.nytimes.com/2023/01/18/us/columbia-president-nemat-shafik.html)
-   3. [Going Infinite](https://www.nytimes.com/2023/10/02/books/review/going-infinite-michael-lewis.html)
-   4. [Season of the Witch](https://www.nytimes.com/2012/08/05/books/review/season-of-the-witch-by-david-talbot.html)
-   5. [God, Human, Animal, Machine](https://www.nytimes.com/2021/08/24/books/review/the-fate-of-the-self-in-the-age-of-clicks.html)
-   6. [Voices in the Code](https://www.russellsage.org/publications/voices-code)
-   7. [You’re Not Listening](https://www.nytimes.com/2020/02/11/well/family/listening-relationships-marriage-closeness-communication-bias.html)
-   8. [God, Human, Animal, Machine](https://www.nytimes.com/2021/08/24/books/review/the-fate-of-the-self-in-the-age-of-clicks.html)
-   9. [STFU](https://www.cbsnews.com/news/book-excerpt-stfu-by-dan-lyons/)
-   10. [Behind the Screen](https://www.nytimes.com/2020/03/13/opinion/sunday/online-comment-moderation.html)
-   11. [The Bauhaus Group](https://www.nytimes.com/2009/12/27/books/review/Simon-t.html)
-   12. [The Creative Act](https://www.nytimes.com/2022/12/29/books/review/rick-rubin-by-the-book-interview.html)
-   13. [Station Eleven](https://www.nytimes.com/2021/12/15/arts/television/station-eleven-review.html)
-   14. **[Previous years' books](/about/booklist/)**
+   1. [Atlas of AI](https://www.newyorker.com/magazine/2021/05/17/the-souvenir-museum-the-vietri-project-atlas-of-ai-and-beloved-beasts)
+   2. [The Slip](https://www.nytimes.com/2023/07/27/books/review/the-slip-prudence-peiffer.html)
+   3.  **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
    1. [Violent Femmes](https://pitchfork.com/reviews/albums/23130-violent-femmes/)
    2. [The Velvet Rope](https://pitchfork.com/reviews/albums/janet-jackson-the-velvet-rope-deluxe-edition/)
