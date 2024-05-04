@@ -22,6 +22,8 @@
 
 ## Awards 🏆 and Talks 💬
 
+**💬 Industry Insights Series: Oxford Internet Institute** (Oxford Internet Institute, 2024). Met with current MSc and DPhil students at the OII about my experience in academia and industry.
+
 **💬 Safety2Vec: An Introduction to Text Embeddings and their Applications in T&S** (TrustCon, 2023). Presented on applications of AI in Trust & Safety to tech professionals.
 
 **💬 Generative AI for Constructive Communication** (MIT Media Lab, 2023). Presented on trust, regulatory policy, and audits.
