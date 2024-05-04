@@ -5,9 +5,10 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [Atlas of AI](https://www.newyorker.com/magazine/2021/05/17/the-souvenir-museum-the-vietri-project-atlas-of-ai-and-beloved-beasts)
-   2. [The Slip](https://www.nytimes.com/2023/07/27/books/review/the-slip-prudence-peiffer.html)
-   3.  **[Previous years' books](/about/booklist/)**
+   1. [Big Bets](https://www.wsj.com/arts-culture/books/big-bets-review-trying-to-reach-audacious-goals-23ed5b05)
+   2. [Atlas of AI](https://www.newyorker.com/magazine/2021/05/17/the-souvenir-museum-the-vietri-project-atlas-of-ai-and-beloved-beasts)
+   3. [The Slip](https://www.nytimes.com/2023/07/27/books/review/the-slip-prudence-peiffer.html)
+   4.  **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
    1. [Violent Femmes](https://pitchfork.com/reviews/albums/23130-violent-femmes/)
    2. [The Velvet Rope](https://pitchfork.com/reviews/albums/janet-jackson-the-velvet-rope-deluxe-edition/)
@@ -20,6 +21,8 @@
    5. [Pet Sounds](https://pitchfork.com/reviews/albums/9371-pet-sounds-40th-anniversary/)
 
 ## Awards 🏆 and Talks 💬
+
+**💬 Industry Insights Series: Oxford Internet Institute** (Oxford Internet Institute, 2024). Met with current MSc and DPhil students at the OII about my experience in academia and industry.
 
 **💬 Safety2Vec: An Introduction to Text Embeddings and their Applications in T&S** (TrustCon, 2023). Presented on applications of AI in Trust & Safety to tech professionals.
 
