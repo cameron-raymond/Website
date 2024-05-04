@@ -14,7 +14,6 @@
   let day = "06";
   let linkedIn = "https://www.linkedin.com/in/CJKRaymond/";
   let github = "https://github.com/cameron-raymond/";
-  let medium = "https://medium.com/@cameronraymond/";
   let twitter = "https://twitter.com/CJKRaymond";
 </script>
 
@@ -132,14 +131,6 @@
       class="icon"
       on:click={() => getOutboundLink(github)}>
       <FaGithub />
-    </a>
-    <div class="divider" />
-    <a
-      aria-label="Medium"
-      href={medium}
-      class="icon"
-      on:click={() => getOutboundLink(medium)}>
-      <FaMediumM />
     </a>
   </div>
 </div>
