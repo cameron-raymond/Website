@@ -4,7 +4,7 @@ title: "Nice to meet you"
 emoji: "🙋‍♂️"
 ---
 
-I'm Cameron – a data scientist from Toronto. I'm a member of OpenAI's Safety Systems team where I work to detect novel harms from AI (moderation research). Previously I was a research fellow at Stanford where I worked with government agencies to leverage emerging technology and causal inference to inform policy. I completed my MSc at Oxford where I researched misinformation and human-computer interaction. I did my undergrad at Queen's University in computer science and political science.
+I'm Cameron – a researcher scientist from Toronto. I'm a Member of Technical Staff on OpenAI's Safety Systems team where I work to detect novel harms from AI (moderation research). Previously I was a research fellow at Stanford where I worked with government agencies to leverage emerging technology and causal inference to inform policy. I completed my MSc at Oxford where I researched misinformation and human-computer interaction. I did my undergrad at Queen's University in computer science and political science.
 
 I've been lucky enough to work and do research at institutions like the University of Toronto's Computational Social Science Lab; Princeton's Stigma and Social Perception Lab; Stanford's Regulation Evaluation and Governance Lab; and the Oxford Internet Institute. I've had my work accepted to venues like [ICWSM](https://www.icwsm.org), [IC2S2](http://ic2s2.org), INSNA's [Sunbelt](https://www.insna.org/sunbelt-archives) conference, [MISDOOM](https://www.oii.ox.ac.uk/misdoom-2021/), [The Lancet *eclinicalmedicine*](https://www.thelancet.com/journals/eclinm/home) and [TrustCon](https://www.tspa.org/event/trustcon-2023/).
 

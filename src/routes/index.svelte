@@ -75,7 +75,7 @@
         <p
           in:fly={{ delay: 300, y: 50, duration: 500 }}
           out:fly={{ y: 50, duration: 500 }}>
-          I'm Cameron - a data scientist
+          I'm Cameron - a research scientist
           <Emoji symbol="📈" />
           working on
           <a aria-label="OpenAI" href="https://openai.com/">OpenAI's</a>
