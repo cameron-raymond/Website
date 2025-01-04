@@ -134,7 +134,7 @@
   <meta
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
-    Science, Social Data Sience, Data Scientist" />
+    Science, Social Data Sience, Data Scientist, OpenAI" />
   <link rel="canonical" href="https://cameronraymond.me/blog/" />
 
   <!-- Open Graph / Facebook -->
