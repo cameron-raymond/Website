@@ -3,12 +3,11 @@
 
   <meta
     name="description"
-    content="Cameron Raymond is a data scientist and graduate from the University of Oxford. His broad areas of interest include network
-    science, machine learning, and computational social science." />
+    content="Cameron Raymond is a research scientist at OpenAI and graduate from the University of Oxford." />
   <meta
     name="keywords"
     content="Cameron Raymond, University of Oxford, Oxford University, Data
-    Science, Social Data Sience, Data Scientist" />
+    Science, Social Data Sience, Data Scientist, OpenAI" />
   <link rel="canonical" href="https://cameronraymond.me" />
 
   <!-- Open Graph / Facebook -->
@@ -17,8 +16,7 @@
   <meta property="og:title" content="🤯Cameron Raymond🤯" />
   <meta
     name="og:description"
-    content="Cameron Raymond is a data scientist and graduate from the University of Oxford. His broad areas of interest include network
-    science, machine learning, and computational social science." />
+    content="Cameron Raymond is a research scientist at OpenAI and graduate from the University of Oxford." />
   <meta
     property="og:image"
     content="https://cameronraymond.me/summary_large_image.png" />
@@ -29,8 +27,7 @@
   <meta property="twitter:title" content="🤯Cameron Raymond🤯" />
   <meta
     property="twitter:description"
-    content="Cameron Raymond is a data scientist and graduate from the University of Oxford. His broad areas of interest include network
-    science, machine learning, and computational social science." />
+    content="Cameron Raymond is a research scientist at OpenAI and graduate from the University of Oxford." />
   <meta
     property="twitter:image"
     content="https://cameronraymond.me/summary_large_image.png" />

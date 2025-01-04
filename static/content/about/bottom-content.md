@@ -5,12 +5,14 @@
    3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
    4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [Immune](https://www.washingtonpost.com/books/2022/02/17/dettmer-immune/)
-   2. [Radiant](https://www.nytimes.com/2024/03/03/books/review/radiant-keith-haring-brad-gooch.html)
-   3. [Big Bets](https://www.wsj.com/arts-culture/books/big-bets-review-trying-to-reach-audacious-goals-23ed5b05)
-   4. [Atlas of AI](https://www.newyorker.com/magazine/2021/05/17/the-souvenir-museum-the-vietri-project-atlas-of-ai-and-beloved-beasts)
-   5. [The Slip](https://www.nytimes.com/2023/07/27/books/review/the-slip-prudence-peiffer.html)
-   6.  **[Previous years' books](/about/booklist/)**
+   1. [You Dreamed of Empires](https://www.nytimes.com/2024/01/08/books/review/you-dreamed-of-empires-alvaro-enrigue.html)
+   2. [The Anxious Generation](https://www.nytimes.com/2024/03/26/books/review/jonathan-haidt-the-anxious-generation.html)
+   3. [Immune](https://www.washingtonpost.com/books/2022/02/17/dettmer-immune/)
+   4. [Radiant](https://www.nytimes.com/2024/03/03/books/review/radiant-keith-haring-brad-gooch.html)
+   5. [Big Bets](https://www.wsj.com/arts-culture/books/big-bets-review-trying-to-reach-audacious-goals-23ed5b05)
+   6. [Atlas of AI](https://www.newyorker.com/magazine/2021/05/17/the-souvenir-museum-the-vietri-project-atlas-of-ai-and-beloved-beasts)
+   7. [The Slip](https://www.nytimes.com/2023/07/27/books/review/the-slip-prudence-peiffer.html)
+   8.  **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
    1. [Violent Femmes](https://pitchfork.com/reviews/albums/23130-violent-femmes/)
    2. [The Velvet Rope](https://pitchfork.com/reviews/albums/janet-jackson-the-velvet-rope-deluxe-edition/)
