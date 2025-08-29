@@ -1,5 +1,14 @@
 # All the Books I've Read Since COVID 📚
 
+1. ### 2024
+   1. [You Dreamed of Empires](https://www.nytimes.com/2024/01/08/books/review/you-dreamed-of-empires-alvaro-enrigue.html)
+   2. [The Anxious Generation](https://www.nytimes.com/2024/03/26/books/review/jonathan-haidt-the-anxious-generation.html)
+   3. [The Hitchhiker's Guide to the Galaxy](https://www.nytimes.com/1981/01/25/books/science-fiction.html)
+   4. [Immune](https://www.washingtonpost.com/books/2022/02/17/dettmer-immune/)
+   5. [Radiant](https://www.nytimes.com/2024/03/03/books/review/radiant-keith-haring-brad-gooch.html)
+   6. [Big Bets](https://www.wsj.com/arts-culture/books/big-bets-review-trying-to-reach-audacious-goals-23ed5b05)
+   7. [Atlas of AI](https://www.newyorker.com/magazine/2021/05/17/the-souvenir-museum-the-vietri-project-atlas-of-ai-and-beloved-beasts)
+   8. [The Slip](https://www.nytimes.com/2023/07/27/books/review/the-slip-prudence-peiffer.html)
 1. ### 2023 😴
    1. [Bottoms Up and the Devil Laughs](https://www.nytimes.com/2023/03/22/books/review/bottoms-up-and-the-devil-laughs-kerry-howley.html)
    2. [What We Owe Each Other](https://www.nytimes.com/2023/01/18/us/columbia-president-nemat-shafik.html)
