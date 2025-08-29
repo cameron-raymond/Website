@@ -1,18 +1,12 @@
 ## Me Through Lists ✅
 1. ### All Time Books 📖
-   1. [Freakonomics](https://www.nytimes.com/2005/05/15/books/review/freakonomics-everything-he-always-wanted-to-know.html)
-   2. [Thinking Fast and Slow](https://www.nytimes.com/2011/11/27/books/review/thinking-fast-and-slow-by-daniel-kahneman-book-review.html)
-   3. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
-   4. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
+   1. [Thinking Fast and Slow](https://www.nytimes.com/2011/11/27/books/review/thinking-fast-and-slow-by-daniel-kahneman-book-review.html)
+   2. [Future Politics](https://www.nytimes.com/2018/12/04/opinion/chatbots-ai-democracy-free-speech.html)
+   3. [Bowling Alone](https://www.nytimes.com/2000/05/06/arts/lonely-bowlers-unite-mend-social-fabric-political-scientist-renews-his-alarm.html)
 2. ### Recent Books 📚
-   1. [You Dreamed of Empires](https://www.nytimes.com/2024/01/08/books/review/you-dreamed-of-empires-alvaro-enrigue.html)
-   2. [The Anxious Generation](https://www.nytimes.com/2024/03/26/books/review/jonathan-haidt-the-anxious-generation.html)
-   3. [The Hitchhiker's Guide to the Galaxy](https://www.nytimes.com/1981/01/25/books/science-fiction.html)
-   4. [Immune](https://www.washingtonpost.com/books/2022/02/17/dettmer-immune/)
-   5. [Radiant](https://www.nytimes.com/2024/03/03/books/review/radiant-keith-haring-brad-gooch.html)
-   6. [Big Bets](https://www.wsj.com/arts-culture/books/big-bets-review-trying-to-reach-audacious-goals-23ed5b05)
-   7. [Atlas of AI](https://www.newyorker.com/magazine/2021/05/17/the-souvenir-museum-the-vietri-project-atlas-of-ai-and-beloved-beasts)
-   8. [The Slip](https://www.nytimes.com/2023/07/27/books/review/the-slip-prudence-peiffer.html)
+   1. [3 Shades of Blue](https://www.nytimes.com/2024/03/07/books/review/3-shades-of-blue-james-kaplan.html)
+   2. [Empire of AI](https://www.nytimes.com/2025/05/19/books/review/empire-of-ai-karen-hao-the-optimist-keach-hagey.html)
+   3. [Parable of the Sower](https://www.nytimes.com/interactive/2022/11/17/arts/octavia-butler-vision-kindred.html)
    9.  **[Previous years' books](/about/booklist/)**
 3. ### Recent Albums 👨‍🎤
    1. [Violent Femmes](https://pitchfork.com/reviews/albums/23130-violent-femmes/)
@@ -21,8 +15,7 @@
 4. ### All Time Albums 💃🕺
    1. [The Miseducation of Lauryn Hill](https://pitchfork.com/reviews/albums/22035-the-miseducation-of-lauryn-hill/)
    2. [All Eyez on Me](https://pitchfork.com/reviews/albums/2pac-all-eyez-on-me/)
-   3. [Madvillainy](https://pitchfork.com/reviews/albums/5579-madvillainy/)
-   4. [To Pimp a Butterfly](https://pitchfork.com/reviews/albums/20390-to-pimp-a-butterfly/)
+   4. [Kind of Blue](https://pitchfork.com/reviews/albums/12283-kind-of-blue-50th-anniversary-edition/)
    5. [Pet Sounds](https://pitchfork.com/reviews/albums/9371-pet-sounds-40th-anniversary/)
 
 ## Awards 🏆 and Talks 💬
